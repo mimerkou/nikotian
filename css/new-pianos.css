@@ -1,0 +1,290 @@
+/* Nikotian — «Καινούργια πιάνα» (new-pianos.html) · v1.0
+   Layout only. Text takes its type from the shared roles (style.css «Typography roles» + tokens.css):
+   .eyebrow · .title (+ --stack, --light) · .t-body · .t-meta · .t-meta-value · .t-caption · .t-subtitle ·
+   .btn · .link-arrow. The filter options use the values of the existing UI links (.nav__link / .link-arrow:
+   --fs-sm, 500). No new font sizes, no new colours. */
+
+/* =========================================================
+   01 · Hero — the approved About hero (same padding, grid, split and photo height)
+   ========================================================= */
+.np-hero {
+  background: var(--ivory);
+  padding-top: calc(var(--header-h) + var(--s-6));
+  padding-bottom: clamp(3rem, 2rem + 3vw, 5rem);
+  overflow: hidden;
+}
+.np-hero .crumbs { margin-bottom: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); }
+
+.np-hero__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  align-items: center;
+}
+.np-hero__text { grid-column: 1 / span 5; padding-right: var(--s-5); }
+.np-hero__lead { margin-top: var(--s-6); }
+
+.np-hero__media {
+  grid-column: 6 / -1;
+  margin-right: calc(-1 * var(--gutter) - max(0px, (100vw - var(--max-w)) / 2));
+  height: clamp(20rem, 100svh - var(--header-h) - 14rem, 36rem);
+  overflow: hidden;
+  background: var(--beige);
+}
+.np-hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 36% 62%; }
+
+.js .np-hero .crumbs, .js .np-hero__text > * { animation: rise 1000ms var(--ease-out) both; }
+.js .np-hero__text > :nth-child(1) { animation-delay: 100ms; }
+.js .np-hero__text > :nth-child(2) { animation-delay: 200ms; }
+.js .np-hero__text > :nth-child(3) { animation-delay: 340ms; }
+.js .np-hero__media { animation: np-unveil 1400ms var(--ease-out) 300ms both; }
+.js .np-hero__media img { animation: np-settle 2000ms var(--ease-out) 300ms both; }
+@keyframes np-unveil { from { clip-path: inset(0 0 0 100%); } to { clip-path: inset(0); } }
+@keyframes np-settle { from { transform: scale(1.06); } to { transform: none; } }
+
+@media (max-width: 64rem) {
+  .np-hero__text { grid-column: 1 / span 6; }
+  .np-hero__media { grid-column: 7 / -1; height: clamp(20rem, 52vw, 30rem); }
+}
+@media (max-width: 47.9375rem) {
+  .np-hero__grid { row-gap: var(--s-7); }
+  .np-hero__text, .np-hero__media { grid-column: 1 / -1; }
+  .np-hero__text { padding-right: 0; }
+  .np-hero__media { margin-inline: calc(-1 * var(--gutter)); height: auto; aspect-ratio: 4 / 3; }
+}
+
+/* =========================================================
+   02 · Η συλλογή — head, filters, grid
+   ========================================================= */
+.np-collection {
+  background: var(--ivory);
+  padding-top: clamp(2.5rem, 1.5rem + 3vw, 4.5rem);   /* follows the ivory hero directly */
+  border-top: 1px solid var(--line-soft);
+}
+.np-collection__head { margin-bottom: clamp(2rem, 1.5rem + 1.5vw, 3rem); }
+
+/* --- Filters (v1.1): one horizontal bar — manufacturer <select>, type segmented control;
+       result count and reset apart on the right. Control height = button height (3rem). --- */
+.filters {
+  display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between;
+  gap: var(--s-5) var(--s-7);
+  padding-block: var(--s-5);
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: clamp(2.5rem, 1.75rem + 2vw, 3.75rem);
+}
+.filters[hidden] { display: none; }
+.filters__controls { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--s-5) var(--s-6); min-width: 0; }
+.filters__field { display: grid; gap: var(--s-2); margin: 0; padding: 0; border: 0; min-width: 0; }
+.filters__label { display: block; padding: 0; }
+
+/* Manufacturer: native select, styled like the outline button */
+.select { position: relative; width: 17.5rem; max-width: 100%; }
+.select__control {
+  appearance: none; -webkit-appearance: none;
+  width: 100%; min-height: 3rem;
+  padding: .7rem 2.75rem .7rem 1rem;
+  border: 1px solid var(--line-strong); border-radius: var(--radius);
+  background: var(--ivory); color: var(--graphite);
+  font: 500 var(--fs-sm)/1.2 var(--font-sans);
+  cursor: pointer;
+  transition: border-color var(--dur) var(--ease-out);
+}
+.select__control:hover { border-color: var(--graphite); }
+.select__control:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; border-color: var(--graphite); }
+.select__icon { position: absolute; right: 1rem; top: 50%; translate: 0 -50%; color: var(--graphite); pointer-events: none; }
+
+/* Type: segmented control — three equal segments, the active one filled */
+.segmented {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid var(--line-strong); border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--ivory);
+}
+.segmented__option { position: relative; display: flex; }
+.segmented__option input { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; pointer-events: none; }
+.segmented__option span {
+  display: flex; align-items: center; justify-content: center; flex: 1;
+  min-height: calc(3rem - 2px); padding: 0 1.25rem;
+  font-size: var(--fs-sm); font-weight: 500; line-height: 1.2; white-space: nowrap;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background-color var(--dur) var(--ease-out), color var(--dur) var(--ease-out);
+}
+.segmented__option span:hover { color: var(--graphite); background: var(--beige); }
+.segmented__option input:checked + span { background: var(--graphite); color: var(--ivory); }
+.segmented__option input:focus-visible + span { outline: 2px solid var(--red); outline-offset: -4px; }
+/* Fine Tuning v1.0 — no lasting red ring after a mouse / touch choice.
+   Cause: Chrome keeps :focus-visible on a <select> (and on a radio chosen through its label) after a pointer
+   selection, so the shared red focus ring stayed around the control. The selected state already says what is
+   chosen (select value · filled graphite segment). The ring now appears only when the last input was the
+   keyboard (html[data-input], set in main.js); keyboard navigation keeps a clear, accessible indicator. */
+html[data-input="pointer"] .filters .select__control:focus-visible { outline: none; border-color: var(--line-strong); }
+html[data-input="pointer"] .filters .select__control:focus-visible:hover { border-color: var(--graphite); }
+html[data-input="pointer"] .filters .segmented__option input:focus-visible + span { outline: none; }
+
+.filters__status { display: flex; align-items: center; gap: var(--s-5); min-height: 3rem; margin-left: auto; }
+.filters__count { white-space: nowrap; }
+.filters__reset { border: 0; padding: 0 0 var(--ul-gap, .1em); cursor: pointer; color: var(--graphite); font-family: inherit; line-height: inherit; background-color: transparent; }
+.filters__reset[hidden] { display: none; }
+
+/* --- Grid: 3 / 2 / 1 --- */
+.np-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: clamp(1.25rem, .75rem + 1.5vw, 2.5rem);
+  row-gap: clamp(3rem, 2.25rem + 2vw, 4.5rem);
+}
+.np-card { display: flex; }
+.np-card[hidden] { display: none; }
+.np-card__inner { display: flex; flex-direction: column; width: 100%; }
+
+/* one image ratio for every piano; the instrument is contained, never cropped */
+.np-card__media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  background: var(--beige);
+}
+.np-card__media img {
+  position: absolute; inset: 9% 11%;
+  width: 78%; height: 82%;
+  object-fit: contain;
+  mix-blend-mode: multiply;          /* the white studio background becomes Warm Beige */
+}
+/* hover zoom: the shared image-hover rule in style.css (Fine Tuning v1.0) */
+
+.np-card__body { display: flex; flex-direction: column; flex: 1; padding-top: var(--s-5); }
+.np-card__title { margin-top: var(--s-1); }
+.np-card__type { margin-top: var(--s-2); }
+.np-card__more { align-self: flex-start; }
+/* the link sits at the foot of the card: every link of a row on one line, whatever the title length */
+.np-card__spacer { flex: 1; min-height: var(--s-5); }
+
+.js .np-card.is-entering { animation: np-fade 500ms var(--ease-out) both; }
+@keyframes np-fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+
+/* --- Empty state --- */
+.np-empty { padding-block: clamp(2rem, 1.5rem + 2vw, 3.5rem); border-top: 1px solid var(--line); max-width: 40rem; }
+.np-empty[hidden] { display: none; }
+.np-empty__text { margin-top: var(--s-3); }
+.np-empty__reset { margin-top: var(--s-5); border: 0; padding: 0 0 var(--ul-gap, .1em); cursor: pointer; font-family: inherit; line-height: inherit; color: var(--graphite); background-color: transparent; }
+
+@media (max-width: 64rem) {
+  .np-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  /* filters: count and reset get their own row under the controls */
+  .filters__status { width: 100%; margin-left: 0; justify-content: space-between; min-height: 2.75rem; }
+}
+@media (max-width: 47.9375rem) {
+  .np-grid { grid-template-columns: minmax(0, 1fr); }
+  /* filters: the two controls full width, stacked; status row under them */
+  .filters__controls, .filters__field, .filters__field--type { width: 100%; }
+  .select { width: 100%; }
+  .segmented__option span { padding: 0 .5rem; }
+  .filters__status { width: 100%; margin-left: 0; justify-content: space-between; min-height: 2.75rem; }
+}
+
+/* =========================================================
+   03 · Η προσωπική επιλογή (v1.1) — one editorial unit
+   Photograph 6/12, bleeding to the left edge of the page; text block 5/12 on the right,
+   vertically centred on the photograph.
+   ========================================================= */
+.np-choice { padding-block: var(--section-y); }
+.np-choice__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  align-items: center;
+}
+.np-choice__media {
+  grid-column: 1 / span 6;
+  margin-left: calc(-1 * var(--gutter) - max(0px, (100vw - var(--max-w)) / 2));
+  aspect-ratio: 5 / 4;
+  background: var(--graphite);
+}
+.np-choice__media img { object-position: 64% 50%; }
+.np-choice__text { grid-column: 8 / -1; }
+.np-choice__body { margin-top: var(--s-6); }
+
+@media (max-width: 64rem) {
+  .np-choice__media { grid-column: 1 / span 6; aspect-ratio: 4 / 5; }
+  .np-choice__media img { object-position: 60% 50%; }
+  .np-choice__text { grid-column: 7 / -1; padding-left: var(--s-3); }
+}
+@media (max-width: 47.9375rem) {
+  .np-choice__grid { row-gap: var(--s-7); }
+  .np-choice__media { grid-column: 1 / -1; margin-inline: calc(-1 * var(--gutter)); aspect-ratio: 4 / 3; }
+  .np-choice__media img { object-position: 62% 50%; }
+  .np-choice__text { grid-column: 1 / -1; padding-left: 0; }
+}
+
+/* =========================================================
+   04 · Πρόσκληση στην έκθεση (v1.1) — centred closing on Warm Beige
+   ========================================================= */
+.np-visit { background: var(--beige); }
+.np-visit__inner {
+  max-width: 40rem;
+  margin-inline: auto;
+  display: flex; flex-direction: column; align-items: center;
+  text-align: center;
+}
+.np-visit__eyebrow { justify-content: center; }
+.np-visit__text { margin-top: var(--s-6); margin-inline: auto; }
+/* Fine Tuning v1.0: primary button + the shared underlined text link (as «Ο Οίκος»), same spacing as .actions */
+.np-visit__actions { justify-content: center; margin-top: var(--s-7); gap: var(--s-4) var(--s-6); }
+
+@media (max-width: 47.9375rem) {
+  .np-visit__actions { display: grid; grid-template-columns: minmax(0, 1fr); width: 100%; max-width: 22rem; margin-top: var(--s-6); }
+  .np-visit__actions { row-gap: var(--s-5); }
+  .np-visit__actions .btn { width: 100%; white-space: normal; text-align: center; }
+  .np-visit__actions .link-arrow { justify-self: center; }
+}
+
+/* =========================================================
+   02b · Featured presentation (added in Ηλεκτρικά πιάνα v1.0)
+   Used by js/new-pianos.js when #np-grid[data-layout="auto"] holds ONE record: the same record as a card,
+   shown as an editorial spread instead of a lonely card. New selectors only — the grid, cards and
+   filters above are unchanged. From two records on, the page falls back to the 3/2/1 grid automatically.
+   Desktop: photograph 7/12 · presentation 4/12 (after one open column), details under it, aligned to the
+   foot of the photograph · facts on one hairline across the 12 columns (4 + 4 + 4).
+   ========================================================= */
+.np-featured[hidden] { display: none; }
+.np-feature {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: auto 1fr auto;
+  column-gap: var(--s-5);
+}
+.np-feature__media { grid-column: 1 / span 7; grid-row: 1 / span 2; margin: 0; aspect-ratio: 13 / 9; }
+.np-feature__body { grid-column: 9 / -1; grid-row: 1; align-self: start; }
+.np-feature__title { margin-top: var(--s-1); }
+.np-feature__text { display: grid; gap: var(--s-4); margin-top: var(--s-5); }
+.np-feature__more { display: inline-block; margin-top: var(--s-6); }
+.np-feature__details {
+  grid-column: 9 / -1; grid-row: 2; align-self: end;
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-4);
+  margin: var(--s-6) 0 0; padding: 0; list-style: none;
+}
+.np-feature__detail { aspect-ratio: 12 / 7; }
+.np-feature__facts {
+  grid-column: 1 / -1; grid-row: 3;
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: var(--s-5);
+  margin: clamp(2.5rem, 1.75rem + 2vw, 3.75rem) 0 0;
+  padding-top: var(--s-5);
+  border-top: 1px solid var(--line-strong);
+}
+.np-feature__fact dd { margin: var(--s-1) 0 0; }
+
+@media (max-width: 64rem) {
+  /* photograph across the container; presentation 7/12 with the details beside it (4/12, stacked) */
+  .np-feature { grid-template-rows: auto auto auto; }
+  .np-feature__media { grid-column: 1 / -1; grid-row: 1; }
+  .np-feature__body { grid-column: 1 / span 7; grid-row: 2; margin-top: var(--s-6); }
+  .np-feature__details { grid-column: 9 / -1; grid-row: 2; align-self: start; grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 47.9375rem) {
+  .np-feature { grid-template-columns: minmax(0, 1fr); grid-template-rows: none; }
+  .np-feature__media, .np-feature__body, .np-feature__details, .np-feature__facts { grid-column: 1 / -1; grid-row: auto; }
+  .np-feature__media { aspect-ratio: 4 / 3; }
+  .np-feature__details { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-3); }
+  .np-feature__facts { grid-template-columns: minmax(0, 1fr); row-gap: var(--s-4); }
+}

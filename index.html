@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="el" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Μουσικός Οίκος Nikotian — Πιάνα στην Αθήνα από το 1929</title>
+  <meta name="description" content="Μουσικός Οίκος Nikotian, Σόλωνος 105, Αθήνα. Μια οικογενειακή ιστορία σχεδόν ενός αιώνα με το πιάνο στο επίκεντρο: καινούργια και μεταχειρισμένα πιάνα, χόρδισμα, συντήρηση και επισκευές.">
+  <meta name="theme-color" content="#182225">
+  <link rel="icon" href="assets/logo/nikotian-C-favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300..700&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&display=swap">
+  <link rel="preload" as="image" href="assets/photos/hero-piano.jpg">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+
+  <!-- ================= HEADER =================
+       Transparent over the hero (logo on dark), solid ivory after scroll (logo on light). -->
+  <header class="site-header" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="#top" aria-label="Nikotian, αρχική σελίδα">
+        <img class="brand__logo brand__logo--on-dark" src="assets/logo/nikotian-C-heritage-refined-on-dark.svg" alt="Nikotian" width="150" height="41">
+        <img class="brand__logo brand__logo--on-light" src="assets/logo/nikotian-C-heritage-refined-light.svg" alt="" width="150" height="41">
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Κύρια πλοήγηση">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="about.html">Ο Οίκος</a></li>
+          <li class="nav__item"><a class="nav__link" href="services.html">Υπηρεσίες</a></li>
+          <li class="nav__item nav__item--has-sub">
+            <!-- «Πιάνα» is a category, not a page: one button opens the submenu (hover/click on desktop, tap in the mobile menu) -->
+            <button class="nav__parent" type="button" aria-expanded="false" aria-controls="sub-pianos">
+              <span class="nav__link">Πιάνα</span>
+              <svg class="nav__chev" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            </button>
+            <ul class="nav__sub" id="sub-pianos">
+              <li><a href="new-pianos.html">Καινούργια</a></li>
+              <li><a href="used-pianos.html">Μεταχειρισμένα</a></li>
+              <li><a href="electric-pianos.html">Ηλεκτρικά</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="guitars.html">Κιθάρες</a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html">Επικοινωνία</a></li>
+        </ul>
+        <div class="nav__mobile-extra">
+          <a class="btn btn--primary" href="contact.html">Επισκεφθείτε την έκθεση</a>
+          <address class="nav__meta">
+            Σόλωνος 105, 106 78 Αθήνα<br>
+            <a href="tel:+302103808836">210 380 8836</a> · <a href="tel:+306972034883">697 203 4883</a>
+          </address>
+        </div>
+      </nav>
+
+      <div class="site-header__actions">
+        <!-- When the English pages exist, turn EN into <a class="lang__item" href="/en/" lang="en" hreflang="en">EN</a> -->
+        <nav class="lang" aria-label="Γλώσσα">
+          <a class="lang__item" href="#top" lang="el" hreflang="el" aria-current="page">EL</a>
+          <span class="lang__sep" aria-hidden="true">|</span>
+          <span class="lang__item lang__item--pending" lang="en" title="Η αγγλική έκδοση ετοιμάζεται">EN</span>
+        </nav>
+        <a class="btn btn--primary btn--sm header-cta" href="contact.html">Επισκεφθείτε την έκθεση</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__label">Μενού</span>
+          <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= 01 · HERO ================= -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <figure class="hero__media">
+        <img src="assets/photos/hero-piano.jpg" alt="Πιάνο με ουρά με ανοιχτό καπάκι, σε χαμηλό φως" width="1200" height="660" fetchpriority="high">
+      </figure>
+      <div class="hero__content wrap">
+        <div class="hero__text">
+          <p class="eyebrow eyebrow--plain hero__eyebrow">Μουσικός Οίκος Nikotian · Από το 1929</p>
+          <h1 class="title title--hero" id="hero-title">Μια ζωή αφιερωμένη <em>στο πιάνο.</em></h1>
+          <p class="hero__lead">Μια οικογενειακή ιστορία σχεδόν ενός αιώνα, με το πιάνο πάντα στο επίκεντρο. Με γνώση, φροντίδα και αγάπη για κάθε όργανο.</p>
+          <div class="actions hero__actions">
+            <a class="btn btn--primary" href="#oikos">Γνωρίστε τον Οίκο</a>
+            <a class="link-arrow link-arrow--light" href="#pianos">Ανακαλύψτε τα πιάνα <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- The staff of the logo: five hairlines along the foot of the hero, under the CTAs, never behind the title -->
+      <div class="staff staff--hero" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+    </section>
+
+    <!-- ================= 02 · Ο ΟΙΚΟΣ ================= -->
+    <section class="oikos section" id="oikos" aria-labelledby="oikos-title">
+      <div class="wrap">
+        <div class="oikos__grid">
+          <div class="oikos__text" data-reveal>
+            <p class="eyebrow">Ο Οίκος</p>
+            <h2 class="title title--stack" id="oikos-title">Μια ιστορία <em>που συνεχίζεται</em></h2>
+            <div class="prose">
+              <p>Η Nikotian ξεκίνησε στην Αθήνα το 1929 και μένει από τότε στην ίδια οικογένεια.</p>
+              <p>Κάθε γενιά παραδίδει στην επόμενη ό,τι ξέρει για το πιάνο: πώς ακούγεται, πώς φτιάχνεται, πώς κρατά τη φωνή του με τα χρόνια.</p>
+              <p>Αυτή η γνώση παραμένει ζωντανή μέχρι σήμερα, περνώντας από γενιά σε γενιά και διαμορφώνοντας τη σχέση του Οίκου με κάθε πιάνο.</p>
+            </div>
+            <!-- Page: about.html (final URL /o-oikos/) -->
+            <a class="link-arrow" href="about.html">Η διαδρομή μας <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+          </div>
+
+          <figure class="oikos__figure" data-reveal style="--d: 120ms">
+            <div class="frame">
+              <img src="assets/photos/oikos-portrait-wall.jpg" alt="Τοίχος της έκθεσης με το πορτραίτο του Κάρλο Νικοτιάν, οικογενειακές φωτογραφίες και δύο όρθια πιάνα" width="960" height="640" loading="lazy">
+            </div>
+            <figcaption>Στην έκθεση σήμερα: το πορτραίτο του Κάρλο Νικοτιάν, ιδρυτή του μουσικού μας οίκου, δίπλα στα πιάνα.</figcaption>
+          </figure>
+        </div>
+
+        <!-- Timeline: the four stations from the history on the current nikotian.gr.
+             --pitch = position on the staff in half-spaces (0 = top line, 8 = bottom line). -->
+        <div class="timeline" id="timeline" data-timeline>
+          <ol class="timeline__list" aria-label="Χρονολόγιο του Οίκου">
+            <li class="timeline__item timeline__item--accent" style="--pitch: 8; --i: 0">
+              <span class="timeline__staff" aria-hidden="true"><span class="timeline__note"></span></span>
+              <span class="timeline__year">1929</span>
+              <span class="timeline__title">Η αρχή</span>
+              <span class="timeline__text">Ο Κάρλο Νικοτιάν ιδρύει τον Οίκο στην οδό Ακαδημίας 63.</span>
+            </li>
+            <li class="timeline__item" style="--pitch: 5; --i: 1">
+              <span class="timeline__staff" aria-hidden="true"><span class="timeline__note"></span></span>
+              <span class="timeline__year">1978</span>
+              <span class="timeline__title">Μεγάλη συνεργασία</span>
+              <span class="timeline__text">Ξεκινά η συνεργασία με τον κατασκευαστή πιάνων Young Chang.</span>
+            </li>
+            <li class="timeline__item timeline__item--tied" style="--pitch: 3; --i: 2">
+              <span class="timeline__staff" aria-hidden="true">
+                <span class="timeline__note"></span><span class="timeline__note timeline__note--second"></span>
+                <svg class="timeline__tie" viewBox="0 0 40 10" preserveAspectRatio="none" focusable="false"><path d="M2 2 Q20 11 38 2"/></svg>
+              </span>
+              <span class="timeline__year">2000–2008</span>
+              <span class="timeline__title">Η επόμενη γενιά</span>
+              <span class="timeline__text">Ο Κάρολος και ο Ρομπέρ εντάσσονται σταδιακά στον Οίκο.</span>
+            </li>
+            <li class="timeline__item timeline__item--accent" style="--pitch: 1; --i: 3">
+              <span class="timeline__staff" aria-hidden="true"><span class="timeline__note"></span></span>
+              <span class="timeline__year">Σήμερα</span>
+              <span class="timeline__title">Η ιστορία συνεχίζεται</span>
+              <span class="timeline__text">Η έκθεση της Nikotian βρίσκεται στη Σόλωνος 105, στην Αθήνα.</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 03 · ΤΕΧΝΟΓΝΩΣΙΑ ================= -->
+    <section class="gnosi" id="gnosi" aria-labelledby="gnosi-title">
+      <figure class="gnosi__media">
+        <img src="assets/photos/craft-hammers.jpg" alt="Κοντινό στον μηχανισμό πιάνου: σφυράκια, χορδές και κόκκινη τσόχα" width="1700" height="800" loading="lazy">
+      </figure>
+      <div class="gnosi__panel">
+        <div class="gnosi__content" data-reveal>
+          <p class="eyebrow eyebrow--light">Τεχνογνωσία</p>
+          <h2 class="title title--stack title--light" id="gnosi-title">Η γνώση πίσω από <em>κάθε πιάνο</em></h2>
+          <p class="gnosi__lead">Ένα πιάνο δεν τελειώνει τη μέρα που φτάνει στο σπίτι σας. Αλλάζει με τον χρόνο, την υγρασία και τη χρήση. Γι’ αυτό το φροντίζουμε και μετά.</p>
+
+          <ol class="services">
+            <li class="services__item">
+              <span class="services__num" aria-hidden="true">i.</span>
+              <h3 class="services__title">Χόρδισμα &amp; συντήρηση</h3>
+              <p class="services__text">Τακτική φροντίδα, ώστε το πιάνο να κρατά τον ήχο του.</p>
+            </li>
+            <li class="services__item">
+              <span class="services__num" aria-hidden="true">ii.</span>
+              <h3 class="services__title">Επισκευές &amp; τεχνική φροντίδα</h3>
+              <p class="services__text">Επισκευές και ρυθμίσεις του μηχανισμού.</p>
+            </li>
+            <li class="services__item">
+              <span class="services__num" aria-hidden="true">iii.</span>
+              <h3 class="services__title">Ενοικίαση, μεταφορά &amp; εκτίμηση</h3>
+              <p class="services__text">Ενοικίαση πιάνου, μεταφορά και εκτίμηση, κατόπιν συνεννόησης.</p>
+            </li>
+          </ol>
+
+          <div class="actions">
+            <a class="link-arrow link-arrow--light" href="services.html">Όλες οι υπηρεσίες <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 04 · ΤΟ ΠΙΑΝΟ ΠΟΥ ΣΑΣ ΤΑΙΡΙΑΖΕΙ ================= -->
+    <section class="choice section" id="epilogi" aria-labelledby="choice-title">
+      <div class="wrap choice__grid">
+        <div class="choice__text" data-reveal>
+          <p class="eyebrow">Μια επιλογή προσωπική</p>
+          <h2 class="title title--stack" id="choice-title">Το πιάνο που <em>σας ταιριάζει.</em></h2>
+          <p class="choice__body">Κάθε πιάνο έχει τον δικό του χαρακτήρα. Ο χώρος, η εμπειρία και ο τρόπος που παίζει κανείς είναι μερικά μόνο από όσα αξίζει να σκεφτεί πριν επιλέξει. Στη Nikotian, η επιλογή ξεκινά με την προσωπική επαφή με το όργανο.</p>
+          <p class="choice__coda">Ακούστε το. Παίξτε το. Νιώστε το.</p>
+        </div>
+        <figure class="choice__media frame" data-reveal style="--d: 120ms">
+          <img src="assets/photos/choice-grand.jpg" alt="Πιάνο με ουρά σε φωτεινό, σύγχρονο σαλόνι" width="1080" height="1080" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 05 · ΟΙ ΣΥΛΛΟΓΕΣ ΜΑΣ =================
+         Only the photograph and «Δείτε τη συλλογή» are links (same destination). -->
+    <section class="collections section" id="pianos" aria-labelledby="pianos-title">
+      <div class="wrap">
+        <header class="collections__head" data-reveal>
+          <div>
+            <p class="eyebrow">Οι συλλογές μας</p>
+            <h2 class="title" id="pianos-title">Κάθε πιάνο, ένας <em>δικός του κόσμος.</em></h2>
+          </div>
+          <p class="collections__intro">Όρθια και με ουρά, καινούργια και μεταχειρισμένα. Όποιο σας ενδιαφέρει, μπορείτε να το ακούσετε και να το παίξετε στην έκθεση.</p>
+        </header>
+
+        <div class="collections__grid">
+          <article class="collection" aria-labelledby="col-new" data-reveal>
+            <!-- Page: new-pianos.html (future URL /pianos/new/) -->
+            <a class="collection__frame frame" href="new-pianos.html" tabindex="-1" aria-hidden="true">
+              <img src="assets/photos/collection-new.jpg" alt="" width="710" height="509" loading="lazy">
+            </a>
+            <div class="collection__caption">
+              <h3 class="collection__title" id="col-new">Καινούργια πιάνα</h3>
+              <p class="collection__text">Η αρχή της δικής σας διαδρομής.</p>
+              <a class="link-arrow collection__more" href="new-pianos.html">Δείτε τη συλλογή<span class="visually-hidden">: Καινούργια πιάνα</span> <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+            </div>
+          </article>
+
+          <article class="collection" aria-labelledby="col-used" data-reveal style="--d: 120ms">
+            <!-- Page: used-pianos.html (future URL /pianos/used/) -->
+            <a class="collection__frame frame" href="used-pianos.html" tabindex="-1" aria-hidden="true">
+              <img src="assets/photos/collection-used.jpg" alt="" width="736" height="736" loading="lazy">
+            </a>
+            <div class="collection__caption">
+              <h3 class="collection__title" id="col-used">Μεταχειρισμένα πιάνα</h3>
+              <p class="collection__text">Όργανα με τη δική τους διαδρομή.</p>
+              <a class="link-arrow collection__more" href="used-pianos.html">Δείτε τη συλλογή<span class="visually-hidden">: Μεταχειρισμένα πιάνα</span> <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="collections__foot">
+          <!-- electric-pianos.html → /pianos/digital/ in WordPress -->
+          <p>Διαθέτουμε και <a class="link-inline" href="electric-pianos.html">ηλεκτρικά πιάνα <span class="link-arrow__icon" aria-hidden="true">→</span></a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 06 · ΚΛΑΣΙΚΕΣ ΚΙΘΑΡΕΣ =================
+         Left: the staff and treble clef of the logo symbol (nikotian-C-symbol), quiet, on walnut. -->
+    <section class="guitars" id="guitars" aria-labelledby="guitars-title">
+      <div class="guitars__art" aria-hidden="true">
+        <svg class="guitars__staff" viewBox="-8 -101.44 1600 293.12" preserveAspectRatio="xMidYMid meet" focusable="false"><g class="guitars__lines"><line x1="0" x2="1584" y1="0" y2="0"/><line x1="0" x2="1584" y1="40" y2="40"/><line x1="0" x2="1584" y1="80" y2="80"/><line x1="0" x2="1584" y1="120" y2="120"/><line x1="0" x2="1584" y1="160" y2="160"/></g><path class="guitars__clef" transform="translate(12.81,120.00) scale(0.14400,-0.16000)" d="M314 801Q300 854 291.0 906.0Q282 958 282 1012Q282 1059 288.5 1100.5Q295 1142 307 1177Q320 1217 341.0 1252.5Q362 1288 385.5 1311.0Q409 1334 427 1334Q451 1334 493 1249Q514 1206 524.0 1156.0Q534 1106 534 1049Q534 978 515.0 907.5Q496 837 459.5 775.0Q423 713 372 666L407 498Q422 500 432.0 501.0Q442 502 447 502Q508 502 556.0 467.5Q604 433 632.5 377.0Q661 321 661 254Q661 177 621.5 115.5Q582 54 503 25Q508 8 532 -117Q538 -147 541.0 -164.5Q544 -182 545.0 -195.0Q546 -208 546 -225Q546 -275 521.5 -314.5Q497 -354 455.5 -376.0Q414 -398 363 -398Q311 -398 271.0 -378.5Q231 -359 208.0 -324.5Q185 -290 185 -245Q185 -197 211.5 -165.0Q238 -133 287 -133Q329 -133 355.5 -163.5Q382 -194 382 -236Q382 -272 357.0 -299.0Q332 -326 292 -326H282Q308 -365 364 -365Q433 -365 472.0 -320.0Q511 -275 511 -205Q511 -188 507.0 -159.5Q503 -131 493.0 -91.0Q483 -51 477.5 -25.0Q472 1 470 12Q436 2 390 2Q304 2 222 52Q142 102 96.0 184.0Q50 266 50 361Q50 451 91.0 530.0Q132 609 192.5 675.0Q253 741 314 801ZM341 826Q364 838 390.0 870.5Q416 903 440.0 945.0Q464 987 479.0 1029.5Q494 1072 494 1106Q494 1142 483.0 1163.0Q472 1184 445 1184Q421 1184 398.5 1162.0Q376 1140 358.5 1103.5Q341 1067 331.0 1022.0Q321 977 321 930Q321 898 327.5 872.0Q334 846 341 826ZM495 55Q593 97 593 227Q593 270 571.0 305.5Q549 341 512.0 362.0Q475 383 429 383ZM398 379Q371 373 347.0 353.5Q323 334 308.5 306.5Q294 279 294 248Q294 223 307.0 196.5Q320 170 339 154Q352 142 365 136Q380 129 380 123Q380 120 370 117Q332 126 301.5 151.0Q271 176 253.5 211.5Q236 247 236 287Q236 330 253.5 370.0Q271 410 302.5 442.0Q334 474 374 490L345 641Q229 547 174.5 456.5Q120 366 120 277Q120 212 154.0 156.0Q188 100 247.0 65.5Q306 31 380 31Q400 31 420.5 35.0Q441 39 464 45Z"/></svg>
+      </div>
+      <div class="guitars__panel">
+        <div class="guitars__content" data-reveal>
+          <p class="eyebrow">Μια άλλη μουσική φωνή</p>
+          <h2 class="title title--md" id="guitars-title">Κλασικές <em>κιθάρες</em></h2>
+          <p class="guitars__text">Δίπλα στα πιάνα, μια μικρή επιλογή κλασικών κιθάρων Juan Hernandez και Azahar.</p>
+          <!-- guitars.html → /kitheres/ in WordPress -->
+          <a class="link-arrow" href="guitars.html">Δείτε τις κιθάρες <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 07 · ΕΠΙΣΚΕΦΘΕΙΤΕ ΤΗΝ ΕΚΘΕΣΗ ================= -->
+    <section class="visit section" id="ekthesi" aria-labelledby="ekthesi-title">
+      <div class="wrap visit__grid">
+        <div class="visit__text" data-reveal>
+          <p class="eyebrow">Η έκθεση</p>
+          <h2 class="title title--stack" id="ekthesi-title">Η μουσική <em>από κοντά.</em></h2>
+          <p class="visit__lead">Η επιλογή ενός πιάνου είναι μια εμπειρία που αξίζει να ζήσει κανείς από κοντά. Στην έκθεση της Nikotian, κάθε όργανο μπορεί να ακουστεί, να δοκιμαστεί και να ανακαλυφθεί με τον δικό του ρυθμό.</p>
+
+          <!-- Opening hours: add an item once confirmed -->
+          <address class="contact">
+            <dl class="contact__list">
+              <!-- Two columns, read row by row: left = address, email · right = landline, mobile -->
+              <div class="contact__item"><dt>Διεύθυνση</dt><dd>Σόλωνος 105,<br>106 78 Αθήνα</dd></div>
+              <div class="contact__item"><dt>Σταθερό τηλέφωνο</dt><dd><a href="tel:+302103808836">210 380 8836</a></dd></div>
+              <div class="contact__item"><dt>Email</dt><dd><a href="mailto:info@nikotian.gr">info@nikotian.gr</a></dd></div>
+              <div class="contact__item"><dt>Κινητό τηλέφωνο</dt><dd><a href="tel:+306972034883">697 203 4883</a></dd></div>
+            </dl>
+          </address>
+
+          <div class="actions">
+            <a class="btn btn--primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=%CE%A3%CF%8C%CE%BB%CF%89%CE%BD%CE%BF%CF%82%20105%2C%20106%2078%20%CE%91%CE%B8%CE%AE%CE%BD%CE%B1" target="_blank" rel="noopener noreferrer">Οδηγίες στον χάρτη<span class="visually-hidden"> (ανοίγει σε νέα καρτέλα)</span></a>
+            <a class="btn btn--outline" href="contact.html">Επικοινωνήστε μαζί μας</a>
+          </div>
+        </div>
+
+        <div class="visit__media">
+          <figure class="visit__room frame" data-reveal style="--d: 120ms">
+            <img src="assets/photos/visit-showroom.jpg" alt="Η έκθεση της Nikotian: πιάνα, κιθάρες στη βιτρίνα και ο δρόμος έξω" width="960" height="640" loading="lazy">
+          </figure>
+          <figure class="visit__facade frame" data-reveal style="--d: 240ms">
+            <img src="assets/photos/visit-facade.jpg" alt="Η γυάλινη πρόσοψη του κτιρίου της Nikotian στην οδό Σόλωνος" width="720" height="1080" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__top">
+      <div class="site-footer__brand">
+        <img src="assets/logo/nikotian-C-heritage-refined-on-dark.svg" alt="Nikotian" width="170" height="47" loading="lazy">
+        <p>Μουσικός Οίκος Nikotian.<br>Πιάνα στην Αθήνα, από το 1929.</p>
+        <a class="site-footer__social" href="https://www.facebook.com/PianaNikotian" target="_blank" rel="noopener noreferrer" aria-label="Nikotian στο Facebook (ανοίγει σε νέα καρτέλα)">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.5 21.95V14h2.66l.4-3.1H13.5V8.92c0-.9.25-1.5 1.54-1.5h1.64V4.65a22 22 0 0 0-2.4-.12c-2.37 0-4 1.45-4 4.11v2.27H7.6V14h2.68v7.95A10 10 0 1 1 13.5 21.95z"/></svg>
+          <span>Facebook</span>
+        </a>
+      </div>
+      <nav class="site-footer__col" aria-labelledby="f-oikos">
+        <h2 id="f-oikos">Ο Οίκος</h2>
+        <ul>
+          <li><a href="about.html">Η ιστορία μας</a></li>
+          <li><a href="services.html">Υπηρεσίες</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__col" aria-labelledby="f-organa">
+        <h2 id="f-organa">Όργανα</h2>
+        <ul>
+          <li><a href="new-pianos.html">Καινούργια πιάνα</a></li>
+          <li><a href="used-pianos.html">Μεταχειρισμένα πιάνα</a></li>
+          <li><a href="electric-pianos.html">Ηλεκτρικά πιάνα</a></li>
+          <li><a href="guitars.html">Κλασικές κιθάρες</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__col">
+        <h2>Έκθεση</h2>
+        <address>
+          <ul>
+            <li>Σόλωνος 105, 106 78 Αθήνα</li>
+            <li><a href="tel:+302103808836">210 380 8836</a></li>
+            <li><a href="tel:+306972034883">697 203 4883</a></li>
+            <li><a href="mailto:info@nikotian.gr">info@nikotian.gr</a></li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="wrap site-footer__bottom">
+      <p>© 2026 Nikotian. Με επιφύλαξη παντός δικαιώματος.</p>
+      <ul class="site-footer__legal">
+        <!-- Pages to be created in WordPress -->
+        <li><a href="#" data-href="/politiki-aporritou/" data-pending="Πολιτική Απορρήτου">Πολιτική Απορρήτου</a></li>
+        <li><a href="#" data-href="/politiki-cookies/" data-pending="Πολιτική Cookies">Πολιτική Cookies</a></li>
+      </ul>
+      <p class="site-footer__credit">Δημιουργία ιστοσελίδας: <a href="https://michalismerkouris.com/" target="_blank" rel="noopener noreferrer">Μιχάλης Μερκούρης<span class="visually-hidden"> (ανοίγει σε νέα καρτέλα)</span></a></p>
+    </div>
+  </footer>
+
+  <!-- Announces pages that are not built yet (prototype only) -->
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>

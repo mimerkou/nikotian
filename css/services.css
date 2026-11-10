@@ -1,0 +1,206 @@
+/* Nikotian — «Υπηρεσίες» (services.html) · v1.0
+   Layout only. Every piece of text takes its type from a shared role class
+   (style.css «Typography roles» + tokens.css role tokens):
+   .eyebrow · .title (+ --stack, --light) · .t-body · .t-meta · .t-subtitle · .t-index · .btn · .link-arrow.
+   This file sets no font-size, font-family or colour for text. */
+
+/* =========================================================
+   01 · Hero — the About hero, on Deep Charcoal
+   Same padding, grid, column split and viewport-driven photo height as .a-hero (about.css),
+   so the h1, the lead and the overall height match the approved internal hero.
+   ========================================================= */
+.s-hero {
+  padding-top: calc(var(--header-h) + var(--s-6));
+  padding-bottom: clamp(3rem, 2rem + 3vw, 5rem);
+  overflow: hidden;
+}
+.s-hero .crumbs { margin-bottom: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); }
+
+.s-hero__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  align-items: center;
+}
+.s-hero__text { grid-column: 1 / span 5; padding-right: var(--s-5); }
+.s-hero__lead { margin-top: var(--s-6); }
+
+.s-hero__media {
+  position: relative;
+  grid-column: 6 / -1;
+  margin-right: calc(-1 * var(--gutter) - max(0px, (100vw - var(--max-w)) / 2));
+  height: clamp(20rem, 100svh - var(--header-h) - 14rem, 36rem);
+  overflow: hidden;
+  background: var(--graphite);
+}
+.s-hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 58% 50%; }
+/* The photograph is not cut out of the page: its left edge dissolves into the charcoal */
+.s-hero__media::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background:
+    linear-gradient(90deg, var(--charcoal) 0%, rgba(24, 34, 37, .55) 14%, rgba(24, 34, 37, 0) 42%),
+    linear-gradient(0deg, rgba(24, 34, 37, .35) 0%, rgba(24, 34, 37, 0) 30%);
+}
+
+.js .s-hero .crumbs, .js .s-hero__text > * { animation: rise 1000ms var(--ease-out) both; }
+.js .s-hero__text > :nth-child(1) { animation-delay: 100ms; }
+.js .s-hero__text > :nth-child(2) { animation-delay: 200ms; }
+.js .s-hero__text > :nth-child(3) { animation-delay: 340ms; }
+.js .s-hero__media img { animation: s-glow 2200ms var(--ease-out) 200ms both; }
+/* the light comes up slowly on the strings */
+@keyframes s-glow { from { opacity: 0; transform: scale(1.05); filter: brightness(.6); } to { opacity: 1; transform: none; filter: none; } }
+
+@media (max-width: 64rem) {
+  .s-hero__text { grid-column: 1 / span 6; }
+  .s-hero__media { grid-column: 7 / -1; height: clamp(20rem, 52vw, 30rem); }
+}
+@media (max-width: 47.9375rem) {
+  .s-hero__grid { row-gap: var(--s-7); }
+  .s-hero__text, .s-hero__media { grid-column: 1 / -1; }
+  .s-hero__text { padding-right: 0; }
+  .s-hero__media { margin-inline: calc(-1 * var(--gutter)); height: auto; aspect-ratio: 4 / 3; }
+  .s-hero__media::after {
+    background: linear-gradient(180deg, var(--charcoal) 0%, rgba(24, 34, 37, 0) 30%);
+  }
+}
+
+/* =========================================================
+   02 · Οι υπηρεσίες — one system, two readings of the same three columns
+   ========================================================= */
+.svc {
+  --svc-gap: clamp(1.5rem, .75rem + 2vw, 2.75rem);
+  --row-py: clamp(2rem, 1.25rem + 2vw, 3.25rem);
+  background: var(--ivory);
+}
+.svc__head { margin-bottom: clamp(3rem, 2rem + 3vw, 5rem); }
+.svc__group + .svc__group { margin-top: clamp(4.5rem, 3rem + 4vw, 7.5rem); }
+.svc__label { margin-bottom: clamp(2rem, 1.5rem + 1.5vw, 3rem); }
+
+.svc-item__num { margin-bottom: var(--s-2); }
+
+/* I · columns: photograph, number, title, text — read downwards */
+.svc__group--columns .svc__list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: var(--svc-gap);
+}
+.svc__group--columns .svc-item__media { aspect-ratio: 4 / 5; }
+.svc__group--columns .svc-item__text { margin-top: var(--s-5); }
+.svc__group--columns .svc-item__body { margin-top: var(--s-4); }
+#xordisma .svc-item__media img { object-position: 50% 50%; }
+#syntirisi .svc-item__media img { object-position: 50% 50%; }
+#episkeves .svc-item__media img { object-position: 50% 40%; }
+
+/* II · rows: the same three columns read across — number + title | text | photograph */
+.svc__group--rows .svc-item {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: var(--svc-gap);
+  align-items: start;
+  padding-block: var(--row-py);
+  border-bottom: 1px solid var(--line);
+}
+.svc__group--rows .svc-item:first-child { padding-top: 0; }
+.svc__group--rows .svc-item:last-child { border-bottom: 0; padding-bottom: 0; }
+/* the text starts on the line of the title, not of the number */
+.svc__group--rows .svc-item__body { margin-top: calc(var(--body-size) * 1.5 + var(--s-2)); }
+.svc__group--rows .svc-item__media { aspect-ratio: 4 / 3; }
+#enoikiasi .svc-item__media img { object-position: 50% 62%; }
+#metafora .svc-item__media img { object-position: 50% 60%; }
+#ektimisi .svc-item__media img { object-position: 50% 50%; }
+
+/* Tablet: every service becomes a row; the two groups mirror each other */
+@media (max-width: 64rem) {
+  .svc__group--columns .svc__list { grid-template-columns: minmax(0, 1fr); row-gap: var(--row-py); }
+  .svc__group--columns .svc-item {
+    display: grid;
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+    column-gap: var(--svc-gap);
+    align-items: center;
+  }
+  .svc__group--columns .svc-item__text { margin-top: 0; }
+
+  .svc__group--rows .svc-item {
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    grid-template-rows: auto auto;
+    align-content: center;
+  }
+  .svc__group--rows .svc-item__text { grid-column: 1; grid-row: 1; }
+  .svc__group--rows .svc-item__body { grid-column: 1; grid-row: 2; margin-top: var(--s-4); }
+  .svc__group--rows .svc-item__media { grid-column: 2; grid-row: 1 / span 2; align-self: center; }
+  /* one photograph format for all six on tablet */
+  .svc__group--columns .svc-item__media,
+  .svc__group--rows .svc-item__media { aspect-ratio: 4 / 3; }
+  #episkeves .svc-item__media img { object-position: 50% 38%; }
+}
+
+/* Mobile: one column; every service in the same order — photograph, number, title, text */
+@media (max-width: 47.9375rem) {
+  .svc__group--columns .svc__list { row-gap: var(--s-8); }
+  .svc__group--columns .svc-item,
+  .svc__group--rows .svc-item { display: flex; flex-direction: column; }
+  .svc__group--rows .svc-item { padding-block: 0; border-bottom: 0; }
+  .svc__group--rows .svc-item + .svc-item { margin-top: var(--s-8); }
+  .svc-item__media { order: -1; width: 100%; }
+  .svc__group--columns .svc-item__media,
+  .svc__group--rows .svc-item__media { aspect-ratio: 4 / 3; }
+  .svc__group--columns .svc-item__text,
+  .svc__group--rows .svc-item__text { margin-top: var(--s-5); }
+  .svc__group--rows .svc-item__body,
+  .svc__group--columns .svc-item__body { margin-top: var(--s-4); }
+  #episkeves .svc-item__media img { object-position: 50% 38%; }
+}
+
+/* =========================================================
+   03 · Η τεχνογνωσία στην πράξη — a photographic pause
+   One plate, centred; the text under it on the same columns.
+   ========================================================= */
+.craft { padding-block: var(--section-y); }
+.craft__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  row-gap: clamp(2.5rem, 1.5rem + 2.5vw, 4rem);
+  align-items: end;
+}
+.craft__media { grid-column: 3 / span 8; aspect-ratio: 3 / 2; background: var(--graphite); }
+.craft__media img { object-position: 50% 52%; }
+.craft__head { grid-column: 3 / span 4; }
+.craft__head .eyebrow { margin-bottom: var(--s-5); }
+.craft__body { grid-column: 7 / span 4; }
+
+@media (max-width: 64rem) {
+  .craft__grid { row-gap: var(--s-6); }
+  .craft__media { grid-column: 1 / -1; margin-bottom: var(--s-2); }
+  .craft__head, .craft__body { grid-column: 1 / span 9; }
+}
+@media (max-width: 47.9375rem) {
+  .craft__media { margin-inline: calc(-1 * var(--gutter)); aspect-ratio: 1 / 1; }
+  .craft__head, .craft__body { grid-column: 1 / -1; }
+}
+
+/* =========================================================
+   04 · Επικοινωνία — a short closing on Warm Beige
+   ========================================================= */
+.s-contact { background: var(--beige); }
+.s-contact__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  row-gap: var(--s-6);
+  align-items: end;
+}
+.s-contact__head { grid-column: 1 / span 7; }
+.s-contact__text { grid-column: 8 / -1; }
+.s-contact__actions { margin-top: var(--s-6); gap: var(--s-4) var(--s-6); }   /* button + underlined phone link (Fine Tuning v1.0) */
+
+@media (max-width: 64rem) {
+  .s-contact__head { grid-column: 1 / -1; }
+  .s-contact__text { grid-column: 1 / span 9; }
+}
+@media (max-width: 47.9375rem) {
+  .s-contact__text { grid-column: 1 / -1; }
+}
+@media (max-width: 23.75rem) {
+  .s-contact__actions { display: grid; justify-items: start; }
+}

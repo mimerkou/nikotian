@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="el" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Υπηρεσίες — Χόρδισμα, συντήρηση και επισκευές πιάνων | Μουσικός Οίκος Nikotian</title>
+  <meta name="description" content="Οι υπηρεσίες του μουσικού οίκου Nikotian στην Αθήνα: χόρδισμα, συντήρηση και ρύθμιση, επισκευές, ενοικίαση, μεταφορά και εκτίμηση πιάνου.">
+  <meta name="theme-color" content="#F7F4EE">
+  <link rel="icon" href="assets/logo/nikotian-C-favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300..700&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&display=swap">
+  <link rel="preload" as="image" href="assets/photos/services/services-hero.jpg">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/services.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+
+  <!-- ================= HEADER (shared) =================
+       Internal page: .site-header--light = ivory bar, graphite type, light logo, one hairline underneath. -->
+  <header class="site-header site-header--light" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nikotian, αρχική σελίδα">
+        <img class="brand__logo brand__logo--on-dark" src="assets/logo/nikotian-C-heritage-refined-on-dark.svg" alt="" width="150" height="41">
+        <img class="brand__logo brand__logo--on-light" src="assets/logo/nikotian-C-heritage-refined-light.svg" alt="Nikotian" width="150" height="41">
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Κύρια πλοήγηση">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="about.html">Ο Οίκος</a></li>
+          <li class="nav__item"><a class="nav__link" href="services.html" aria-current="page">Υπηρεσίες</a></li>
+          <li class="nav__item nav__item--has-sub">
+            <!-- «Πιάνα» is a category, not a page: one button opens the submenu (hover/click on desktop, tap in the mobile menu) -->
+            <button class="nav__parent" type="button" aria-expanded="false" aria-controls="sub-pianos">
+              <span class="nav__link">Πιάνα</span>
+              <svg class="nav__chev" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            </button>
+            <!-- Category pages do not exist yet: homepage anchor + data-href with the future URL -->
+            <ul class="nav__sub" id="sub-pianos">
+              <li><a href="new-pianos.html">Καινούργια</a></li>
+              <li><a href="used-pianos.html">Μεταχειρισμένα</a></li>
+              <li><a href="electric-pianos.html">Ηλεκτρικά</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="guitars.html">Κιθάρες</a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html">Επικοινωνία</a></li>
+        </ul>
+        <div class="nav__mobile-extra">
+          <a class="btn btn--primary" href="contact.html">Επισκεφθείτε την έκθεση</a>
+          <address class="nav__meta">
+            Σόλωνος 105, 106 78 Αθήνα<br>
+            <a href="tel:+302103808836">210 380 8836</a> · <a href="tel:+306972034883">697 203 4883</a>
+          </address>
+        </div>
+      </nav>
+
+      <div class="site-header__actions">
+        <nav class="lang" aria-label="Γλώσσα">
+          <a class="lang__item" href="services.html" lang="el" hreflang="el" aria-current="page">EL</a>
+          <span class="lang__sep" aria-hidden="true">|</span>
+          <span class="lang__item lang__item--pending" lang="en" title="Η αγγλική έκδοση ετοιμάζεται">EN</span>
+        </nav>
+        <a class="btn btn--primary btn--sm header-cta" href="contact.html">Επισκεφθείτε την έκθεση</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__label">Μενού</span>
+          <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= 01 · HERO =================
+         Same proportions and type as the approved About hero (crumbs, eyebrow, .title--stack h1, .t-body lead,
+         photograph bleeding right, height set by the viewport), on Deep Charcoal through .surface-dark.
+         The photograph melts into the charcoal on its left edge. No CTA. -->
+    <section class="s-hero surface-dark" id="top" aria-labelledby="s-hero-title">
+      <div class="wrap">
+        <nav class="crumbs t-meta" aria-label="Διαδρομή πλοήγησης">
+          <ol>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><span aria-current="page">Υπηρεσίες</span></li>
+          </ol>
+        </nav>
+
+        <div class="s-hero__grid">
+          <div class="s-hero__text">
+            <p class="eyebrow eyebrow--light">Οι υπηρεσίες μας</p>
+            <h1 class="title title--stack title--light" id="s-hero-title">Η φροντίδα πίσω από <em>κάθε ήχο.</em></h1>
+            <p class="t-body s-hero__lead">Η γνώση και η εμπειρία που συνοδεύουν κάθε πιάνο, από το πρώτο χόρδισμα μέχρι την εξειδικευμένη τεχνική φροντίδα.</p>
+          </div>
+
+          <figure class="s-hero__media">
+            <img src="assets/photos/services/services-hero.jpg" alt="Το εσωτερικό ενός πιάνου με ουρά σε θερμό φως: χορδές, γέφυρα και ηχείο" width="1700" height="800" fetchpriority="high">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 02 · ΟΙ ΥΠΗΡΕΣΙΕΣ =================
+         One editorial system on a three-column grid; every photograph has the width of one column.
+         I  · Τεχνική φροντίδα (01–03): the three columns read downwards: photograph, number, title, text.
+         II · Ενοικίαση, μεταφορά & εκτίμηση (04–06): the same three columns read across: number + title | text | photograph.
+         Same title role (.t-subtitle), same body role (.t-body), same index role (.t-index) for all six. -->
+    <section class="svc section" id="ypiresies" aria-labelledby="svc-title">
+      <div class="wrap">
+        <header class="svc__head" data-reveal>
+          <p class="eyebrow">Εξειδικευμένη φροντίδα</p>
+          <h2 class="title title--stack" id="svc-title">Κάθε πιάνο αξίζει την <em>κατάλληλη φροντίδα.</em></h2>
+        </header>
+
+        <div class="svc__group svc__group--columns" aria-labelledby="svc-g1">
+          <p class="t-meta t-label-rule svc__label" data-reveal><span id="svc-g1">Τεχνική φροντίδα</span><span aria-hidden="true">01 — 03</span></p>
+          <ol class="svc__list">
+            <li class="svc-item" id="xordisma" data-reveal>
+              <figure class="frame svc-item__media">
+                <img src="assets/photos/services/services-01-xordisma.jpg" alt="Χέρι με κλειδί χορδίσματος πάνω στα κλειδιά τάσης ενός όρθιου πιάνου, πάνω από τα σφυράκια" width="538" height="538" loading="lazy">
+              </figure>
+              <div class="svc-item__text">
+                <p class="t-index svc-item__num" aria-hidden="true">01</p>
+                <h3 class="t-subtitle">Χόρδισμα πιάνου</h3>
+                <p class="t-body svc-item__body">Το σωστό χόρδισμα αποτελεί τη βάση για την ποιότητα και την ισορροπία του ήχου. Με γνώση της κατασκευής και των ιδιαίτερων χαρακτηριστικών κάθε οργάνου, η φροντίδα του πιάνου γίνεται με προσοχή στη λεπτομέρεια.</p>
+              </div>
+            </li>
+            <li class="svc-item" id="syntirisi" data-reveal style="--d: 120ms">
+              <figure class="frame svc-item__media">
+                <img src="assets/photos/services/services-02-syntirisi.jpg" alt="Τεχνικός ρυθμίζει τον μηχανισμό ενός πιάνου, βγαλμένο από το όργανο πάνω στον πάγκο εργασίας" width="1400" height="1438" loading="lazy">
+              </figure>
+              <div class="svc-item__text">
+                <p class="t-index svc-item__num" aria-hidden="true">02</p>
+                <h3 class="t-subtitle">Συντήρηση &amp; ρύθμιση</h3>
+                <p class="t-body svc-item__body">Η συστηματική συντήρηση και η προσεγμένη ρύθμιση του μηχανισμού συμβάλλουν στη σωστή λειτουργία και την απόκριση του πιάνου. Κάθε παρέμβαση προσαρμόζεται στις ανάγκες και την κατάσταση του οργάνου.</p>
+              </div>
+            </li>
+            <li class="svc-item" id="episkeves" data-reveal style="--d: 240ms">
+              <figure class="frame svc-item__media">
+                <img src="assets/photos/services/services-03-episkeves.jpg" alt="Χέρια τεχνικού δουλεύουν με εργαλείο ανάμεσα στα σφυράκια του μηχανισμού ενός πιάνου" width="1200" height="1800" loading="lazy">
+              </figure>
+              <div class="svc-item__text">
+                <p class="t-index svc-item__num" aria-hidden="true">03</p>
+                <h3 class="t-subtitle">Επισκευές πιάνων</h3>
+                <p class="t-body svc-item__body">Από μικρές δυσλειτουργίες έως πιο απαιτητικές τεχνικές εργασίες, η επισκευή ενός πιάνου απαιτεί εμπειρία και κατανόηση του μηχανισμού του. Στόχος είναι η αξιόπιστη λειτουργία και η διατήρηση των ιδιαίτερων χαρακτηριστικών του.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+        <div class="svc__group svc__group--rows" aria-labelledby="svc-g2">
+          <p class="t-meta t-label-rule svc__label" data-reveal><span id="svc-g2">Ενοικίαση, μεταφορά &amp; εκτίμηση</span><span aria-hidden="true">04 — 06</span></p>
+          <ol class="svc__list" start="4">
+            <li class="svc-item" id="enoikiasi" data-reveal>
+              <div class="svc-item__text">
+                <p class="t-index svc-item__num" aria-hidden="true">04</p>
+                <h3 class="t-subtitle">Ενοικίαση πιάνου</h3>
+              </div>
+              <p class="t-body svc-item__body">Η ενοικίαση προσφέρει μια ευέλικτη επιλογή για διαφορετικές μουσικές ανάγκες. Ο Οίκος Nikotian παρέχει ενημέρωση και καθοδήγηση για την επιλογή κατάλληλου οργάνου, ανάλογα με τη χρήση και τη διαθεσιμότητα.</p>
+              <figure class="frame svc-item__media">
+                <img src="assets/photos/services/services-04-enoikiasi.jpg" alt="Πιάνο με ουρά στη μέση άδειας σκηνής αίθουσας συναυλιών, κάτω από τους προβολείς" width="880" height="600" loading="lazy">
+              </figure>
+            </li>
+            <li class="svc-item" id="metafora" data-reveal>
+              <div class="svc-item__text">
+                <p class="t-index svc-item__num" aria-hidden="true">05</p>
+                <h3 class="t-subtitle">Μεταφορά πιάνου</h3>
+              </div>
+              <p class="t-body svc-item__body">Η μεταφορά ενός πιάνου απαιτεί ιδιαίτερη προσοχή λόγω της κατασκευής, του βάρους και της ευαισθησίας του. Η κατάλληλη οργάνωση και ο προσεκτικός χειρισμός είναι απαραίτητα στοιχεία για την ασφαλή μετακίνησή του.</p>
+              <figure class="frame svc-item__media">
+                <img src="assets/photos/services/services-05-metafora.jpg" alt="Πιάνο με ουρά τυλιγμένο σε προστατευτικό κάλυμμα, πάνω σε τροχήλατη βάση μεταφοράς, σε σαλόνι" width="730" height="544" loading="lazy">
+              </figure>
+            </li>
+            <li class="svc-item" id="ektimisi" data-reveal>
+              <div class="svc-item__text">
+                <p class="t-index svc-item__num" aria-hidden="true">06</p>
+                <h3 class="t-subtitle">Εκτίμηση πιάνου</h3>
+              </div>
+              <p class="t-body svc-item__body">Η εκτίμηση ενός πιάνου βασίζεται στην κατασκευή, την κατάσταση, την ηλικία και τα τεχνικά χαρακτηριστικά του. Η εξειδικευμένη αξιολόγηση βοηθά στη διαμόρφωση μιας πιο ολοκληρωμένης εικόνας για το όργανο.</p>
+              <figure class="frame svc-item__media">
+                <img src="assets/photos/services/services-06-ektimisi.jpg" alt="Κοντινό στη χυτοσιδηρή πλάκα ενός πιάνου με ουρά: το γράμμα του μοντέλου και ο αριθμός σειράς ανάμεσα στις χορδές" width="664" height="439" loading="lazy">
+              </figure>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 03 · Η ΤΕΧΝΟΓΝΩΣΙΑ ΣΤΗΝ ΠΡΑΞΗ =================
+         A photographic pause: one large plate, centred on charcoal; the text follows under it
+         in two columns of the same grid. -->
+    <section class="craft surface-dark" id="texni" aria-labelledby="craft-title">
+      <div class="wrap craft__grid">
+        <figure class="frame craft__media" data-reveal>
+          <img src="assets/photos/services/services-07-technognosia.jpg" alt="Χέρια τεχνικού με κλειδί χορδίσματος πάνω στα κλειδιά τάσης ενός πιάνου με ουρά" width="932" height="940" loading="lazy">
+        </figure>
+        <div class="craft__head" data-reveal>
+          <p class="eyebrow eyebrow--light">Η τέχνη της λεπτομέρειας</p>
+          <h2 class="title title--stack title--light" id="craft-title">Κάθε λεπτομέρεια <em>έχει σημασία.</em></h2>
+        </div>
+        <p class="t-body craft__body" data-reveal style="--d: 120ms">Πίσω από τον ήχο ενός πιάνου βρίσκεται ένας πολύπλοκος μηχανισμός, όπου κάθε λεπτομέρεια επηρεάζει το τελικό αποτέλεσμα. Η τεχνική γνώση και η προσεκτική εργασία αποτελούν αναπόσπαστο μέρος της φιλοσοφίας του Οίκου Nikotian.</p>
+      </div>
+    </section>
+
+    <!-- ================= 04 · ΕΠΙΚΟΙΝΩΝΙΑ ================= -->
+    <section class="s-contact section" id="epikoinonia" aria-labelledby="s-contact-title">
+      <div class="wrap s-contact__grid">
+        <div class="s-contact__head" data-reveal>
+          <p class="eyebrow">Επικοινωνία</p>
+          <h2 class="title title--stack" id="s-contact-title">Μιλήστε μας <em>για το πιάνο σας.</em></h2>
+        </div>
+        <div class="s-contact__text" data-reveal style="--d: 120ms">
+          <p class="t-body">Για πληροφορίες σχετικά με τις υπηρεσίες του Οίκου, η ομάδα της Nikotian είναι στη διάθεσή σας.</p>
+          <div class="actions s-contact__actions">
+            <a class="btn btn--primary" href="contact.html">Επικοινωνήστε μαζί μας</a>
+            <a class="link-arrow" href="tel:+302103808836">Καλέστε μας στο 210 380 8836 <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (shared) ================= -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__top">
+      <div class="site-footer__brand">
+        <img src="assets/logo/nikotian-C-heritage-refined-on-dark.svg" alt="Nikotian" width="170" height="47" loading="lazy">
+        <p>Μουσικός Οίκος Nikotian.<br>Πιάνα στην Αθήνα, από το 1929.</p>
+        <a class="site-footer__social" href="https://www.facebook.com/PianaNikotian" target="_blank" rel="noopener noreferrer" aria-label="Nikotian στο Facebook (ανοίγει σε νέα καρτέλα)">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.5 21.95V14h2.66l.4-3.1H13.5V8.92c0-.9.25-1.5 1.54-1.5h1.64V4.65a22 22 0 0 0-2.4-.12c-2.37 0-4 1.45-4 4.11v2.27H7.6V14h2.68v7.95A10 10 0 1 1 13.5 21.95z"/></svg>
+          <span>Facebook</span>
+        </a>
+      </div>
+      <nav class="site-footer__col" aria-labelledby="f-oikos">
+        <h2 id="f-oikos">Ο Οίκος</h2>
+        <ul>
+          <li><a href="about.html">Η ιστορία μας</a></li>
+          <li><a href="services.html" aria-current="page">Υπηρεσίες</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__col" aria-labelledby="f-organa">
+        <h2 id="f-organa">Όργανα</h2>
+        <ul>
+          <li><a href="new-pianos.html">Καινούργια πιάνα</a></li>
+          <li><a href="used-pianos.html">Μεταχειρισμένα πιάνα</a></li>
+          <li><a href="electric-pianos.html">Ηλεκτρικά πιάνα</a></li>
+          <li><a href="guitars.html">Κλασικές κιθάρες</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__col">
+        <h2>Έκθεση</h2>
+        <address>
+          <ul>
+            <li>Σόλωνος 105, 106 78 Αθήνα</li>
+            <li><a href="tel:+302103808836">210 380 8836</a></li>
+            <li><a href="tel:+306972034883">697 203 4883</a></li>
+            <li><a href="mailto:info@nikotian.gr">info@nikotian.gr</a></li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="wrap site-footer__bottom">
+      <p>© 2026 Nikotian. Με επιφύλαξη παντός δικαιώματος.</p>
+      <ul class="site-footer__legal">
+        <!-- Pages to be created in WordPress -->
+        <li><a href="#" data-href="/politiki-aporritou/" data-pending="Πολιτική Απορρήτου">Πολιτική Απορρήτου</a></li>
+        <li><a href="#" data-href="/politiki-cookies/" data-pending="Πολιτική Cookies">Πολιτική Cookies</a></li>
+      </ul>
+      <p class="site-footer__credit">Δημιουργία ιστοσελίδας: <a href="https://michalismerkouris.com/" target="_blank" rel="noopener noreferrer">Μιχάλης Μερκούρης<span class="visually-hidden"> (ανοίγει σε νέα καρτέλα)</span></a></p>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>

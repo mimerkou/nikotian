@@ -1,0 +1,1099 @@
+[
+  {
+    "id": "used-20",
+    "slug": "atlas-20",
+    "url": "/pianos/used/atlas-20/",
+    "detailPage": "piano.html?model=atlas-20",
+    "condition": "used",
+    "manufacturer": "Atlas",
+    "manufacturerSlug": "atlas",
+    "model": null,
+    "name": "Atlas",
+    "originalName": "ATLAS",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-20.jpg",
+        "width": 550,
+        "height": 260,
+        "fit": "cover",
+        "position": "50% 50%",
+        "alt": "Atlas, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_20.txt",
+      "image": "used-piano_20.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 1,
+    "ref": "20"
+  },
+  {
+    "id": "used-01",
+    "slug": "hofmann-cerny-01",
+    "url": "/pianos/used/hofmann-cerny-01/",
+    "detailPage": "piano.html?model=hofmann-cerny-01",
+    "condition": "used",
+    "manufacturer": "Hofmann & Černý",
+    "manufacturerSlug": "hofmann-cerny",
+    "model": null,
+    "name": "Hofmann & Černý",
+    "originalName": "HOFMANN & CERNY",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο (κοντινό, υπό γωνία)",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-01.jpg",
+        "width": 550,
+        "height": 550,
+        "fit": "cover",
+        "position": "50% 50%",
+        "alt": "Hofmann & Černý, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_01.txt",
+      "image": "used-piano_01.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [
+      "Το TXT γράφει «HOFMANN & CERNY»· στο καπάκι των πλήκτρων διαβάζεται «HOFMANN & ČERNÝ». Εμφανίζεται με τα διακριτικά· προς επιβεβαίωση."
+    ],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 2,
+    "ref": "01"
+  },
+  {
+    "id": "used-02",
+    "slug": "ibach-02",
+    "url": "/pianos/used/ibach-02/",
+    "detailPage": "piano.html?model=ibach-02",
+    "condition": "used",
+    "manufacturer": "Ibach",
+    "manufacturerSlug": "ibach",
+    "model": null,
+    "name": "Ibach",
+    "originalName": "IBACH",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-02.jpg",
+        "width": 550,
+        "height": 342,
+        "fit": "cover",
+        "position": "50% 50%",
+        "alt": "Ibach, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_02.txt",
+      "image": "used-piano_02.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 3,
+    "ref": "02"
+  },
+  {
+    "id": "used-04",
+    "slug": "kaps-04",
+    "url": "/pianos/used/kaps-04/",
+    "detailPage": "piano.html?model=kaps-04",
+    "condition": "used",
+    "manufacturer": "Kaps",
+    "manufacturerSlug": "kaps",
+    "model": null,
+    "name": "Kaps",
+    "originalName": "KAPS",
+    "type": "grand",
+    "typeLabel": "Πιάνο με ουρά",
+    "typeEvidence": "Φωτογραφία: οριζόντιο σώμα με ουρά, ανοιχτό αναλόγιο, τρία πόδια",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-04.jpg",
+        "width": 550,
+        "height": 550,
+        "fit": "cover",
+        "position": "50% 70%",
+        "alt": "Kaps, πιάνο με ουρά, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_04.txt",
+      "image": "used-piano_04.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 4,
+    "ref": "04"
+  },
+  {
+    "id": "used-13",
+    "slug": "kawai-at-32-silent-system-13",
+    "url": "/pianos/used/kawai-at-32-silent-system-13/",
+    "detailPage": "piano.html?model=kawai-at-32-silent-system-13",
+    "condition": "used",
+    "manufacturer": "Kawai",
+    "manufacturerSlug": "kawai",
+    "model": "AT-32 (Silent System)",
+    "name": "Kawai AT-32 (Silent System)",
+    "originalName": "KAWAI AT-32 (Silent System)",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-13.jpg",
+        "width": 550,
+        "height": 254,
+        "fit": "cover",
+        "position": "38% 50%",
+        "alt": "Kawai AT-32 (Silent System), όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_13.txt",
+      "image": "used-piano_13.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 5,
+    "ref": "13"
+  },
+  {
+    "id": "used-16",
+    "slug": "kawai-ns-15-16",
+    "url": "/pianos/used/kawai-ns-15-16/",
+    "detailPage": "piano.html?model=kawai-ns-15-16",
+    "condition": "used",
+    "manufacturer": "Kawai",
+    "manufacturerSlug": "kawai",
+    "model": "NS-15",
+    "name": "Kawai NS-15",
+    "originalName": "KAWAI NS-15",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-16.jpg",
+        "width": 550,
+        "height": 260,
+        "fit": "cover",
+        "position": "56% 50%",
+        "alt": "Kawai NS-15, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_16.txt",
+      "image": "used-piano_16.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 6,
+    "ref": "16"
+  },
+  {
+    "id": "used-05",
+    "slug": "krauss-05",
+    "url": "/pianos/used/krauss-05/",
+    "detailPage": "piano.html?model=krauss-05",
+    "condition": "used",
+    "manufacturer": "Krauss",
+    "manufacturerSlug": "krauss",
+    "model": null,
+    "name": "Krauss",
+    "originalName": "KRAUSS",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-05.jpg",
+        "width": 550,
+        "height": 550,
+        "fit": "cover",
+        "position": "50% 30%",
+        "alt": "Krauss, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_05.txt",
+      "image": "used-piano_05.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 7,
+    "ref": "05"
+  },
+  {
+    "id": "used-21",
+    "slug": "petrof-116-21",
+    "url": "/pianos/used/petrof-116-21/",
+    "detailPage": "piano.html?model=petrof-116-21",
+    "condition": "used",
+    "manufacturer": "Petrof",
+    "manufacturerSlug": "petrof",
+    "model": "116",
+    "name": "Petrof 116",
+    "originalName": "Petrof 116",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο, με σκαμπό",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-21.jpg",
+        "width": 550,
+        "height": 521,
+        "fit": "contain",
+        "position": "50% 50%",
+        "alt": "Petrof 116, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_21.txt",
+      "image": "used-piano_21.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 8,
+    "ref": "21"
+  },
+  {
+    "id": "used-09",
+    "slug": "pleyel-09",
+    "url": "/pianos/used/pleyel-09/",
+    "detailPage": "piano.html?model=pleyel-09",
+    "condition": "used",
+    "manufacturer": "Pleyel",
+    "manufacturerSlug": "pleyel",
+    "model": null,
+    "name": "Pleyel",
+    "originalName": "PLEYEL",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-09.jpg",
+        "width": 550,
+        "height": 254,
+        "fit": "cover",
+        "position": "47% 50%",
+        "alt": "Pleyel, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_09.txt",
+      "image": "used-piano_09.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 9,
+    "ref": "09"
+  },
+  {
+    "id": "used-11",
+    "slug": "rameau-11",
+    "url": "/pianos/used/rameau-11/",
+    "detailPage": "piano.html?model=rameau-11",
+    "condition": "used",
+    "manufacturer": "Rameau",
+    "manufacturerSlug": "rameau",
+    "model": null,
+    "name": "Rameau",
+    "originalName": "RAMEAU",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο (το ανοιχτό καπάκι πίσω του ανήκει σε άλλο πιάνο της έκθεσης)",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-11.jpg",
+        "width": 550,
+        "height": 254,
+        "fit": "cover",
+        "position": "59% 50%",
+        "alt": "Rameau, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_11.txt",
+      "image": "used-piano_11.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 10,
+    "ref": "11"
+  },
+  {
+    "id": "used-12",
+    "slug": "sauter-12",
+    "url": "/pianos/used/sauter-12/",
+    "detailPage": "piano.html?model=sauter-12",
+    "condition": "used",
+    "manufacturer": "Sauter",
+    "manufacturerSlug": "sauter",
+    "model": null,
+    "name": "Sauter",
+    "originalName": "SAUTER",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-12.jpg",
+        "width": 550,
+        "height": 260,
+        "fit": "cover",
+        "position": "50% 50%",
+        "alt": "Sauter, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_12.txt",
+      "image": "used-piano_12.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 11,
+    "ref": "12"
+  },
+  {
+    "id": "used-03",
+    "slug": "schimmel-03",
+    "url": "/pianos/used/schimmel-03/",
+    "detailPage": "piano.html?model=schimmel-03",
+    "condition": "used",
+    "manufacturer": "Schimmel",
+    "manufacturerSlug": "schimmel",
+    "model": null,
+    "name": "Schimmel",
+    "originalName": "SCHIMMEL",
+    "type": "grand",
+    "typeLabel": "Πιάνο με ουρά",
+    "typeEvidence": "Φωτογραφία: οριζόντιο σώμα με ουρά, κλειστό καπάκι, τρία πόδια, λύρα πεντάλ",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-03.jpg",
+        "width": 550,
+        "height": 260,
+        "fit": "cover",
+        "position": "50% 50%",
+        "alt": "Schimmel, πιάνο με ουρά, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_03.txt",
+      "image": "used-piano_03.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 12,
+    "ref": "03"
+  },
+  {
+    "id": "used-23",
+    "slug": "schimmel-104-23",
+    "url": "/pianos/used/schimmel-104-23/",
+    "detailPage": "piano.html?model=schimmel-104-23",
+    "condition": "used",
+    "manufacturer": "Schimmel",
+    "manufacturerSlug": "schimmel",
+    "model": "104",
+    "name": "Schimmel 104",
+    "originalName": "SCHIMMEL 104",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-23.jpg",
+        "width": 550,
+        "height": 310,
+        "fit": "cover",
+        "position": "55% 50%",
+        "alt": "Schimmel 104, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_23.txt",
+      "image": "used-piano_23.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 13,
+    "ref": "23"
+  },
+  {
+    "id": "used-24",
+    "slug": "weinbach-175-24",
+    "url": "/pianos/used/weinbach-175-24/",
+    "detailPage": "piano.html?model=weinbach-175-24",
+    "condition": "used",
+    "manufacturer": "Weinbach",
+    "manufacturerSlug": "weinbach",
+    "model": "175",
+    "name": "Weinbach 175",
+    "originalName": "Weinbach 175",
+    "type": "grand",
+    "typeLabel": "Πιάνο με ουρά",
+    "typeEvidence": "Φωτογραφία: οριζόντιο σώμα με ουρά, ανοιχτό καπάκι",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-24.jpg",
+        "width": 550,
+        "height": 718,
+        "fit": "contain",
+        "position": "50% 50%",
+        "alt": "Weinbach 175, πιάνο με ουρά, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_24.txt",
+      "image": "used-piano_24.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 14,
+    "ref": "24"
+  },
+  {
+    "id": "used-26",
+    "slug": "yamaha-g1-26",
+    "url": "/pianos/used/yamaha-g1-26/",
+    "detailPage": "piano.html?model=yamaha-g1-26",
+    "condition": "used",
+    "manufacturer": "Yamaha",
+    "manufacturerSlug": "yamaha",
+    "model": "G1",
+    "name": "Yamaha G1",
+    "originalName": "Yamaha G1",
+    "type": "grand",
+    "typeLabel": "Πιάνο με ουρά",
+    "typeEvidence": "Φωτογραφία: οριζόντιο σώμα με ουρά, ανοιχτό καπάκι",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-26.jpg",
+        "width": 500,
+        "height": 530,
+        "fit": "contain",
+        "position": "50% 50%",
+        "alt": "Yamaha G1, πιάνο με ουρά, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_26.txt",
+      "image": "used-piano_26.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 15,
+    "ref": "26"
+  },
+  {
+    "id": "used-18",
+    "slug": "yamaha-m1j-18",
+    "url": "/pianos/used/yamaha-m1j-18/",
+    "detailPage": "piano.html?model=yamaha-m1j-18",
+    "condition": "used",
+    "manufacturer": "Yamaha",
+    "manufacturerSlug": "yamaha",
+    "model": "M1J",
+    "name": "Yamaha M1J",
+    "originalName": "YAMAHA M1J",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο (κοντινό)",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-18.jpg",
+        "width": 550,
+        "height": 254,
+        "fit": "cover",
+        "position": "50% 50%",
+        "alt": "Yamaha M1J, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_18.txt",
+      "image": "used-piano_18.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 16,
+    "ref": "18"
+  },
+  {
+    "id": "used-10",
+    "slug": "yamaha-m5j-10",
+    "url": "/pianos/used/yamaha-m5j-10/",
+    "detailPage": "piano.html?model=yamaha-m5j-10",
+    "condition": "used",
+    "manufacturer": "Yamaha",
+    "manufacturerSlug": "yamaha",
+    "model": "M5J",
+    "name": "Yamaha M5J",
+    "originalName": "YAMAHA M5J",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-10.jpg",
+        "width": 550,
+        "height": 254,
+        "fit": "cover",
+        "position": "38% 50%",
+        "alt": "Yamaha M5J, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_10.txt",
+      "image": "used-piano_10.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 17,
+    "ref": "10"
+  },
+  {
+    "id": "used-15",
+    "slug": "yamaha-mc10bl-15",
+    "url": "/pianos/used/yamaha-mc10bl-15/",
+    "detailPage": "piano.html?model=yamaha-mc10bl-15",
+    "condition": "used",
+    "manufacturer": "Yamaha",
+    "manufacturerSlug": "yamaha",
+    "model": "MC10BL",
+    "name": "Yamaha MC10BL",
+    "originalName": "YAMAHA MC10BL",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-15.jpg",
+        "width": 550,
+        "height": 260,
+        "fit": "cover",
+        "position": "52% 50%",
+        "alt": "Yamaha MC10BL, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_15.txt",
+      "image": "used-piano_15.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 18,
+    "ref": "15"
+  },
+  {
+    "id": "used-06",
+    "slug": "yamaha-u3-06",
+    "url": "/pianos/used/yamaha-u3-06/",
+    "detailPage": "piano.html?model=yamaha-u3-06",
+    "condition": "used",
+    "manufacturer": "Yamaha",
+    "manufacturerSlug": "yamaha",
+    "model": "U3",
+    "name": "Yamaha U3",
+    "originalName": "YAMAHA U3",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο (κοντινό, υπό γωνία)",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-06.jpg",
+        "width": 550,
+        "height": 254,
+        "fit": "cover",
+        "position": "60% 50%",
+        "alt": "Yamaha U3, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_06.txt",
+      "image": "used-piano_06.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 19,
+    "ref": "06"
+  },
+  {
+    "id": "used-14",
+    "slug": "yamaha-yus-14",
+    "url": "/pianos/used/yamaha-yus-14/",
+    "detailPage": "piano.html?model=yamaha-yus-14",
+    "condition": "used",
+    "manufacturer": "Yamaha",
+    "manufacturerSlug": "yamaha",
+    "model": "YUS",
+    "name": "Yamaha YUS",
+    "originalName": "YAMAHA YUS",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο (κοντινό, υπό γωνία)",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-14.jpg",
+        "width": 500,
+        "height": 231,
+        "fit": "cover",
+        "position": "60% 50%",
+        "alt": "Yamaha YUS, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_14.txt",
+      "image": "used-piano_14.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 20,
+    "ref": "14"
+  },
+  {
+    "id": "used-07",
+    "slug": "young-chang-118-07",
+    "url": "/pianos/used/young-chang-118-07/",
+    "detailPage": "piano.html?model=young-chang-118-07",
+    "condition": "used",
+    "manufacturer": "Young Chang",
+    "manufacturerSlug": "young-chang",
+    "model": "118",
+    "name": "Young Chang 118",
+    "originalName": "YOUNG CHANG 118",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-07.jpg",
+        "width": 550,
+        "height": 254,
+        "fit": "cover",
+        "position": "41% 50%",
+        "alt": "Young Chang 118, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_07.txt",
+      "image": "used-piano_07.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": "young-chang-118",
+    "sameNameIndex": [
+      1,
+      2
+    ],
+    "order": 21,
+    "ref": "07"
+  },
+  {
+    "id": "used-17",
+    "slug": "young-chang-118-17",
+    "url": "/pianos/used/young-chang-118-17/",
+    "detailPage": "piano.html?model=young-chang-118-17",
+    "condition": "used",
+    "manufacturer": "Young Chang",
+    "manufacturerSlug": "young-chang",
+    "model": "118",
+    "name": "Young Chang 118",
+    "originalName": "YOUNG CHANG 118",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-17.jpg",
+        "width": 550,
+        "height": 260,
+        "fit": "cover",
+        "position": "52% 50%",
+        "alt": "Young Chang 118, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_17.txt",
+      "image": "used-piano_17.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": "young-chang-118",
+    "sameNameIndex": [
+      2,
+      2
+    ],
+    "order": 22,
+    "ref": "17"
+  },
+  {
+    "id": "used-08",
+    "slug": "young-chang-121-08",
+    "url": "/pianos/used/young-chang-121-08/",
+    "detailPage": "piano.html?model=young-chang-121-08",
+    "condition": "used",
+    "manufacturer": "Young Chang",
+    "manufacturerSlug": "young-chang",
+    "model": "121",
+    "name": "Young Chang 121",
+    "originalName": "YOUNG CHANG 121",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-08.jpg",
+        "width": 550,
+        "height": 260,
+        "fit": "cover",
+        "position": "57% 50%",
+        "alt": "Young Chang 121, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_08.txt",
+      "image": "used-piano_08.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": "young-chang-121",
+    "sameNameIndex": [
+      1,
+      3
+    ],
+    "order": 23,
+    "ref": "08"
+  },
+  {
+    "id": "used-25",
+    "slug": "young-chang-121-25",
+    "url": "/pianos/used/young-chang-121-25/",
+    "detailPage": "piano.html?model=young-chang-121-25",
+    "condition": "used",
+    "manufacturer": "Young Chang",
+    "manufacturerSlug": "young-chang",
+    "model": "121",
+    "name": "Young Chang 121",
+    "originalName": "Young Chang 121",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο, ζωγραφισμένο πάνελ",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-25.jpg",
+        "width": 550,
+        "height": 472,
+        "fit": "contain",
+        "position": "50% 50%",
+        "alt": "Young Chang 121, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_25.txt",
+      "image": "used-piano_25.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": "young-chang-121",
+    "sameNameIndex": [
+      2,
+      3
+    ],
+    "order": 24,
+    "ref": "25"
+  },
+  {
+    "id": "used-27",
+    "slug": "young-chang-121-27",
+    "url": "/pianos/used/young-chang-121-27/",
+    "detailPage": "piano.html?model=young-chang-121-27",
+    "condition": "used",
+    "manufacturer": "Young Chang",
+    "manufacturerSlug": "young-chang",
+    "model": "121",
+    "name": "Young Chang 121",
+    "originalName": "Young Chang 121",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο, ζωγραφισμένο πάνελ",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-27.jpg",
+        "width": 500,
+        "height": 499,
+        "fit": "contain",
+        "position": "50% 50%",
+        "alt": "Young Chang 121, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_27.txt",
+      "image": "used-piano_27.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": "young-chang-121",
+    "sameNameIndex": [
+      3,
+      3
+    ],
+    "order": 25,
+    "ref": "27"
+  },
+  {
+    "id": "used-22",
+    "slug": "young-chang-121-silent-system-22",
+    "url": "/pianos/used/young-chang-121-silent-system-22/",
+    "detailPage": "piano.html?model=young-chang-121-silent-system-22",
+    "condition": "used",
+    "manufacturer": "Young Chang",
+    "manufacturerSlug": "young-chang",
+    "model": "121 (Silent System)",
+    "name": "Young Chang 121 (Silent System)",
+    "originalName": "YOUNG CHANG 121 (Silent System)",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-22.jpg",
+        "width": 550,
+        "height": 310,
+        "fit": "cover",
+        "position": "50% 50%",
+        "alt": "Young Chang 121 (Silent System), όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_22.txt",
+      "image": "used-piano_22.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 26,
+    "ref": "22"
+  },
+  {
+    "id": "used-19",
+    "slug": "young-chang-131-19",
+    "url": "/pianos/used/young-chang-131-19/",
+    "detailPage": "piano.html?model=young-chang-131-19",
+    "condition": "used",
+    "manufacturer": "Young Chang",
+    "manufacturerSlug": "young-chang",
+    "model": "131",
+    "name": "Young Chang 131",
+    "originalName": "YOUNG CHANG 131",
+    "type": "upright",
+    "typeLabel": "Όρθιο πιάνο",
+    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
+    "images": [
+      {
+        "src": "assets/photos/pianos/used/used-piano-19.jpg",
+        "width": 550,
+        "height": 260,
+        "fit": "cover",
+        "position": "52% 50%",
+        "alt": "Young Chang 131, όρθιο πιάνο, στην έκθεση Nikotian",
+        "pageFit": "photo"
+      }
+    ],
+    "source": {
+      "txt": "used-piano_19.txt",
+      "image": "used-piano_19.jpg",
+      "zip": "used-pianos.zip"
+    },
+    "description": [],
+    "specs": {},
+    "finish": null,
+    "features": [],
+    "notes": [],
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 27,
+    "ref": "19"
+  }
+]

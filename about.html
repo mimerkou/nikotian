@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="el" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ο Οίκος — Η διαδρομή μας από το 1929 | Μουσικός Οίκος Nikotian</title>
+  <meta name="description" content="Η ιστορία του μουσικού οίκου Nikotian: από την ίδρυση από τον Κάρλο Νικοτιάν στην οδό Ακαδημίας 63 το 1929, μέχρι τη σημερινή έκθεση στη Σόλωνος 105, στην Αθήνα.">
+  <meta name="theme-color" content="#F7F4EE">
+  <link rel="icon" href="assets/logo/nikotian-C-favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300..700&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&display=swap">
+  <link rel="preload" as="image" href="assets/photos/about/about-04-keys.jpg">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/about.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="js/main.js" defer></script>
+  <script src="js/about.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+
+  <!-- ================= HEADER (shared) =================
+       Internal page: .site-header--light = ivory bar, graphite type, light logo, one hairline underneath. -->
+  <header class="site-header site-header--light" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nikotian, αρχική σελίδα">
+        <img class="brand__logo brand__logo--on-dark" src="assets/logo/nikotian-C-heritage-refined-on-dark.svg" alt="" width="150" height="41">
+        <img class="brand__logo brand__logo--on-light" src="assets/logo/nikotian-C-heritage-refined-light.svg" alt="Nikotian" width="150" height="41">
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Κύρια πλοήγηση">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="about.html" aria-current="page">Ο Οίκος</a></li>
+          <li class="nav__item"><a class="nav__link" href="services.html">Υπηρεσίες</a></li>
+          <li class="nav__item nav__item--has-sub">
+            <!-- «Πιάνα» is a category, not a page: one button opens the submenu (hover/click on desktop, tap in the mobile menu) -->
+            <button class="nav__parent" type="button" aria-expanded="false" aria-controls="sub-pianos">
+              <span class="nav__link">Πιάνα</span>
+              <svg class="nav__chev" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            </button>
+            <!-- Category pages do not exist yet: homepage anchor + data-href with the future URL -->
+            <ul class="nav__sub" id="sub-pianos">
+              <li><a href="new-pianos.html">Καινούργια</a></li>
+              <li><a href="used-pianos.html">Μεταχειρισμένα</a></li>
+              <li><a href="electric-pianos.html">Ηλεκτρικά</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="guitars.html">Κιθάρες</a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html">Επικοινωνία</a></li>
+        </ul>
+        <div class="nav__mobile-extra">
+          <a class="btn btn--primary" href="contact.html">Επισκεφθείτε την έκθεση</a>
+          <address class="nav__meta">
+            Σόλωνος 105, 106 78 Αθήνα<br>
+            <a href="tel:+302103808836">210 380 8836</a> · <a href="tel:+306972034883">697 203 4883</a>
+          </address>
+        </div>
+      </nav>
+
+      <div class="site-header__actions">
+        <nav class="lang" aria-label="Γλώσσα">
+          <a class="lang__item" href="about.html" lang="el" hreflang="el" aria-current="page">EL</a>
+          <span class="lang__sep" aria-hidden="true">|</span>
+          <span class="lang__item lang__item--pending" lang="en" title="Η αγγλική έκδοση ετοιμάζεται">EN</span>
+        </nav>
+        <a class="btn btn--primary btn--sm header-cta" href="contact.html">Επισκεφθείτε την έκθεση</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__label">Μενού</span>
+          <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= 01 · ΕΙΣΑΓΩΓΗ =================
+         Shared scale: the page heading is a .title (same size as the homepage section titles).
+         Text and photograph share one row; the whole introduction fits in a desktop viewport. -->
+    <section class="a-hero" id="top" aria-labelledby="a-hero-title">
+      <div class="wrap">
+        <nav class="crumbs t-meta" aria-label="Διαδρομή πλοήγησης">
+          <ol>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><span aria-current="page">Ο Οίκος</span></li>
+          </ol>
+        </nav>
+
+        <div class="a-hero__grid">
+          <div class="a-hero__text">
+            <p class="eyebrow">Ο Οίκος</p>
+            <h1 class="title title--stack" id="a-hero-title">Μια διαδρομή <em>γεμάτη μουσική.</em></h1>
+            <p class="t-body a-hero__lead">Ο Κάρλο Νικοτιάν ίδρυσε τον μουσικό οίκο στην Αθήνα το 1929. Σχεδόν έναν αιώνα αργότερα, ο Οίκος παραμένει οικογενειακός και το πιάνο παραμένει το κέντρο του: το ακούμε, το φροντίζουμε και το συστήνουμε σε όσους θα το παίξουν.</p>
+
+            <dl class="a-facts">
+              <div class="a-facts__item"><dt class="t-meta">Ίδρυση</dt><dd class="t-meta-value">1929</dd></div>
+              <div class="a-facts__item"><dt class="t-meta">Πρώτο κατάστημα</dt><dd class="t-meta-value">Ακαδημίας 63</dd></div>
+              <div class="a-facts__item"><dt class="t-meta">Σήμερα</dt><dd class="t-meta-value">Σόλωνος 105</dd></div>
+            </dl>
+          </div>
+
+          <figure class="a-hero__media">
+            <img src="assets/photos/about/about-04-keys.jpg" alt="Κοντινό στα πλήκτρα και στο γυαλιστερό μαύρο σώμα ενός πιάνου με ουρά, σε χαμηλό φως" width="2000" height="1334" fetchpriority="high">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 02 · Η ΑΡΧΗ ================= -->
+    <section class="origin section" id="arxi" aria-labelledby="origin-title">
+      <div class="wrap origin__grid">
+        <figure class="origin__portrait" data-reveal>
+          <div class="frame origin__portrait-frame">
+            <!-- Crop of oikos-portrait-wall.jpg (Nikotian). Replace with an original photograph of Κάρλο Νικοτιάν when the archive material arrives. -->
+            <img src="assets/photos/about/founder-portrait-crop.jpg" alt="Το πορτραίτο του Κάρλο Νικοτιάν σε επιχρυσωμένη κορνίζα, πάνω από ένα όρθιο πιάνο στην έκθεση" width="400" height="490" loading="lazy">
+          </div>
+          <figcaption class="t-caption"><strong>Κάρλο Νικοτιάν</strong>, ιδρυτής του Οίκου. Το πορτραίτο του κρέμεται σήμερα στην έκθεση, δίπλα στα πιάνα.</figcaption>
+        </figure>
+
+        <div class="origin__text" data-reveal style="--d: 120ms">
+          <p class="eyebrow">Η αρχή</p>
+          <h2 class="title title--stack" id="origin-title">Όλα ξεκίνησαν <em>από τον ήχο.</em></h2>
+          <p class="t-meta origin__date">Μάρτιος 1929 · Ακαδημίας 63, Αθήνα</p>
+
+          <div class="prose">
+            <p>Ο Κάρλο Νικοτιάν ήταν τεχνικός και χορδιστής πιάνων. Η δουλειά του ξεκινούσε από το αυτί: να ακούσει ένα όργανο, να καταλάβει τι χρειάζεται και να του επιστρέψει τη σωστή του φωνή.</p>
+            <p>Τον Μάρτιο του 1929 ίδρυσε τον μουσικό οίκο στην οδό Ακαδημίας 63. Η εξειδίκευσή του στη συντήρηση και στο χόρδισμα τον έφερε κοντά σε μουσικούς της εποχής, και ο Οίκος συνδέθηκε με ρεσιτάλ σημαντικών καλλιτεχνών στην Αθήνα.</p>
+            <p>Ανάμεσα στα τεκμήρια εκείνων των χρόνων, η ιστορία του Οίκου αναφέρει συγχαρητήριες επιστολές του Ρουμπινστάιν και του Άρτουρ Σνάμπελ.</p>
+          </div>
+        </div>
+
+        <!-- Archive: two slots for the original letters. Placeholders only, until the scans arrive from the family archive. -->
+        <div class="archive" data-reveal style="--d: 200ms">
+          <p class="t-meta archive__label">Από το αρχείο του Οίκου</p>
+          <ul class="archive__list">
+            <li class="archive__item">
+              <div class="placeholder" role="img" aria-label="Θέση για την επιστολή του Ρουμπινστάιν. Το πρωτότυπο δεν έχει ακόμη ψηφιοποιηθεί.">
+                <span class="t-meta placeholder__tag">Προσωρινή θέση</span>
+              </div>
+              <p class="t-caption archive__caption"><strong>Επιστολή του Ρουμπινστάιν</strong><br>Το πρωτότυπο θα προστεθεί από το οικογενειακό αρχείο.</p>
+            </li>
+            <li class="archive__item">
+              <div class="placeholder" role="img" aria-label="Θέση για την επιστολή του Άρτουρ Σνάμπελ. Το πρωτότυπο δεν έχει ακόμη ψηφιοποιηθεί.">
+                <span class="t-meta placeholder__tag">Προσωρινή θέση</span>
+              </div>
+              <p class="t-caption archive__caption"><strong>Επιστολή του Άρτουρ Σνάμπελ</strong><br>Το πρωτότυπο θα προστεθεί από το οικογενειακό αρχείο.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 03 · Η ΔΙΑΔΡΟΜΗ ΜΑΣ =================
+         A purely typographic chronicle: one scale for every year (the homepage timeline roles),
+         one hairline that connects the events and fills as the reader scrolls. No photographs. -->
+    <section class="route section" id="diadromi" aria-labelledby="route-title">
+      <div class="wrap route__grid">
+        <header class="route__head" data-reveal>
+          <p class="eyebrow">Η διαδρομή μας</p>
+          <h2 class="title title--stack" id="route-title">Σχεδόν ένας αιώνας <em>διαδρομής.</em></h2>
+          <p class="t-body route__intro">Από την Ακαδημίας στη Σόλωνος: πέντε στιγμές που σημάδεψαν τον Οίκο και τους ανθρώπους του.</p>
+        </header>
+
+        <ol class="chronicle" data-route aria-label="Χρονολόγιο του Οίκου">
+          <li class="chronicle__item" data-reveal>
+            <p class="t-year chronicle__year"><time datetime="1929">1929</time></p>
+            <div class="chronicle__body">
+              <h3 class="t-event">Η ίδρυση</h3>
+              <p class="t-event-text">Ο Κάρλο Νικοτιάν ιδρύει τον μουσικό οίκο στην οδό Ακαδημίας 63, στην Αθήνα.</p>
+            </div>
+          </li>
+          <li class="chronicle__item" data-reveal>
+            <p class="t-year chronicle__year"><time datetime="1978">1978</time></p>
+            <div class="chronicle__body">
+              <h3 class="t-event">Η συνεργασία με τη Young Chang</h3>
+              <p class="t-event-text">Ο Κάρλο και ο γιος του, Στεπάν, ξεκινούν τη συνεργασία με τον κατασκευαστή πιάνων της Νότιας Κορέας.</p>
+            </div>
+          </li>
+          <li class="chronicle__item" data-reveal>
+            <p class="t-year chronicle__year"><time datetime="1981">1981</time></p>
+            <div class="chronicle__body">
+              <h3 class="t-event">Η οικογενειακή συνέχεια</h3>
+              <p class="t-event-text">Μετά τον θάνατο του Κάρλο, τη δραστηριότητα του Οίκου συνεχίζουν τα παιδιά του, ο Στεπάν και η Αρούς.</p>
+            </div>
+          </li>
+          <li class="chronicle__item" data-reveal>
+            <p class="t-year chronicle__year"><time datetime="2000">2000</time>–<time datetime="2008">2008</time></p>
+            <div class="chronicle__body">
+              <h3 class="t-event">Η επόμενη γενιά</h3>
+              <p class="t-event-text">Ο Κάρολος εντάσσεται στον Οίκο το 2000, έχοντας εκπαιδευτεί στην τεχνική των πιάνων στη Grotrian Steinweg. Το 2008 ακολουθεί ο Ρομπέρ.</p>
+            </div>
+          </li>
+          <li class="chronicle__item chronicle__item--now" data-reveal>
+            <p class="t-year chronicle__year">Σήμερα</p>
+            <div class="chronicle__body">
+              <h3 class="t-event">Σόλωνος 105</h3>
+              <p class="t-event-text">Ο Οίκος συνεχίζει τη δραστηριότητά του στο κέντρο της Αθήνας.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= 04 · Η ΕΠΟΜΕΝΗ ΓΕΝΙΑ =================
+         The one dark section: .surface-dark switches every role colour.
+         Photographs about-02 and about-03: Καθημερινή, reference only, not cleared for public use. -->
+    <section class="lineage surface-dark" id="gnosi-synexeia" aria-labelledby="lineage-title">
+      <div class="wrap lineage__grid">
+        <div class="lineage__text" data-reveal>
+          <p class="eyebrow eyebrow--light">Η επόμενη γενιά</p>
+          <h2 class="title title--stack title--light" id="lineage-title">Η γνώση περνά <em>από χέρι σε χέρι.</em></h2>
+          <div class="prose">
+            <p>Η τεχνική του πιάνου δεν μαθαίνεται μόνο από βιβλία. Μαθαίνεται δίπλα σε κάποιον που ξέρει, πάνω στο ίδιο το όργανο, με τα χρόνια.</p>
+            <p>Έτσι πέρασε η γνώση στον Οίκο: από τον Κάρλο στα παιδιά του, τον Στεπάν και την Αρούς, και από εκεί στην επόμενη γενιά. Ο Κάρολος συμπλήρωσε την οικογενειακή εμπειρία με εκπαίδευση στην τεχνική των πιάνων στη Grotrian Steinweg· ο Ρομπέρ Καραμπετιάν εντάχθηκε στη δουλειά του Οίκου το 2008.</p>
+          </div>
+        </div>
+
+        <figure class="lineage__elders" data-reveal style="--d: 120ms">
+          <div class="frame lineage__elders-frame">
+            <img src="assets/photos/about/about-02-arous-stefanos.jpg" alt="Η Αρούς Νικοτιάν στο γραφείο της έκθεσης και ο Στέφανος Νικοτιάν όρθιος, δίπλα σε πιάνα" width="2000" height="1500" loading="lazy">
+          </div>
+          <figcaption class="t-caption"><strong>Αρούς και Στέφανος Νικοτιάν</strong> στην έκθεση.</figcaption>
+        </figure>
+
+        <p class="t-statement lineage__statement" data-reveal>Ό,τι ξεκίνησε ως γνώση ενός ανθρώπου <em>έγινε δουλειά μιας οικογένειας.</em></p>
+
+        <figure class="lineage__hands" data-reveal>
+          <div class="frame lineage__hands-frame">
+            <img src="assets/photos/about/about-05-tuning.jpg" alt="Χέρι με κλειδί χορδίσματος πάνω στα κλειδιά τάσης ενός πιάνου με ουρά" width="862" height="862" loading="lazy">
+          </div>
+          <figcaption class="t-caption">Χόρδισμα: η ίδια δουλειά με την οποία ξεκίνησε ο Οίκος.</figcaption>
+        </figure>
+
+        <figure class="lineage__robert" data-reveal style="--d: 120ms">
+          <div class="frame lineage__robert-frame">
+            <img src="assets/photos/about/about-03-robert.jpg" alt="Ο Ρομπέρ Καραμπετιάν με το χέρι στο αναλόγιο ενός πιάνου με ουρά από ξύλο καρυδιάς" width="2000" height="1123" loading="lazy">
+          </div>
+          <figcaption class="t-caption"><strong>Ρομπέρ Καραμπετιάν</strong> στην έκθεση.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 05 · ΣΗΜΕΡΑ ================= -->
+    <section class="today" id="simera" aria-labelledby="today-title">
+      <figure class="today__street" data-reveal>
+        <!-- about-01: Καθημερινή, reference only, not cleared for public use. -->
+        <img src="assets/photos/about/about-01-sign-solonos.jpg" alt="Η επιγραφή «Πιάνα Nikotian» στον τοίχο της εισόδου, με τον δρόμο της Σόλωνος στο σούρουπο" width="2000" height="1123" loading="lazy">
+      </figure>
+
+      <div class="wrap today__grid">
+        <div class="today__text" data-reveal>
+          <p class="eyebrow">Σήμερα</p>
+          <h2 class="title title--stack" id="today-title">Η ιστορία συνεχίζεται <em>στη Σόλωνος.</em></h2>
+          <div class="prose">
+            <p>Η έκθεση του Οίκου βρίσκεται στη Σόλωνος 105, στο κέντρο της Αθήνας. Εκεί θα βρείτε πιάνα καινούργια και μεταχειρισμένα, όρθια και με ουρά, και ανθρώπους που μπορούν να σας μιλήσουν για καθένα από αυτά.</p>
+          </div>
+          <p class="t-coda today__coda">Η καλύτερη συνέχεια αυτής της ιστορίας γράφεται από κοντά.</p>
+          <div class="actions today__actions">
+            <!-- Top of the Contact page (final URL /epikoinonia/) -->
+            <a class="btn btn--primary" href="contact.html">Επισκεφθείτε την έκθεση</a>
+            <a class="link-arrow" href="tel:+302103808836">Καλέστε μας στο 210 380 8836 <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <figure class="today__room" data-reveal style="--d: 120ms">
+          <div class="frame today__room-frame">
+            <img src="assets/photos/visit-showroom.jpg" alt="Η έκθεση της Nikotian από ψηλά: πιάνα, κιθάρες και η βιτρίνα προς τη Σόλωνος" width="960" height="640" loading="lazy">
+          </div>
+          <figcaption class="t-caption">Η έκθεση, με τη βιτρίνα προς τη Σόλωνος.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (shared) ================= -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__top">
+      <div class="site-footer__brand">
+        <img src="assets/logo/nikotian-C-heritage-refined-on-dark.svg" alt="Nikotian" width="170" height="47" loading="lazy">
+        <p>Μουσικός Οίκος Nikotian.<br>Πιάνα στην Αθήνα, από το 1929.</p>
+        <a class="site-footer__social" href="https://www.facebook.com/PianaNikotian" target="_blank" rel="noopener noreferrer" aria-label="Nikotian στο Facebook (ανοίγει σε νέα καρτέλα)">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.5 21.95V14h2.66l.4-3.1H13.5V8.92c0-.9.25-1.5 1.54-1.5h1.64V4.65a22 22 0 0 0-2.4-.12c-2.37 0-4 1.45-4 4.11v2.27H7.6V14h2.68v7.95A10 10 0 1 1 13.5 21.95z"/></svg>
+          <span>Facebook</span>
+        </a>
+      </div>
+      <nav class="site-footer__col" aria-labelledby="f-oikos">
+        <h2 id="f-oikos">Ο Οίκος</h2>
+        <ul>
+          <li><a href="about.html">Η ιστορία μας</a></li>
+          <li><a href="services.html">Υπηρεσίες</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__col" aria-labelledby="f-organa">
+        <h2 id="f-organa">Όργανα</h2>
+        <ul>
+          <li><a href="new-pianos.html">Καινούργια πιάνα</a></li>
+          <li><a href="used-pianos.html">Μεταχειρισμένα πιάνα</a></li>
+          <li><a href="electric-pianos.html">Ηλεκτρικά πιάνα</a></li>
+          <li><a href="guitars.html">Κλασικές κιθάρες</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__col">
+        <h2>Έκθεση</h2>
+        <address>
+          <ul>
+            <li>Σόλωνος 105, 106 78 Αθήνα</li>
+            <li><a href="tel:+302103808836">210 380 8836</a></li>
+            <li><a href="tel:+306972034883">697 203 4883</a></li>
+            <li><a href="mailto:info@nikotian.gr">info@nikotian.gr</a></li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="wrap site-footer__bottom">
+      <p>© 2026 Nikotian. Με επιφύλαξη παντός δικαιώματος.</p>
+      <ul class="site-footer__legal">
+        <!-- Pages to be created in WordPress -->
+        <li><a href="#" data-href="/politiki-aporritou/" data-pending="Πολιτική Απορρήτου">Πολιτική Απορρήτου</a></li>
+        <li><a href="#" data-href="/politiki-cookies/" data-pending="Πολιτική Cookies">Πολιτική Cookies</a></li>
+      </ul>
+      <p class="site-footer__credit">Δημιουργία ιστοσελίδας: <a href="https://michalismerkouris.com/" target="_blank" rel="noopener noreferrer">Μιχάλης Μερκούρης<span class="visually-hidden"> (ανοίγει σε νέα καρτέλα)</span></a></p>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>

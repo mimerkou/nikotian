@@ -1,0 +1,50 @@
+{
+  "_note": "Single source of the contact details (Contact Page v1.0). Keys = data-contact attributes in contact.html. In WordPress: one options page «Στοιχεία επικοινωνίας»; header, footer, homepage and contact page read from it. See NOTES.md · Επικοινωνία.",
+  "address": {
+    "street": "Σόλωνος 105",
+    "postalCode": "106 78",
+    "city": "Αθήνα"
+  },
+  "directions": "https://www.google.com/maps/dir/?api=1&destination=Nikotian%2C%20%CE%A3%CF%8C%CE%BB%CF%89%CE%BD%CE%BF%CF%82%20105%2C%20%CE%91%CE%B8%CE%AE%CE%BD%CE%B1",
+  "phones": [
+    {
+      "key": "landline-1",
+      "group": "Σταθερά τηλέφωνα",
+      "label": "",
+      "display": "210 380 8836",
+      "tel": "+302103808836"
+    },
+    {
+      "key": "landline-2",
+      "group": "Σταθερά τηλέφωνα",
+      "label": "",
+      "display": "210 383 9623",
+      "tel": "+302103839623"
+    },
+    {
+      "key": "mobile-karolos",
+      "group": "Κινητά",
+      "label": "Κάρολος Νικοτιάν",
+      "display": "697 203 4883",
+      "tel": "+306972034883"
+    },
+    {
+      "key": "mobile-rober",
+      "group": "Κινητά",
+      "label": "Ρομπέρ Καραμπετιάν",
+      "display": "694 887 3390",
+      "tel": "+306948873390"
+    }
+  ],
+  "email": "info@nikotian.gr",
+  "form": {
+    "recipient": "info@nikotian.gr",
+    "fields": [
+      "name",
+      "email",
+      "phone",
+      "message"
+    ]
+  },
+  "openingHours": null
+}

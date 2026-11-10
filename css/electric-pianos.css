@@ -1,0 +1,58 @@
+/* Nikotian — «Ηλεκτρικά πιάνα» (electric-pianos.html) · v1.0
+   Loaded after css/new-pianos.css, which carries the shared collection system (hero, filters, grid, cards,
+   empty state) and the featured presentation (02b). This file holds only what differs on this page:
+   the hero photograph, the card frame for a future multi-model grid, section 03 and the closing.
+   Layout only: no new font sizes, colours or spacing values — shared tokens and role classes throughout. */
+
+/* =========================================================
+   01 · Hero — same grid, proportions and height as «Καινούργια» / «Μεταχειρισμένα»
+   ========================================================= */
+.ep-hero__media img { object-position: 42% 60%; }
+
+/* =========================================================
+   02 · Cards (future grid, from two models on) — real photographs in a room, so they are framed like
+   the used pianos: 3:2, cropped, never blended. The featured presentation (one model) is in new-pianos.css.
+   ========================================================= */
+.ep-collection .np-card__media { aspect-ratio: 3 / 2; overflow: hidden; }
+.ep-collection .np-card__media img {
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  mix-blend-mode: normal;
+}
+
+/* =========================================================
+   03 · Μουσική και τεχνολογία (v1.1) — one editorial unit on Deep Charcoal
+   Text area (5/12): eyebrow, title and paragraph on one left axis, no indents, no rules.
+   Photograph: starts after one open column (7/12 → right edge of the page, like the hero), 2:1,
+   text centred vertically on it. Tablet and mobile: text first, then the photograph, 9:4.
+   Spacing = the shared tokens of the other collection sections (title → body --s-6).
+   ========================================================= */
+.ep-tech { padding-block: var(--section-y); overflow: hidden; }
+.ep-tech__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  align-items: center;
+}
+.ep-tech__text { grid-column: 1 / span 5; }
+.ep-tech__body { margin-top: var(--s-6); }
+.ep-tech__media {
+  grid-column: 7 / -1;
+  margin-right: calc(-1 * var(--gutter) - max(0px, (100vw - var(--max-w)) / 2));
+  aspect-ratio: 2 / 1;
+  background: var(--graphite);
+}
+.ep-tech__media img { object-position: 55% 50%; }
+
+@media (max-width: 64rem) {
+  .ep-tech__grid { row-gap: var(--s-7); }
+  .ep-tech__text { grid-column: 1 / span 9; }
+  .ep-tech__media { grid-column: 3 / -1; aspect-ratio: 9 / 4; }
+}
+@media (max-width: 47.9375rem) {
+  .ep-tech__text { grid-column: 1 / -1; }
+  .ep-tech__media { grid-column: 1 / -1; margin-inline: calc(-1 * var(--gutter)); }
+}
+
+/* 04 · Επικοινωνία (v1.1): the shared .np-visit closing (css/new-pianos.css) — no page-specific rules. */

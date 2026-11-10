@@ -1,0 +1,211 @@
+/* Nikotian — Product Detail Template v1.0 (piano.html)
+   Layout only. Text takes its type from the shared roles (style.css «Typography roles» + tokens.css):
+   .crumbs · .title (--md) · .t-meta · .t-caption · .t-body · .t-meta-value · .t-label-rule · .btn · .link-arrow.
+   No new font sizes, no new colours. Containers, gutters and breakpoints are those of the collection pages
+   (12 columns, --gutter, --max-w; 64rem · 56rem · 47.9375rem). Loaded by piano.html and guitar.html. */
+
+/* Current collection in the «Πιάνα» dropdown (product page = inside that collection) */
+.nav__sub a[aria-current="true"] { color: var(--red); }
+
+/* =========================================================
+   01 · Breadcrumb + main presentation
+   Desktop: gallery 7/12 · one open column · information 4/12, vertically centred on the gallery.
+   ========================================================= */
+.pd-hero {
+  background: var(--ivory);
+  padding-top: calc(var(--header-h) + var(--s-6));
+  padding-bottom: clamp(3rem, 2rem + 3vw, 5rem);
+}
+.pd-crumbs { margin-bottom: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); min-height: calc(var(--meta-size) * 1.65); }
+
+.pd-main {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  align-items: center;
+}
+.pd-gallery { grid-column: 1 / span 7; min-width: 0; }
+.pd-info { grid-column: 9 / -1; min-width: 0; }
+.pd-main--no-media .pd-info { grid-column: 1 / span 7; }
+
+/* --- Gallery: one stage, thumbnails only from two photographs on --- */
+.pd-gallery__stage {
+  position: relative;
+  aspect-ratio: 5 / 4;
+  overflow: hidden;
+  background: var(--beige);
+  touch-action: pan-y;
+}
+.pd-gallery__slide {
+  position: absolute; inset: 0;
+  margin: 0;
+  opacity: 0; visibility: hidden;
+  transition: opacity 600ms var(--ease-out), visibility 0s linear 600ms;
+}
+.pd-gallery__slide.is-active { opacity: 1; visibility: visible; transition: opacity 600ms var(--ease-out), visibility 0s; }
+/* cut-out instrument on white: shown whole, with room around it; white becomes Warm Beige (as the cards) */
+.pd-gallery__slide--contain .pd-gallery__img {
+  position: absolute; inset: 7% 10%;
+  width: 80%; height: 86%;
+  object-fit: contain;
+  mix-blend-mode: multiply;
+}
+/* photograph: fills the frame */
+.pd-gallery__slide--cover .pd-gallery__img { width: 100%; height: 100%; object-fit: cover; }
+/* showroom photograph (v2.0): shown whole; the stage takes its proportions (js), portrait photos sit centred */
+.pd-gallery__slide--photo .pd-gallery__img { width: 100%; height: 100%; object-fit: contain; }
+
+.pd-thumbs { display: flex; flex-wrap: wrap; gap: var(--s-3); margin-top: var(--s-3); }
+.pd-thumbs__btn {
+  position: relative; display: block;
+  width: 5.5rem; aspect-ratio: 4 / 3;
+  padding: 0; border: 0; border-radius: var(--radius);
+  background: var(--beige);
+  overflow: hidden;
+  cursor: pointer;
+  opacity: .62;
+  transition: opacity var(--dur) var(--ease-out);
+}
+.pd-thumbs__btn::after {   /* current: one graphite hairline under the thumbnail */
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+  background: var(--graphite);
+  transform: scaleX(0); transform-origin: left;
+  transition: transform var(--dur) var(--ease-out);
+}
+.pd-thumbs__btn:hover { opacity: 1; }
+.pd-thumbs__btn[aria-current="true"] { opacity: 1; }
+.pd-thumbs__btn[aria-current="true"]::after { transform: none; }
+.pd-thumbs__btn img { width: 100%; height: 100%; object-fit: cover; }
+.pd-thumbs--dense { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); }   /* v2.0: 7+ photos on one row */
+.pd-thumbs--dense .pd-thumbs__btn { width: 100%; }
+.pd-thumbs__btn--contain img { position: absolute; inset: 8% 12%; width: 76%; height: 84%; object-fit: contain; mix-blend-mode: multiply; }
+
+/* --- Information --- */
+.pd-info__title { margin-top: var(--s-1); }
+.pd-info__type { margin-top: var(--s-2); }
+.pd-info__text { display: grid; gap: var(--s-4); margin-top: var(--s-5); }
+.pd-info__actions {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: var(--s-4) var(--s-6);
+  margin-top: var(--s-6);
+}
+
+.js .pd-crumbs ol, .js .pd-info > * { animation: rise 1000ms var(--ease-out) both; }
+.js .pd-info > :nth-child(2) { animation-delay: 80ms; }
+.js .pd-info > :nth-child(3) { animation-delay: 160ms; }
+.js .pd-info > :nth-child(4) { animation-delay: 240ms; }
+.js .pd-info > :nth-child(5) { animation-delay: 320ms; }
+.js .pd-gallery { animation: pd-appear 1200ms var(--ease-out) both; }
+@keyframes pd-appear { from { opacity: 0; } to { opacity: 1; } }
+
+/* =========================================================
+   02 · Description · technical characteristics · technical brochure
+   Description 6/12 on the left; specs and brochure 5/12 on the right. Each block exists only with data.
+   ========================================================= */
+.pd-details {
+  background: var(--ivory);
+  border-top: 1px solid var(--line-soft);
+  padding-block: clamp(3rem, 2rem + 3vw, 5.5rem);
+}
+.pd-details__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  row-gap: var(--s-7);
+  align-items: start;
+}
+.pd-desc { grid-column: 1 / span 6; }
+.pd-aside { grid-column: 8 / -1; display: grid; gap: var(--s-7); }
+.pd-details__grid--aside-only .pd-aside { grid-column: 1 / span 7; }
+.pd-details__grid--text-only .pd-desc { grid-column: 1 / span 7; }
+
+.pd-label { margin-bottom: var(--s-2); }
+.pd-desc .pd-label { margin-bottom: var(--s-5); }
+.pd-desc__text { display: grid; gap: var(--s-4); }
+
+.pd-specs__row {
+  display: grid;
+  grid-template-columns: minmax(7rem, 2fr) minmax(0, 3fr);
+  column-gap: var(--s-5);
+  align-items: baseline;
+  padding-block: .8rem;
+  border-bottom: 1px solid var(--line);
+}
+.pd-specs__row dd { margin: 0; overflow-wrap: anywhere; }
+
+.pd-doc__meta { margin-top: var(--s-3); }
+.pd-doc__link { margin-top: var(--s-4); }
+.pd-doc__link:hover .link-arrow__icon { transform: translate(2px, -2px); }
+
+/* =========================================================
+   01b · Portrait gallery — vertical instruments (guitar.html, Guitar Product Details v1.0)
+   Same position, thumbnails and behaviour as the piano gallery; only the frame changes:
+   · a 4:5 portrait stage, centred in the gallery columns, no taller than the viewport allows,
+     so the whole guitar (head, neck, body) is in view without scrolling;
+   · the stage takes the studio colour of each photograph (images[].backdrop → --backdrop), exactly as the
+     collection cards, so the photograph has no visible edge and its colours are not blended or altered;
+   · the photograph is contained and never enlarged beyond its own pixels (max-width/max-height, size auto).
+   ========================================================= */
+.pd-gallery--portrait .pd-gallery__stage {
+  aspect-ratio: 4 / 5;
+  width: min(100%, calc(min(66svh, 46rem) * .8));
+  margin-inline: auto;
+}
+.pd-gallery--portrait .pd-thumbs { justify-content: center; }
+.pd-gallery__slide--portrait {
+  display: flex; align-items: center; justify-content: center;
+  background: var(--backdrop, var(--beige));
+}
+.pd-gallery__slide--portrait .pd-gallery__img {
+  width: auto; height: auto;
+  max-width: 80%; max-height: 88%;
+  object-fit: contain;
+}
+.pd-thumbs__btn--portrait { width: 3.75rem; aspect-ratio: 3 / 4; background: var(--backdrop, var(--beige)); }
+.pd-thumbs__btn--portrait img { position: absolute; inset: 8% 14%; width: 72%; height: 84%; object-fit: contain; }
+
+/* =========================================================
+   03 · Back to the collection
+   ========================================================= */
+.pd-back { border-top: 1px solid var(--line-soft); padding-block: var(--s-6) clamp(3rem, 2rem + 2.5vw, 4.5rem); }
+.pd-back__link:hover .link-arrow__icon { transform: translateX(-4px); }
+
+/* --- Model not found / not published --- */
+.pd-missing { grid-column: 1 / span 8; padding-bottom: var(--s-8); }
+.pd-missing__text { margin-top: var(--s-5); }
+.pd-missing__links { display: flex; flex-wrap: wrap; gap: var(--s-4) var(--s-6); margin-top: var(--s-6); }
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media (max-width: 64rem) {
+  .pd-info { grid-column: 8 / -1; }
+  .pd-desc { grid-column: 1 / span 6; }
+  .pd-aside { grid-column: 8 / -1; }
+}
+
+/* Tablet portrait & mobile: one column — gallery, then information; description, then specs */
+@media (max-width: 56rem) {
+  .pd-gallery, .pd-info, .pd-main--no-media .pd-info { grid-column: 1 / -1; }
+  .pd-info { margin-top: var(--s-6); max-width: 36rem; }
+  .pd-gallery__stage { aspect-ratio: 4 / 3; }
+  .pd-desc, .pd-aside,
+  .pd-details__grid--aside-only .pd-aside,
+  .pd-details__grid--text-only .pd-desc { grid-column: 1 / -1; }
+  .pd-aside { max-width: 36rem; }
+  .pd-missing { grid-column: 1 / -1; }
+}
+
+@media (max-width: 56rem) {
+  .pd-gallery--portrait .pd-gallery__stage { aspect-ratio: 4 / 5; }
+}
+
+@media (max-width: 47.9375rem) {
+  .pd-gallery__stage { margin-inline: calc(-1 * var(--gutter)); }
+  .pd-gallery--portrait .pd-gallery__stage { width: auto; max-height: 82svh; margin-inline: calc(-1 * var(--gutter)); }
+  .pd-thumbs__btn { width: 4.5rem; }
+  .pd-thumbs__btn--portrait { width: 3.25rem; }
+  .pd-thumbs--dense { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .pd-info__actions { display: grid; justify-items: start; gap: var(--s-4); }
+  .pd-info__cta { width: 100%; white-space: normal; text-align: center; }
+}

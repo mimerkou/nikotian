@@ -1,0 +1,111 @@
+/* Nikotian — design tokens (homepage final prototype)
+   Shared system for all future templates. Six base colours only; the rest are
+   transparent variants of them, plus one lighter tone of Heritage Red for dark backgrounds. */
+
+:root {
+  /* Base palette */
+  --ivory: #F7F4EE;
+  --beige: #EDE7DC;          /* Warm Beige */
+  --charcoal: #182225;       /* Deep Charcoal: hero, knowledge, footer */
+  --graphite: #1F1D1B;       /* text */
+  --walnut: #6E4F3A;
+  --red: #A3262A;            /* Heritage Red: 6.7:1 on ivory, 6.0:1 on beige */
+
+  /* Derived (variants of the base palette) */
+  --red-hover: #8C1F23;      /* darker Heritage Red for hover */
+  --red-on-dark: #E06460;    /* lighter Heritage Red for small text on charcoal: 4.8:1 (AA) */
+  --red-on-dark-lg: #D04A4D; /* lighter Heritage Red for display titles on charcoal: 3.7:1 (AA large text) */
+  --text: var(--graphite);
+  --text-muted: rgba(31, 29, 27, .74);       /* ≈ 5.6:1 on ivory */
+  --text-on-dark: var(--ivory);
+  --text-on-dark-muted: rgba(247, 244, 238, .76);
+  --line: rgba(31, 29, 27, .16);
+  --line-strong: rgba(31, 29, 27, .32);
+  --line-on-dark: rgba(247, 244, 238, .18);
+
+  /* Type */
+  --font-sans: "Commissioner", "Noto Sans", "Segoe UI", system-ui, sans-serif;
+  --font-serif: "Literata", "Noto Serif", Georgia, serif;
+
+  --fs-eyebrow: .75rem;                                   /* 12, uppercase */
+  --fs-sm: .875rem;                                       /* 14 */
+  --fs-base: clamp(1rem, .97rem + .15vw, 1.0625rem);      /* 16–17 */
+  --fs-lead: clamp(1.0625rem, 1rem + .3vw, 1.25rem);      /* 17–20 */
+  --fs-h3: clamp(1.0625rem, 1rem + .25vw, 1.1875rem);
+  --fs-title-md: clamp(2rem, 1.4rem + 1.8vw, 3rem);
+  --fs-title: clamp(2.25rem, 1.35rem + 2.7vw, 4rem);      /* section titles */
+  --fs-hero: clamp(2.75rem, 1.5rem + 4.2vw, 5.5rem);
+  --fs-collection: clamp(1.375rem, 1.2rem + .7vw, 1.875rem);
+  --fs-year: clamp(1.375rem, 1.2rem + .6vw, 1.75rem);
+
+  /* Space */
+  --s-1: .25rem;
+  --s-2: .5rem;
+  --s-3: .75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --section-y: clamp(4.5rem, 2.5rem + 6vw, 8.5rem);
+  --gutter: clamp(1.25rem, .5rem + 3.2vw, 4rem);
+  --max-w: 82rem;
+
+  /* Shape & motion */
+  --radius: 2px;
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --ease: cubic-bezier(.4, 0, .2, 1);
+  --dur-fast: 200ms;
+  --dur: 350ms;
+  --dur-slow: 900ms;
+
+  /* Motion system (Fine Tuning v1.0) — one vocabulary for hovers, links and images.
+     Quiet, short, no bounce. Same behaviour for every visitor (no prefers-reduced-motion condition). */
+  --ease-soft: cubic-bezier(.33, 0, .2, 1);   /* even start, long gentle settle: images */
+  --ease-in: cubic-bezier(.5, 0, .75, 0);     /* leaving: the underline that slides away */
+  --dur-underline-out: 180ms;                 /* underline: old line leaves to the right… */
+  --dur-underline-in: 240ms;                  /* …new line drawn from the left (total ≈ 400ms) */
+  --dur-image: 600ms;                         /* image zoom on hover (in and out) */
+  --scale-image: 1.03;                        /* gentle: never a visible jump */
+  --nav-close-delay: 140ms;                   /* desktop dropdown waits before it starts to close */
+
+  --header-h: 5rem;
+
+  /* ---------------------------------------------------------
+     Typography roles — one rule per role, for every page.
+     Values are those of the approved homepage. Pages use the role
+     classes in style.css («Typography roles»); a section never sets
+     its own font-size or colour for text that has one of these roles.
+     Dark surfaces switch the colours through .surface-dark.
+     --------------------------------------------------------- */
+  --body-size: var(--fs-base);          /* paragraphs, intros, leads: 16–17px */
+  --body-lh: 1.65;
+  --body-color: var(--text-muted);
+  --caption-size: var(--fs-sm);         /* figure captions: 14px */
+  --caption-lh: 1.55;
+  --caption-color: var(--text-muted);
+  --meta-size: var(--fs-eyebrow);       /* labels, datelines, breadcrumbs: 12px */
+  --meta-weight: 500;
+  --meta-tracking: .03em;
+  --meta-color: var(--text-muted);
+  --meta-value-size: var(--fs-base);    /* values next to a label (contact, facts) */
+  --meta-value-lh: 1.5;
+  --meta-value-color: var(--graphite);
+  --year-size: var(--fs-year);          /* timeline years: Literata, 22–28px */
+  --year-lh: 1.15;
+  --event-size: var(--fs-sm);           /* timeline event titles */
+  --event-weight: 600;
+  --event-lh: 1.35;
+  --event-text-size: var(--fs-sm);      /* timeline descriptions */
+  --event-text-lh: 1.55;
+  --coda-size: var(--fs-lead);          /* one closing line in Literata italic */
+  --statement-size: var(--fs-title-md); /* editorial statement */
+  --heading-color: var(--graphite);
+  --strong-color: var(--graphite);
+  --accent: var(--red);
+  --line-soft: rgba(31, 29, 27, .12);   /* header rule on light pages */
+}
+
+@media (max-width: 67.5rem) {
+  :root { --header-h: 4.25rem; }
+}

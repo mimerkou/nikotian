@@ -1,0 +1,478 @@
+[
+  {
+    "id": "guitar-jh-01",
+    "slug": "juan-hernandez-sonata",
+    "url": "/kitheres/juan-hernandez-sonata/",
+    "detailPage": "guitar.html?model=juan-hernandez-sonata",
+    "instrument": "guitar",
+    "category": "guitar",
+    "categoryLabel": "Κλασική κιθάρα",
+    "categoryUrl": "/kitheres/",
+    "condition": null,
+    "manufacturer": "Juan Hernández",
+    "manufacturerSlug": "juan-hernandez",
+    "model": "Sonata",
+    "name": "Juan Hernández Sonata",
+    "originalName": "Juan Hernandez Sonata",
+    "type": null,
+    "typeLabel": null,
+    "images": [
+      {
+        "src": "assets/photos/guitars/juan-hernandez-sonata-backdrop.jpg",
+        "width": 400,
+        "height": 759,
+        "derived": "Φόντο στούντιο (234, 234, 232) και σκιά δαπέδου → #983302, όπως οι υπόλοιπες Juan Hernández· το όργανο αμετάβλητο (v1.1)",
+        "alt": "Juan Hernández Sonata, κλασική κιθάρα, μπροστινή όψη",
+        "role": "primary",
+        "fit": "contain",
+        "backdrop": "#983302",
+        "source": "juan-hernandez-01.jpg"
+      }
+    ],
+    "description": [],
+    "descriptionQuestioned": [],
+    "specs": [
+      {
+        "label": "Καπάκι",
+        "value": "Cedar (Thuja Plicata) or Spruce (Picea Abies)",
+        "source": "TXT («Top»)",
+        "show": true
+      },
+      {
+        "label": "Πλάτη και πλευρές",
+        "value": "Ovengkol (Guibourtia ehie J.Leonard)",
+        "source": "TXT («Body»)",
+        "show": true
+      },
+      {
+        "label": "Ταστιέρα",
+        "value": "Ebony (Diospyros Crassiflora Hiern)",
+        "source": "TXT («Fingerboard»)",
+        "show": true
+      }
+    ],
+    "specsOriginal": [
+      {
+        "label": "Top",
+        "value": "Cedar (Thuja Plicata) or Spruce (Picea Abies)"
+      },
+      {
+        "label": "Body",
+        "value": "Ovengkol (Guibourtia ehie J.Leonard)"
+      },
+      {
+        "label": "Fingerboard",
+        "value": "Ebony (Diospyros Crassiflora Hiern)"
+      }
+    ],
+    "pdf": null,
+    "pageImages": [
+      {
+        "src": "assets/photos/guitars/juan-hernandez-sonata.jpg",
+        "width": 400,
+        "height": 759,
+        "role": "hero",
+        "fit": "contain",
+        "source": "juan-hernandez-01.jpg",
+        "alt": "Κλασική κιθάρα Juan Hernández Sonata: καπάκι σε φυσικό ξύλο, ροζέτα γύρω από το στόμα και σκούρα ταστιέρα",
+        "derived": "Φόντο (234, 234, 232) → λευκό, για multiply σε Warm Beige (hero)· το όργανο αμετάβλητο"
+      }
+    ],
+    "source": {
+      "txt": "juan-hernandez-01.txt",
+      "image": "juan-hernandez-01.jpg",
+      "folder": "01. juan hernandez"
+    },
+    "notes": [
+      "Το TXT γράφει «Body: Ovengkol»: στις κλασικές κιθάρες αυτό συνήθως αφορά πλάτη και πλευρές. Ετικέτα «Πλάτη και πλευρές» — προς επιβεβαίωση."
+    ],
+    "raw": "Juan Hernandez Sonata\n\nTop:\nCedar (Thuja Plicata) or Spruce (Picea Abies)\n\nBody:\nOvengkol (Guibourtia ehie J.Leonard)\n\nFingerboard:\nEbony (Diospyros Crassiflora Hiern)\n",
+    "order": 1
+  },
+  {
+    "id": "guitar-jh-02",
+    "slug": "juan-hernandez-maestro",
+    "url": "/kitheres/juan-hernandez-maestro/",
+    "detailPage": "guitar.html?model=juan-hernandez-maestro",
+    "instrument": "guitar",
+    "category": "guitar",
+    "categoryLabel": "Κλασική κιθάρα",
+    "categoryUrl": "/kitheres/",
+    "condition": null,
+    "manufacturer": "Juan Hernández",
+    "manufacturerSlug": "juan-hernandez",
+    "model": "Maestro",
+    "name": "Juan Hernández Maestro",
+    "originalName": "Juan Hernandez | Maestro",
+    "type": null,
+    "typeLabel": null,
+    "images": [
+      {
+        "src": "assets/photos/guitars/juan-hernandez-maestro.jpg",
+        "width": 400,
+        "height": 935,
+        "alt": "Juan Hernández Maestro, κλασική κιθάρα, μπροστινή όψη",
+        "role": "primary",
+        "fit": "contain",
+        "backdrop": "#983302",
+        "source": "juan-hernandez-02.jpg"
+      }
+    ],
+    "description": [
+      "Επιλογή της κορυφής ερυθρελατών ή κέδρων. Γαλλικό φινίρισμα.",
+      "Πλάτη και πλευρές από τριανταφυλλιά Αμαζονίου. Ταστιέρα παραδοσιακή ή αυξημένη."
+    ],
+    "descriptionQuestioned": [],
+    "specs": [],
+    "specsOriginal": [],
+    "pdf": null,
+    "source": {
+      "txt": "juan-hernandez-02.txt",
+      "image": "juan-hernandez-02.jpg",
+      "folder": "01. juan hernandez"
+    },
+    "notes": [],
+    "raw": "Juan Hernandez | Maestro\n\nΕπιλογή της κορυφής ερυθρελατών ή κέδρων. Γαλλικό φινίρισμα.\n\nΠλάτη και πλευρές από τριανταφυλλιά Αμαζονίου. Ταστιέρα παραδοσιακή ή αυξημένη.\n",
+    "order": 2
+  },
+  {
+    "id": "guitar-jh-03",
+    "slug": "juan-hernandez-concierto",
+    "url": "/kitheres/juan-hernandez-concierto/",
+    "detailPage": "guitar.html?model=juan-hernandez-concierto",
+    "instrument": "guitar",
+    "category": "guitar",
+    "categoryLabel": "Κλασική κιθάρα",
+    "categoryUrl": "/kitheres/",
+    "condition": null,
+    "manufacturer": "Juan Hernández",
+    "manufacturerSlug": "juan-hernandez",
+    "model": "Concierto",
+    "name": "Juan Hernández Concierto",
+    "originalName": "Juan Hernandez | Concierto",
+    "type": null,
+    "typeLabel": null,
+    "images": [
+      {
+        "src": "assets/photos/guitars/juan-hernandez-concierto.jpg",
+        "width": 400,
+        "height": 878,
+        "alt": "Juan Hernández Concierto, κλασική κιθάρα, μπροστινή όψη",
+        "role": "primary",
+        "fit": "contain",
+        "backdrop": "#983302",
+        "source": "juan-hernandez-03.jpg"
+      }
+    ],
+    "description": [
+      "Επιλογή της κορυφής ερυθρελατών ή κέδρων.",
+      "Πλάτη και πλευρές από Ινδική τριανταφυλλιά. Πρόσθετη εσωτερική κατασκευή. Πρόσθετο νίτρο βερνίκι."
+    ],
+    "descriptionQuestioned": [],
+    "specs": [],
+    "specsOriginal": [],
+    "pdf": null,
+    "source": {
+      "txt": "juan-hernandez-03.txt",
+      "image": "juan-hernandez-03.jpg",
+      "folder": "01. juan hernandez"
+    },
+    "notes": [],
+    "raw": "Juan Hernandez | Concierto\n\nΕπιλογή της κορυφής ερυθρελατών ή κέδρων.\n\nΠλάτη και πλευρές από Ινδική τριανταφυλλιά.  Πρόσθετη εσωτερική κατασκευή. Πρόσθετο νίτρο βερνίκι.\n",
+    "order": 3
+  },
+  {
+    "id": "guitar-jh-04",
+    "slug": "juan-hernandez-profesor",
+    "url": "/kitheres/juan-hernandez-profesor/",
+    "detailPage": "guitar.html?model=juan-hernandez-profesor",
+    "instrument": "guitar",
+    "category": "guitar",
+    "categoryLabel": "Κλασική κιθάρα",
+    "categoryUrl": "/kitheres/",
+    "condition": null,
+    "manufacturer": "Juan Hernández",
+    "manufacturerSlug": "juan-hernandez",
+    "model": "Profesor",
+    "name": "Juan Hernández Profesor",
+    "originalName": "Juan Hernandez | Profesor",
+    "type": null,
+    "typeLabel": null,
+    "images": [
+      {
+        "src": "assets/photos/guitars/juan-hernandez-profesor.jpg",
+        "width": 400,
+        "height": 962,
+        "alt": "Juan Hernández Profesor, κλασική κιθάρα, μπροστινή όψη",
+        "role": "primary",
+        "fit": "contain",
+        "backdrop": "#983302",
+        "source": "juan-hernandez-04.jpg"
+      }
+    ],
+    "description": [
+      "Επιλογή της κορυφής ερυθρελατών ή κέδρων. Πλάτη και πλευρές από Ινδική τριανταφυλλιά."
+    ],
+    "descriptionQuestioned": [],
+    "specs": [],
+    "specsOriginal": [],
+    "pdf": null,
+    "source": {
+      "txt": "juan-hernandez-04.txt",
+      "image": "juan-hernandez-04.jpg",
+      "folder": "01. juan hernandez"
+    },
+    "notes": [],
+    "raw": "Juan Hernandez | Profesor\n\nΕπιλογή της κορυφής ερυθρελατών ή κέδρων. Πλάτη και πλευρές από Ινδική τριανταφυλλιά. \n",
+    "order": 4
+  },
+  {
+    "id": "guitar-jh-05",
+    "slug": "juan-hernandez-estudio-clasica",
+    "url": "/kitheres/juan-hernandez-estudio-clasica/",
+    "detailPage": "guitar.html?model=juan-hernandez-estudio-clasica",
+    "instrument": "guitar",
+    "category": "guitar",
+    "categoryLabel": "Κλασική κιθάρα",
+    "categoryUrl": "/kitheres/",
+    "condition": null,
+    "manufacturer": "Juan Hernández",
+    "manufacturerSlug": "juan-hernandez",
+    "model": "Estudio Clasica",
+    "name": "Juan Hernández Estudio Clasica",
+    "originalName": "Juan Hernandez | Estudio Clasica",
+    "type": null,
+    "typeLabel": null,
+    "images": [
+      {
+        "src": "assets/photos/guitars/juan-hernandez-estudio-clasica-front.jpg",
+        "width": 201,
+        "height": 484,
+        "crop": [
+          0,
+          0,
+          201,
+          484
+        ],
+        "derived": "Μπροστινή όψη από τη φωτογραφία μπροστινής και πίσω όψης",
+        "alt": "Juan Hernández Estudio Clasica, κλασική κιθάρα, μπροστινή όψη",
+        "role": "primary",
+        "fit": "contain",
+        "backdrop": "#983302",
+        "source": "juan-hernandez-05.jpg"
+      },
+      {
+        "src": "assets/photos/guitars/juan-hernandez-estudio-clasica.jpg",
+        "width": 400,
+        "height": 484,
+        "alt": "Juan Hernández Estudio Clasica, κλασική κιθάρα, μπροστινή και πίσω όψη",
+        "role": "gallery",
+        "fit": "contain",
+        "backdrop": "#983302",
+        "source": "juan-hernandez-05.jpg"
+      }
+    ],
+    "description": [
+      "Επιλογή της κορυφής των ερυθρελατών ή κέδρων. Πλάτη και πλευρές από Mongoy."
+    ],
+    "descriptionQuestioned": [],
+    "specs": [],
+    "specsOriginal": [],
+    "pdf": null,
+    "source": {
+      "txt": "juan-hernandez-05.txt",
+      "image": "juan-hernandez-05.jpg",
+      "folder": "01. juan hernandez"
+    },
+    "notes": [
+      "Η φωτογραφία δείχνει μπροστινή και πίσω όψη. Η κάρτα δείχνει την μπροστινή όψη· ολόκληρη η φωτογραφία είναι στο images[1] (και στην ενότητα 03 της σελίδας).",
+      "Το TXT γράφει «Estudio Clasica» (χωρίς τόνο). Διατηρείται όπως είναι."
+    ],
+    "raw": "Juan Hernandez | Estudio Clasica\n\nΕπιλογή της κορυφής των ερυθρελατών ή κέδρων. Πλάτη και πλευρές από Mongoy.\n",
+    "order": 5
+  },
+  {
+    "id": "guitar-az-01",
+    "slug": "azahar-model-142",
+    "url": "/kitheres/azahar-model-142/",
+    "detailPage": "guitar.html?model=azahar-model-142",
+    "instrument": "guitar",
+    "category": "guitar",
+    "categoryLabel": "Κλασική κιθάρα",
+    "categoryUrl": "/kitheres/",
+    "condition": null,
+    "manufacturer": "Azahar",
+    "manufacturerSlug": "azahar",
+    "model": "Model 142",
+    "name": "Azahar Model 142",
+    "originalName": "Azahar - Model 142",
+    "type": null,
+    "typeLabel": null,
+    "images": [
+      {
+        "src": "assets/photos/guitars/azahar-model-142.jpg",
+        "width": 400,
+        "height": 1002,
+        "alt": "Azahar Model 142, κλασική κιθάρα, όψη υπό γωνία",
+        "role": "primary",
+        "fit": "contain",
+        "backdrop": "#394761",
+        "source": "azahar-01.jpg"
+      }
+    ],
+    "description": [
+      "Κιθάρα από Ινδικό ξύλο τριανταφυλλιάς, πρόσοψη από κέδρο με μωσαϊκό στο στόμα, ηχείο από Ebony, διακοσμημένη με διπλής όψης ξύλο τριανταφυλιάς και στις δύο πλευρές."
+    ],
+    "descriptionQuestioned": [],
+    "specs": [],
+    "specsOriginal": [],
+    "pdf": null,
+    "source": {
+      "txt": "azahar-01.txt",
+      "image": "azahar-01.jpg",
+      "folder": "02. azahar"
+    },
+    "notes": [],
+    "raw": "Azahar - Model 142\n\nΚιθάρα από Ινδικό ξύλο τριανταφυλλιάς, πρόσοψη από κέδρο με μωσαϊκό στο στόμα, ηχείο από Ebony, διακοσμημένη με διπλής όψης ξύλο τριανταφυλιάς και στις δύο πλευρές.\n",
+    "order": 6
+  },
+  {
+    "id": "guitar-az-02",
+    "slug": "azahar-model-140",
+    "url": "/kitheres/azahar-model-140/",
+    "detailPage": "guitar.html?model=azahar-model-140",
+    "instrument": "guitar",
+    "category": "guitar",
+    "categoryLabel": "Κλασική κιθάρα",
+    "categoryUrl": "/kitheres/",
+    "condition": null,
+    "manufacturer": "Azahar",
+    "manufacturerSlug": "azahar",
+    "model": "Model 140",
+    "name": "Azahar Model 140",
+    "originalName": "Azahar | Model 140",
+    "type": null,
+    "typeLabel": null,
+    "images": [
+      {
+        "src": "assets/photos/guitars/azahar-model-140.jpg",
+        "width": 400,
+        "height": 1002,
+        "alt": "Azahar Model 140, κλασική κιθάρα, όψη υπό γωνία",
+        "role": "primary",
+        "fit": "contain",
+        "backdrop": "#394761",
+        "source": "azahar-02.jpg"
+      }
+    ],
+    "description": [
+      "Κιθάρα από μεξικάνικο ξύλο τριανταφυλλιάς, πρόσοψη από κέδρο, με μωσαϊκό στο στόμα, ηχείο από Ebony, διακοσμημένη με διπλής όψης ξύλο τριανταφυλιάς και στις δύο πλευρές."
+    ],
+    "descriptionQuestioned": [],
+    "specs": [],
+    "specsOriginal": [],
+    "pdf": null,
+    "source": {
+      "txt": "azahar-02.txt",
+      "image": "azahar-02.jpg",
+      "folder": "02. azahar"
+    },
+    "notes": [],
+    "raw": "Azahar | Model 140\n\nΚιθάρα από μεξικάνικο ξύλο τριανταφυλλιάς, πρόσοψη από κέδρο, με μωσαϊκό στο στόμα, ηχείο από Ebony, διακοσμημένη με διπλής όψης ξύλο τριανταφυλιάς και στις δύο πλευρές.\n",
+    "order": 7
+  },
+  {
+    "id": "guitar-az-03",
+    "slug": "azahar-model-105",
+    "url": "/kitheres/azahar-model-105/",
+    "detailPage": "guitar.html?model=azahar-model-105",
+    "instrument": "guitar",
+    "category": "guitar",
+    "categoryLabel": "Κλασική κιθάρα",
+    "categoryUrl": "/kitheres/",
+    "condition": null,
+    "manufacturer": "Azahar",
+    "manufacturerSlug": "azahar",
+    "model": "Model 105",
+    "name": "Azahar Model 105",
+    "originalName": "Azahar | Model 105",
+    "type": null,
+    "typeLabel": null,
+    "images": [
+      {
+        "src": "assets/photos/guitars/azahar-model-105.jpg",
+        "width": 400,
+        "height": 1002,
+        "alt": "Azahar Model 105, κλασική κιθάρα, όψη υπό γωνία",
+        "role": "primary",
+        "fit": "contain",
+        "backdrop": "#394761",
+        "source": "azahar-03.jpg"
+      }
+    ],
+    "description": [
+      "Κιθάρα από ξύλο καρυδιάς, solid in cedar, μπράτσο από μαόνι, ηχείο από ξύλο τριανταφυλλιάς με διπλή λευκή πρόσοψη, ξύλο από sicomoro γύρω από τα πλαίσια κι από τις δύο πλευρές."
+    ],
+    "descriptionQuestioned": [],
+    "specs": [],
+    "specsOriginal": [],
+    "pdf": null,
+    "source": {
+      "txt": "azahar-03.txt",
+      "image": "azahar-03.jpg",
+      "folder": "02. azahar"
+    },
+    "notes": [],
+    "raw": "Azahar | Model 105\n\nΚιθάρα από ξύλο καρυδιάς, solid in cedar, μπράτσο από μαόνι, ηχείο από ξύλο τριανταφυλλιάς με διπλή λευκή πρόσοψη, ξύλο από sicomoro γύρω από τα πλαίσια κι από τις δύο πλευρές.\n",
+    "order": 8
+  },
+  {
+    "id": "guitar-az-04",
+    "slug": "azahar-model-102",
+    "url": "/kitheres/azahar-model-102/",
+    "detailPage": "guitar.html?model=azahar-model-102",
+    "instrument": "guitar",
+    "category": "guitar",
+    "categoryLabel": "Κλασική κιθάρα",
+    "categoryUrl": "/kitheres/",
+    "condition": null,
+    "manufacturer": "Azahar",
+    "manufacturerSlug": "azahar",
+    "model": "Model 102",
+    "name": "Azahar Model 102",
+    "originalName": "Azahar | Model 102",
+    "type": null,
+    "typeLabel": null,
+    "images": [
+      {
+        "src": "assets/photos/guitars/azahar-model-102.jpg",
+        "width": 400,
+        "height": 1002,
+        "alt": "Azahar Model 102, κλασική κιθάρα, όψη υπό γωνία",
+        "role": "primary",
+        "fit": "contain",
+        "backdrop": "#394761",
+        "source": "azahar-04.jpg"
+      }
+    ],
+    "description": [
+      "Κιθάρα από ξύλο etimoe, μπράτσο από μαόνι, διαπασόν από ξύλο τριανταφυλλιάς και μαύρες χρωματισμένες πλευρές."
+    ],
+    "descriptionQuestioned": [
+      "Πλάτη και πλευρές από τριανταφυλλιά Αμαζονίου. Ταστιέρα παραδοσιακή ή αυξημένη."
+    ],
+    "specs": [],
+    "specsOriginal": [],
+    "pdf": null,
+    "source": {
+      "txt": "azahar-04.txt",
+      "image": "azahar-04.jpg",
+      "folder": "02. azahar"
+    },
+    "notes": [
+      "Η δεύτερη παράγραφος του TXT («Πλάτη και πλευρές από τριανταφυλλιά Αμαζονίου. Ταστιέρα παραδοσιακή ή αυξημένη.») είναι αυτούσια η περιγραφή του Juan Hernández Maestro και έρχεται σε αντίφαση με την πρώτη («ξύλο etimoe»). Πιθανό λάθος επικόλλησης: δεν μπαίνει στο description· κρατιέται στο raw και στο descriptionQuestioned μέχρι να επιβεβαιωθεί."
+    ],
+    "raw": "Azahar | Model 102\n\nΚιθάρα από ξύλο etimoe, μπράτσο από μαόνι, διαπασόν από ξύλο τριανταφυλλιάς και μαύρες χρωματισμένες πλευρές.\n\nΠλάτη και πλευρές από τριανταφυλλιά Αμαζονίου. Ταστιέρα παραδοσιακή ή αυξημένη.\n",
+    "order": 9
+  }
+]

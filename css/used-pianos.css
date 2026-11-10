@@ -1,0 +1,67 @@
+/* Nikotian — «Μεταχειρισμένα πιάνα» (used-pianos.html) · v1.0
+   Loaded after css/new-pianos.css, which carries the shared collection system (hero, filters, grid,
+   cards, empty state, closing). This file holds only what differs on this page: the hero photograph,
+   the frame of the real showroom photographs in the cards, and section 03.
+   Layout only: no new font sizes, colours or spacing values — shared tokens and role classes throughout. */
+
+/* =========================================================
+   01 · Hero — same grid, proportions and height as «Καινούργια»; only the photograph and its focus differ
+   ========================================================= */
+.up-hero__media img { object-position: 52% 62%; }
+
+/* =========================================================
+   02 · Cards — real showroom photographs
+   The new pianos are cut-outs, contained and multiplied onto Warm Beige. The used pianos are photographed
+   in the showroom: the background is part of the picture, so it is never blended or removed.
+   One frame for every card (3:2, the format of most of the photographs). Each photograph is cropped with
+   its own object-position (data: images[0].position); tall photographs, where a 3:2 crop would cut the
+   instrument, are shown whole inside the same frame on Warm Beige (data: images[0].fit = "contain").
+   ========================================================= */
+.up-collection .np-card__media {
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+}
+.up-collection .np-card__media img {
+  inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  mix-blend-mode: normal;
+}
+.up-collection .np-card__media--contain img { object-fit: contain; }
+
+/* =========================================================
+   03 · Μια δεύτερη διαδρομή (v1.1) — two-column editorial unit on Deep Charcoal
+   Left (5/12): eyebrow, title, paragraph on one left axis, no indents, no rules.
+   Right (6/12, after one open column): the showroom photograph, 5:4, with its caption.
+   Text centred vertically on the photograph (the caption hangs below it). Tablet: photograph 1:1. Spacing = the shared tokens of «Μια επιλογή προσωπική».
+   One column from 47.9375rem down: text first, photograph under it.
+   ========================================================= */
+.up-story { padding-block: var(--section-y); }
+.up-story__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  align-items: center;
+}
+.up-story__text { grid-column: 1 / span 5; }
+.up-story__body { margin-top: var(--s-6); }
+.up-story__figure { grid-column: 7 / -1; margin: 0; position: relative; }
+.up-story__media { aspect-ratio: 5 / 4; background: var(--graphite); }
+.up-story__media img { object-position: 30% 60%; }
+/* the caption hangs under the photograph, outside the box the text is centred on */
+.up-story__caption { position: absolute; top: 100%; left: 0; right: 0; margin-top: var(--s-3); }
+
+@media (max-width: 64rem) {
+  .up-story__text { grid-column: 1 / span 6; }
+  .up-story__figure { grid-column: 7 / -1; padding-left: var(--s-3); }
+  .up-story__media { aspect-ratio: 1 / 1; }
+  .up-story__media img { object-position: 28% 60%; }
+}
+@media (max-width: 47.9375rem) {
+  .up-story__grid { row-gap: var(--s-7); }
+  .up-story__text, .up-story__figure { grid-column: 1 / -1; }
+  .up-story__figure { padding-left: 0; position: static; }
+  .up-story__caption { position: static; }
+  .up-story__media { aspect-ratio: 3 / 2; }
+  .up-story__media img { object-position: 50% 60%; }
+}

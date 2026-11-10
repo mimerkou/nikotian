@@ -1,0 +1,152 @@
+/* Nikotian — «Επικοινωνία» (contact.html) · v1.0
+   Layout only. Text takes its type from the shared role classes
+   (style.css «Typography roles» + tokens.css role tokens):
+   .eyebrow · .title (+ --stack, --md) · .t-body · .t-meta · .t-meta-value · .t-caption · .t-subtitle ·
+   .btn · .link-arrow · .link-inline.
+   The form controls are new components; they reuse the metadata/value tokens and the shared :focus-visible. */
+
+/* =========================================================
+   01 · Hero — the approved internal hero of «Ο Οίκος» (.a-hero, about.css)
+   Same padding, grid, column split, viewport-driven photo height and entrance.
+   ========================================================= */
+.c-hero {
+  background: var(--ivory);
+  padding-top: calc(var(--header-h) + var(--s-6));
+  padding-bottom: clamp(3rem, 2rem + 3vw, 5rem);
+  overflow: hidden;
+}
+.c-hero .crumbs { margin-bottom: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); }
+
+.c-hero__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  align-items: center;
+}
+.c-hero__text { grid-column: 1 / span 5; padding-right: var(--s-5); }
+.c-hero__lead { margin-top: var(--s-6); }
+
+.c-hero__media {
+  grid-column: 6 / -1;
+  margin-right: calc(-1 * var(--gutter) - max(0px, (100vw - var(--max-w)) / 2));
+  height: clamp(20rem, 100svh - var(--header-h) - 14rem, 36rem);
+  overflow: hidden;
+  background: var(--beige);
+}
+/* the piano and the pianist sit left of centre; the crop keeps them and the window */
+.c-hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 38% 62%; }
+
+.js .c-hero .crumbs, .js .c-hero__text > * { animation: rise 1000ms var(--ease-out) both; }
+.js .c-hero__text > :nth-child(1) { animation-delay: 100ms; }
+.js .c-hero__text > :nth-child(2) { animation-delay: 200ms; }
+.js .c-hero__text > :nth-child(3) { animation-delay: 340ms; }
+.js .c-hero__media { animation: c-unveil 1400ms var(--ease-out) 300ms both; }
+.js .c-hero__media img { animation: c-settle 2000ms var(--ease-out) 300ms both; }
+@keyframes c-unveil { from { clip-path: inset(0 0 0 100%); } to { clip-path: inset(0); } }
+@keyframes c-settle { from { transform: scale(1.06); } to { transform: none; } }
+
+@media (max-width: 64rem) {
+  .c-hero__text { grid-column: 1 / span 6; }
+  .c-hero__media { grid-column: 7 / -1; height: clamp(20rem, 52vw, 30rem); }
+  .c-hero__media img { object-position: 24% 60%; }   /* near-square crop: keep the pianist and the whole piano */
+}
+@media (max-width: 47.9375rem) {
+  .c-hero__grid { row-gap: var(--s-7); }
+  .c-hero__text, .c-hero__media { grid-column: 1 / -1; }
+  .c-hero__text { padding-right: 0; }
+  .c-hero__media { margin-inline: calc(-1 * var(--gutter)); height: auto; aspect-ratio: 3 / 2; }
+  .c-hero__media img { object-position: 50% 50%; }
+}
+
+/* =========================================================
+   02 · Στοιχεία επικοινωνίας & φόρμα — Warm Beige
+   ========================================================= */
+.c-main { background: var(--beige); }
+.c-main__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  row-gap: clamp(3rem, 2rem + 3vw, 4.5rem);
+  align-items: start;
+}
+/* Two rows shared by both columns (subgrid): row 1 = headings, row 2 = ledger | fields.
+   The ledger's top rule and the rule under the form title fall on the same line. */
+.c-main__grid { grid-template-rows: auto auto; }
+.c-info, .c-form { display: grid; grid-row: span 2; grid-template-rows: subgrid; row-gap: 0; }
+.c-info { grid-column: 1 / span 5; }
+.c-info__head { align-self: end; padding-bottom: clamp(2rem, 1.5rem + 1.5vw, 3rem); }
+#ekthesi { scroll-margin-top: calc(var(--header-h) + var(--s-6)); }
+.c-form { grid-column: 7 / -1; }
+
+/* ---- Ledger: label | value on hairlines, every value on one vertical line ---- */
+.c-ledger { align-self: start; border-top: 1px solid var(--line-strong); }
+.c-ledger__row {
+  display: grid;
+  grid-template-columns: 10.5rem minmax(0, 1fr);
+  column-gap: var(--s-5);
+  align-items: baseline;
+  padding-block: var(--s-5);
+  border-bottom: 1px solid var(--line);
+}
+.c-ledger dd { min-width: 0; }
+.c-ledger__values { display: grid; gap: var(--s-1); }
+.c-ledger a.t-meta-value {
+  text-decoration: none;
+  background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat;
+  transition: background-size var(--dur-slow) var(--ease-out), color var(--dur) var(--ease-out);
+}
+.c-ledger a.t-meta-value:hover { color: var(--red); background-size: 100% 1px; }
+.c-ledger__directions { margin-top: var(--s-3); }
+
+/* ---- Form: one column, bordered ivory fields, labels always above ---- */
+.cf__title { align-self: end; padding-bottom: var(--s-4); border-bottom: 1px solid var(--line-strong); }
+.cf__fields { display: grid; gap: var(--s-5); padding-top: var(--s-5); align-content: start; }
+.cf__field { display: grid; gap: var(--s-2); min-width: 0; }
+.cf__label {
+  font-size: var(--caption-size);
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--graphite);
+}
+.cf__req { color: var(--red); margin-left: .1em; }
+
+.cf__input {
+  display: block;
+  width: 100%;
+  height: 3.25rem;
+  padding: 0 1rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--ivory);
+  color: var(--graphite);
+  font: 400 var(--meta-value-size)/1.5 var(--font-sans);
+  transition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out);
+  appearance: none;
+}
+.cf__input:hover { border-color: rgba(31, 29, 27, .5); }
+/* Focus: Heritage Red border + a soft red ring (replaces the shared outline on fields only) */
+.cf__input:focus { outline: none; border-color: var(--red); box-shadow: 0 0 0 3px rgba(163, 38, 42, .14); }
+.cf__input:user-invalid { border-color: var(--red); }
+.cf__textarea { height: auto; min-height: 10.5rem; padding: .85rem 1rem; resize: vertical; }
+
+.cf__submit { margin-top: var(--s-3); }
+
+@media (max-width: 64rem) {
+  .c-form { grid-column: 6 / -1; }
+  .c-ledger__row { grid-template-columns: minmax(0, 1fr); row-gap: var(--s-1); padding-block: var(--s-4); }
+  .cf__fields { padding-top: var(--s-4); }
+}
+@media (max-width: 56rem) {
+  .c-main__grid { grid-template-rows: none; }
+  .c-info, .c-form { grid-column: 1 / -1; grid-row: auto; grid-template-rows: none; }
+  .c-ledger { max-width: 36rem; }
+  .c-ledger__row { grid-template-columns: 11rem minmax(0, 1fr); padding-block: var(--s-5); }
+  .cf { max-width: 36rem; }
+  .cf__fields { padding-top: var(--s-5); }
+}
+@media (max-width: 47.9375rem) {
+  .c-ledger__row { grid-template-columns: minmax(0, 1fr); row-gap: var(--s-1); padding-block: var(--s-4); }
+}
+@media (max-width: 23.75rem) {
+  .cf__submit .btn { width: 100%; }
+}

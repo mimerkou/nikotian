@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="el" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Κλασικές κιθάρες — Juan Hernández, Azahar | Μουσικός Οίκος Nikotian</title>
+  <meta name="description" content="Κλασικές κιθάρες Juan Hernández και Azahar στον μουσικό οίκο Nikotian, Σόλωνος 105, Αθήνα. Επιλεγμένα όργανα με διαφορετικό χαρακτήρα, για να τα γνωρίσετε από κοντά στην έκθεση.">
+  <meta name="theme-color" content="#F7F4EE">
+  <link rel="icon" href="assets/logo/nikotian-C-favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Commissioner:wght@300..700&family=Literata:ital,opsz,wght@0,7..72,300..600;1,7..72,300..500&display=swap">
+  <link rel="preload" as="image" href="assets/photos/guitars/juan-hernandez-sonata.jpg">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/new-pianos.css">
+  <link rel="stylesheet" href="css/guitars.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="js/main.js" defer></script>
+  <script src="data/guitars.js" defer></script>
+  <script src="js/new-pianos.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a>
+
+  <!-- ================= HEADER (shared) =================
+       Internal page: .site-header--light = ivory bar, graphite type, light logo, one hairline underneath. -->
+  <header class="site-header site-header--light" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nikotian, αρχική σελίδα">
+        <img class="brand__logo brand__logo--on-dark" src="assets/logo/nikotian-C-heritage-refined-on-dark.svg" alt="" width="150" height="41">
+        <img class="brand__logo brand__logo--on-light" src="assets/logo/nikotian-C-heritage-refined-light.svg" alt="Nikotian" width="150" height="41">
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Κύρια πλοήγηση">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="about.html">Ο Οίκος</a></li>
+          <li class="nav__item"><a class="nav__link" href="services.html">Υπηρεσίες</a></li>
+          <li class="nav__item nav__item--has-sub">
+            <!-- «Πιάνα» is a category, not a page: one button opens the submenu (hover/click on desktop, tap in the mobile menu) -->
+            <button class="nav__parent" type="button" aria-expanded="false" aria-controls="sub-pianos">
+              <span class="nav__link">Πιάνα</span>
+              <svg class="nav__chev" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            </button>
+            <!-- Καινούργια → new-pianos.html (/pianos/new/), Μεταχειρισμένα → used-pianos.html (/pianos/used/). Ηλεκτρικά → electric-pianos.html (/pianos/digital/) -->
+            <ul class="nav__sub" id="sub-pianos">
+              <li><a href="new-pianos.html">Καινούργια</a></li>
+              <li><a href="used-pianos.html">Μεταχειρισμένα</a></li>
+              <li><a href="electric-pianos.html">Ηλεκτρικά</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="guitars.html" aria-current="page">Κιθάρες</a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html">Επικοινωνία</a></li>
+        </ul>
+        <div class="nav__mobile-extra">
+          <a class="btn btn--primary" href="contact.html">Επισκεφθείτε την έκθεση</a>
+          <address class="nav__meta">
+            Σόλωνος 105, 106 78 Αθήνα<br>
+            <a href="tel:+302103808836">210 380 8836</a> · <a href="tel:+306972034883">697 203 4883</a>
+          </address>
+        </div>
+      </nav>
+
+      <div class="site-header__actions">
+        <nav class="lang" aria-label="Γλώσσα">
+          <a class="lang__item" href="guitars.html" lang="el" hreflang="el" aria-current="page">EL</a>
+          <span class="lang__sep" aria-hidden="true">|</span>
+          <span class="lang__item lang__item--pending" lang="en" title="Η αγγλική έκδοση ετοιμάζεται">EN</span>
+        </nav>
+        <a class="btn btn--primary btn--sm header-cta" href="contact.html">Επισκεφθείτε την έκθεση</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__label">Μενού</span>
+          <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+    <main id="main">
+
+    <!-- ================= 01 · HERO =================
+         The approved internal hero (same padding, grid, split and media height as the piano collections).
+         Not full height, no CTA. The media panel is Warm Beige; the photograph (Juan Hernández Sonata,
+         studio background lifted to white) is multiplied onto it and shown whole — head to lower bout. -->
+    <section class="np-hero gt-hero" id="top" aria-labelledby="gt-hero-title">
+      <div class="wrap">
+        <nav class="crumbs t-meta" aria-label="Διαδρομή πλοήγησης">
+          <ol>
+            <li><a href="index.html">Αρχική</a></li>
+            <li><span aria-current="page">Κλασικές κιθάρες</span></li>
+          </ol>
+        </nav>
+
+        <div class="np-hero__grid">
+          <div class="np-hero__text">
+            <p class="eyebrow">Η συλλογή μας</p>
+            <h1 class="title title--stack" id="gt-hero-title">Κλασικές <em>κιθάρες.</em></h1>
+            <p class="t-body np-hero__lead">Η κλασική κιθάρα συνδυάζει την τέχνη της κατασκευής με τη μοναδικότητα του ήχου. Ανακαλύψτε επιλεγμένα όργανα των Juan Hernández και Azahar, με διαφορετικό χαρακτήρα και δυνατότητες μουσικής έκφρασης.</p>
+          </div>
+
+          <figure class="np-hero__media gt-hero__media">
+            <img src="assets/photos/guitars/juan-hernandez-sonata.jpg" alt="Κλασική κιθάρα Juan Hernández Sonata: καπάκι σε φυσικό ξύλο, ροζέτα γύρω από το στόμα και σκούρα ταστιέρα" width="400" height="759" fetchpriority="high">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 02 · Η ΣΥΛΛΟΓΗ =================
+         One collection, one grid, one manufacturer filter (the shared system of the piano collections:
+         js/new-pianos.js, no type radios → manufacturer only). Data: data/guitars.js (one record per model,
+         built from images/guitars by tools/build-guitars-data.py). Every card opens its model page
+         from the record's detailPage (guitar.html?model=<slug>, Guitar Product Details v1.0). -->
+    <section class="np-collection gt-collection section" id="syllogi" aria-labelledby="gt-collection-title">
+      <div class="wrap">
+        <header class="np-collection__head" data-reveal>
+          <p class="eyebrow">Τα όργανά μας</p>
+          <h2 class="title title--stack" id="gt-collection-title">Κάθε κιθάρα, <em>ο δικός της χαρακτήρας.</em></h2>
+        </header>
+
+        <form class="filters" id="np-filters" aria-label="Φίλτρα συλλογής" data-reveal hidden>
+          <div class="filters__controls">
+            <div class="filters__field">
+              <label class="t-meta filters__label" for="np-brand">Κατασκευαστής</label>
+              <div class="select">
+                <select class="select__control" id="np-brand" name="brand">
+                  <option value="all">Όλοι οι κατασκευαστές</option>
+                </select>
+                <svg class="select__icon" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+              </div>
+            </div>
+          </div>
+          <div class="filters__status">
+            <p class="t-meta-value filters__count" id="np-count" role="status" aria-live="polite" aria-atomic="true"></p>
+            <button class="link-arrow filters__reset" type="reset" hidden>Καθαρισμός φίλτρων</button>
+          </div>
+        </form>
+
+        <ul class="np-grid" id="np-grid" data-source="NIKOTIAN_GUITARS" data-noun="κιθάρα|κιθάρες" aria-label="Κλασικές κιθάρες"></ul>
+
+        <div class="np-empty" id="np-empty" hidden>
+          <p class="t-subtitle">Καμία κιθάρα με αυτή την επιλογή.</p>
+          <p class="t-body np-empty__text">Δείτε ολόκληρη τη συλλογή ή επιλέξτε άλλον κατασκευαστή.</p>
+          <button class="link-arrow np-empty__reset" type="button">Όλες οι κιθάρες <span class="link-arrow__icon" aria-hidden="true">→</span></button>
+        </div>
+
+        <noscript>
+          <p class="t-body">Για να δείτε τη συλλογή, ενεργοποιήστε τη JavaScript στον browser σας ή καλέστε μας στο <a href="tel:+302103808836">210 380 8836</a>.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <!-- ================= 03 · ΤΕΧΝΗ ΚΑΙ ΚΑΤΑΣΚΕΥΗ =================
+         One editorial unit on Deep Charcoal: eyebrow, title and paragraph as one block on the left axis,
+         centred on the photograph; the photograph on the right, at its own proportions and native size:
+         the two faces of one instrument (Juan Hernández Estudio Clasica) — top and back, the woods. -->
+    <section class="gt-craft surface-dark" id="techni" aria-labelledby="gt-craft-title">
+      <div class="wrap gt-craft__grid">
+        <div class="gt-craft__text" data-reveal>
+          <p class="eyebrow eyebrow--light">Τέχνη και κατασκευή</p>
+          <h2 class="title title--md title--stack title--light" id="gt-craft-title">Η λεπτομέρεια <em>διαμορφώνει τον ήχο.</em></h2>
+          <p class="t-body gt-craft__body">Στην κλασική κιθάρα, η επιλογή των υλικών, η κατασκευή και η φροντίδα της λεπτομέρειας συμβάλλουν στον ιδιαίτερο χαρακτήρα κάθε οργάνου. Από την πρώτη επαφή με τις χορδές μέχρι την απόκριση του ήχου, κάθε κιθάρα προσφέρει μια διαφορετική μουσική εμπειρία.</p>
+        </div>
+        <figure class="frame gt-craft__media" data-reveal style="--d: 200ms">
+          <img src="assets/photos/guitars/juan-hernandez-estudio-clasica.jpg" alt="Η ίδια κλασική κιθάρα από μπροστά και από πίσω: το καπάκι με τη ροζέτα και η πλάτη σε ενιαίο τόνο ξύλου" width="400" height="484" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 04 · Η ΕΚΘΕΣΗ =================
+         The shared closing of the collections (.np-visit, as in Καινούργια / Μεταχειρισμένα / Ηλεκτρικά). -->
+    <section class="np-visit section" id="ekthesi" aria-labelledby="np-visit-title">
+      <div class="wrap">
+        <div class="np-visit__inner" data-reveal>
+          <p class="eyebrow np-visit__eyebrow">Η έκθεση</p>
+          <h2 class="title title--stack" id="np-visit-title">Δείτε τις κιθάρες <em>από κοντά.</em></h2>
+          <p class="t-body np-visit__text">Η επιλογή μιας κιθάρας είναι μια προσωπική εμπειρία. Στην έκθεση Nikotian, στη Σόλωνος&nbsp;105, υπάρχει η δυνατότητα να γνωρίσει κανείς τα διαθέσιμα μοντέλα και να ανακαλύψει το όργανο που του ταιριάζει.</p>
+          <div class="actions np-visit__actions">
+            <!-- Top of the Contact page (final URL /epikoinonia/) -->
+            <a class="btn btn--primary" href="contact.html">Επισκεφθείτε την έκθεση</a>
+            <a class="link-arrow" href="tel:+302103808836">Καλέστε μας στο 210 380 8836 <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================= FOOTER (shared) ================= -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__top">
+      <div class="site-footer__brand">
+        <img src="assets/logo/nikotian-C-heritage-refined-on-dark.svg" alt="Nikotian" width="170" height="47" loading="lazy">
+        <p>Μουσικός Οίκος Nikotian.<br>Πιάνα στην Αθήνα, από το 1929.</p>
+        <a class="site-footer__social" href="https://www.facebook.com/PianaNikotian" target="_blank" rel="noopener noreferrer" aria-label="Nikotian στο Facebook (ανοίγει σε νέα καρτέλα)">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.5 21.95V14h2.66l.4-3.1H13.5V8.92c0-.9.25-1.5 1.54-1.5h1.64V4.65a22 22 0 0 0-2.4-.12c-2.37 0-4 1.45-4 4.11v2.27H7.6V14h2.68v7.95A10 10 0 1 1 13.5 21.95z"/></svg>
+          <span>Facebook</span>
+        </a>
+      </div>
+      <nav class="site-footer__col" aria-labelledby="f-oikos">
+        <h2 id="f-oikos">Ο Οίκος</h2>
+        <ul>
+          <li><a href="about.html">Η ιστορία μας</a></li>
+          <li><a href="services.html">Υπηρεσίες</a></li>
+          <li><a href="contact.html">Επικοινωνία</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__col" aria-labelledby="f-organa">
+        <h2 id="f-organa">Όργανα</h2>
+        <ul>
+          <li><a href="new-pianos.html">Καινούργια πιάνα</a></li>
+          <li><a href="used-pianos.html">Μεταχειρισμένα πιάνα</a></li>
+          <li><a href="electric-pianos.html">Ηλεκτρικά πιάνα</a></li>
+          <li><a href="guitars.html" aria-current="page">Κλασικές κιθάρες</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__col">
+        <h2>Έκθεση</h2>
+        <address>
+          <ul>
+            <li>Σόλωνος 105, 106 78 Αθήνα</li>
+            <li><a href="tel:+302103808836">210 380 8836</a></li>
+            <li><a href="tel:+306972034883">697 203 4883</a></li>
+            <li><a href="mailto:info@nikotian.gr">info@nikotian.gr</a></li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="wrap site-footer__bottom">
+      <p>© 2026 Nikotian. Με επιφύλαξη παντός δικαιώματος.</p>
+      <ul class="site-footer__legal">
+        <!-- Pages to be created in WordPress -->
+        <li><a href="#" data-href="/politiki-aporritou/" data-pending="Πολιτική Απορρήτου">Πολιτική Απορρήτου</a></li>
+        <li><a href="#" data-href="/politiki-cookies/" data-pending="Πολιτική Cookies">Πολιτική Cookies</a></li>
+      </ul>
+      <p class="site-footer__credit">Δημιουργία ιστοσελίδας: <a href="https://michalismerkouris.com/" target="_blank" rel="noopener noreferrer">Μιχάλης Μερκούρης<span class="visually-hidden"> (ανοίγει σε νέα καρτέλα)</span></a></p>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>

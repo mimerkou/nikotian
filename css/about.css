@@ -1,0 +1,293 @@
+/* Nikotian — «Ο Οίκος» (about.html) · v2.0
+   Layout only. Every piece of text takes its type from a shared role class
+   (style.css «Typography roles» + tokens.css role tokens). This file sets no
+   font-size, font-family or colour for text that has a role. */
+
+/* =========================================================
+   Placeholder for archive material that does not exist yet (prototype only)
+   ========================================================= */
+.placeholder {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  background: var(--ivory);
+  outline: 1px solid var(--line);
+  outline-offset: -.75rem;
+}
+.placeholder__tag { position: absolute; top: 1.25rem; left: 1.25rem; right: 1.25rem; }
+
+/* =========================================================
+   01 · Εισαγωγή — compact, one row: text | photograph (bleeds right)
+   ========================================================= */
+.a-hero {
+  background: var(--ivory);
+  padding-top: calc(var(--header-h) + var(--s-6));
+  padding-bottom: clamp(3rem, 2rem + 3vw, 5rem);
+  overflow: hidden;
+}
+.crumbs { margin-bottom: clamp(1.5rem, 1rem + 1.5vw, 2.5rem); }
+
+.a-hero__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  align-items: center;
+}
+.a-hero__text { grid-column: 1 / span 5; padding-right: var(--s-5); }
+.a-hero__lead { margin-top: var(--s-6); }
+
+.a-facts { margin-top: var(--s-6); max-width: 32rem; border-top: 1px solid var(--line-strong); }
+.a-facts__item {
+  display: flex; align-items: baseline; justify-content: space-between; gap: var(--s-4);
+  padding-block: .7rem;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Height is set by the viewport so the whole introduction fits on screen */
+.a-hero__media {
+  grid-column: 6 / -1;
+  margin-right: calc(-1 * var(--gutter) - max(0px, (100vw - var(--max-w)) / 2));
+  height: clamp(20rem, 100svh - var(--header-h) - 14rem, 36rem);
+  overflow: hidden;
+  background: var(--charcoal);
+}
+.a-hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 40% 62%; }
+
+.js .crumbs, .js .a-hero__text > * { animation: rise 1000ms var(--ease-out) both; }
+.js .a-hero__text > :nth-child(1) { animation-delay: 100ms; }
+.js .a-hero__text > :nth-child(2) { animation-delay: 200ms; }
+.js .a-hero__text > :nth-child(3) { animation-delay: 340ms; }
+.js .a-hero__text > :nth-child(4) { animation-delay: 460ms; }
+.js .a-hero__media { animation: a-unveil 1400ms var(--ease-out) 300ms both; }
+.js .a-hero__media img { animation: a-settle 2000ms var(--ease-out) 300ms both; }
+@keyframes a-unveil { from { clip-path: inset(0 0 0 100%); } to { clip-path: inset(0); } }
+@keyframes a-settle { from { transform: scale(1.06); } to { transform: none; } }
+
+@media (max-width: 64rem) {
+  .a-hero__text { grid-column: 1 / span 6; }
+  .a-hero__media { grid-column: 7 / -1; height: clamp(20rem, 52vw, 30rem); }
+}
+@media (max-width: 47.9375rem) {
+  .a-hero__grid { row-gap: var(--s-7); }
+  .a-hero__text, .a-hero__media { grid-column: 1 / -1; }
+  .a-hero__text { padding-right: 0; }
+  .a-hero__media { margin-inline: calc(-1 * var(--gutter)); height: auto; aspect-ratio: 4 / 3; }
+}
+
+/* =========================================================
+   02 · Η αρχή
+   ========================================================= */
+.origin { background: var(--beige); }
+.origin__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  row-gap: clamp(3rem, 2rem + 3vw, 5rem);
+  align-items: start;
+}
+.origin__portrait { grid-column: 1 / span 4; grid-row: 1 / span 2; position: sticky; top: calc(var(--header-h) + var(--s-6)); }
+.origin__portrait-frame { aspect-ratio: 4 / 5; }
+.origin__portrait-frame img { object-position: 48% 30%; }
+.origin__portrait figcaption { margin-top: var(--s-3); max-width: 22rem; }
+
+.origin__text { grid-column: 6 / -1; }
+.origin__date { margin-top: var(--s-5); }
+.origin__text .prose { margin-top: var(--s-5); }
+
+.archive { grid-column: 6 / -1; }
+.archive__label { padding-bottom: var(--s-3); margin-bottom: var(--s-5); border-bottom: 1px solid var(--line-strong); }
+.archive__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-5); max-width: 32rem; }
+.archive__caption { margin-top: var(--s-3); }
+
+@media (max-width: 64rem) {
+  .origin__portrait { grid-column: 1 / span 5; }
+  .origin__text, .archive { grid-column: 6 / -1; padding-left: var(--s-4); }
+}
+@media (max-width: 47.9375rem) {
+  .origin__grid { row-gap: var(--s-7); }
+  .origin__portrait, .origin__text, .archive { grid-column: 1 / -1; grid-row: auto; padding-left: 0; }
+  .origin__text { order: -1; }
+  .origin__portrait { position: static; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: var(--s-4); align-items: end; }
+  .origin__portrait figcaption { margin-top: 0; }
+}
+
+/* =========================================================
+   03 · Η διαδρομή μας — typographic chronicle on one hairline
+   ========================================================= */
+.route { background: var(--ivory); }
+.route__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  row-gap: var(--s-7);
+  align-items: start;
+}
+.route__head { grid-column: 1 / span 5; position: sticky; top: calc(var(--header-h) + var(--s-6)); }
+.route__intro { margin-top: var(--s-5); }
+
+.chronicle {
+  /* One set of alignment variables drives the line, every dot and every row */
+  --year-col: 8.5rem;
+  --col-gap: var(--s-7);
+  --pad-top: var(--s-2);                                   /* chronicle padding-top */
+  --pad-l: 0px;                                            /* chronicle padding-left (mobile) */
+  --item-py: clamp(1.5rem, 1rem + 1.5vw, 2.25rem);         /* row padding, same for every station */
+  --line-x: calc(var(--pad-l) + var(--year-col) + var(--col-gap) / 2);  /* left edge of the 1px line */
+  --dot: 7px;
+  /* Dot centre, from the top of the row. The year and the event title are trimmed to their
+     cap height (see below), so the year's first line starts exactly at the row's padding edge
+     and its figures are centred at half a cap height. «cap» is resolved in the year's font
+     (the pseudo-elements carry that font). */
+  --dot-y: calc(var(--item-py) + .5cap);
+  grid-column: 7 / -1;
+  position: relative;
+  padding-top: var(--pad-top);
+  padding-bottom: var(--s-2);
+  padding-left: var(--pad-l);
+}
+/* the line: starts at the centre of the 1929 dot and runs on past «Σήμερα» to the end of the list;
+   a quiet track, filled in graphite as the reader moves through (js/about.js) */
+.chronicle::before,
+.chronicle::after,
+.chronicle__item::before {
+  font-family: var(--font-serif); font-size: var(--year-size); line-height: 1;  /* = the year's font, for the cap unit */
+}
+.chronicle::before,
+.chronicle::after {
+  content: ""; position: absolute;
+  top: calc(var(--pad-top) + var(--dot-y));
+  bottom: 0;
+  left: var(--line-x);
+  width: 1px;
+}
+.chronicle::before { background: var(--line); }
+.chronicle::after { background: var(--graphite); transform-origin: center top; transform: scaleY(var(--progress, 1)); }
+
+.chronicle__item {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--year-col) minmax(0, 1fr);
+  column-gap: var(--col-gap);
+  align-items: start;               /* year and body start on the same line: the top of the row */
+  padding-block: var(--item-py);
+}
+.chronicle__year { text-align: right; white-space: nowrap; }
+/* Trim the leading above the year and the title so each box starts at the top of its capitals:
+   the visible tops align, and so do the element tops. */
+.chronicle__year,
+.chronicle__body .t-event { text-box: trim-start cap alphabetic; }
+/* Browsers without text-box trimming (Firefox): element tops still align (align-items: start);
+   the dot falls back to the centre of the year's line box. */
+@supports not (text-box: trim-start cap alphabetic) {
+  .chronicle { --dot-y: calc(var(--item-py) + var(--year-size) * var(--year-lh) / 2); }
+}
+.chronicle__body .t-event-text { margin-top: var(--s-2); }
+/* the marker: one small dot per station, centred on the line and on the first line of the year */
+.chronicle__item::before {
+  content: ""; position: absolute; z-index: 1;
+  left: calc(var(--line-x) - var(--pad-l) + .5px - var(--dot) / 2);
+  top: calc(var(--dot-y) - var(--dot) / 2);
+  width: var(--dot); height: var(--dot);
+  border-radius: 50%;
+  background: var(--graphite);
+}
+.chronicle__item--now::before { background: var(--red); }
+
+.js .chronicle__item[data-reveal] { transform: translateX(14px); }
+.js .chronicle__item[data-reveal].is-in { transform: none; }
+
+@media (max-width: 64rem) {
+  .route__head, .chronicle { grid-column: 1 / -1; }
+  .route__head { position: static; }
+  .chronicle { --year-col: 9rem; max-width: 46rem; }
+}
+@media (max-width: 47.9375rem) {
+  /* the line moves to the left edge; the same variables place it and the dots */
+  .chronicle { --pad-l: 1.5rem; --line-x: 0px; }
+  .chronicle__item { grid-template-columns: minmax(0, 1fr); row-gap: var(--s-2); }
+  .chronicle__year { text-align: left; }
+}
+
+/* =========================================================
+   04 · Η επόμενη γενιά (.surface-dark)
+   ========================================================= */
+.lineage { padding-block: var(--section-y); }
+.lineage__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  row-gap: clamp(3.5rem, 2rem + 4vw, 6rem);
+}
+.lineage figcaption { margin-top: var(--s-3); }
+.lineage .frame { background: var(--graphite); }
+
+.lineage__text { grid-column: 1 / span 5; align-self: center; padding-right: var(--s-5); }
+.lineage__elders { grid-column: 6 / -1; margin-right: calc(-1 * var(--gutter) - max(0px, (100vw - var(--max-w)) / 2)); }
+.lineage__elders figcaption { padding-right: var(--gutter); }
+.lineage__elders-frame { aspect-ratio: 4 / 3; max-height: 40rem; }
+.lineage__elders-frame img { object-position: 64% 55%; }
+
+.lineage__statement { grid-column: 2 / span 10; padding-top: clamp(2rem, 1rem + 2.5vw, 3.5rem); border-top: 1px solid var(--line-on-dark); }
+
+.lineage__hands { grid-column: 1 / span 4; align-self: start; margin-top: clamp(0rem, -2rem + 8vw, 7rem); }
+.lineage__hands-frame { aspect-ratio: 1 / 1; }
+.lineage__robert { grid-column: 5 / -1; }
+.lineage__robert-frame { aspect-ratio: 16 / 9; }
+.lineage__robert-frame img { object-position: 60% 35%; }
+
+@media (max-width: 64rem) {
+  .lineage__text { grid-column: 1 / -1; padding-right: 0; }
+  .lineage__elders { grid-column: 1 / -1; margin-right: calc(-1 * var(--gutter)); }
+  .lineage__elders-frame { aspect-ratio: 16 / 10; }
+  .lineage__statement { grid-column: 1 / -1; }
+  .lineage__hands { grid-column: 1 / span 5; margin-top: 0; }
+  .lineage__robert { grid-column: 6 / -1; align-self: end; }
+}
+@media (max-width: 47.9375rem) {
+  .lineage__grid { row-gap: var(--s-7); }
+  .lineage__elders { margin-inline: calc(-1 * var(--gutter)); }
+  .lineage__elders-frame { aspect-ratio: 4 / 3; }
+  .lineage__elders figcaption { padding-inline: var(--gutter); }
+  .lineage__robert { grid-column: 1 / -1; }
+  .lineage__hands { grid-column: 4 / -1; order: 1; }
+}
+
+/* =========================================================
+   05 · Σήμερα
+   ========================================================= */
+.today { background: var(--ivory); padding-bottom: var(--section-y); }
+.today__street { height: clamp(18rem, 8rem + 30vw, 40rem); overflow: hidden; background: var(--beige); }
+.today__street img { width: 100%; height: 100%; object-fit: cover; object-position: 22% 45%; }
+
+.today__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  align-items: start;
+}
+.today__text { grid-column: 1 / span 6; padding-top: clamp(3.5rem, 2rem + 4vw, 6rem); padding-right: var(--s-6); }
+.today__text .prose { margin-top: var(--s-5); }
+.today__coda { margin-top: var(--s-5); max-width: 32rem; }
+.today__actions { margin-top: var(--s-6); }
+
+/* The room rises into the street photograph, with an ivory margin around it */
+.today__room { grid-column: 8 / -1; margin-top: clamp(-10rem, -2rem - 8vw, -4rem); position: relative; z-index: 1; }
+.today__room-frame { aspect-ratio: 4 / 3; box-shadow: 0 0 0 clamp(.5rem, .25rem + .8vw, 1rem) var(--ivory); }
+.today__room-frame img { object-position: 46% 55%; }
+.today__room figcaption { margin-top: calc(var(--s-3) + clamp(.5rem, .25rem + .8vw, 1rem)); }
+
+@media (max-width: 64rem) {
+  .today__text { grid-column: 1 / span 7; padding-right: var(--s-4); }
+  .today__room { grid-column: 8 / -1; }
+}
+@media (max-width: 47.9375rem) {
+  .today__street { height: clamp(15rem, 62vw, 22rem); }
+  .today__street img { object-position: 16% 45%; }
+  .today__text, .today__room { grid-column: 1 / -1; }
+  .today__text { padding-right: 0; padding-top: var(--s-7); }
+  .today__room { margin-top: var(--s-7); }
+  .today__room-frame { box-shadow: none; }
+  .today__room figcaption { margin-top: var(--s-3); }
+}
+@media (max-width: 23.75rem) {
+  .today__actions { display: grid; justify-items: start; }
+}

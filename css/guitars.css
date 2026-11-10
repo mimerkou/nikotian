@@ -1,0 +1,77 @@
+/* Nikotian — «Κλασικές κιθάρες» (guitars.html) · v1.0
+   Loaded after css/new-pianos.css, which carries the shared collection system (hero, filters, grid, cards,
+   empty state, closing .np-visit). This file holds only what differs on this page: the hero photograph,
+   the portrait card frame for the guitars, and section 03.
+   Layout only: no new font sizes, colours (the card backdrops are the photographs' own studio colours,
+   from the data) or spacing values — shared tokens and role classes throughout. */
+
+/* =========================================================
+   01 · Hero — same grid, proportions and height as the piano collections.
+   The guitar is a vertical object: the photograph is contained (never cropped) in the Warm Beige panel,
+   multiplied onto it like the new-piano cut-outs (its studio background was lifted to white).
+   ========================================================= */
+.gt-hero__media { position: relative; }
+.gt-hero__media img {
+  position: absolute; inset: 7% 0;
+  width: 100%; height: 86%;
+  object-fit: contain;
+  object-position: 50% 50%;
+  mix-blend-mode: multiply;
+}
+@media (max-width: 47.9375rem) {
+  .gt-hero__media { aspect-ratio: 1 / 1; }
+}
+
+/* =========================================================
+   02 · Cards — portrait frame (4:5) for vertical instruments
+   Every photograph is shown whole: head, neck and body, never a horizontal crop. The frame takes the
+   studio colour of its photograph (data: images[0].backdrop → --backdrop), so the picture has no visible
+   edge and its colours are not blended or altered. Without a backdrop (white studio background) the frame
+   is Warm Beige and the photograph is multiplied, as for the new pianos.
+   ========================================================= */
+.gt-collection .np-card__media {
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+}
+.gt-collection .np-card__media img {
+  inset: 6% 10%;
+  width: 80%; height: 88%;
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+.gt-collection .np-card__media--backdrop { background: var(--backdrop); }
+.gt-collection .np-card__media--backdrop img { mix-blend-mode: normal; }
+
+/* =========================================================
+   03 · Τέχνη και κατασκευή — one editorial unit on Deep Charcoal
+   Desktop: eyebrow, title and paragraph as one block (cols 1–6) on the left axis, vertically centred on the
+   photograph. The photograph (cols 8–11, right-aligned) at its own proportions and at most its native
+   width (400px), so it is never enlarged. Open column 7 between them. No rules, no caption, no overlap.
+   ========================================================= */
+.gt-craft { padding-block: var(--section-y); }
+.gt-craft__grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--s-5);
+  align-items: center;
+}
+.gt-craft__text { grid-column: 1 / span 6; }
+.gt-craft__body { margin-top: var(--s-6); }
+.gt-craft__media {
+  grid-column: 8 / span 4;
+  justify-self: end;
+  width: min(100%, 25rem);
+  aspect-ratio: 400 / 484;
+  margin: 0;
+  background: var(--graphite);
+}
+
+@media (max-width: 64rem) {
+  .gt-craft__text { grid-column: 1 / span 7; }
+  .gt-craft__media { grid-column: 8 / -1; }
+}
+@media (max-width: 47.9375rem) {
+  .gt-craft__grid { grid-template-columns: minmax(0, 1fr); row-gap: var(--s-7); }
+  .gt-craft__text, .gt-craft__media { grid-column: 1; }
+  .gt-craft__media { justify-self: start; }
+}
