@@ -1,3 +1,18 @@
+# NIKOTIAN — Open Graph v1.3.3 · Changelog (2026-11-10)
+
+Βάση: Anchor Fix v1.3.2. Δεν άλλαξε τίποτα στο design, στα κείμενα ή στη λειτουργία.
+
+- **Νέο `assets/og/og-image.jpg`:** 1200 × 630, JPEG 87 KB.
+  - Αναπαράγει το Hero της Αρχικής: φωτογραφία πιάνου, logo, «Μουσικός Οίκος Nikotian · Από το 1929», «Μια ζωή αφιερωμένη *στο πιάνο.*», «Σόλωνος 105, Αθήνα», πεντάγραμμο.
+  - Γραμματοσειρές Literata και Commissioner.
+- **Open Graph και Twitter tags σε όλες τις 10 σελίδες**, στο `<head>` αμέσως μετά το meta description:
+  - `og:type`, `og:site_name`, `og:locale` (el_GR);
+  - `og:title` και `og:description` (ίδια με το `<title>` και το description κάθε σελίδας), `og:url`;
+  - `og:image` με διαστάσεις, τύπο και alt, `twitter:card` = summary_large_image.
+- Τα απόλυτα URLs δείχνουν στο `https://nikotian.netlify.app/`. Στο launch πρέπει να αλλάξουν στο τελικό domain.
+
+---
+
 # NIKOTIAN — Anchor Fix v1.3.2 · Changelog (2026-11-10)
 
 Βάση: Hero Fix v1.3.1. Αλλαγή μόνο στο `js/main.js` (scroll controller).
