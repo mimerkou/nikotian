@@ -152,7 +152,7 @@
      Same-page anchors only (#oikos, #pianos, #top … and page.html#id on that same page): the page glides
      from where the visitor is to the section, with requestAnimationFrame and an ease-in-out curve — no jump first.
      · duration follows the distance: ~400 ms for short hops, up to 850 ms for long ones;
-     · lands under the fixed header (html scroll-padding-top + the target's own scroll-margin-top);
+     · the section starts right at the lower edge of the fixed header (+ the target's own scroll-margin-top);
      · the URL gets the #hash (pushState), so Back / Forward step through the sections as usual;
      · a wheel, touch or key press during the glide hands control back to the visitor at once;
      · not handled here: other pages, ?query links, external links, href="#" placeholders, the skip link
@@ -162,12 +162,14 @@
   const stopGlide = () => { if (glide) { cancelAnimationFrame(glide); glide = 0; } };
   ['wheel', 'touchstart', 'keydown'].forEach((t) => window.addEventListener(t, stopGlide, { passive: true }));
 
+  // v1.3.2: the section starts exactly at the lower edge of the fixed header — no strip of the section above.
+  // (The section's own top padding gives the breathing room; html scroll-padding-top stays for native #links.)
   const sectionTop = (target) => {
-    const pad = parseFloat(getComputedStyle(root).scrollPaddingTop) || 0;
+    const headerH = header ? header.getBoundingClientRect().height : 0;
     const margin = parseFloat(getComputedStyle(target).scrollMarginTop) || 0;
-    const y = target.getBoundingClientRect().top + window.scrollY - pad - margin;
+    const y = target.getBoundingClientRect().top + window.scrollY - headerH - margin;
     const max = document.documentElement.scrollHeight - window.innerHeight;
-    return Math.max(0, Math.min(Math.round(y), max));
+    return Math.max(0, Math.min(Math.ceil(y), max));
   };
   const glideTo = (target) => {
     stopGlide();
@@ -211,6 +213,16 @@
       try { history.pushState(null, '', url.hash); } catch (err) { /* file:// in some browsers: no URL update */ }
     }
     glideTo(target);
+  });
+
+  // Back / Forward between sections of this page: the browser places the section with html scroll-padding-top
+  // (header + 1rem); align it to the header edge as well, so it looks the same as after the click.
+  window.addEventListener('popstate', () => {
+    stopGlide();
+    let id = '';
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch (err) { return; }
+    const target = id && document.getElementById(id);
+    if (target) requestAnimationFrame(() => window.scrollTo(0, sectionTop(target)));
   });
 
   /* ---------- Reveals ---------- */

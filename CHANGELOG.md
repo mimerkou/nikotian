@@ -1,3 +1,18 @@
+# NIKOTIAN — Anchor Fix v1.3.2 · Changelog (2026-11-10)
+
+Βάση: Hero Fix v1.3.1. Αλλαγή μόνο στο `js/main.js` (scroll controller).
+
+- **Αρχική, Hero CTAs (και κάθε link προς section της ίδιας σελίδας):** μετά το smooth scroll, το section ξεκινά ακριβώς στην κάτω άκρη του Header.
+  - Πριν σταματούσε 15–16 px πιο κάτω (Header + 1rem) και φαινόταν μια λωρίδα από το προηγούμενο section.
+  - Το κενό πάνω από το περιεχόμενο το δίνει πλέον το padding του ίδιου του section.
+- **Back/Forward ανάμεσα στα sections:** ίδια θέση με το click. Στο v1.3.1 ο browser επανέφερε το section με τη λωρίδα των 15 px.
+- **Χωρίς αλλαγή:** links από άλλες σελίδες (π.χ. `index.html#pianos`), φόρμα Επικοινωνίας, design, animations.
+- **QA (headless Chrome: 1440, 1024, 390, 360):**
+  - Section top = Header bottom (±1 px). Κάτω από το Header φαίνεται πλέον το ίδιο το section, όχι το προηγούμενο.
+  - Smooth scroll, hash, Back/Forward, reveals και διακοπή με wheel/touch λειτουργούν. 0 JS errors.
+
+---
+
 # NIKOTIAN — Hero Fix v1.3.1 · Changelog (2026-11-10)
 
 Βάση: Navigation Motion Hotfix v1.3. Μία αλλαγή, στο `css/style.css`.
