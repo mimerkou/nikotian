@@ -385,6 +385,7 @@ p { text-wrap: pretty; }
 .hero__media {
   position: absolute; top: 0; right: 0; bottom: 0;
   width: 68%;
+  overflow: hidden;   /* v1.3.1: the entrance zoom (1.07 → 1) stays inside the frame, under its gradient — as in every other hero */
 }
 .hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%; }
 /* Dark falls in from the left, behind the text; a soft shade at the top keeps the header legible */
