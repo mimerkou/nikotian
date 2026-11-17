@@ -66,6 +66,10 @@ MANUAL = {
     27: (U, PH_U + ', ζωγραφισμένο πάνελ', 'contain', '50% 50%'),
 }
 TYPE_LABEL = {U: 'Όρθιο πιάνο', G: 'Πιάνο με ουρά'}
+# No longer available (client, 17/11/2026): left out on rebuild.
+# 4 Kaps · 14 Yamaha YUS · 17 Young Chang 118 (καφέ) · 8 Young Chang 121 (καφέ)
+REMOVED = {4, 8, 14, 17}
+
 NOTES = {
     1: ['Το TXT γράφει «HOFMANN & CERNY»· στο καπάκι των πλήκτρων διαβάζεται «HOFMANN & ČERNÝ». Εμφανίζεται με τα διακριτικά· προς επιβεβαίωση.'],
 }
@@ -100,6 +104,8 @@ def main():
     recs = []
     for t, j in zip(txts, jpgs):
         n = int(t.stem.split('_')[1])
+        if n in REMOVED:
+            continue
         raw = t.read_text(encoding='utf-8-sig').strip()
         maker, model = split_name(raw)
         typ, evidence, fit, pos = MANUAL[n]

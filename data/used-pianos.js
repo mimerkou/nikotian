@@ -159,46 +159,6 @@ window.NIKOTIAN_USED_PIANOS = [
     "ref": "02"
   },
   {
-    "id": "used-04",
-    "slug": "kaps-04",
-    "url": "/pianos/used/kaps-04/",
-    "detailPage": "piano.html?model=kaps-04",
-    "condition": "used",
-    "manufacturer": "Kaps",
-    "manufacturerSlug": "kaps",
-    "model": null,
-    "name": "Kaps",
-    "originalName": "KAPS",
-    "type": "grand",
-    "typeLabel": "Πιάνο με ουρά",
-    "typeEvidence": "Φωτογραφία: οριζόντιο σώμα με ουρά, ανοιχτό αναλόγιο, τρία πόδια",
-    "images": [
-      {
-        "src": "assets/photos/pianos/used/used-piano-04.jpg",
-        "width": 550,
-        "height": 550,
-        "fit": "cover",
-        "position": "50% 70%",
-        "alt": "Kaps, πιάνο με ουρά, στην έκθεση Νικοτιάν",
-        "pageFit": "photo"
-      }
-    ],
-    "source": {
-      "txt": "used-piano_04.txt",
-      "image": "used-piano_04.jpg",
-      "zip": "used-pianos.zip"
-    },
-    "description": [],
-    "specs": [],
-    "finish": null,
-    "features": [],
-    "notes": [],
-    "sameNameGroup": null,
-    "sameNameIndex": null,
-    "order": 4,
-    "ref": "04"
-  },
-  {
     "id": "used-13",
     "slug": "kawai-at-32-silent-system-13",
     "url": "/pianos/used/kawai-at-32-silent-system-13/",
@@ -246,7 +206,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 5,
+    "order": 4,
     "ref": "13"
   },
   {
@@ -297,7 +257,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 6,
+    "order": 5,
     "ref": "16"
   },
   {
@@ -348,7 +308,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 7,
+    "order": 6,
     "ref": "05"
   },
   {
@@ -399,7 +359,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 8,
+    "order": 7,
     "ref": "21"
   },
   {
@@ -450,7 +410,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 9,
+    "order": 8,
     "ref": "09"
   },
   {
@@ -501,7 +461,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 10,
+    "order": 9,
     "ref": "11"
   },
   {
@@ -552,7 +512,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 11,
+    "order": 10,
     "ref": "12"
   },
   {
@@ -598,7 +558,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 12,
+    "order": 11,
     "ref": "03"
   },
   {
@@ -649,7 +609,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 13,
+    "order": 12,
     "ref": "23"
   },
   {
@@ -700,7 +660,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 14,
+    "order": 13,
     "ref": "24"
   },
   {
@@ -736,6 +696,11 @@ window.NIKOTIAN_USED_PIANOS = [
     "description": [],
     "specs": [
       {
+        "label": "Διαστάσεις (Π × Μ)",
+        "value": "150 × 160 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
         "label": "Χώρα κατασκευής",
         "value": "Ιαπωνία",
         "source": "Στοιχεία πελάτη, 17/11/2026"
@@ -746,7 +711,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 15,
+    "order": 14,
     "ref": "26"
   },
   {
@@ -783,7 +748,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "specs": [
       {
         "label": "Διαστάσεις (Π × Β × Υ)",
-        "value": "151 × 60 × 121 cm",
+        "value": "148 × 54 × 108 cm",
         "source": "Στοιχεία πελάτη, 17/11/2026"
       },
       {
@@ -797,7 +762,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 16,
+    "order": 15,
     "ref": "18"
   },
   {
@@ -848,7 +813,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 17,
+    "order": 16,
     "ref": "10"
   },
   {
@@ -884,6 +849,11 @@ window.NIKOTIAN_USED_PIANOS = [
     "description": [],
     "specs": [
       {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "151 × 60 × 121 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
         "label": "Χώρα κατασκευής",
         "value": "Ιαπωνία",
         "source": "Στοιχεία πελάτη, 17/11/2026"
@@ -894,7 +864,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 18,
+    "order": 17,
     "ref": "15"
   },
   {
@@ -928,47 +898,12 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": [],
-    "finish": null,
-    "features": [],
-    "notes": [],
-    "sameNameGroup": null,
-    "sameNameIndex": null,
-    "order": 19,
-    "ref": "06"
-  },
-  {
-    "id": "used-14",
-    "slug": "yamaha-yus-14",
-    "url": "/pianos/used/yamaha-yus-14/",
-    "detailPage": "piano.html?model=yamaha-yus-14",
-    "condition": "used",
-    "manufacturer": "Yamaha",
-    "manufacturerSlug": "yamaha",
-    "model": "YUS",
-    "name": "Yamaha YUS",
-    "originalName": "YAMAHA YUS",
-    "type": "upright",
-    "typeLabel": "Όρθιο πιάνο",
-    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο (κοντινό, υπό γωνία)",
-    "images": [
-      {
-        "src": "assets/photos/pianos/used/used-piano-14.jpg",
-        "width": 500,
-        "height": 231,
-        "fit": "cover",
-        "position": "60% 50%",
-        "alt": "Yamaha YUS, όρθιο πιάνο, στην έκθεση Νικοτιάν",
-        "pageFit": "photo"
-      }
-    ],
-    "source": {
-      "txt": "used-piano_14.txt",
-      "image": "used-piano_14.jpg",
-      "zip": "used-pianos.zip"
-    },
-    "description": [],
     "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "154 × 65 × 131 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
       {
         "label": "Χώρα κατασκευής",
         "value": "Ιαπωνία",
@@ -980,8 +915,8 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 20,
-    "ref": "14"
+    "order": 18,
+    "ref": "06"
   },
   {
     "id": "used-07",
@@ -1029,111 +964,10 @@ window.NIKOTIAN_USED_PIANOS = [
     "finish": null,
     "features": [],
     "notes": [],
-    "sameNameGroup": "young-chang-118",
-    "sameNameIndex": [
-      1,
-      2
-    ],
-    "order": 21,
+    "sameNameGroup": null,
+    "sameNameIndex": null,
+    "order": 19,
     "ref": "07"
-  },
-  {
-    "id": "used-17",
-    "slug": "young-chang-118-17",
-    "url": "/pianos/used/young-chang-118-17/",
-    "detailPage": "piano.html?model=young-chang-118-17",
-    "condition": "used",
-    "manufacturer": "Young Chang",
-    "manufacturerSlug": "young-chang",
-    "model": "118",
-    "name": "Young Chang 118",
-    "originalName": "YOUNG CHANG 118",
-    "type": "upright",
-    "typeLabel": "Όρθιο πιάνο",
-    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
-    "images": [
-      {
-        "src": "assets/photos/pianos/used/used-piano-17.jpg",
-        "width": 550,
-        "height": 260,
-        "fit": "cover",
-        "position": "52% 50%",
-        "alt": "Young Chang 118, όρθιο πιάνο, στην έκθεση Νικοτιάν",
-        "pageFit": "photo"
-      }
-    ],
-    "source": {
-      "txt": "used-piano_17.txt",
-      "image": "used-piano_17.jpg",
-      "zip": "used-pianos.zip"
-    },
-    "description": [],
-    "specs": [
-      {
-        "label": "Χώρα κατασκευής",
-        "value": "Κορέα",
-        "source": "Στοιχεία πελάτη, 17/11/2026"
-      }
-    ],
-    "finish": null,
-    "features": [],
-    "notes": [],
-    "sameNameGroup": "young-chang-118",
-    "sameNameIndex": [
-      2,
-      2
-    ],
-    "order": 22,
-    "ref": "17"
-  },
-  {
-    "id": "used-08",
-    "slug": "young-chang-121-08",
-    "url": "/pianos/used/young-chang-121-08/",
-    "detailPage": "piano.html?model=young-chang-121-08",
-    "condition": "used",
-    "manufacturer": "Young Chang",
-    "manufacturerSlug": "young-chang",
-    "model": "121",
-    "name": "Young Chang 121",
-    "originalName": "YOUNG CHANG 121",
-    "type": "upright",
-    "typeLabel": "Όρθιο πιάνο",
-    "typeEvidence": "Φωτογραφία: όρθιο σώμα, πλήκτρα μπροστά από κατακόρυφο ηχείο",
-    "images": [
-      {
-        "src": "assets/photos/pianos/used/used-piano-08.jpg",
-        "width": 550,
-        "height": 260,
-        "fit": "cover",
-        "position": "57% 50%",
-        "alt": "Young Chang 121, όρθιο πιάνο, στην έκθεση Νικοτιάν",
-        "pageFit": "photo"
-      }
-    ],
-    "source": {
-      "txt": "used-piano_08.txt",
-      "image": "used-piano_08.jpg",
-      "zip": "used-pianos.zip"
-    },
-    "description": [],
-    "specs": [
-      {
-        "label": "Χώρα κατασκευής",
-        "value": "Κορέα",
-        "source": "Στοιχεία πελάτη, 17/11/2026"
-      }
-    ],
-    "finish": null,
-    "features": [],
-    "notes": [],
-    "sameNameGroup": "young-chang-121",
-    "sameNameIndex": [
-      1,
-      3
-    ],
-    "order": 23,
-    "ref": "08"
   },
   {
     "id": "used-25",
@@ -1178,10 +1012,10 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": "young-chang-121",
     "sameNameIndex": [
-      2,
-      3
+      1,
+      2
     ],
-    "order": 24,
+    "order": 20,
     "ref": "25"
   },
   {
@@ -1227,10 +1061,10 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": "young-chang-121",
     "sameNameIndex": [
-      3,
-      3
+      2,
+      2
     ],
-    "order": 25,
+    "order": 21,
     "ref": "27"
   },
   {
@@ -1281,7 +1115,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 26,
+    "order": 22,
     "ref": "22"
   },
   {
@@ -1332,7 +1166,7 @@ window.NIKOTIAN_USED_PIANOS = [
     "notes": [],
     "sameNameGroup": null,
     "sameNameIndex": null,
-    "order": 27,
+    "order": 23,
     "ref": "19"
   }
 ];
