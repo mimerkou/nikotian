@@ -1,0 +1,2 @@
+# Netlify: English 404 page for missing URLs under /en/ (the root 404.html serves everything else).
+/en/*  /en/404.html  404

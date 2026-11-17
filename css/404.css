@@ -1,0 +1,44 @@
+/* Nikotian — 404 (Η σελίδα δεν βρέθηκε / Page not found)
+   Ivory, one screen: the message and the way home on the left; a large «404» on five staff hairlines on the
+   right (the same staff as the hero). Shared roles: .eyebrow, .title, .t-body, .btn, .link-arrow. */
+.nf {
+  min-height: 100svh;
+  display: flex; align-items: center;
+  padding-block: calc(var(--header-h) + var(--s-7)) var(--s-8);
+}
+.nf__wrap {
+  width: 100%;
+  display: grid; grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: var(--grid-gap, var(--s-6)); row-gap: var(--s-7);
+  align-items: center;
+}
+.nf__text { grid-column: 1 / span 6; }
+.nf .title em { display: block; }
+.nf__lead { margin-top: var(--s-5); max-width: 32rem; }
+.nf__actions { margin-top: var(--s-7); display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-5) var(--s-6); }
+
+.nf__mark { grid-column: 8 / -1; position: relative; display: grid; align-items: center; }
+.nf__num {
+  grid-area: 1 / 1; position: relative; z-index: 1;
+  font-family: var(--font-serif); font-style: italic; font-weight: 400;
+  font-size: clamp(6.5rem, 3rem + 13vw, 15rem); line-height: .9; letter-spacing: -.02em;
+  color: var(--red);
+  text-align: center;
+}
+.nf__staff {
+  grid-area: 1 / 1; align-self: center;
+  gap: clamp(10px, .4rem + .6vw, 16px);
+  color: var(--line-strong);
+}
+.js .nf__staff span { animation: staff-draw 1400ms var(--ease-out) both; }
+.js .nf__staff span:nth-child(2) { animation-delay: 80ms; }
+.js .nf__staff span:nth-child(3) { animation-delay: 160ms; }
+.js .nf__staff span:nth-child(4) { animation-delay: 240ms; }
+.js .nf__staff span:nth-child(5) { animation-delay: 320ms; }
+
+@media (max-width: 900px) {
+  .nf { align-items: flex-start; }
+  .nf__mark { grid-column: 1 / -1; grid-row: 1; justify-self: start; width: min(100%, 26rem); }
+  .nf__num { text-align: left; }
+  .nf__text { grid-column: 1 / -1; }
+}

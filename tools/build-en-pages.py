@@ -113,14 +113,43 @@ def english(page, src):
     return s
 
 
+ABS = re.compile(r'\b(href|src|data-lang-switch)="(?!https?:|mailto:|tel:|#|/|data:)([^"]*)"')
+
+
+def not_found(src, en):
+    """404.html / en/404.html: Netlify serves them at any missing URL, at any depth, so every path is made
+    root-absolute. No hreflang (noindex page); the language switch goes to the other language's home page."""
+    src = re.sub(r'  <!-- Language versions \(hreflang\) -->\n(  <link rel="alternate"[^\n]*\n)+', '', src)
+    def fix(m):
+        val = m.group(2)
+        if val.startswith('../'):
+            val = val[3:]
+        elif en and not val.startswith(('css/', 'js/', 'assets/', 'data/')):
+            val = 'en/' + val
+        return f'{m.group(1)}="/{val}"'
+    src = ABS.sub(fix, src)
+    src = src.replace('data-root="../"', 'data-root="/"')
+    def nav(m):
+        el = '<a class="lang__item" href="/" lang="el" hreflang="el"' + (' aria-current="page"' if not en else '') + '>EL</a>'
+        en_ = '<a class="lang__item" href="/en/" lang="en" hreflang="en"' + (' aria-current="page"' if en else '') + '>EN</a>'
+        return f'{m.group(1)}\n          {el}\n          <span class="lang__sep" aria-hidden="true">|</span>\n          {en_}\n        {m.group(3)}'
+    return LANG_NAV.sub(nav, src, count=1)
+
+
 def main():
     (ROOT / 'en').mkdir(exist_ok=True)
     pages = sorted(p.name for p in ROOT.glob('*.html'))
     for page in pages:
         path = ROOT / page
-        src = greek(page, path.read_text(encoding='utf-8'))
+        raw = path.read_text(encoding='utf-8')
+        if page == '404.html':   # start again from relative paths; not_found() makes them absolute
+            raw = re.sub(r'\b(href|src|data-lang-switch)="/(?!/)([^"]+)"', r'\1="\2"', raw)
+        src = greek(page, raw)
+        en_src = english(page, src)
+        if page == '404.html':
+            src, en_src = not_found(src, False), not_found(en_src, True)
         path.write_text(src, encoding='utf-8')
-        (ROOT / 'en' / page).write_text(english(page, src), encoding='utf-8')
+        (ROOT / 'en' / page).write_text(en_src, encoding='utf-8')
     leftovers = {}
     for page in pages:
         body = (ROOT / 'en' / page).read_text(encoding='utf-8')
