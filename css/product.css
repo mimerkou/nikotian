@@ -43,7 +43,10 @@
   transition: opacity 600ms var(--ease-out), visibility 0s linear 600ms;
 }
 .pd-gallery__slide.is-active { opacity: 1; visibility: visible; transition: opacity 600ms var(--ease-out), visibility 0s; }
-/* cut-out instrument on white: shown whole, with room around it; white becomes Warm Beige (as the cards) */
+/* cut-out instrument on white: shown whole, with room around it; white becomes Warm Beige (as the cards).
+   The slide carries the beige itself: while it fades (opacity < 1) the slide is its own group, so the photograph
+   multiplies with this beige and never with an empty layer — no white flash when the thumbnails change it. */
+.pd-gallery__slide--contain { background: var(--beige); }
 .pd-gallery__slide--contain .pd-gallery__img {
   position: absolute; inset: 7% 10%;
   width: 80%; height: 86%;
