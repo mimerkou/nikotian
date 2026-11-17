@@ -31,7 +31,8 @@
   /* ---------- Mobile menu ---------- */
   const setMenu = (open) => {
     menuToggle.setAttribute('aria-expanded', String(open));
-    menuToggle.querySelector('.menu-toggle__label').textContent = open ? 'Κλείσιμο' : 'Μενού';
+    const T = window.NIKOTIAN_T || ((s) => s);
+    menuToggle.querySelector('.menu-toggle__label').textContent = open ? T('Κλείσιμο') : T('Μενού');
     root.classList.toggle('menu-open', open);
     if (open) nav.querySelector('a, button')?.focus({ preventScroll: true });
   };
@@ -142,7 +143,9 @@
     const link = e.target.closest('a[data-pending]');
     if (!link || !toast) return;
     if (link.getAttribute('href') === '#') e.preventDefault();
-    toast.textContent = `Η σελίδα «${link.dataset.pending}» θα είναι διαθέσιμη στο τελικό website.`;
+    toast.textContent = document.documentElement.lang === 'en'
+      ? `The page “${link.dataset.pending}” will be available on the final website.`
+      : `Η σελίδα «${link.dataset.pending}» θα είναι διαθέσιμη στο τελικό website.`;
     toast.classList.add('is-visible');
     clearTimeout(toastTimer);
     toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 3200);
@@ -245,6 +248,18 @@
       fontsReady.then(() => requestAnimationFrame(align));
     }, { once: true });
   })();
+
+  /* ---------- Language switch (EL | EN) ----------
+     Each page links to its counterpart (Greek at the root, English in /en/). The link also carries the current
+     query and #section, so a product (?model=…), a filtered collection (?brand=…) or a section stays the same. */
+  const langLinks = document.querySelectorAll('a[data-lang-switch]');
+  const syncLang = () => langLinks.forEach((a) => {
+    const base = a.getAttribute('data-lang-switch');
+    a.setAttribute('href', base + location.search + location.hash);
+  });
+  syncLang();
+  langLinks.forEach((a) => ['pointerenter', 'focus', 'pointerdown'].forEach((t) => a.addEventListener(t, syncLang)));
+  window.addEventListener('hashchange', syncLang);
 
   /* ---------- Reveals ---------- */
   const targets = document.querySelectorAll('[data-reveal], [data-timeline]');

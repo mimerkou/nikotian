@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — Showroom at 105 Solonos Street, Athens | Nikotian Music House</title>
+  <meta name="description" content="Contact the Nikotian music house: showroom at 105 Solonos Street, 106 78 Athens, telephone 210 380 8836 and 210 383 9623, info@nikotian.gr.">
+  <!-- Open Graph / social sharing (og-image: assets/og/og-image.jpg, 1200 × 630). Absolute URLs: Netlify prototype domain — change to the final domain at launch. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nikotian Music House">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:title" content="Contact — Showroom at 105 Solonos Street, Athens | Nikotian Music House">
+  <meta property="og:description" content="Contact the Nikotian music house: showroom at 105 Solonos Street, 106 78 Athens, telephone 210 380 8836 and 210 383 9623, info@nikotian.gr.">
+  <meta property="og:url" content="https://nikotian.netlify.app/en/contact.html">
+  <meta property="og:image" content="https://nikotian.netlify.app/assets/og/og-image-en.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nikotian Music House, since 1929: “A life devoted to the piano.” A grand piano with its lid open.">
+  <!-- Language versions (hreflang) -->
+  <link rel="alternate" hreflang="el" href="https://nikotian.netlify.app/contact.html">
+  <link rel="alternate" hreflang="en" href="https://nikotian.netlify.app/en/contact.html">
+  <link rel="alternate" hreflang="x-default" href="https://nikotian.netlify.app/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#F7F4EE">
+  <link rel="icon" href="../assets/logo/nikotian-C-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="preload" as="image" href="../assets/photos/contact/contact-hero.jpeg">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/i18n.js" defer></script>
+  <script src="../js/contact.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= HEADER (shared) =================
+       Internal page: .site-header--light = ivory bar, graphite type, light logo, one hairline underneath. -->
+  <header class="site-header site-header--light" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nikotian, home page">
+        <img class="brand__logo brand__logo--on-dark" src="../assets/logo/nikotian-C-heritage-refined-on-dark.svg" alt="" width="150" height="41">
+        <img class="brand__logo brand__logo--on-light" src="../assets/logo/nikotian-C-heritage-refined-light.svg" alt="Nikotian" width="150" height="41">
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="about.html">The House</a></li>
+          <li class="nav__item"><a class="nav__link" href="services.html">Services</a></li>
+          <li class="nav__item nav__item--has-sub">
+            <!-- «Πιάνα» is a category, not a page: one button opens the submenu (hover/click on desktop, tap in the mobile menu) -->
+            <button class="nav__parent" type="button" aria-expanded="false" aria-controls="sub-pianos">
+              <span class="nav__link">Pianos</span>
+              <svg class="nav__chev" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            </button>
+            <!-- Category pages do not exist yet: homepage anchor + data-href with the future URL -->
+            <ul class="nav__sub" id="sub-pianos">
+              <li><a href="new-pianos.html">New</a></li>
+              <li><a href="used-pianos.html">Pre-owned</a></li>
+              <li><a href="electric-pianos.html">Electric</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="guitars.html">Guitars</a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+        <div class="nav__mobile-extra">
+          <a class="btn btn--primary" href="contact.html">Visit the showroom</a>
+          <address class="nav__meta">
+            105 Solonos Street, 106 78 Athens<br>
+            <a href="tel:+302103808836">210 380 8836</a> · <a href="tel:+306972034883">697 203 4883</a>
+          </address>
+        </div>
+      </nav>
+
+      <div class="site-header__actions">
+        <nav class="lang" aria-label="Language">
+          <a class="lang__item" href="../contact.html" data-lang-switch="../contact.html" lang="el" hreflang="el">EL</a>
+          <span class="lang__sep" aria-hidden="true">|</span>
+          <a class="lang__item" href="contact.html" lang="en" hreflang="en" aria-current="page">EN</a>
+        </nav>
+        <a class="btn btn--primary btn--sm header-cta" href="contact.html">Visit the showroom</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__label">Menu</span>
+          <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= 01 · HERO =================
+         The approved internal hero of «Ο Οίκος» (ivory): crumbs, eyebrow, .title--stack h1, .t-body lead,
+         photograph bleeding right, height set by the viewport. Not full-height. No CTA.
+         Photograph: images/contact-hero.jpeg (JPEG, 818 × 545), byte-for-byte copy; only crop/position in CSS. -->
+    <section class="c-hero" id="top" aria-labelledby="c-hero-title">
+      <div class="wrap">
+        <nav class="crumbs t-meta" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Contact</span></li>
+          </ol>
+        </nav>
+
+        <div class="c-hero__grid">
+          <div class="c-hero__text">
+            <p class="eyebrow">Contact</p>
+            <h1 class="title title--stack" id="c-hero-title">Come and <em>meet us.</em></h1>
+            <p class="t-body c-hero__lead">For information about our instruments and services, or to arrange a visit to the showroom, you can contact us in whichever way suits you.</p>
+          </div>
+
+          <figure class="c-hero__media">
+            <img src="../assets/photos/contact/contact-hero.jpeg" alt="A pianist playing a grand piano in a bright, wood-panelled room with a large window onto the street" width="818" height="545" fetchpriority="high">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 02 · ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ & ΦΟΡΜΑ =================
+         Left: one typographic ledger (label | value) on hairlines. No cards, no icons.
+         Right: the contact form, directly on the beige, with bordered ivory fields.
+         Every contact value carries data-contact="<key>" = the key in data/contact.json, the single source
+         that becomes a WordPress options page (see NOTES.md · «Επικοινωνία»). -->
+    <section class="c-main section" id="stoixeia" aria-labelledby="c-info-title">
+      <div class="wrap c-main__grid">
+
+        <div class="c-info">
+          <header class="c-info__head" data-reveal>
+            <p class="eyebrow">Find us</p>
+            <h2 class="title title--md" id="c-info-title">Let’s talk.</h2>
+          </header>
+
+          <address class="c-ledger" data-reveal style="--d: 120ms">
+            <dl>
+              <div class="c-ledger__row" id="ekthesi">
+                <dt class="t-meta">The showroom</dt>
+                <dd>
+                  <p class="t-meta-value" data-contact="address">105 Solonos Street<br>106 78 Athens</p>
+                  <a class="link-arrow c-ledger__directions" data-contact="directions" href="https://www.google.com/maps/dir/?api=1&amp;destination=Nikotian%2C%20%CE%A3%CF%8C%CE%BB%CF%89%CE%BD%CE%BF%CF%82%20105%2C%20%CE%91%CE%B8%CE%AE%CE%BD%CE%B1" target="_blank" rel="noopener noreferrer">Directions<span class="visually-hidden"> on Google Maps (opens in a new tab)</span> <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+                </dd>
+              </div>
+              <div class="c-ledger__row">
+                <dt class="t-meta">Landlines</dt>
+                <dd>
+                  <ul class="c-ledger__values">
+                    <li><a class="t-meta-value" data-contact="landline-1" href="tel:+302103808836">210 380 8836</a></li>
+                    <li><a class="t-meta-value" data-contact="landline-2" href="tel:+302103839623">210 383 9623</a></li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="c-ledger__row">
+                <dt class="t-meta">Karolos Nikotian</dt>
+                <dd><a class="t-meta-value" data-contact="mobile-karolos" href="tel:+306972034883">697 203 4883</a></dd>
+              </div>
+              <div class="c-ledger__row">
+                <dt class="t-meta">Robert Karabetian</dt>
+                <dd><a class="t-meta-value" data-contact="mobile-rober" href="tel:+306948873390">694 887 3390</a></dd>
+              </div>
+              <div class="c-ledger__row">
+                <dt class="t-meta">Email</dt>
+                <dd><a class="t-meta-value" data-contact="email" href="mailto:info@nikotian.gr">info@nikotian.gr</a></dd>
+              </div>
+              <!-- Opening hours: add one row here once confirmed by the client -->
+            </dl>
+          </address>
+        </div>
+
+        <!-- Contact form — visual presentation only (no sending in the frontend prototype).
+             Four required fields in one column; labels always visible above the field. -->
+        <form class="c-form cf" id="contact-form" method="post" aria-labelledby="cf-title">
+          <h2 class="t-subtitle cf__title" id="cf-title" data-reveal style="--d: 200ms">Send us a message</h2>
+
+          <div class="cf__fields" data-reveal style="--d: 260ms">
+            <div class="cf__field">
+              <label class="cf__label" for="cf-name">Full name <span class="cf__req" aria-hidden="true">*</span></label>
+              <input class="cf__input" id="cf-name" name="name" type="text" autocomplete="name" required maxlength="120">
+            </div>
+            <div class="cf__field">
+              <label class="cf__label" for="cf-email">Email <span class="cf__req" aria-hidden="true">*</span></label>
+              <input class="cf__input" id="cf-email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="160" spellcheck="false">
+            </div>
+            <div class="cf__field">
+              <label class="cf__label" for="cf-phone">Telephone <span class="cf__req" aria-hidden="true">*</span></label>
+              <input class="cf__input" id="cf-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required maxlength="30">
+            </div>
+            <div class="cf__field">
+              <label class="cf__label" for="cf-message">Message <span class="cf__req" aria-hidden="true">*</span></label>
+              <textarea class="cf__input cf__textarea" id="cf-message" name="message" rows="6" required maxlength="4000"></textarea>
+            </div>
+
+            <!-- WordPress: privacy notice + link to «Πολιτική Απορρήτου» goes here once that page exists -->
+
+            <div class="cf__submit">
+              <button class="btn btn--primary" type="submit">Send message</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (shared) ================= -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__top">
+      <div class="site-footer__brand">
+        <img src="../assets/logo/nikotian-C-heritage-refined-on-dark.svg" alt="Nikotian" width="170" height="47" loading="lazy">
+        <p>Nikotian Music House.<br>Pianos in Athens, since 1929.</p>
+        <a class="site-footer__social" href="https://www.facebook.com/PianaNikotian" target="_blank" rel="noopener noreferrer" aria-label="Nikotian on Facebook (opens in a new tab)">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.5 21.95V14h2.66l.4-3.1H13.5V8.92c0-.9.25-1.5 1.54-1.5h1.64V4.65a22 22 0 0 0-2.4-.12c-2.37 0-4 1.45-4 4.11v2.27H7.6V14h2.68v7.95A10 10 0 1 1 13.5 21.95z"/></svg>
+          <span>Facebook</span>
+        </a>
+      </div>
+      <nav class="site-footer__col" aria-labelledby="f-oikos">
+        <h2 id="f-oikos">The House</h2>
+        <ul>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__col" aria-labelledby="f-organa">
+        <h2 id="f-organa">Instruments</h2>
+        <ul>
+          <li><a href="new-pianos.html">New pianos</a></li>
+          <li><a href="used-pianos.html">Pre-owned pianos</a></li>
+          <li><a href="electric-pianos.html">Electric pianos</a></li>
+          <li><a href="guitars.html">Classical guitars</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__col">
+        <h2>Showroom</h2>
+        <address>
+          <ul>
+            <li>105 Solonos Street, 106 78 Athens</li>
+            <li><a href="tel:+302103808836">210 380 8836</a></li>
+            <li><a href="tel:+306972034883">697 203 4883</a></li>
+            <li><a href="mailto:info@nikotian.gr">info@nikotian.gr</a></li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="wrap site-footer__bottom">
+      <p class="site-footer__copy">© 2026 Nikotian. All rights reserved.<span class="site-footer__dot" aria-hidden="true">•</span><a href="privacy.html">Privacy policy</a></p>
+      <p class="site-footer__credit">Website by <a href="https://michalismerkouris.com/" target="_blank" rel="noopener noreferrer">Michalis Merkouris<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>

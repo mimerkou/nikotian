@@ -829,7 +829,10 @@ html:not(.menu-open) .site-header:not(.is-solid) :focus-visible:not(.nav__sub a)
   content: ""; position: absolute; top: 0; left: var(--gutter); right: var(--gutter);
   height: 1px; background: var(--line-on-dark);
 }
-.site-footer__legal { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-6); }
+/* © + privacy policy on one line, separated by a dot (17/11/2026); the credit stays on the right */
+.site-footer__dot { margin-inline: .75em; opacity: .55; }
+.site-footer__copy a { color: inherit; text-decoration: underline; text-decoration-color: rgba(247, 244, 238, .35); text-underline-offset: .3em; transition: text-decoration-color var(--dur) var(--ease-out); }
+.site-footer__copy a:hover { text-decoration-color: currentColor; }
 .site-footer__credit a { color: var(--ivory); text-decoration: underline; text-decoration-color: rgba(247, 244, 238, .35); text-underline-offset: .3em; }
 
 @media (max-width: 64rem) {

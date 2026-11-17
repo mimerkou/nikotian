@@ -17,7 +17,7 @@
   const item = (params.get('item') || '').trim().slice(0, 120);
 
   if (interest && message.value.trim() === '') {
-    message.value = `Ενδιαφέρομαι για το ${interest}`;
+    message.value = document.documentElement.lang === 'en' ? `I am interested in the ${interest}` : `Ενδιαφέρομαι για το ${interest}`;
   }
   if (item && !form.querySelector('input[name="product"]')) {
     const hidden = document.createElement('input');

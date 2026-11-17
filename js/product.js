@@ -19,6 +19,11 @@
   if (!root) return;
 
   const PHONE = { href: 'tel:+302103808836', label: '210 380 8836' };
+  // English pages (/en/): js/i18n.js provides the translations and the path to the root files; on the Greek pages these are no-ops
+  const T = window.NIKOTIAN_T || ((s) => s);
+  const EN = document.documentElement.lang === 'en';
+  const ROOT = window.NIKOTIAN_ROOT || '';
+  const localise = window.NIKOTIAN_localise || ((x) => x);
 
   // One entry per collection. «label» feeds the breadcrumb, «back» the return link, «condition» the type line.
   // «family» = the page that renders it · «portrait» = vertical instrument (portrait gallery, studio backdrop)
@@ -33,6 +38,7 @@
       label: 'Κιθάρες', back: 'Πίσω στις Κιθάρες', condition: null, typeFallback: 'Κλασική κιθάρα', portrait: true },
   ];
   const FAMILY = root.dataset.family || 'piano';
+  ALL_COLLECTIONS.forEach((c) => { ['label', 'back', 'condition', 'typeFallback'].forEach((k) => { if (c[k]) c[k] = T(c[k]); }); });
   const COLLECTIONS = ALL_COLLECTIONS.filter((c) => (c.family || 'piano') === FAMILY);
   const PAGE = FAMILY === 'piano' ? 'piano.html' : `${FAMILY}.html`;
 
@@ -53,8 +59,8 @@
     const hint = params.get('c');
     const order = [...COLLECTIONS].sort((a, b) => (b.key === hint) - (a.key === hint));
     for (const c of order) {
-      if (!Array.isArray(window[c.global])) await loadScript(c.src);
-      const data = window[c.global];
+      if (!Array.isArray(window[c.global])) await loadScript(ROOT + c.src);
+      const data = localise(window[c.global]);
       const rec = Array.isArray(data) ? data.find((r) => r.slug === slug) : null;
       if (rec) return { rec, c, data };
     }
@@ -119,15 +125,15 @@
     const ratio = !many && one.fit === 'photo' && one.width && one.height
       ? ` style="aspect-ratio: ${Math.min(2.4, Math.max(1, one.width / one.height)).toFixed(4)}"` : '';
     const slides = v.gallery.map((im, i) => `
-        <figure class="pd-gallery__slide pd-gallery__slide--${fitClass(im)}${i === 0 ? ' is-active' : ''}"${bd(im)} id="pd-slide-${i}"${many ? ` role="group" aria-roledescription="φωτογραφία" aria-label="${i + 1} από ${v.gallery.length}"` : ''}${i ? ' aria-hidden="true"' : ''}>
+        <figure class="pd-gallery__slide pd-gallery__slide--${fitClass(im)}${i === 0 ? ' is-active' : ''}"${bd(im)} id="pd-slide-${i}"${many ? ` role="group" aria-roledescription="${T('φωτογραφία')}" aria-label="${i + 1} ${EN ? 'of' : 'από'} ${v.gallery.length}"` : ''}${i ? ' aria-hidden="true"' : ''}>
           ${img(im, 'pd-gallery__img', (i === 0 ? ' fetchpriority="high"' : ' loading="lazy"') + (im.position ? ` style="object-position: ${esc(im.position)}"` : ''))}
         </figure>`).join('');
     const thumbs = many ? `
-      <ul class="pd-thumbs${v.gallery.length > 6 ? ' pd-thumbs--dense' : ''}" style="--n: ${v.gallery.length}" aria-label="Φωτογραφίες του ${esc(v.name)}">
+      <ul class="pd-thumbs${v.gallery.length > 6 ? ' pd-thumbs--dense' : ''}" style="--n: ${v.gallery.length}" aria-label="${EN ? `Photographs of the ${esc(v.name)}` : `Φωτογραφίες του ${esc(v.name)}`}">
         ${v.gallery.map((im, i) => `
         <li class="pd-thumbs__item">
           <button class="pd-thumbs__btn pd-thumbs__btn--${v.portrait ? 'portrait' : fitClass(im) === 'contain' ? 'contain' : 'cover'}"${bd(im)} type="button" data-slide="${i}" aria-controls="pd-slide-${i}"${i === 0 ? ' aria-current="true"' : ''} tabindex="${i === 0 ? 0 : -1}">
-            <span class="visually-hidden">Φωτογραφία ${i + 1} από ${v.gallery.length}: ${esc(im.alt || v.name)}</span>
+            <span class="visually-hidden">${EN ? 'Photograph' : 'Φωτογραφία'} ${i + 1} ${EN ? 'of' : 'από'} ${v.gallery.length}: ${esc(im.alt || v.name)}</span>
             <img src="${esc(im.src)}" alt="" width="${im.width}" height="${im.height}" loading="lazy" decoding="async">
           </button>
         </li>`).join('')}
@@ -148,13 +154,13 @@
         ${v.typeLine ? `<p class="t-caption pd-info__type">${esc(v.typeLine)}</p>` : ''}
         ${v.lead.length ? `<div class="pd-info__text">${v.lead.map((t) => `<p class="t-body">${esc(t)}</p>`).join('')}</div>` : ''}
         <div class="pd-info__actions">
-          <a class="btn btn--primary pd-info__cta" href="${esc(contactHref(v))}">Ρωτήστε για το μοντέλο</a>
-          <a class="link-arrow pd-info__phone" href="${PHONE.href}">Καλέστε μας στο ${PHONE.label}</a>
+          <a class="btn btn--primary pd-info__cta" href="${esc(contactHref(v))}">${T('Ρωτήστε για το μοντέλο')}</a>
+          <a class="link-arrow pd-info__phone" href="${PHONE.href}">${EN ? 'Call us on' : 'Καλέστε μας στο'} ${PHONE.label}</a>
         </div>
       </div>`;
   }
 
-  const kb = (bytes) => (bytes ? `${Math.max(1, Math.round(bytes / 1024)).toLocaleString('el-GR')} KB` : '');
+  const kb = (bytes) => (bytes ? `${Math.max(1, Math.round(bytes / 1024)).toLocaleString(EN ? 'en-GB' : 'el-GR')} KB` : '');
 
   function detailsHTML(v) {
     const hasBody = v.body.length > 0;
@@ -162,12 +168,12 @@
     if (!hasBody && !hasAside) return '';
     const desc = hasBody ? `
         <div class="pd-desc" data-reveal>
-          <h2 class="t-meta t-label-rule pd-label" id="pd-desc-title">Περιγραφή</h2>
+          <h2 class="t-meta t-label-rule pd-label" id="pd-desc-title">${T('Περιγραφή')}</h2>
           <div class="pd-desc__text">${v.body.map((t) => `<p class="t-body">${esc(t)}</p>`).join('')}</div>
         </div>` : '';
     const specs = v.specs.length ? `
           <section class="pd-specs" aria-labelledby="pd-specs-title">
-            <h2 class="t-meta t-label-rule pd-label" id="pd-specs-title">Τεχνικά χαρακτηριστικά</h2>
+            <h2 class="t-meta t-label-rule pd-label" id="pd-specs-title">${T('Τεχνικά χαρακτηριστικά')}</h2>
             <dl class="pd-specs__list">${v.specs.map((s) => `
               <div class="pd-specs__row"><dt class="t-meta">${esc(s.label)}</dt><dd class="t-meta-value">${esc(s.value)}</dd></div>`).join('')}
             </dl>
@@ -175,9 +181,9 @@
     const meta = v.pdf ? [v.pdf.label || 'PDF', `PDF${v.pdf.bytes ? `, ${kb(v.pdf.bytes)}` : ''}`, v.pdf.language].filter(Boolean).join(' · ') : '';
     const doc = v.pdf ? `
           <section class="pd-doc" aria-labelledby="pd-doc-title">
-            <h2 class="t-meta t-label-rule pd-label" id="pd-doc-title">Τεχνικό φυλλάδιο</h2>
+            <h2 class="t-meta t-label-rule pd-label" id="pd-doc-title">${T('Τεχνικό φυλλάδιο')}</h2>
             <p class="t-caption pd-doc__meta">${esc(meta)}</p>
-            <a class="link-arrow pd-doc__link" href="${esc(v.pdf.src)}" target="_blank" rel="noopener" type="application/pdf">Προβολή PDF<span class="visually-hidden">: ${esc(v.name)} (ανοίγει σε νέα καρτέλα)</span> <span class="link-arrow__icon" aria-hidden="true">↗</span></a>
+            <a class="link-arrow pd-doc__link" href="${esc(v.pdf.src)}" target="_blank" rel="noopener" type="application/pdf">${T('Προβολή PDF')}<span class="visually-hidden">: ${esc(v.name)} ${T('(ανοίγει σε νέα καρτέλα)')}</span> <span class="link-arrow__icon" aria-hidden="true">↗</span></a>
           </section>` : '';
     return `
       <div class="wrap pd-details__grid${hasBody ? '' : ' pd-details__grid--aside-only'}${hasAside ? '' : ' pd-details__grid--text-only'}">${desc}
@@ -252,14 +258,14 @@
 
   /* ---------- Not found / not published ---------- */
   function notFound() {
-    setMeta('Το μοντέλο δεν βρέθηκε | Μουσικός Οίκος Νικοτιάν');
+    setMeta(EN ? 'Model not found | Nikotian Music House' : 'Το μοντέλο δεν βρέθηκε | Μουσικός Οίκος Νικοτιάν');
     root.classList.add('pd--empty');
-    const family = FAMILY === 'guitar' ? '<li><a href="guitars.html">Κιθάρες</a></li>' : '<li><span class="crumbs__label">Πιάνα</span></li>';
-    document.getElementById('pd-crumbs').innerHTML = `<ol><li><a href="index.html">Αρχική</a></li>${family}</ol>`;
+    const family = FAMILY === 'guitar' ? `<li><a href="guitars.html">${T('Κιθάρες')}</a></li>` : `<li><span class="crumbs__label">${T('Πιάνα')}</span></li>`;
+    document.getElementById('pd-crumbs').innerHTML = `<ol><li><a href="index.html">${T('Αρχική')}</a></li>${family}</ol>`;
     document.getElementById('pd-main').innerHTML = `
       <div class="pd-missing">
-        <h1 class="title title--md" id="pd-title">Το μοντέλο δεν βρέθηκε.</h1>
-        <p class="t-body pd-missing__text">Η σελίδα που αναζητάτε δεν είναι διαθέσιμη. Δείτε τις συλλογές μας ή καλέστε μας στο <a class="link-inline" href="${PHONE.href}">${PHONE.label}</a>.</p>
+        <h1 class="title title--md" id="pd-title">${T('Το μοντέλο δεν βρέθηκε.')}</h1>
+        <p class="t-body pd-missing__text">${EN ? 'The page you are looking for is not available. See our collections or call us on' : 'Η σελίδα που αναζητάτε δεν είναι διαθέσιμη. Δείτε τις συλλογές μας ή καλέστε μας στο'} <a class="link-inline" href="${PHONE.href}">${PHONE.label}</a>.</p>
         <ul class="pd-missing__links">${COLLECTIONS.map((c) => `<li><a class="link-arrow" href="${c.href}">${esc(c.label)} <span class="link-arrow__icon" aria-hidden="true">→</span></a></li>`).join('')}</ul>
       </div>`;
     root.removeAttribute('aria-busy');
@@ -272,7 +278,7 @@
     const { rec, c, data } = found;
     const v = view(rec, c, data);
 
-    setMeta(`${v.name} — ${c.label} | Μουσικός Οίκος Νικοτιάν`, v.lead.join(' '));
+    setMeta(`${v.name} — ${c.label} | ${EN ? 'Nikotian Music House' : 'Μουσικός Οίκος Νικοτιάν'}`, v.lead.join(' '));
     markCollection(c);
 
     // 01 · breadcrumb: collection / manufacturer / model — a crumb links only to a page that exists

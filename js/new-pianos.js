@@ -19,7 +19,9 @@
 
 (() => {
   const grid = document.getElementById('np-grid');
-  const DATA = window[(grid && grid.dataset.source) || 'NIKOTIAN_NEW_PIANOS'];
+  const T = window.NIKOTIAN_T || ((s) => s);
+  const EN = document.documentElement.lang === 'en';
+  const DATA = (window.NIKOTIAN_localise || ((x) => x))(window[(grid && grid.dataset.source) || 'NIKOTIAN_NEW_PIANOS']);
   const form = document.getElementById('np-filters');
   if (!Array.isArray(DATA) || !grid || !form) return;
 
@@ -57,9 +59,9 @@
           <p class="t-meta np-feature__brand">${esc(p.manufacturer)}</p>
           <h3 class="title title--md np-feature__title" id="t-${esc(p.slug)}">${esc(p.model || name)}</h3>
           ${text.length ? `<div class="np-feature__text">${text.map((t) => `<p class="t-body">${keep(esc(t))}</p>`).join('')}</div>` : ''}
-          <a class="link-arrow np-feature__more" ${linkAttrs(p)}>Ανακαλύψτε το μοντέλο<span class="visually-hidden">: ${esc(name)}</span> <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+          <a class="link-arrow np-feature__more" ${linkAttrs(p)}>${T('Ανακαλύψτε το μοντέλο')}<span class="visually-hidden">: ${esc(name)}</span> <span class="link-arrow__icon" aria-hidden="true">→</span></a>
         </div>
-        ${details.length ? `<ul class="np-feature__details" aria-label="Λεπτομέρειες του ${esc(name)}" data-reveal style="--d: 220ms">${details.map((d) => `<li class="frame np-feature__detail">${img(d, 'np-feature__img', ' loading="lazy"')}</li>`).join('')}</ul>` : ''}
+        ${details.length ? `<ul class="np-feature__details" aria-label="${EN ? `Details of the ${esc(name)}` : `Λεπτομέρειες του ${esc(name)}`}" data-reveal style="--d: 220ms">${details.map((d) => `<li class="frame np-feature__detail">${img(d, 'np-feature__img', ' loading="lazy"')}</li>`).join('')}</ul>` : ''}
         ${facts.length ? `<dl class="np-feature__facts" data-reveal style="--d: 280ms">${facts.map((f) => `<div class="np-feature__fact"><dt class="t-meta">${esc(f.label)}</dt><dd class="t-meta-value">${esc(f.value)}</dd></div>`).join('')}</dl>` : ''}
       </article>`;
     featuredEl.hidden = false;
@@ -86,7 +88,7 @@
   pianos.forEach((p) => {
     if (!brands.some((b) => b.value === p.manufacturerSlug)) brands.push({ value: p.manufacturerSlug, label: p.manufacturer });
   });
-  brands.sort((a, b) => a.label.localeCompare(b.label, 'el'));
+  brands.sort((a, b) => a.label.localeCompare(b.label, EN ? 'en' : 'el'));
   const BRAND_VALUES = ['all', ...brands.map((b) => b.value)];
   const TYPE_VALUES = ['all', 'upright', 'grand'];
 
@@ -104,7 +106,9 @@
     const pos = img.position ? ` style="object-position: ${esc(img.position)}"` : '';
     const backdrop = img.backdrop ? ` np-card__media--backdrop" style="--backdrop: ${esc(img.backdrop)}` : '';
     // instruments with the same name: tell them apart for screen readers
-    const same = p.sameNameIndex ? `, όργανο ${p.sameNameIndex[0]} από ${p.sameNameIndex[1]} με την ίδια ονομασία` : '';
+    const same = !p.sameNameIndex ? '' : EN
+      ? `, instrument ${p.sameNameIndex[0]} of ${p.sameNameIndex[1]} with the same name`
+      : `, όργανο ${p.sameNameIndex[0]} από ${p.sameNameIndex[1]} με την ίδια ονομασία`;
     const live = Boolean(p.detailPage);
     const href = live ? p.detailPage : '#';
     const pending = live ? '' : ` data-href="${esc(p.url)}" data-pending="${esc(name)}"`;
@@ -119,7 +123,7 @@
             <h3 class="t-subtitle np-card__title" id="t-${esc(p.slug)}">${esc(title)}</h3>
             ${p.typeLabel ? `<p class="t-caption np-card__type">${esc(p.typeLabel)}</p>` : ''}
             <span class="np-card__spacer" aria-hidden="true"></span>
-            <a class="link-arrow np-card__more" href="${esc(href)}"${pending}>Ανακαλύψτε το μοντέλο<span class="visually-hidden">: ${esc(name)}${same}</span> <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+            <a class="link-arrow np-card__more" href="${esc(href)}"${pending}>${T('Ανακαλύψτε το μοντέλο')}<span class="visually-hidden">: ${esc(name)}${same}</span> <span class="link-arrow__icon" aria-hidden="true">→</span></a>
           </div>
         </article>
       </li>`;
@@ -142,7 +146,7 @@
   });
   // A model with an undocumented type is shown under «Όλα» only.
   const match = (p, s) => (s.brand === 'all' || p.manufacturerSlug === s.brand) && (s.type === 'all' || p.type === s.type);
-  const [nounOne, nounMany] = (grid.dataset.noun || 'πιάνο|πιάνα').split('|');
+  const [nounOne, nounMany] = (grid.dataset.noun || T('πιάνο|πιάνα')).split('|');
   const plural = (n) => (n === 1 ? nounOne : nounMany);
 
   const apply = (animate) => {
@@ -161,7 +165,7 @@
     });
 
     const filtered = s.brand !== 'all' || s.type !== 'all';
-    countEl.textContent = filtered ? `${shown} από ${pianos.length} ${plural(pianos.length)}` : `${pianos.length} ${plural(pianos.length)}`;
+    countEl.textContent = filtered ? `${shown} ${EN ? 'of' : 'από'} ${pianos.length} ${plural(pianos.length)}` : `${pianos.length} ${plural(pianos.length)}`;
     resetBtn.hidden = !filtered;
     empty.hidden = shown !== 0;
     grid.hidden = shown === 0;

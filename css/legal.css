@@ -1,0 +1,37 @@
+/* Nikotian — legal pages (Πολιτική απορρήτου / Privacy policy)
+   A quiet reading page on Ivory: crumbs, eyebrow, title, a draft notice, then the text in one readable column.
+   Shared type roles only (.eyebrow, .title, .t-subtitle, .t-body, .t-meta); this file sets layout. */
+.legal {
+  padding-top: calc(var(--header-h) + var(--s-6));
+  padding-bottom: var(--section-y);
+}
+.legal__wrap { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--grid-gap, var(--s-6)); }
+.legal__wrap > * { grid-column: 1 / -1; }
+.legal__head { margin-top: var(--s-8); }
+.legal__head .title { margin-top: var(--s-3); }
+.legal__updated { margin-top: var(--s-4); }
+.legal__draft {
+  margin-top: var(--s-7);
+  padding: var(--s-5) var(--s-6);
+  border-left: 2px solid var(--red);
+  background: var(--beige);
+  max-width: 44rem;
+}
+.legal__draft p { max-width: none; }
+.legal__draft p + p { margin-top: var(--s-2); }
+.legal__body { margin-top: var(--s-8); max-width: 44rem; }
+.legal__section + .legal__section { margin-top: var(--s-8); padding-top: var(--s-7); border-top: 1px solid var(--line); }
+.legal__section h2 { margin-bottom: var(--s-4); }
+.legal__section h3 { margin: var(--s-5) 0 var(--s-2); font-weight: 600; font-size: var(--body-size); color: var(--strong-color); }
+.legal__section .t-body { max-width: none; }
+.legal__section .t-body + .t-body { margin-top: var(--s-3); }
+.legal__list { margin: var(--s-3) 0 0; padding-left: 1.25em; list-style: disc; display: grid; gap: var(--s-2); }
+.legal__list li { font-size: var(--body-size); line-height: var(--body-lh); color: var(--body-color); padding-left: .25em; }
+.legal__list li::marker { color: var(--red); }
+.legal__ph { background: rgba(163, 38, 42, .08); color: var(--red); padding: 0 .25em; border-radius: 2px; }   /* [to be completed] */
+.legal__body a, .legal__draft a { color: inherit; text-decoration: underline; text-decoration-color: rgba(32, 32, 32, .35); text-underline-offset: .25em; transition: text-decoration-color var(--dur) var(--ease-out); }
+.legal__body a:hover, .legal__draft a:hover { text-decoration-color: var(--red); }
+@media (min-width: 64rem) {
+  .legal__head, .legal__draft, .legal__body { grid-column: 3 / span 8; }
+  .legal .crumbs { grid-column: 3 / span 8; }
+}

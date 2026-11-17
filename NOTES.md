@@ -72,3 +72,18 @@ guitars.html → /kitheres/ · μοντέλα /kitheres/<slug>/ · φίλτρο 
 - **Smooth scroll (v1.3):** `js/main.js` → «Smooth scroll to sections». Ισχύει μόνο για same-page anchors. Στο WordPress χρειάζεται το ίδιο script.
 - **Motion System v1.2:** τα εγκεκριμένα animations δεν εξαρτώνται από το `prefers-reduced-motion` (απόφαση 2026-11-10). Δεν υπάρχει κανένας τέτοιος έλεγχος σε CSS ή JS.
 - **Motion tokens:** `css/tokens.css` (`--ease-soft`, `--dur-underline-*`, `--dur-image`, `--scale-image`, `--dur-page`, `--nav-close-delay`).
+
+---
+
+## Ελληνικά / English (17/11/2026)
+- **Δομή:** ελληνικά στη ρίζα, αγγλικά στο `/en/` (ίδια ονόματα αρχείων).
+  - WordPress: Polylang ή WPML με πρόθεμα `/en/`· τα αγγλικά πεδία κάθε προϊόντος αντικαθιστούν το `js/i18n.js`.
+- **Νέο κείμενο σε ελληνική σελίδα:**
+  1. Προσθέτουμε τη μετάφραση στο `data/i18n/en-pages.json`.
+  2. Τρέχουμε `python3 -I tools/build-en-pages.py .`
+  3. Το script αναφέρει ό,τι λείπει.
+- **Γραμματοσειρές:** WOFF (zlib). Με WOFF2 (brotli) θα ήταν ~35% μικρότερες· να γίνει στο WordPress build.
+- **Προς επιβεβαίωση από τον πελάτη (αγγλικά):**
+  - λατινική γραφή των ονομάτων (Carlo, Stepan, Arous, Karolos, Stefanos, Robert Karabetian);
+  - «Nikotian Music House»;
+  - «Pre-owned pianos».

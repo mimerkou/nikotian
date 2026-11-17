@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-root="../">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The House — Our story since 1929 | Nikotian Music House</title>
+  <meta name="description" content="The story of the Nikotian music house: from its founding by Carlo Nikotian at 63 Akadimias Street in 1929 to today&#x27;s showroom at 105 Solonos Street, Athens.">
+  <!-- Open Graph / social sharing (og-image: assets/og/og-image.jpg, 1200 × 630). Absolute URLs: Netlify prototype domain — change to the final domain at launch. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nikotian Music House">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:locale:alternate" content="el_GR">
+  <meta property="og:title" content="The House — Our story since 1929 | Nikotian Music House">
+  <meta property="og:description" content="The story of the Nikotian music house: from its founding by Carlo Nikotian at 63 Akadimias Street in 1929 to today&#x27;s showroom at 105 Solonos Street, Athens.">
+  <meta property="og:url" content="https://nikotian.netlify.app/en/about.html">
+  <meta property="og:image" content="https://nikotian.netlify.app/assets/og/og-image-en.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Nikotian Music House, since 1929: “A life devoted to the piano.” A grand piano with its lid open.">
+  <!-- Language versions (hreflang) -->
+  <link rel="alternate" hreflang="el" href="https://nikotian.netlify.app/about.html">
+  <link rel="alternate" hreflang="en" href="https://nikotian.netlify.app/en/about.html">
+  <link rel="alternate" hreflang="x-default" href="https://nikotian.netlify.app/about.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#F7F4EE">
+  <link rel="icon" href="../assets/logo/nikotian-C-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="preload" as="image" href="../assets/photos/about/about-04-keys.jpg">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/about.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/i18n.js" defer></script>
+  <script src="../js/about.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= HEADER (shared) =================
+       Internal page: .site-header--light = ivory bar, graphite type, light logo, one hairline underneath. -->
+  <header class="site-header site-header--light" data-header>
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nikotian, home page">
+        <img class="brand__logo brand__logo--on-dark" src="../assets/logo/nikotian-C-heritage-refined-on-dark.svg" alt="" width="150" height="41">
+        <img class="brand__logo brand__logo--on-light" src="../assets/logo/nikotian-C-heritage-refined-light.svg" alt="Nikotian" width="150" height="41">
+      </a>
+
+      <nav class="nav" id="site-nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="about.html" aria-current="page">The House</a></li>
+          <li class="nav__item"><a class="nav__link" href="services.html">Services</a></li>
+          <li class="nav__item nav__item--has-sub">
+            <!-- «Πιάνα» is a category, not a page: one button opens the submenu (hover/click on desktop, tap in the mobile menu) -->
+            <button class="nav__parent" type="button" aria-expanded="false" aria-controls="sub-pianos">
+              <span class="nav__link">Pianos</span>
+              <svg class="nav__chev" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+            </button>
+            <!-- Category pages do not exist yet: homepage anchor + data-href with the future URL -->
+            <ul class="nav__sub" id="sub-pianos">
+              <li><a href="new-pianos.html">New</a></li>
+              <li><a href="used-pianos.html">Pre-owned</a></li>
+              <li><a href="electric-pianos.html">Electric</a></li>
+            </ul>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="guitars.html">Guitars</a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav__mobile-extra">
+          <a class="btn btn--primary" href="contact.html">Visit the showroom</a>
+          <address class="nav__meta">
+            105 Solonos Street, 106 78 Athens<br>
+            <a href="tel:+302103808836">210 380 8836</a> · <a href="tel:+306972034883">697 203 4883</a>
+          </address>
+        </div>
+      </nav>
+
+      <div class="site-header__actions">
+        <nav class="lang" aria-label="Language">
+          <a class="lang__item" href="../about.html" data-lang-switch="../about.html" lang="el" hreflang="el">EL</a>
+          <span class="lang__sep" aria-hidden="true">|</span>
+          <a class="lang__item" href="about.html" lang="en" hreflang="en" aria-current="page">EN</a>
+        </nav>
+        <a class="btn btn--primary btn--sm header-cta" href="contact.html">Visit the showroom</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle__label">Menu</span>
+          <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= 01 · ΕΙΣΑΓΩΓΗ =================
+         Shared scale: the page heading is a .title (same size as the homepage section titles).
+         Text and photograph share one row; the whole introduction fits in a desktop viewport. -->
+    <section class="a-hero" id="top" aria-labelledby="a-hero-title">
+      <div class="wrap">
+        <nav class="crumbs t-meta" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">The House</span></li>
+          </ol>
+        </nav>
+
+        <div class="a-hero__grid">
+          <div class="a-hero__text">
+            <p class="eyebrow">The House</p>
+            <h1 class="title title--stack" id="a-hero-title">A journey <em>full of music.</em></h1>
+            <p class="t-body a-hero__lead">Carlo Nikotian founded the music house in Athens in 1929. Almost a century later, the House is still a family business and the piano is still at its heart: we listen to it, we care for it and we introduce it to those who will play it.</p>
+
+            <dl class="a-facts">
+              <div class="a-facts__item"><dt class="t-meta">Founded</dt><dd class="t-meta-value">1929</dd></div>
+              <div class="a-facts__item"><dt class="t-meta">First shop</dt><dd class="t-meta-value">63 Akadimias Street</dd></div>
+              <div class="a-facts__item"><dt class="t-meta">Today</dt><dd class="t-meta-value">105 Solonos Street</dd></div>
+            </dl>
+          </div>
+
+          <figure class="a-hero__media">
+            <img src="../assets/photos/about/about-04-keys.jpg" alt="Close-up of the keys and glossy black body of a grand piano, in low light" width="2000" height="1334" fetchpriority="high">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 02 · Η ΑΡΧΗ ================= -->
+    <section class="origin section" id="arxi" aria-labelledby="origin-title">
+      <div class="wrap origin__grid">
+        <figure class="origin__portrait" data-reveal>
+          <div class="frame origin__portrait-frame">
+            <!-- Crop of oikos-portrait-wall.jpg (Nikotian). Replace with an original photograph of Κάρλο Νικοτιάν when the archive material arrives. -->
+            <img src="../assets/photos/about/founder-portrait-crop.jpg" alt="The portrait of Carlo Nikotian in a gilded frame, above an upright piano in the showroom" width="400" height="490" loading="lazy">
+          </div>
+          <figcaption class="t-caption"><strong>Carlo Nikotian</strong>, founder of the House. His portrait hangs in the showroom today, beside the pianos.</figcaption>
+        </figure>
+
+        <div class="origin__text" data-reveal style="--d: 120ms">
+          <p class="eyebrow">The beginning</p>
+          <h2 class="title title--stack" id="origin-title">It all began <em>with sound.</em></h2>
+          <p class="t-meta origin__date">March 1929 · 63 Akadimias Street, Athens</p>
+
+          <div class="prose">
+            <p>Carlo Nikotian was a piano technician and tuner. His work began with the ear: to listen to an instrument, understand what it needs and give it back its true voice.</p>
+            <p>In March 1929 he founded the music house at 63 Akadimias Street. His expertise in maintenance and tuning brought him close to the musicians of the time, and the House became associated with recitals by leading artists in Athens.</p>
+            <p>Among the records of those years, the history of the House mentions letters of congratulation from Rubinstein and Artur Schnabel.</p>
+          </div>
+        </div>
+
+        <!-- Archive: two slots for the original letters. Placeholders only, until the scans arrive from the family archive. -->
+        <div class="archive" data-reveal style="--d: 200ms">
+          <p class="t-meta archive__label">From the House archive</p>
+          <ul class="archive__list">
+            <li class="archive__item">
+              <div class="placeholder" role="img" aria-label="Placeholder for the letter from Rubinstein. The original has not been digitised yet.">
+                <span class="t-meta placeholder__tag">Placeholder</span>
+              </div>
+              <p class="t-caption archive__caption"><strong>Letter from Rubinstein</strong><br>The original will be added from the family archive.</p>
+            </li>
+            <li class="archive__item">
+              <div class="placeholder" role="img" aria-label="Placeholder for the letter from Artur Schnabel. The original has not been digitised yet.">
+                <span class="t-meta placeholder__tag">Placeholder</span>
+              </div>
+              <p class="t-caption archive__caption"><strong>Letter from Artur Schnabel</strong><br>The original will be added from the family archive.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 03 · Η ΔΙΑΔΡΟΜΗ ΜΑΣ =================
+         A purely typographic chronicle: one scale for every year (the homepage timeline roles),
+         one hairline that connects the events and fills as the reader scrolls. No photographs. -->
+    <section class="route section" id="diadromi" aria-labelledby="route-title">
+      <div class="wrap route__grid">
+        <header class="route__head" data-reveal>
+          <p class="eyebrow">Our journey</p>
+          <h2 class="title title--stack" id="route-title">Almost a century <em>of history.</em></h2>
+          <p class="t-body route__intro">From Akadimias Street to Solonos Street: five moments that shaped the House and its people.</p>
+        </header>
+
+        <ol class="chronicle" data-route aria-label="Timeline of the House">
+          <li class="chronicle__item" data-reveal>
+            <p class="t-year chronicle__year"><time datetime="1929">1929</time></p>
+            <div class="chronicle__body">
+              <h3 class="t-event">The founding</h3>
+              <p class="t-event-text">Carlo Nikotian founds the music house at 63 Akadimias Street, Athens.</p>
+            </div>
+          </li>
+          <li class="chronicle__item" data-reveal>
+            <p class="t-year chronicle__year"><time datetime="1978">1978</time></p>
+            <div class="chronicle__body">
+              <h3 class="t-event">The partnership with Young Chang</h3>
+              <p class="t-event-text">Carlo and his son Stepan begin working with the South Korean piano maker.</p>
+            </div>
+          </li>
+          <li class="chronicle__item" data-reveal>
+            <p class="t-year chronicle__year"><time datetime="1981">1981</time></p>
+            <div class="chronicle__body">
+              <h3 class="t-event">A family continuity</h3>
+              <p class="t-event-text">After Carlo's death, the House is carried on by his children, Stepan and Arous.</p>
+            </div>
+          </li>
+          <li class="chronicle__item" data-reveal>
+            <p class="t-year chronicle__year"><time datetime="2000">2000</time>–<time datetime="2008">2008</time></p>
+            <div class="chronicle__body">
+              <h3 class="t-event">The next generation</h3>
+              <p class="t-event-text">Karolos joins the House in 2000, after training in piano technology at Grotrian Steinweg. Robert follows in 2008.</p>
+            </div>
+          </li>
+          <li class="chronicle__item chronicle__item--now" data-reveal>
+            <p class="t-year chronicle__year">Today</p>
+            <div class="chronicle__body">
+              <h3 class="t-event">105 Solonos Street</h3>
+              <p class="t-event-text">The House continues its work in the centre of Athens.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= 04 · Η ΕΠΟΜΕΝΗ ΓΕΝΙΑ =================
+         The one dark section: .surface-dark switches every role colour.
+         Photographs about-02 and about-03: Καθημερινή, reference only, not cleared for public use. -->
+    <section class="lineage surface-dark" id="gnosi-synexeia" aria-labelledby="lineage-title">
+      <div class="wrap lineage__grid">
+        <div class="lineage__text" data-reveal>
+          <p class="eyebrow eyebrow--light">The next generation</p>
+          <h2 class="title title--stack title--light" id="lineage-title">Knowledge passes <em>from hand to hand.</em></h2>
+          <div class="prose">
+            <p>Piano technology is not learned from books alone. It is learned beside someone who knows, on the instrument itself, over the years.</p>
+            <p>This is how knowledge passed through the House: from Carlo to his children, Stepan and Arous, and from them to the next generation. Karolos added training in piano technology at Grotrian Steinweg to the family's experience; Robert Karabetian joined the work of the House in 2008.</p>
+          </div>
+        </div>
+
+        <figure class="lineage__elders" data-reveal style="--d: 120ms">
+          <div class="frame lineage__elders-frame">
+            <img src="../assets/photos/about/about-02-arous-stefanos.jpg" alt="Arous Nikotian at the showroom desk and Stefanos Nikotian standing beside pianos" width="2000" height="1500" loading="lazy">
+          </div>
+          <figcaption class="t-caption"><strong>Arous and Stefanos Nikotian</strong> in the showroom.</figcaption>
+        </figure>
+
+        <p class="t-statement lineage__statement" data-reveal>What began as one person's knowledge <em>became the work of a family.</em></p>
+
+        <figure class="lineage__hands" data-reveal>
+          <div class="frame lineage__hands-frame">
+            <img src="../assets/photos/about/about-05-tuning.jpg" alt="A hand with a tuning hammer on the tuning pins of a grand piano" width="862" height="862" loading="lazy">
+          </div>
+          <figcaption class="t-caption">Tuning: the same work the House began with.</figcaption>
+        </figure>
+
+        <figure class="lineage__robert" data-reveal style="--d: 120ms">
+          <div class="frame lineage__robert-frame">
+            <img src="../assets/photos/about/about-03-robert.jpg" alt="Robert Karabetian with his hand on the music desk of a walnut grand piano" width="2000" height="1123" loading="lazy">
+          </div>
+          <figcaption class="t-caption"><strong>Robert Karabetian</strong> in the showroom.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= 05 · ΣΗΜΕΡΑ ================= -->
+    <section class="today" id="simera" aria-labelledby="today-title">
+      <figure class="today__street" data-reveal>
+        <!-- about-01: Καθημερινή, reference only, not cleared for public use. -->
+        <img src="../assets/photos/about/about-01-sign-solonos.jpg" alt="The “Πιάνα Nikotian” sign on the entrance wall, with Solonos Street at dusk" width="2000" height="1123" loading="lazy">
+      </figure>
+
+      <div class="wrap today__grid">
+        <div class="today__text" data-reveal>
+          <p class="eyebrow">Today</p>
+          <h2 class="title title--stack" id="today-title">The story continues <em>on Solonos Street.</em></h2>
+          <div class="prose">
+            <p>The House's showroom is at 105 Solonos Street, in the centre of Athens. There you will find new and pre-owned pianos, upright and grand, and people who can tell you about each one of them.</p>
+          </div>
+          <p class="t-coda today__coda">The best continuation of this story is written in person.</p>
+          <div class="actions today__actions">
+            <!-- Top of the Contact page (final URL /epikoinonia/) -->
+            <a class="btn btn--primary" href="contact.html">Visit the showroom</a>
+            <a class="link-arrow" href="tel:+302103808836">Call us on 210 380 8836 <span class="link-arrow__icon" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <figure class="today__room" data-reveal style="--d: 120ms">
+          <div class="frame today__room-frame">
+            <img src="../assets/photos/visit-showroom.jpg" alt="The Nikotian showroom from above: pianos, guitars and the shop window onto Solonos Street" width="960" height="640" loading="lazy">
+          </div>
+          <figcaption class="t-caption">The showroom, with its window onto Solonos Street.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER (shared) ================= -->
+  <footer class="site-footer">
+    <div class="wrap site-footer__top">
+      <div class="site-footer__brand">
+        <img src="../assets/logo/nikotian-C-heritage-refined-on-dark.svg" alt="Nikotian" width="170" height="47" loading="lazy">
+        <p>Nikotian Music House.<br>Pianos in Athens, since 1929.</p>
+        <a class="site-footer__social" href="https://www.facebook.com/PianaNikotian" target="_blank" rel="noopener noreferrer" aria-label="Nikotian on Facebook (opens in a new tab)">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M13.5 21.95V14h2.66l.4-3.1H13.5V8.92c0-.9.25-1.5 1.54-1.5h1.64V4.65a22 22 0 0 0-2.4-.12c-2.37 0-4 1.45-4 4.11v2.27H7.6V14h2.68v7.95A10 10 0 1 1 13.5 21.95z"/></svg>
+          <span>Facebook</span>
+        </a>
+      </div>
+      <nav class="site-footer__col" aria-labelledby="f-oikos">
+        <h2 id="f-oikos">The House</h2>
+        <ul>
+          <li><a href="about.html">Our story</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="site-footer__col" aria-labelledby="f-organa">
+        <h2 id="f-organa">Instruments</h2>
+        <ul>
+          <li><a href="new-pianos.html">New pianos</a></li>
+          <li><a href="used-pianos.html">Pre-owned pianos</a></li>
+          <li><a href="electric-pianos.html">Electric pianos</a></li>
+          <li><a href="guitars.html">Classical guitars</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__col">
+        <h2>Showroom</h2>
+        <address>
+          <ul>
+            <li>105 Solonos Street, 106 78 Athens</li>
+            <li><a href="tel:+302103808836">210 380 8836</a></li>
+            <li><a href="tel:+306972034883">697 203 4883</a></li>
+            <li><a href="mailto:info@nikotian.gr">info@nikotian.gr</a></li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="wrap site-footer__bottom">
+      <p class="site-footer__copy">© 2026 Nikotian. All rights reserved.<span class="site-footer__dot" aria-hidden="true">•</span><a href="privacy.html">Privacy policy</a></p>
+      <p class="site-footer__credit">Website by <a href="https://michalismerkouris.com/" target="_blank" rel="noopener noreferrer">Michalis Merkouris<span class="visually-hidden"> (opens in a new tab)</span></a></p>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+</body>
+</html>
