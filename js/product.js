@@ -252,7 +252,7 @@
 
   /* ---------- Not found / not published ---------- */
   function notFound() {
-    setMeta('Το μοντέλο δεν βρέθηκε | Μουσικός Οίκος Nikotian');
+    setMeta('Το μοντέλο δεν βρέθηκε | Μουσικός Οίκος Νικοτιάν');
     root.classList.add('pd--empty');
     const family = FAMILY === 'guitar' ? '<li><a href="guitars.html">Κιθάρες</a></li>' : '<li><span class="crumbs__label">Πιάνα</span></li>';
     document.getElementById('pd-crumbs').innerHTML = `<ol><li><a href="index.html">Αρχική</a></li>${family}</ol>`;
@@ -272,7 +272,7 @@
     const { rec, c, data } = found;
     const v = view(rec, c, data);
 
-    setMeta(`${v.name} — ${c.label} | Μουσικός Οίκος Nikotian`, v.lead.join(' '));
+    setMeta(`${v.name} — ${c.label} | Μουσικός Οίκος Νικοτιάν`, v.lead.join(' '));
     markCollection(c);
 
     // 01 · breadcrumb: collection / manufacturer / model — a crumb links only to a page that exists
@@ -293,9 +293,9 @@
     const html = detailsHTML(v);
     if (html) { details.innerHTML = html; details.hidden = false; }
 
-    // 03 · back to the collection
+    // 03 · back to the collection — straight to its models (#syllogi), not to the top of the page
     const back = document.getElementById('pd-back');
-    back.innerHTML = `<div class="wrap"><a class="link-arrow pd-back__link" href="${c.href}"><span class="link-arrow__icon" aria-hidden="true">←</span> ${esc(c.back)}</a></div>`;
+    back.innerHTML = `<div class="wrap"><a class="link-arrow pd-back__link" href="${c.href}#syllogi"><span class="link-arrow__icon" aria-hidden="true">←</span> ${esc(c.back)}</a></div>`;
     back.hidden = false;
 
     root.removeAttribute('aria-busy');

@@ -225,12 +225,15 @@ def main():
                                  'source': f"{src_pdf.name}, σελ. 1 (εξώφυλλο)", 'sourceSize': list(orig)}]
     write('new-pianos', new)
 
-    # ---------------- Μεταχειρισμένα: name, photo, type, internal reference — nothing else ----------------
+    # ---------------- Μεταχειρισμένα: name, photo, type, internal reference + dimensions / country ----------------
     used = json.loads((ROOT / 'data/used-pianos.json').read_text(encoding='utf-8'))
+    used_specs = json.loads((ROOT / 'data/editorial/used-pianos-specs.json').read_text(encoding='utf-8'))['records']
     for r in used:
         base(r)
         r['ref'] = r['id'].split('-')[1]          # number of the instrument in used-pianos.zip
         r['images'][0]['pageFit'] = 'photo'       # showroom photograph: shown whole on the product page
+        # client data (17/11/2026): dimensions and country of manufacture, shown under «Τεχνικά χαρακτηριστικά»
+        r['specs'] = used_specs.get(r['slug'], [])
     write('used-pianos', used)
 
     # ---------------- Ηλεκτρικά: the eight supplied photographs, whole ----------------

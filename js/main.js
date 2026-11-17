@@ -225,6 +225,27 @@
     if (target) requestAnimationFrame(() => window.scrollTo(0, sectionTop(target)));
   });
 
+  // Arriving from another page with a #section (e.g. «Πίσω στα …» → used-pianos.html#syllogi): the browser
+  // places it with scroll-padding-top (header + 1rem); align it to the header edge, as after an in-page click.
+  // Sections only (<section id>): #contact-form keeps its own alignment in contact.js.
+  (() => {
+    let id = '';
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch (err) { return; }
+    const target = id && document.getElementById(id);
+    if (!target || target.tagName !== 'SECTION') return;
+    // Back / Forward / reload: the browser restores the visitor's own position — leave it
+    const nav = performance.getEntriesByType && performance.getEntriesByType('navigation')[0];
+    if (nav && nav.type !== 'navigate') return;
+    let moved = false;
+    ['wheel', 'touchstart', 'keydown', 'pointerdown'].forEach((t) => window.addEventListener(t, () => { moved = true; }, { once: true, passive: true }));
+    const align = () => { if (!moved && location.hash === '#' + id) window.scrollTo(0, sectionTop(target)); };
+    requestAnimationFrame(align);
+    window.addEventListener('load', () => {
+      const fontsReady = document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve();
+      fontsReady.then(() => requestAnimationFrame(align));
+    }, { once: true });
+  })();
+
   /* ---------- Reveals ---------- */
   const targets = document.querySelectorAll('[data-reveal], [data-timeline]');
   if (!('IntersectionObserver' in window)) {

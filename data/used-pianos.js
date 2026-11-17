@@ -24,7 +24,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 260,
         "fit": "cover",
         "position": "50% 50%",
-        "alt": "Atlas, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Atlas, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -34,7 +34,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "151 × 63 × 123 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Ιαπωνία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -64,7 +75,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 550,
         "fit": "cover",
         "position": "50% 50%",
-        "alt": "Hofmann & Černý, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Hofmann & Černý, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -74,7 +85,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "151 × 60 × 135 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Γερμανία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [
@@ -106,7 +128,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 342,
         "fit": "cover",
         "position": "50% 50%",
-        "alt": "Ibach, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Ibach, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -116,7 +138,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "147 × 59 × 115 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Γερμανία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -146,7 +179,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 550,
         "fit": "cover",
         "position": "50% 70%",
-        "alt": "Kaps, πιάνο με ουρά, στην έκθεση Nikotian",
+        "alt": "Kaps, πιάνο με ουρά, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -156,7 +189,7 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [],
     "finish": null,
     "features": [],
     "notes": [],
@@ -186,7 +219,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 254,
         "fit": "cover",
         "position": "38% 50%",
-        "alt": "Kawai AT-32 (Silent System), όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Kawai AT-32 (Silent System), όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -196,7 +229,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "155 × 66 × 131 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Ιαπωνία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -226,7 +270,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 260,
         "fit": "cover",
         "position": "56% 50%",
-        "alt": "Kawai NS-15, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Kawai NS-15, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -236,7 +280,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "152 × 61 × 125 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Ιαπωνία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -266,7 +321,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 550,
         "fit": "cover",
         "position": "50% 30%",
-        "alt": "Krauss, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Krauss, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -276,7 +331,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "156 × 69 × 145 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Γερμανία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -306,7 +372,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 521,
         "fit": "contain",
         "position": "50% 50%",
-        "alt": "Petrof 116, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Petrof 116, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -316,7 +382,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "145 × 64 × 116 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Τσεχία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -346,7 +423,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 254,
         "fit": "cover",
         "position": "47% 50%",
-        "alt": "Pleyel, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Pleyel, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -356,7 +433,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "159 × 69 × 135 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Γαλλία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -386,7 +474,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 254,
         "fit": "cover",
         "position": "59% 50%",
-        "alt": "Rameau, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Rameau, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -396,7 +484,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "145 × 55 × 120 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Γαλλία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -426,7 +525,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 260,
         "fit": "cover",
         "position": "50% 50%",
-        "alt": "Sauter, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Sauter, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -436,7 +535,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "145 × 55 × 120 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Γερμανία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -466,7 +576,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 260,
         "fit": "cover",
         "position": "50% 50%",
-        "alt": "Schimmel, πιάνο με ουρά, στην έκθεση Nikotian",
+        "alt": "Schimmel, πιάνο με ουρά, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -476,7 +586,13 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Γερμανία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -506,7 +622,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 310,
         "fit": "cover",
         "position": "55% 50%",
-        "alt": "Schimmel 104, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Schimmel 104, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -516,7 +632,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "147 × 51 × 104 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Γερμανία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -546,7 +673,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 718,
         "fit": "contain",
         "position": "50% 50%",
-        "alt": "Weinbach 175, πιάνο με ουρά, στην έκθεση Nikotian",
+        "alt": "Weinbach 175, πιάνο με ουρά, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -556,7 +683,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Μ)",
+        "value": "152 × 175 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Τσεχία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -586,7 +724,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 530,
         "fit": "contain",
         "position": "50% 50%",
-        "alt": "Yamaha G1, πιάνο με ουρά, στην έκθεση Nikotian",
+        "alt": "Yamaha G1, πιάνο με ουρά, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -596,7 +734,13 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Ιαπωνία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -626,7 +770,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 254,
         "fit": "cover",
         "position": "50% 50%",
-        "alt": "Yamaha M1J, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Yamaha M1J, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -636,7 +780,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "151 × 60 × 121 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Ιαπωνία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -666,7 +821,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 254,
         "fit": "cover",
         "position": "38% 50%",
-        "alt": "Yamaha M5J, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Yamaha M5J, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -676,7 +831,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "154 × 65 × 131 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Ιαπωνία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -706,7 +872,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 260,
         "fit": "cover",
         "position": "52% 50%",
-        "alt": "Yamaha MC10BL, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Yamaha MC10BL, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -716,7 +882,13 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Ιαπωνία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -746,7 +918,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 254,
         "fit": "cover",
         "position": "60% 50%",
-        "alt": "Yamaha U3, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Yamaha U3, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -756,7 +928,7 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [],
     "finish": null,
     "features": [],
     "notes": [],
@@ -786,7 +958,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 231,
         "fit": "cover",
         "position": "60% 50%",
-        "alt": "Yamaha YUS, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Yamaha YUS, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -796,7 +968,13 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Ιαπωνία",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -826,7 +1004,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 254,
         "fit": "cover",
         "position": "41% 50%",
-        "alt": "Young Chang 118, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Young Chang 118, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -836,7 +1014,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "147 × 57 × 118 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Κορέα",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -869,7 +1058,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 260,
         "fit": "cover",
         "position": "52% 50%",
-        "alt": "Young Chang 118, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Young Chang 118, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -879,7 +1068,13 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Κορέα",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -912,7 +1107,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 260,
         "fit": "cover",
         "position": "57% 50%",
-        "alt": "Young Chang 121, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Young Chang 121, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -922,7 +1117,13 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Κορέα",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -955,7 +1156,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 472,
         "fit": "contain",
         "position": "50% 50%",
-        "alt": "Young Chang 121, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Young Chang 121, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -965,7 +1166,13 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Κορέα",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -998,7 +1205,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 499,
         "fit": "contain",
         "position": "50% 50%",
-        "alt": "Young Chang 121, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Young Chang 121, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -1008,7 +1215,13 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Κορέα",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -1041,7 +1254,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 310,
         "fit": "cover",
         "position": "50% 50%",
-        "alt": "Young Chang 121 (Silent System), όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Young Chang 121 (Silent System), όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -1051,7 +1264,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "150 × 63 × 121 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Κορέα",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
@@ -1081,7 +1305,7 @@ window.NIKOTIAN_USED_PIANOS = [
         "height": 260,
         "fit": "cover",
         "position": "52% 50%",
-        "alt": "Young Chang 131, όρθιο πιάνο, στην έκθεση Nikotian",
+        "alt": "Young Chang 131, όρθιο πιάνο, στην έκθεση Νικοτιάν",
         "pageFit": "photo"
       }
     ],
@@ -1091,7 +1315,18 @@ window.NIKOTIAN_USED_PIANOS = [
       "zip": "used-pianos.zip"
     },
     "description": [],
-    "specs": {},
+    "specs": [
+      {
+        "label": "Διαστάσεις (Π × Β × Υ)",
+        "value": "155 × 67 × 131 cm",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      },
+      {
+        "label": "Χώρα κατασκευής",
+        "value": "Κορέα",
+        "source": "Στοιχεία πελάτη, 17/11/2026"
+      }
+    ],
     "finish": null,
     "features": [],
     "notes": [],
