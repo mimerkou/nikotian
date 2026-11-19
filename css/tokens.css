@@ -63,7 +63,7 @@
      Quiet, short, no bounce. Same behaviour for every visitor (no prefers-reduced-motion condition). */
   --ease-soft: cubic-bezier(.33, 0, .2, 1);   /* even start, long gentle settle: images */
   --ease-in: cubic-bezier(.5, 0, .75, 0);     /* leaving: the underline that slides away */
-  --dur-link: 500ms;                          /* underlined CTAs (v1.5): ink, line drop and arrow move together */
+  --dur-link: 550ms;                          /* underlined CTAs (v1.6): the line fills, ink and arrow move together */
   --dur-image: 600ms;                         /* image zoom on hover (in and out) */
   --scale-image: 1.03;                        /* gentle: never a visible jump */
   --nav-close-delay: 140ms;                   /* desktop dropdown waits before it starts to close */

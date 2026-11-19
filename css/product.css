@@ -212,3 +212,4 @@
   .pd-info__actions { display: grid; justify-items: start; gap: var(--s-4); }
   .pd-info__cta { width: 100%; white-space: normal; text-align: center; }
 }
+.pd-back__link:hover::before, .pd-back__link:focus-visible::before { width: 100%; }   /* arrow on the left, moving left: the line stops at the end of the label */

@@ -127,14 +127,16 @@ p { text-wrap: pretty; }
 
 /* Underlined text CTA — one shared component (.link-arrow · .link-caps · .link-inline).
    Not applied to links inside running text.
-   v1.5 (19/11/2026) — «the line breathes». No line is erased, redrawn or swept any more (v1.0 / v1.4 read
-   as busy). One hairline only, always the colour of its text. On hover / keyboard focus, in one slow,
-   synchronised movement: the ink of text, line and arrow eases to Heritage Red, the line settles a few
-   pixels lower (the gap under the word opens, like a breath) and the arrow moves forward. Leaving
-   reverses the same movement. Transform + colour only: no layout shift. */
+   v1.6 (19/11/2026, client's idea) — «the line fills».
+   At rest only the beginning of the label is underlined: a short hairline under its first letters.
+   On hover / keyboard focus the hairline fills to the right, under the whole label and under the arrow;
+   text, line and arrow ease to Heritage Red together, and the arrow steps a little away from the text.
+   On leave everything returns to its resting state along the same path.
+   The line is absolutely positioned: its width animates without moving any content. */
 .link-arrow, .link-caps, .link-inline {
-  --ul-gap: .1em;                        /* text → line at rest */
-  --ul-drop: 3px;                        /* how far the line settles on hover */
+  --ul-gap: .1em;                        /* text → line */
+  --ul-rest: 1.75em;                     /* resting length: the first letters of the label */
+  --ul-nudge: 5px;                       /* how far the arrow steps away on hover */
   position: relative;
   display: inline-flex; align-items: baseline; gap: .5em;
   padding-bottom: var(--ul-gap);
@@ -142,23 +144,26 @@ p { text-wrap: pretty; }
   transition: color var(--dur-link) var(--ease-soft);
 }
 .link-arrow::before, .link-caps::before, .link-inline::before {
-  content: ""; position: absolute; left: 0; right: 0; bottom: 0;
+  content: ""; position: absolute; left: 0; bottom: 0;
+  width: min(var(--ul-rest), 100%);
   height: 1px; background: currentColor;
   pointer-events: none;
-  transition: transform var(--dur-link) var(--ease-soft);
+  transition: width var(--dur-link) var(--ease-soft);
 }
 @media (any-hover: hover) {
-  .link-arrow:hover::before, .link-caps:hover::before, .link-inline:hover::before { transform: translateY(var(--ul-drop)); }
+  .link-arrow:hover::before, .link-caps:hover::before, .link-inline:hover::before { width: 100%; }
+  .link-arrow:hover:has(.link-arrow__icon)::before, .link-caps:hover:has(.link-arrow__icon)::before, .link-inline:hover:has(.link-arrow__icon)::before { width: calc(100% + var(--ul-nudge)); }
 }
-.link-arrow:focus-visible::before, .link-caps:focus-visible::before, .link-inline:focus-visible::before { transform: translateY(var(--ul-drop)); }
+.link-arrow:focus-visible::before, .link-caps:focus-visible::before, .link-inline:focus-visible::before { width: 100%; }
+.link-arrow:focus-visible:has(.link-arrow__icon)::before, .link-caps:focus-visible:has(.link-arrow__icon)::before, .link-inline:focus-visible:has(.link-arrow__icon)::before { width: calc(100% + var(--ul-nudge)); }
 
 .link-arrow { font-size: var(--fs-sm); font-weight: 500; }
 .link-caps { font-size: var(--fs-eyebrow); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
 .link-inline { color: var(--red); font-weight: 500; }
 .link-arrow--light { color: var(--ivory); }
 .link-arrow__icon { display: inline-block; transition: transform var(--dur-link) var(--ease-soft); }
-.link-arrow:hover .link-arrow__icon, .link-caps:hover .link-arrow__icon, .link-inline:hover .link-arrow__icon { transform: translateX(4px); }
-.link-arrow:focus-visible .link-arrow__icon, .link-caps:focus-visible .link-arrow__icon, .link-inline:focus-visible .link-arrow__icon { transform: translateX(4px); }
+.link-arrow:hover .link-arrow__icon, .link-caps:hover .link-arrow__icon, .link-inline:hover .link-arrow__icon { transform: translateX(var(--ul-nudge)); }
+.link-arrow:focus-visible .link-arrow__icon, .link-caps:focus-visible .link-arrow__icon, .link-inline:focus-visible .link-arrow__icon { transform: translateX(var(--ul-nudge)); }
 .link-arrow:hover, .link-caps:hover { color: var(--red); }
 .link-arrow--light:hover { color: var(--red-on-dark); }
 .link-inline:hover { color: var(--red-hover); }
