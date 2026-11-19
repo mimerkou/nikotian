@@ -63,8 +63,8 @@
      Quiet, short, no bounce. Same behaviour for every visitor (no prefers-reduced-motion condition). */
   --ease-soft: cubic-bezier(.33, 0, .2, 1);   /* even start, long gentle settle: images */
   --ease-in: cubic-bezier(.5, 0, .75, 0);     /* leaving: the underline that slides away */
-  --dur-underline-out: 180ms;                 /* underline: old line leaves to the right… */
-  --dur-underline-in: 240ms;                  /* …new line drawn from the left (total ≈ 400ms) */
+  --dur-underline: 650ms;                     /* underline (v1.4): the accent line is drawn over the resting one */
+  --dur-link-color: 450ms;                    /* text colour of underlined CTAs: a slow ink change, never a flash */
   --dur-image: 600ms;                         /* image zoom on hover (in and out) */
   --scale-image: 1.03;                        /* gentle: never a visible jump */
   --nav-close-delay: 140ms;                   /* desktop dropdown waits before it starts to close */

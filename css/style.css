@@ -127,50 +127,54 @@ p { text-wrap: pretty; }
 
 /* Underlined text CTA — one shared component (.link-arrow · .link-caps · .link-inline).
    Not applied to links inside running text.
-   Hover / keyboard focus: the line slides away to the right, then a new one is drawn from the left
-   and settles under the text (≈ 400ms). Two hairlines (::before = resting line, ::after = the redrawn one),
-   transforms only: no layout shift, no visible reset. Leaving mid-way, the new line holds until the resting
-   line has grown back underneath it, so nothing ever jumps.
-   A 1px line travelling under its own word, no displacement of content. */
+   v1.4 (19/11/2026) — «drawn over», replaces the slide-away/redraw of v1.0, which read as a blink:
+   the resting hairline never disappears. On hover / keyboard focus a second hairline in the accent colour
+   is drawn over it from the left, while the text ink turns slowly to the same colour and the resting line
+   fades back. On leave the accent line withdraws to the right. One continuous movement, transforms and
+   opacity only: no layout shift, no flash, and leaving mid-way simply reverses from where it is. */
 .link-arrow, .link-caps, .link-inline {
-  --ul-gap: .1em;                        /* text → line (was .25em) */
+  --ul-gap: .1em;                        /* text → line */
+  --ul-accent: var(--red);               /* the line drawn on hover */
   position: relative;
   display: inline-flex; align-items: baseline; gap: .5em;
   padding-bottom: var(--ul-gap);
   text-decoration: none;
-  transition: color var(--dur) var(--ease-out);
+  transition: color var(--dur-link-color) var(--ease-soft);
 }
 .link-arrow::before, .link-caps::before, .link-inline::before,
 .link-arrow::after, .link-caps::after, .link-inline::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: 0;
-  height: 1px; background: currentColor;
+  height: 1px;
   pointer-events: none;
 }
-/* resting line: grows back from the right after a hover */
+/* resting line: always there; steps back (opacity) while the accent line is drawn over it */
 .link-arrow::before, .link-caps::before, .link-inline::before {
-  transform-origin: right center;
-  transition: transform var(--dur-underline-in) var(--ease-out);
+  background: currentColor;
+  transition: opacity var(--dur-underline) var(--ease-soft);
 }
-/* redrawn line: hidden at rest; on leave it waits until the resting line is back, then resets unseen */
+/* accent line: withdraws to the right at rest… */
 .link-arrow::after, .link-caps::after, .link-inline::after {
-  transform: scaleX(0); transform-origin: left center;
-  transition: transform 0s linear var(--dur-underline-in);
+  background: var(--ul-accent);
+  transform: scaleX(0); transform-origin: right center;
+  transition: transform var(--dur-underline) var(--ease-soft);
 }
+/* …and is drawn from the left on hover / focus */
 @media (any-hover: hover) {
-  .link-arrow:hover::before, .link-caps:hover::before, .link-inline:hover::before { transform: scaleX(0); transition: transform var(--dur-underline-out) var(--ease-in); }
-  .link-arrow:hover::after, .link-caps:hover::after, .link-inline:hover::after { transform: none; transition: transform var(--dur-underline-in) var(--ease-out) calc(var(--dur-underline-out) - 20ms); }
+  .link-arrow:hover::before, .link-caps:hover::before, .link-inline:hover::before { opacity: .2; }
+  .link-arrow:hover::after, .link-caps:hover::after, .link-inline:hover::after { transform: none; transform-origin: left center; }
 }
-.link-arrow:focus-visible::before, .link-caps:focus-visible::before, .link-inline:focus-visible::before { transform: scaleX(0); transition: transform var(--dur-underline-out) var(--ease-in); }
-.link-arrow:focus-visible::after, .link-caps:focus-visible::after, .link-inline:focus-visible::after { transform: none; transition: transform var(--dur-underline-in) var(--ease-out) calc(var(--dur-underline-out) - 20ms); }
+.link-arrow:focus-visible::before, .link-caps:focus-visible::before, .link-inline:focus-visible::before { opacity: .2; }
+.link-arrow:focus-visible::after, .link-caps:focus-visible::after, .link-inline:focus-visible::after { transform: none; transform-origin: left center; }
 
 .link-arrow { font-size: var(--fs-sm); font-weight: 500; }
 .link-caps { font-size: var(--fs-eyebrow); font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
 .link-inline { color: var(--red); font-weight: 500; }
-.link-arrow--light { color: var(--ivory); }
-.link-arrow__icon { display: inline-block; transition: transform var(--dur) var(--ease-out); }
+.link-arrow--light { color: var(--ivory); --ul-accent: var(--red-on-dark); }
+.link-arrow__icon { display: inline-block; transition: transform var(--dur-underline) var(--ease-soft); }
 .link-arrow:hover .link-arrow__icon, .link-caps:hover .link-arrow__icon, .link-inline:hover .link-arrow__icon { transform: translateX(4px); }
 .link-arrow:hover, .link-caps:hover { color: var(--red); }
 .link-arrow--light:hover { color: var(--red-on-dark); }
+.link-inline { --ul-accent: var(--red-hover); }
 .link-inline:hover { color: var(--red-hover); }
 
 .actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-4) var(--s-6); }
