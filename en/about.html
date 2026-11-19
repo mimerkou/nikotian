@@ -193,11 +193,14 @@
         </div>
       </div>
 
-      <!-- Letter reader: native <dialog>, opened by js/about.js. Without JS the buttons do nothing and the captions still read. -->
+      <!-- Letter reader: native <dialog>, opened by js/about.js. Without JS the buttons do nothing and the captions still read.
+           v4.1: the reader opens instantly — its <img> starts as the thumbnail already on the page (cached), and
+           the large scan (data-full) is fetched and decoded in the background as the letters come into view,
+           then swapped in unseen (same framing). -->
       <dialog class="letter-reader" id="letter-rubinstein" aria-labelledby="letter-rubinstein-title">
         <div class="letter-reader__inner">
           <figure class="letter-reader__media">
-            <img src="../assets/photos/about/letter-rubinstein-1931-large.jpg" alt="Handwritten letter from Arthur Rubinstein in French, on Hotel Grande Bretagne letterhead, Athens, 9 February 1931" width="1800" height="2721" loading="lazy">
+            <img src="../assets/photos/about/letter-rubinstein-1931.jpg" data-full="assets/photos/about/letter-rubinstein-1931-large.jpg" alt="Handwritten letter from Arthur Rubinstein in French, on Hotel Grande Bretagne letterhead, Athens, 9 February 1931" width="900" height="1360" decoding="async">
           </figure>
           <div class="letter-reader__text">
             <p class="t-meta">From the House archive</p>
@@ -214,7 +217,7 @@
       <dialog class="letter-reader" id="letter-schnabel" aria-labelledby="letter-schnabel-title">
         <div class="letter-reader__inner">
           <figure class="letter-reader__media">
-            <img src="../assets/photos/about/letter-schnabel-1931-large.jpg" alt="Handwritten letter from Artur Schnabel in German, on Hotel Grande Bretagne letterhead, Athens, 1931" width="1800" height="2737" loading="lazy">
+            <img src="../assets/photos/about/letter-schnabel-1931.jpg" data-full="assets/photos/about/letter-schnabel-1931-large.jpg" alt="Handwritten letter from Artur Schnabel in German, on Hotel Grande Bretagne letterhead, Athens, 1931" width="900" height="1368" decoding="async">
           </figure>
           <div class="letter-reader__text">
             <p class="t-meta">From the House archive</p>

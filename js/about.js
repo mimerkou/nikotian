@@ -26,13 +26,39 @@
 
 // Letters of 1931 (v4): each archive button opens its <dialog> — the letter large, with a free translation.
 // Esc closes (native), as do the close button and a click on the backdrop. Focus returns to the button.
+// v4.1: no wait when the reader opens. The dialog image starts as the page thumbnail (already in cache);
+// the large scan is preloaded + decoded off-screen as the letters approach the viewport (or on hover/focus),
+// then swapped in while the dialog is still closed — or, if the visitor is faster, seamlessly while open.
+(() => {
+  const upgrade = (img) => {
+    if (!img || !img.dataset.full || img.dataset.upgrading) return;
+    img.dataset.upgrading = '1';
+    const full = new Image();
+    full.decoding = 'async';
+    full.src = img.dataset.full;
+    const swap = () => { img.src = full.src; delete img.dataset.full; };
+    (full.decode ? full.decode() : Promise.reject()).then(swap, () => { full.onload = swap; if (full.complete) swap(); });
+  };
+  const readerImg = (btn) => document.getElementById(btn.dataset.letter)?.querySelector('img[data-full]');
+  const buttons = [...document.querySelectorAll('.archive__open[data-letter]')];
+  const archive = document.querySelector('.archive');
+  if (archive && 'IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) { buttons.forEach((b) => upgrade(readerImg(b))); io.disconnect(); }
+    }, { rootMargin: '600px 0px' });
+    io.observe(archive);
+  }
+  buttons.forEach((btn) => {
+    ['pointerenter', 'focus', 'touchstart'].forEach((ev) => btn.addEventListener(ev, () => upgrade(readerImg(btn)), { once: true, passive: true }));
+  });
+})();
+
 (() => {
   document.querySelectorAll('.archive__open[data-letter]').forEach((btn) => {
     const dlg = document.getElementById(btn.dataset.letter);
     if (!dlg || typeof dlg.showModal !== 'function') return;
     const close = () => dlg.close();
     btn.addEventListener('click', () => {
-      dlg.querySelectorAll('img[loading="lazy"]').forEach((im) => { im.loading = 'eager'; });
       dlg.showModal();
       document.documentElement.classList.add('has-dialog');
     });
