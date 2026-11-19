@@ -20,7 +20,7 @@ BASE = 'https://nikotian.netlify.app/'
 MAP = json.loads((ROOT / 'data/i18n/en-pages.json').read_text(encoding='utf-8'))
 GR = re.compile('[Ͱ-Ͽἀ-῿]')
 TEXT_ATTRS = ('alt', 'aria-label', 'title', 'content', 'placeholder', 'data-pending', 'data-noun', 'aria-roledescription', 'label')
-PATH_ATTRS = ('href', 'src', 'srcset', 'poster', 'data-src')
+PATH_ATTRS = ('href', 'src', 'srcset', 'poster', 'data-src', 'data-full')
 TOKEN = re.compile(r'(<!--.*?-->|<script\b.*?</script>|<style\b.*?</style>|<[^>]+>)', re.S)
 missing = {}
 
@@ -42,6 +42,8 @@ def en_tag(tag, page):
             t = tr(val, page)
             if t is not None:
                 return f'{name}="{html.escape(t, quote=True)}"'
+        if name in ('srcset', 'imagesrcset'):   # every candidate of a srcset (performance v2)
+            return f'{name}="' + re.sub(r'(^|,\s*)((?:css|js|assets|data)/)', r'\1../\2', val) + '"'
         if name in PATH_ATTRS and re.match(r'(css|js|assets|data)/', val):
             return f'{name}="../{val}"'
         return m.group(0)

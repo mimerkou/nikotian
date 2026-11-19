@@ -1,6 +1,18 @@
 // Nikotian — Homepage final prototype
 // Progressive enhancement: without JS every section is visible and every link works.
 
+// Responsive images for the catalogue rendered by JavaScript (performance v2, 19/11/2026).
+// Wraps an <img> in <picture> with WebP variants written by tools/build-images.py — same rule there:
+// every step of STEPS below the photograph's width, plus its own width (max 2400). Width = data width.
+window.NIKOTIAN_PICTURE = (src, width, sizes, imgHTML) => {
+  const STEPS = [480, 800, 1200, 1600, 2000];
+  const w = Number(width);
+  if (!w || !/\.(jpe?g|png)$/i.test(src || '')) return imgHTML;
+  const list = STEPS.filter((x) => x < w).concat([Math.min(w, 2400)]);
+  const srcset = list.map((x) => `${src.replace(/\.(jpe?g|png)$/i, `-${x}.webp`)} ${x}w`).join(', ');
+  return `<picture><source type="image/webp" srcset="${srcset}" sizes="${sizes}">${imgHTML}</picture>`;
+};
+
 (() => {
   const root = document.documentElement;
   const header = document.querySelector('[data-header]');
@@ -23,7 +35,8 @@
     header.classList.toggle('is-solid', window.scrollY > 24);
     ticking = false;
   };
-  updateHeader();
+  // first read of scrollY in the next frame, not during script start-up (no forced reflow — performance v2)
+  requestAnimationFrame(updateHeader);
   window.addEventListener('scroll', () => {
     if (!ticking) { requestAnimationFrame(updateHeader); ticking = true; }
   }, { passive: true });

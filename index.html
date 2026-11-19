@@ -24,10 +24,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#182225">
   <link rel="icon" href="assets/logo/nikotian-C-favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="preload" as="image" href="assets/photos/hero-piano.jpg">
-  <link rel="stylesheet" href="css/tokens.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/base.min.css">
+  <link rel="preload" as="image" type="image/webp" imagesrcset="assets/photos/hero-piano-480.webp 480w, assets/photos/hero-piano-800.webp 800w, assets/photos/hero-piano-1200.webp 1200w" imagesizes="(max-width: 47.9375rem) 145vw, (max-width: 67.5rem) 182vw, 1636px" fetchpriority="high" data-for="assets/photos/hero-piano.jpg">
   <script>document.documentElement.classList.replace('no-js', 'js');</script>
   <script src="js/main.js" defer></script>
 </head>
@@ -92,7 +90,7 @@
     <!-- ================= 01 · HERO ================= -->
     <section class="hero" id="top" aria-labelledby="hero-title">
       <figure class="hero__media">
-        <img src="assets/photos/hero-piano.jpg" alt="Πιάνο με ουρά με ανοιχτό καπάκι, σε χαμηλό φως" width="1200" height="660" fetchpriority="high">
+        <picture><source type="image/webp" srcset="assets/photos/hero-piano-480.webp 480w, assets/photos/hero-piano-800.webp 800w, assets/photos/hero-piano-1200.webp 1200w" sizes="(max-width: 47.9375rem) 145vw, (max-width: 67.5rem) 182vw, 1636px"><img src="assets/photos/hero-piano.jpg" alt="Πιάνο με ουρά με ανοιχτό καπάκι, σε χαμηλό φως" width="1200" height="660" fetchpriority="high"></picture>
       </figure>
       <div class="hero__content wrap">
         <div class="hero__text">
@@ -127,7 +125,7 @@
 
           <figure class="oikos__figure" data-reveal style="--d: 120ms">
             <div class="frame">
-              <img src="assets/photos/oikos-portrait-wall.jpg" alt="Τοίχος της έκθεσης με το πορτραίτο του Κάρλο Νικοτιάν, οικογενειακές φωτογραφίες και δύο όρθια πιάνα" width="960" height="640" loading="lazy">
+              <picture><source type="image/webp" srcset="assets/photos/oikos-portrait-wall-480.webp 480w, assets/photos/oikos-portrait-wall-800.webp 800w, assets/photos/oikos-portrait-wall-960.webp 960w" sizes="(max-width: 47.9375rem) 96vw, (max-width: 67.5rem) 48vw, 632px"><img src="assets/photos/oikos-portrait-wall.jpg" alt="Τοίχος της έκθεσης με το πορτραίτο του Κάρλο Νικοτιάν, οικογενειακές φωτογραφίες και δύο όρθια πιάνα" width="960" height="640" loading="lazy"></picture>
             </div>
             <figcaption>Στην έκθεση σήμερα: το πορτραίτο του Κάρλο Νικοτιάν, ιδρυτή του μουσικού μας οίκου, δίπλα στα πιάνα.</figcaption>
           </figure>
@@ -172,7 +170,7 @@
     <!-- ================= 03 · ΤΕΧΝΟΓΝΩΣΙΑ ================= -->
     <section class="gnosi" id="gnosi" aria-labelledby="gnosi-title">
       <figure class="gnosi__media">
-        <img src="assets/photos/craft-hammers.jpg" alt="Κοντινό στον μηχανισμό πιάνου: σφυράκια, χορδές και κόκκινη τσόχα" width="1700" height="800" loading="lazy">
+        <picture><source type="image/webp" srcset="assets/photos/craft-hammers-480.webp 480w, assets/photos/craft-hammers-800.webp 800w, assets/photos/craft-hammers-1200.webp 1200w, assets/photos/craft-hammers-1600.webp 1600w, assets/photos/craft-hammers-1700.webp 1700w" sizes="(max-width: 47.9375rem) 133vw, (max-width: 67.5rem) 186vw, 1630px"><img src="assets/photos/craft-hammers.jpg" alt="Κοντινό στον μηχανισμό πιάνου: σφυράκια, χορδές και κόκκινη τσόχα" width="1700" height="800" loading="lazy"></picture>
       </figure>
       <div class="gnosi__panel">
         <div class="gnosi__content" data-reveal>
@@ -215,7 +213,7 @@
           <p class="choice__coda">Ακούστε το. Παίξτε το. Νιώστε το.</p>
         </div>
         <figure class="choice__media frame" data-reveal style="--d: 120ms">
-          <img src="assets/photos/choice-grand.jpg" alt="Πιάνο με ουρά σε φωτεινό, σύγχρονο σαλόνι" width="1080" height="1080" loading="lazy">
+          <picture><source type="image/webp" srcset="assets/photos/choice-grand-480.webp 480w, assets/photos/choice-grand-800.webp 800w, assets/photos/choice-grand-1080.webp 1080w" sizes="(max-width: 47.9375rem) 89vw, (max-width: 67.5rem) 56vw, 692px"><img src="assets/photos/choice-grand.jpg" alt="Πιάνο με ουρά σε φωτεινό, σύγχρονο σαλόνι" width="1080" height="1080" loading="lazy"></picture>
         </figure>
       </div>
     </section>
@@ -236,7 +234,7 @@
           <article class="collection" aria-labelledby="col-new" data-reveal>
             <!-- Page: new-pianos.html (future URL /pianos/new/) -->
             <a class="collection__frame frame" href="new-pianos.html" tabindex="-1" aria-hidden="true">
-              <img src="assets/photos/collection-new.jpg" alt="" width="710" height="509" loading="lazy">
+              <picture><source type="image/webp" srcset="assets/photos/collection-new-480.webp 480w, assets/photos/collection-new-710.webp 710w" sizes="(max-width: 47.9375rem) 94vw, (max-width: 67.5rem) 45vw, 590px"><img src="assets/photos/collection-new.jpg" alt="" width="710" height="509" loading="lazy"></picture>
             </a>
             <div class="collection__caption">
               <h3 class="collection__title" id="col-new">Καινούργια πιάνα</h3>
@@ -248,7 +246,7 @@
           <article class="collection" aria-labelledby="col-used" data-reveal style="--d: 120ms">
             <!-- Page: used-pianos.html (future URL /pianos/used/) -->
             <a class="collection__frame frame" href="used-pianos.html" tabindex="-1" aria-hidden="true">
-              <img src="assets/photos/collection-used.jpg" alt="" width="736" height="736" loading="lazy">
+              <picture><source type="image/webp" srcset="assets/photos/collection-used-480.webp 480w, assets/photos/collection-used-736.webp 736w" sizes="(max-width: 47.9375rem) 89vw, (max-width: 67.5rem) 45vw, 590px"><img src="assets/photos/collection-used.jpg" alt="" width="736" height="736" loading="lazy"></picture>
             </a>
             <div class="collection__caption">
               <h3 class="collection__title" id="col-used">Μεταχειρισμένα πιάνα</h3>
@@ -309,10 +307,10 @@
 
         <div class="visit__media">
           <figure class="visit__room frame" data-reveal style="--d: 120ms">
-            <img src="assets/photos/visit-showroom.jpg" alt="Η έκθεση της Νικοτιάν: πιάνα, κιθάρες στη βιτρίνα και ο δρόμος έξω" width="960" height="640" loading="lazy">
+            <picture><source type="image/webp" srcset="assets/photos/visit-showroom-480.webp 480w, assets/photos/visit-showroom-800.webp 800w, assets/photos/visit-showroom-960.webp 960w" sizes="(max-width: 47.9375rem) 97vw, (max-width: 67.5rem) 68vw, 605px"><img src="assets/photos/visit-showroom.jpg" alt="Η έκθεση της Νικοτιάν: πιάνα, κιθάρες στη βιτρίνα και ο δρόμος έξω" width="960" height="640" loading="lazy"></picture>
           </figure>
           <figure class="visit__facade frame" data-reveal style="--d: 240ms">
-            <img src="assets/photos/visit-facade.jpg" alt="Η γυάλινη πρόσοψη του κτιρίου της Νικοτιάν στην οδό Σόλωνος" width="720" height="1080" loading="lazy">
+            <picture><source type="image/webp" srcset="assets/photos/visit-facade-480.webp 480w, assets/photos/visit-facade-720.webp 720w" sizes="(max-width: 47.9375rem) 43vw, (max-width: 67.5rem) 30vw, 191px"><img src="assets/photos/visit-facade.jpg" alt="Η γυάλινη πρόσοψη του κτιρίου της Νικοτιάν στην οδό Σόλωνος" width="720" height="1080" loading="lazy"></picture>
           </figure>
         </div>
       </div>

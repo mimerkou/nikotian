@@ -87,3 +87,25 @@ guitars.html → /kitheres/ · μοντέλα /kitheres/<slug>/ · φίλτρο 
   - λατινική γραφή των ονομάτων (Carlo, Stepan, Arous, Karolos, Stefanos, Robert Karabetian);
   - «Nikotian Music House»;
   - «Pre-owned pianos».
+
+## Απόδοση v2 (19/11/2026) — βήματα build μετά από αλλαγές
+Μετά από κάθε αλλαγή, τρέχουν με αυτή τη σειρά:
+1. **CSS:** `python3 tools/build-css.py`, μετά από αλλαγή στα `css/fonts.css`, `css/tokens.css`, `css/style.css`.
+   - Οι σελίδες φορτώνουν μόνο το `css/base.min.css`.
+   - Τα CSS των επιμέρους σελίδων (`about.css` κ.λπ.) δεν αλλάζουν.
+2. **Εικόνες:** `python3 tools/build-images.py`, μετά από νέα ή αλλαγμένη φωτογραφία ή νέο `<img>` σε σελίδα.
+   - Γράφει τις παραλλαγές WebP (`name-480.webp`…) και τυλίγει τα `<img>` σε `<picture>`.
+   - Ενημερώνει τα preload των hero.
+   - Τα `sizes` βρίσκονται στο `data/img-sizes.json` και μετρήθηκαν στον browser στα 390/900/1440/1920 px. Για νέα εικόνα προσθέτουμε γραμμή, αλλιώς παίρνει `100vw`.
+3. **Δεδομένα:** `python3 tools/build-client-data.py`.
+   - Τα `data/*.js` είναι «ελαφριά» αντίγραφα, χωρίς raw, notes, specsOriginal κ.λπ. Τα πλήρη στοιχεία μένουν στα `data/*.json`.
+   - Τρέχει αυτόματα στο τέλος των build-*-data / build-product-details.
+4. **Αγγλικά:** `python3 -I tools/build-en-pages.py .`, πάντα τελευταίο.
+   - Μεταφέρει και τα `srcset`, `imagesrcset` και `data-full` στο `../`.
+5. **Γραμματοσειρές:** `tools/build-fonts.py`, μόνο αν αλλάξουν εύρη ή χαρακτήρες.
+   - Βγάζει WOFF2 από `tools/font-sources/*.woff`, χωρισμένα σε common / greek / latin / latin-ext / greek-ext, χωρίς επικαλύψεις.
+   - Τα ρωμαϊκά i, v, x… των υπηρεσιών βρίσκονται στο italic common.
+
+**Hero αρχικής:** η φωτογραφία φαίνεται από το πρώτο frame. Το «fade in» το κάνει ένα σκούρο πέπλο από πάνω της (`.hero__media::before`), γιατί μια εικόνα με opacity 0 καθυστερεί το LCP.
+
+**WordPress:** το ίδιο αποτέλεσμα θα πετύχουμε με τα responsive images του WP (srcset/sizes), WebP και self-hosted WOFF2.

@@ -1,0 +1,13 @@
+# Nikotian — Netlify response headers (performance v2, 19/11/2026)
+# Fonts never change under the same name: cache for a year. Photographs: a week (a replaced photo with the
+# same file name reaches visitors within 7 days). HTML, CSS, JS, data: Netlify's default (always revalidated),
+# so every deploy is visible at once during the review phase.
+
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/photos/*
+  Cache-Control: public, max-age=604800
+
+/assets/logo/*
+  Cache-Control: public, max-age=604800

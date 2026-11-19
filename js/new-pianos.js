@@ -35,6 +35,10 @@
   const pianos = [...DATA].sort((a, b) => a.order - b.order);
 
   const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  // card image widths, measured per collection (performance v2): the used pianos have a wider, mixed grid
+  const CARD_SIZES = /used-pianos/.test(location.pathname)
+    ? '(max-width: 47.9375rem) 130vw, (max-width: 67.5rem) 64vw, 550px'
+    : '(max-width: 47.9375rem) 72vw, (max-width: 67.5rem) 36vw, 304px';
   const linkAttrs = (p) => (p.detailPage
     ? `href="${esc(p.detailPage)}"`
     : `href="#" data-href="${esc(p.url)}" data-pending="${esc(p.name || `${p.manufacturer} ${p.model}`)}"`);
@@ -53,7 +57,9 @@
     const facts = (p.specs || []).filter((f) => f.show).slice(0, 3);
     // the model name never breaks on its hyphen («SLP-|175»)
     const keep = (html) => (p.model ? html.split(esc(p.model)).join(`<span style="white-space: nowrap">${esc(p.model)}</span>`) : html);
-    const img = (im, cls, extra = '') => `<img class="${cls}" src="${esc(im.src)}" alt="${esc(im.alt || '')}" width="${im.width}" height="${im.height}" decoding="async"${extra}>`;
+    const PIC = window.NIKOTIAN_PICTURE || ((s, w, z, h) => h);
+    const img = (im, cls, extra = '', sizes = '(max-width: 47.9375rem) 97vw, (max-width: 67.5rem) 92vw, 700px') =>
+      PIC(im.src, im.width, sizes, `<img class="${cls}" src="${esc(im.src)}" alt="${esc(im.alt || '')}" width="${im.width}" height="${im.height}" decoding="async"${extra}>`);
     featuredEl.innerHTML = `
       <article class="np-feature" id="${esc(p.slug)}" aria-labelledby="t-${esc(p.slug)}" data-brand="${esc(p.manufacturerSlug)}">
         <figure class="np-feature__media frame" data-reveal>${img(main, 'np-feature__img', ' fetchpriority="high"')}</figure>
@@ -63,7 +69,7 @@
           ${text.length ? `<div class="np-feature__text">${text.map((t) => `<p class="t-body">${keep(esc(t))}</p>`).join('')}</div>` : ''}
           <a class="link-arrow np-feature__more" ${linkAttrs(p)}>${T('Ανακαλύψτε το μοντέλο')}<span class="visually-hidden">: ${esc(name)}</span> <span class="link-arrow__icon" aria-hidden="true">→</span></a>
         </div>
-        ${details.length ? `<ul class="np-feature__details" aria-label="${EN ? `Details of the ${esc(name)}` : `Λεπτομέρειες του ${esc(name)}`}" data-reveal style="--d: 220ms">${details.map((d) => `<li class="frame np-feature__detail">${img(d, 'np-feature__img', ' loading="lazy"')}</li>`).join('')}</ul>` : ''}
+        ${details.length ? `<ul class="np-feature__details" aria-label="${EN ? `Details of the ${esc(name)}` : `Λεπτομέρειες του ${esc(name)}`}" data-reveal style="--d: 220ms">${details.map((d) => `<li class="frame np-feature__detail">${img(d, 'np-feature__img', ' loading="lazy"', '(max-width: 47.9375rem) 43vw, (max-width: 67.5rem) 29vw, 190px')}</li>`).join('')}</ul>` : ''}
         ${facts.length ? `<dl class="np-feature__facts" data-reveal style="--d: 280ms">${facts.map((f) => `<div class="np-feature__fact"><dt class="t-meta">${esc(f.label)}</dt><dd class="t-meta-value">${esc(f.value)}</dd></div>`).join('')}</dl>` : ''}
       </article>`;
     featuredEl.hidden = false;
@@ -119,7 +125,7 @@
       <li class="np-card" id="${esc(p.slug)}" data-brand="${esc(p.manufacturerSlug)}" data-type="${p.type || 'unknown'}"${p.availability ? ` data-availability="${esc(p.availability)}"` : ''}>
         <article class="np-card__inner" aria-labelledby="t-${esc(p.slug)}">
           <a class="np-card__media${media}${backdrop}" href="${esc(href)}"${pending} tabindex="-1" aria-hidden="true">
-            <img src="${esc(img.src)}" alt="" width="${img.width}" height="${img.height}" loading="lazy" decoding="async"${pos}>
+            ${(window.NIKOTIAN_PICTURE || ((s, w, z, h) => h))(img.src, img.width, CARD_SIZES, `<img src="${esc(img.src)}" alt="" width="${img.width}" height="${img.height}" loading="lazy" decoding="async"${pos}>`)}
           </a>
           <div class="np-card__body">
             <p class="t-meta np-card__brand"${brand ? '' : ' aria-hidden="true"'}>${brand ? esc(brand) : '&nbsp;'}</p>

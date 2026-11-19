@@ -125,6 +125,10 @@ p { text-wrap: pretty; }
 .btn--outline:hover { background: var(--graphite); color: var(--ivory); }
 .btn--sm { min-height: 2.5rem; padding: .55rem 1.15rem; }
 
+/* Responsive images (performance v2): <picture> only chooses the file (WebP at the right width, JPEG as
+   fallback) — it takes no box of its own, so every layout and selector sees the <img> exactly as before. */
+picture { display: contents; }
+
 /* Underlined text CTA — one shared component (.link-arrow · .link-caps · .link-inline).
    Not applied to links inside running text.
    v1.6 (19/11/2026, client's idea) — «the line fills».
@@ -431,13 +435,19 @@ html:not(.menu-open) .site-header:not(.is-solid) :focus-visible:not(.nav__sub a)
 }
 .hero__actions { margin-top: var(--s-6); }
 
+/* Performance v2 (19/11/2026): the photograph no longer starts at opacity 0 — an invisible image is not
+   «painted» for the browser, so the LCP waited for the fade. It is now visible from the first frame and a
+   charcoal veil above it fades out instead: same look (charcoal → photograph, gentle zoom), instant LCP. */
+.hero__media::before { content: ""; position: absolute; inset: 0; z-index: 1; background: var(--charcoal); opacity: 0; pointer-events: none; }
+.js .hero__media::before { animation: hero-veil 2200ms var(--ease-out) both; }
 .js .hero__media img { animation: hero-image 2200ms var(--ease-out) both; }
 .js .hero__text > * { animation: rise 1000ms var(--ease-out) both; }
 .js .hero__text > :nth-child(1) { animation-delay: 250ms; }
 .js .hero__text > :nth-child(2) { animation-delay: 400ms; }
 .js .hero__text > :nth-child(3) { animation-delay: 600ms; }
 .js .hero__text > :nth-child(4) { animation-delay: 750ms; }
-@keyframes hero-image { from { opacity: 0; transform: scale(1.07); } to { opacity: 1; transform: none; } }
+@keyframes hero-image { from { transform: scale(1.07); } to { transform: none; } }
+@keyframes hero-veil { from { opacity: 1; } to { opacity: 0; } }
 @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
 
 /* Tablet & mobile: the photograph sits on top under the transparent header, the text follows on charcoal */

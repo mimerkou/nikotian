@@ -171,3 +171,6 @@ def main():
 
 
 main()
+
+# performance v2: the browser copies (data/*.js) drop internal fields — see tools/build-client-data.py
+import runpy; runpy.run_path(str(Path(__file__).resolve().parent / 'build-client-data.py'), run_name='__main__')

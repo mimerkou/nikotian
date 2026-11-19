@@ -112,7 +112,9 @@
   }
 
   /* ---------- Markup ---------- */
-  const img = (im, cls, attrs = '') => `<img class="${cls}" src="${esc(im.src)}" alt="${esc(im.alt || '')}" width="${im.width}" height="${im.height}" decoding="async"${attrs}>`;
+  const PIC = (src, w, sizes, html) => (window.NIKOTIAN_PICTURE ? window.NIKOTIAN_PICTURE(src, w, sizes, html) : html);
+  const GALLERY_SIZES = '(max-width: 47.9375rem) 80vw, (max-width: 67.5rem) 42vw, 560px';
+  const img = (im, cls, attrs = '') => PIC(im.src, im.width, GALLERY_SIZES, `<img class="${cls}" src="${esc(im.src)}" alt="${esc(im.alt || '')}" width="${im.width}" height="${im.height}" decoding="async"${attrs}>`);
 
   function galleryHTML(v) {
     if (!v.gallery.length) return '';
@@ -134,7 +136,7 @@
         <li class="pd-thumbs__item">
           <button class="pd-thumbs__btn pd-thumbs__btn--${v.portrait ? 'portrait' : fitClass(im) === 'contain' ? 'contain' : 'cover'}"${bd(im)} type="button" data-slide="${i}" aria-controls="pd-slide-${i}"${i === 0 ? ' aria-current="true"' : ''} tabindex="${i === 0 ? 0 : -1}">
             <span class="visually-hidden">${EN ? 'Photograph' : 'Φωτογραφία'} ${i + 1} ${EN ? 'of' : 'από'} ${v.gallery.length}: ${esc(im.alt || v.name)}</span>
-            <img src="${esc(im.src)}" alt="" width="${im.width}" height="${im.height}" loading="lazy" decoding="async">
+            ${PIC(im.src, im.width, '120px', `<img src="${esc(im.src)}" alt="" width="${im.width}" height="${im.height}" loading="lazy" decoding="async">`)}
           </button>
         </li>`).join('')}
       </ul>` : '';
