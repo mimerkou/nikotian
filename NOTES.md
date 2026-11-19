@@ -71,7 +71,7 @@ guitars.html → /kitheres/ · μοντέλα /kitheres/<slug>/ · φίλτρο 
 - **Page transitions:** καταργήθηκαν στο v1.3 (μη εγκεκριμένο fade). Η πλοήγηση είναι απλή.
 - **Smooth scroll (v1.3):** `js/main.js` → «Smooth scroll to sections». Ισχύει μόνο για same-page anchors. Στο WordPress χρειάζεται το ίδιο script.
 - **Motion System v1.2:** τα εγκεκριμένα animations δεν εξαρτώνται από το `prefers-reduced-motion` (απόφαση 2026-11-10). Δεν υπάρχει κανένας τέτοιος έλεγχος σε CSS ή JS.
-- **Motion tokens:** `css/tokens.css` (`--ease-soft`, `--dur-underline`, `--dur-link-color`, `--dur-image`, `--scale-image`, `--dur-page`, `--nav-close-delay`).
+- **Motion tokens:** `css/tokens.css` (`--ease-soft`, `--dur-link`, `--dur-image`, `--scale-image`, `--dur-page`, `--nav-close-delay`).
 
 ---
 
