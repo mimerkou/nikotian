@@ -125,15 +125,19 @@
       </div>
     </section>
 
-    <!-- ================= 02 · Η ΑΡΧΗ ================= -->
+    <!-- ================= 02 · Η ΑΡΧΗ =================
+         v4 (19/11/2026): one chapter, three documents — the man, the place, the testimonies.
+         Left: the founder's oil portrait, presented as an object (ivory mat, fine rule, soft shadow), sticky.
+         Right: the story, then the first shop at Ακαδημίας 63 (archive plate, caption beside it),
+         then the two letters of 1931 (flat scans on archival paper; each opens a reader with a translation). -->
     <section class="origin section" id="arxi" aria-labelledby="origin-title">
       <div class="wrap origin__grid">
         <figure class="origin__portrait" data-reveal>
-          <div class="frame origin__portrait-frame">
-            <!-- Crop of oikos-portrait-wall.jpg (Nikotian). Replace with an original photograph of Κάρλο Νικοτιάν when the archive material arrives. -->
-            <img src="../assets/photos/about/founder-portrait-crop.jpg" alt="The portrait of Carlo Nikotian in a gilded frame, above an upright piano in the showroom" width="400" height="490" loading="lazy">
+          <div class="painting">
+            <!-- portrait_01.jpg (Nikotian archive): the oil painting that hangs in the showroom; edges trimmed, light contrast. -->
+            <img src="../assets/photos/about/founder-portrait-oil.jpg" alt="Oil portrait of Carlo Nikotian: an older man with grey hair, a brown jacket and a striped tie, against a dark green background" width="1200" height="1627" loading="lazy">
           </div>
-          <figcaption class="t-caption"><strong>Carlo Nikotian</strong>, founder of the House. His portrait hangs in the showroom today, beside the pianos.</figcaption>
+          <figcaption class="t-caption"><strong>Carlo Nikotian</strong>, founder of the House. His oil portrait hangs today in the showroom on Solonos Street.</figcaption>
         </figure>
 
         <div class="origin__text" data-reveal style="--d: 120ms">
@@ -144,29 +148,86 @@
           <div class="prose">
             <p>Carlo Nikotian was a piano technician and tuner. His work began with the ear: to listen to an instrument, understand what it needs and give it back its true voice.</p>
             <p>In March 1929 he founded the music house at 63 Akadimias Street. His expertise in maintenance and tuning brought him close to the musicians of the time, and the House became associated with recitals by leading artists in Athens.</p>
-            <p>Among the records of those years, the history of the House mentions letters of congratulation from Rubinstein and Artur Schnabel.</p>
+            <p>Two letters survive from those years, written in 1931 at the Hotel Grande Bretagne by Arthur Rubinstein and Artur Schnabel. Both praise Carlo’s work on a Bechstein piano.</p>
           </div>
         </div>
 
-        <!-- Archive: two slots for the original letters. Placeholders only, until the scans arrive from the family archive. -->
-        <div class="archive" data-reveal style="--d: 200ms">
-          <p class="t-meta archive__label">From the House archive</p>
+        <!-- Archive plate: nikotian akadimias trikoupi.jpg (680 × 720, Nikotian archive) — warm monochrome, ×2 for sharp edges. Undated: no year is given. -->
+        <figure class="place" data-reveal>
+          <div class="place__media">
+            <img src="../assets/photos/about/akadimias-63-archive.jpg" alt="Black-and-white photograph: a two-storey neoclassical building on a corner of Akadimias Street. On the ground floor, between two bookshops, the sign «Κ. Νικοτιάν — Πιάνα» (K. Nikotian — Pianos); passers-by in overcoats on the pavement" width="1360" height="1440" loading="lazy">
+          </div>
+          <figcaption class="place__caption">
+            <p class="t-meta place__label">From the House archive</p>
+            <p class="t-subtitle place__title">63 Akadimias Street</p>
+            <p class="t-caption">The first shop, where it all began. On the ground floor of the neoclassical building, between two bookshops, the sign «K. Nikotian — Pianos».</p>
+          </figcaption>
+        </figure>
+
+        <!-- Archive: the two letters of 1931 (IMG_20190413_0020 / 0021, flat scans — sharper than the framed photographs).
+             Each opens a dialog with the letter large and a free Greek translation (js/about.js). -->
+        <div class="archive" data-reveal>
+          <p class="t-meta archive__label">Two letters, 1931</p>
           <ul class="archive__list">
             <li class="archive__item">
-              <div class="placeholder" role="img" aria-label="Placeholder for the letter from Rubinstein. The original has not been digitised yet.">
-                <span class="t-meta placeholder__tag">Placeholder</span>
-              </div>
-              <p class="t-caption archive__caption"><strong>Letter from Rubinstein</strong><br>The original will be added from the family archive.</p>
+              <button class="archive__open" type="button" data-letter="letter-rubinstein" aria-haspopup="dialog">
+                <span class="letter-sheet">
+                  <img src="../assets/photos/about/letter-rubinstein-1931.jpg" alt="" width="900" height="1360" loading="lazy">
+                </span>
+                <span class="visually-hidden">Read the letter from Arthur Rubinstein</span>
+              </button>
+              <p class="t-caption archive__caption"><strong>Arthur Rubinstein</strong><br>Athens, 9 February 1931 · in French</p>
+              <p class="t-caption archive__quote">“…and made it sonorous and brilliant once more.”</p>
             </li>
             <li class="archive__item">
-              <div class="placeholder" role="img" aria-label="Placeholder for the letter from Artur Schnabel. The original has not been digitised yet.">
-                <span class="t-meta placeholder__tag">Placeholder</span>
-              </div>
-              <p class="t-caption archive__caption"><strong>Letter from Artur Schnabel</strong><br>The original will be added from the family archive.</p>
+              <button class="archive__open" type="button" data-letter="letter-schnabel" aria-haspopup="dialog">
+                <span class="letter-sheet">
+                  <img src="../assets/photos/about/letter-schnabel-1931.jpg" alt="" width="900" height="1369" loading="lazy">
+                </span>
+                <span class="visually-hidden">Read the letter from Artur Schnabel</span>
+              </button>
+              <p class="t-caption archive__caption"><strong>Artur Schnabel</strong><br>Athens, 1931 · in German</p>
+              <p class="t-caption archive__quote">“…a gifted piano technician.”</p>
             </li>
           </ul>
         </div>
       </div>
+
+      <!-- Letter reader: native <dialog>, opened by js/about.js. Without JS the buttons do nothing and the captions still read. -->
+      <dialog class="letter-reader" id="letter-rubinstein" aria-labelledby="letter-rubinstein-title">
+        <div class="letter-reader__inner">
+          <figure class="letter-reader__media">
+            <img src="../assets/photos/about/letter-rubinstein-1931-large.jpg" alt="Handwritten letter from Arthur Rubinstein in French, on Hotel Grande Bretagne letterhead, Athens, 9 February 1931" width="1800" height="2721" loading="lazy">
+          </figure>
+          <div class="letter-reader__text">
+            <p class="t-meta">From the House archive</p>
+            <h2 class="title title--md" id="letter-rubinstein-title">Arthur <em>Rubinstein</em></h2>
+            <p class="t-meta letter-reader__date">Hotel Grande Bretagne · Athens, 9 February 1931</p>
+            <blockquote class="letter-reader__quote">
+              <p>“It is with real pleasure that I express my full satisfaction with the way the beautiful Bechstein piano was tuned and repaired by Mr Karl Nicotian. He knew how to draw everything from a piano that was a little tired and worn by humidity, and he made it sonorous and brilliant once more.”</p>
+            </blockquote>
+            <p class="t-caption">Free translation from the French.</p>
+          </div>
+          <button class="letter-reader__close link-arrow" type="button" data-close>Close <span aria-hidden="true">×</span></button>
+        </div>
+      </dialog>
+      <dialog class="letter-reader" id="letter-schnabel" aria-labelledby="letter-schnabel-title">
+        <div class="letter-reader__inner">
+          <figure class="letter-reader__media">
+            <img src="../assets/photos/about/letter-schnabel-1931-large.jpg" alt="Handwritten letter from Artur Schnabel in German, on Hotel Grande Bretagne letterhead, Athens, 1931" width="1800" height="2737" loading="lazy">
+          </figure>
+          <div class="letter-reader__text">
+            <p class="t-meta">From the House archive</p>
+            <h2 class="title title--md" id="letter-schnabel-title">Arthur <em>Schnabel</em></h2>
+            <p class="t-meta letter-reader__date">Hotel Grande Bretagne · Athens, 1931</p>
+            <blockquote class="letter-reader__quote">
+              <p>“I am pleased to confirm that Mr Carl Nicotian, under difficult circumstances, tuned, voiced and regulated the Bechstein grand I used at my Athens concerts with great care and good success. He is a gifted piano technician, to whom I wish a good future.”</p>
+            </blockquote>
+            <p class="t-caption">Free translation from the German.</p>
+          </div>
+          <button class="letter-reader__close link-arrow" type="button" data-close>Close <span aria-hidden="true">×</span></button>
+        </div>
+      </dialog>
     </section>
 
     <!-- ================= 03 · Η ΔΙΑΔΡΟΜΗ ΜΑΣ =================

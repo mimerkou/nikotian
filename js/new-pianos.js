@@ -1,4 +1,4 @@
-// Nikotian — piano collections: product grid + filters (manufacturer × type)
+// Nikotian — piano collections: product grid + filters (manufacturer × type × availability)
 // Shared by «Καινούργια», «Μεταχειρισμένα» and «Ηλεκτρικά πιάνα» (one rendering + filtering system).
 // Data: the global named in #np-grid[data-source]; default window.NIKOTIAN_NEW_PIANOS
 // (data/new-pianos.js). Used pianos: window.NIKOTIAN_USED_PIANOS (data/used-pianos.js).
@@ -9,6 +9,8 @@
 //       presentation (same record, same data); from two records on, the shared 3/2/1 grid is rendered.
 //   #np-filters[data-min-items="N"]              → the filter bar appears only from N records on.
 //   No type radios in #np-filters                → manufacturer filter only (types are not used).
+//   availability radios in #np-filters           → «Διαθεσιμότητα» (v1.2, Καινούργια): record.availability
+//       'stock' | 'order'. All filters combine (AND) and are kept in the URL (?availability=stock).
 //   #np-grid[data-noun="κιθάρα|κιθάρες"]          → the word used in the result count (v1.0 Κιθάρες;
 //       default «πιάνο|πιάνα»).
 //   images[0].backdrop (record)                   → the card frame takes the studio colour of the photograph,
@@ -91,6 +93,7 @@
   brands.sort((a, b) => a.label.localeCompare(b.label, EN ? 'en' : 'el'));
   const BRAND_VALUES = ['all', ...brands.map((b) => b.value)];
   const TYPE_VALUES = ['all', 'upright', 'grand'];
+  const AVAIL_VALUES = ['all', 'stock', 'order'];
 
   // Manufacturer options come from the catalogue data (the «all» option is in the markup).
   brandSelect.insertAdjacentHTML('beforeend', brands.map((b) => `<option value="${esc(b.value)}">${esc(b.label)}</option>`).join(''));
@@ -113,7 +116,7 @@
     const href = live ? p.detailPage : '#';
     const pending = live ? '' : ` data-href="${esc(p.url)}" data-pending="${esc(name)}"`;
     return `
-      <li class="np-card" id="${esc(p.slug)}" data-brand="${esc(p.manufacturerSlug)}" data-type="${p.type || 'unknown'}">
+      <li class="np-card" id="${esc(p.slug)}" data-brand="${esc(p.manufacturerSlug)}" data-type="${p.type || 'unknown'}"${p.availability ? ` data-availability="${esc(p.availability)}"` : ''}>
         <article class="np-card__inner" aria-labelledby="t-${esc(p.slug)}">
           <a class="np-card__media${media}${backdrop}" href="${esc(href)}"${pending} tabindex="-1" aria-hidden="true">
             <img src="${esc(img.src)}" alt="" width="${img.width}" height="${img.height}" loading="lazy" decoding="async"${pos}>
@@ -133,19 +136,26 @@
 
   /* ---------- State (kept in the URL: ?brand=petrof&type=upright) ---------- */
   const hasType = Boolean(form.querySelector('input[name="type"]'));
+  const hasAvail = Boolean(form.querySelector('input[name="availability"]'));
   const typeInput = (v) => form.querySelector(`input[name="type"][value="${v}"]`);
+  const availInput = (v) => form.querySelector(`input[name="availability"][value="${v}"]`);
   const params = new URLSearchParams(location.search);
   const initBrand = params.get('brand');
   const initType = params.get('type');
   if (initBrand && BRAND_VALUES.includes(initBrand)) brandSelect.value = initBrand;
   if (hasType && initType && TYPE_VALUES.includes(initType)) typeInput(initType).checked = true;
+  const initAvail = params.get('availability');
+  if (hasAvail && initAvail && AVAIL_VALUES.includes(initAvail)) availInput(initAvail).checked = true;
 
   const state = () => ({
     brand: brandSelect.value,
     type: hasType ? form.querySelector('input[name="type"]:checked').value : 'all',
+    availability: hasAvail ? form.querySelector('input[name="availability"]:checked').value : 'all',
   });
   // A model with an undocumented type is shown under «Όλα» only.
-  const match = (p, s) => (s.brand === 'all' || p.manufacturerSlug === s.brand) && (s.type === 'all' || p.type === s.type);
+  const match = (p, s) => (s.brand === 'all' || p.manufacturerSlug === s.brand)
+    && (s.type === 'all' || p.type === s.type)
+    && (s.availability === 'all' || p.availability === s.availability);
   const [nounOne, nounMany] = (grid.dataset.noun || T('πιάνο|πιάνα')).split('|');
   const plural = (n) => (n === 1 ? nounOne : nounMany);
 
@@ -164,7 +174,7 @@
       }
     });
 
-    const filtered = s.brand !== 'all' || s.type !== 'all';
+    const filtered = s.brand !== 'all' || s.type !== 'all' || s.availability !== 'all';
     countEl.textContent = filtered ? `${shown} ${EN ? 'of' : 'από'} ${pianos.length} ${plural(pianos.length)}` : `${pianos.length} ${plural(pianos.length)}`;
     resetBtn.hidden = !filtered;
     empty.hidden = shown !== 0;
@@ -173,6 +183,7 @@
     const q = new URLSearchParams();
     if (s.brand !== 'all') q.set('brand', s.brand);
     if (s.type !== 'all') q.set('type', s.type);
+    if (s.availability !== 'all') q.set('availability', s.availability);
     const url = `${location.pathname}${q.toString() ? `?${q}` : ''}${location.hash}`;
     try { history.replaceState(null, '', url); } catch (e) { /* file:// in some browsers */ }
   };
@@ -182,6 +193,7 @@
   const resetAll = (focusTarget) => {
     brandSelect.value = 'all';
     if (hasType) typeInput('all').checked = true;
+    if (hasAvail) availInput('all').checked = true;
     apply(true);
     focusTarget?.focus();
   };

@@ -190,6 +190,10 @@ def main():
         for k in ('summary', 'body', 'bodySource', 'editNote'):
             if e.get(k):
                 r[k] = e[k]
+        # Availability (client, 19/11/2026): 'stock' = in the showroom, 'order' = κατόπιν παραγγελίας.
+        # Used by the «Διαθεσιμότητα» filter (js/new-pianos.js). WordPress: one select field per product.
+        r['availability'] = e.get('availability', 'order')
+        r['availabilityLabel'] = 'Στοκ' if r['availability'] == 'stock' else 'Κατόπιν παραγγελίας'
         curated = []
         if e.get('specs'):
             curated = e['specs']

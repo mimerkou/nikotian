@@ -1,4 +1,4 @@
-// Nikotian — «Ο Οίκος» page
+// Nikotian — «Ο Οίκος» page (v4: + letter reader)
 // The route axis fills as the reader moves through the five stations.
 // Without JS the line is simply drawn in full.
 
@@ -22,4 +22,25 @@
   const onScroll = () => { if (!ticking) { requestAnimationFrame(update); ticking = true; } };
   window.addEventListener('scroll', onScroll, { passive: true });
   window.addEventListener('resize', onScroll);
+})();
+
+// Letters of 1931 (v4): each archive button opens its <dialog> — the letter large, with a free translation.
+// Esc closes (native), as do the close button and a click on the backdrop. Focus returns to the button.
+(() => {
+  document.querySelectorAll('.archive__open[data-letter]').forEach((btn) => {
+    const dlg = document.getElementById(btn.dataset.letter);
+    if (!dlg || typeof dlg.showModal !== 'function') return;
+    const close = () => dlg.close();
+    btn.addEventListener('click', () => {
+      dlg.querySelectorAll('img[loading="lazy"]').forEach((im) => { im.loading = 'eager'; });
+      dlg.showModal();
+      document.documentElement.classList.add('has-dialog');
+    });
+    dlg.addEventListener('close', () => {
+      document.documentElement.classList.remove('has-dialog');
+      btn.focus();
+    });
+    dlg.querySelector('[data-close]')?.addEventListener('click', close);
+    dlg.addEventListener('click', (e) => { if (e.target === dlg) close(); });
+  });
 })();

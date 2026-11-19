@@ -1,19 +1,7 @@
-/* Nikotian — «Ο Οίκος» (about.html) · v2.0
+/* Nikotian — «Ο Οίκος» (about.html) · v4.0 (archive: portrait, Ακαδημίας 63, letters)
    Layout only. Every piece of text takes its type from a shared role class
    (style.css «Typography roles» + tokens.css role tokens). This file sets no
    font-size, font-family or colour for text that has a role. */
-
-/* =========================================================
-   Placeholder for archive material that does not exist yet (prototype only)
-   ========================================================= */
-.placeholder {
-  position: relative;
-  aspect-ratio: 3 / 4;
-  background: var(--ivory);
-  outline: 1px solid var(--line);
-  outline-offset: -.75rem;
-}
-.placeholder__tag { position: absolute; top: 1.25rem; left: 1.25rem; right: 1.25rem; }
 
 /* =========================================================
    01 · Εισαγωγή — compact, one row: text | photograph (bleeds right)
@@ -74,40 +62,119 @@
 }
 
 /* =========================================================
-   02 · Η αρχή
+   02 · Η αρχή (v4, 19/11/2026) — the man, the place, the testimonies
+   One language for every archive object: the document sits on the Warm Beige like an object on a wall —
+   ivory ground, one fine rule, a long soft shadow. No gilt, no ornament: the documents carry the period.
    ========================================================= */
 .origin { background: var(--beige); }
 .origin__grid {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   column-gap: var(--s-5);
-  row-gap: clamp(3rem, 2rem + 3vw, 5rem);
+  row-gap: clamp(3.5rem, 2.5rem + 3vw, 5.5rem);
   align-items: start;
 }
-.origin__portrait { grid-column: 1 / span 4; grid-row: 1 / span 2; position: sticky; top: calc(var(--header-h) + var(--s-6)); }
-.origin__portrait-frame { aspect-ratio: 4 / 5; }
-.origin__portrait-frame img { object-position: 48% 30%; }
-.origin__portrait figcaption { margin-top: var(--s-3); max-width: 22rem; }
+.origin { --object-shadow: 0 1px 1px rgba(31, 29, 27, .06), 0 24px 48px -28px rgba(31, 29, 27, .42); }
+
+/* The portrait: the oil painting inside an ivory mat — formal, quiet, a museum label for a caption */
+.origin__portrait { grid-column: 1 / span 4; grid-row: 1 / span 3; position: sticky; top: calc(var(--header-h) + var(--s-6)); }
+.painting {
+  padding: clamp(.75rem, .4rem + 1.1vw, 1.375rem);
+  background: var(--ivory);
+  box-shadow: var(--object-shadow);
+}
+.painting img { display: block; width: 100%; height: auto; aspect-ratio: 1200 / 1627; outline: 1px solid rgba(31, 29, 27, .22); outline-offset: 0; }
+.origin__portrait figcaption { margin-top: var(--s-4); max-width: 22rem; }
 
 .origin__text { grid-column: 6 / -1; }
 .origin__date { margin-top: var(--s-5); }
 .origin__text .prose { margin-top: var(--s-5); }
 
+/* The place: Ακαδημίας 63 — an archive plate, the caption set beside it like a label */
+.place {
+  grid-column: 6 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(0, 3fr);
+  column-gap: var(--s-6);
+  align-items: end;
+}
+.place__media { background: var(--ivory); padding: clamp(.5rem, .3rem + .6vw, .875rem); box-shadow: var(--object-shadow); }
+.place__media img { display: block; width: 100%; height: auto; aspect-ratio: 1360 / 1440; filter: contrast(1.02); }
+.place__caption { padding-bottom: var(--s-2); border-top: 1px solid var(--line-strong); padding-top: var(--s-3); }
+.place__title { margin-top: var(--s-4); }
+.place__caption .t-caption { margin-top: var(--s-3); max-width: 20rem; }
+
+/* The testimonies: two letters, flat scans on archival paper */
 .archive { grid-column: 6 / -1; }
-.archive__label { padding-bottom: var(--s-3); margin-bottom: var(--s-5); border-bottom: 1px solid var(--line-strong); }
-.archive__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-5); max-width: 32rem; }
-.archive__caption { margin-top: var(--s-3); }
+.archive__label { padding-bottom: var(--s-3); margin-bottom: var(--s-6); border-bottom: 1px solid var(--line-strong); }
+.archive__list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-7) clamp(1.5rem, 1rem + 2vw, 3rem); max-width: 40rem; }
+.archive__open {
+  display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in;
+  text-align: inherit; color: inherit;
+}
+.letter-sheet {
+  display: block;
+  background: #F6F1E6;
+  box-shadow: var(--object-shadow);
+  transition: transform var(--dur-image, 900ms) var(--ease-soft, ease), box-shadow var(--dur-image, 900ms) var(--ease-soft, ease);
+}
+.letter-sheet img { display: block; width: 100%; height: auto; aspect-ratio: 900 / 1365; object-fit: cover; object-position: top; mix-blend-mode: multiply; }
+.archive__open:hover .letter-sheet { transform: translateY(-4px); box-shadow: 0 1px 1px rgba(31, 29, 27, .06), 0 32px 56px -28px rgba(31, 29, 27, .5); }
+.archive__open:focus-visible { outline: 2px solid var(--red); outline-offset: 6px; }
+.archive__caption { margin-top: var(--s-4); }
+.archive__quote { margin-top: var(--s-2); font-family: var(--font-serif); font-style: italic; color: var(--accent, var(--red)); }
+
+/* Letter reader (native <dialog>) */
+.letter-reader {
+  width: min(72rem, calc(100vw - 2 * var(--gutter)));
+  max-width: none; max-height: calc(100svh - 2 * var(--gutter));
+  margin: auto; padding: 0; border: 0;
+  background: var(--ivory); color: var(--graphite);
+  box-shadow: 0 40px 90px -30px rgba(0, 0, 0, .55);
+  overflow: auto;
+}
+.letter-reader::backdrop { background: rgba(24, 34, 37, .78); }
+.letter-reader[open] { animation: lr-in 500ms var(--ease-out) both; }
+.letter-reader[open]::backdrop { animation: lr-fade 500ms var(--ease-out) both; }
+@keyframes lr-in { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+@keyframes lr-fade { from { opacity: 0; } to { opacity: 1; } }
+.letter-reader__inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  gap: clamp(1.5rem, 1rem + 3vw, 4rem);
+  align-items: center;
+  padding: clamp(1.25rem, .75rem + 2.5vw, 3.5rem);
+}
+.letter-reader__media { justify-self: center; max-width: 100%; background: #F6F1E6; box-shadow: var(--object-shadow, 0 24px 48px -28px rgba(31, 29, 27, .42)); }
+.letter-reader__media img { display: block; width: auto; max-width: 100%; height: auto; max-height: calc(100svh - 2 * var(--gutter) - 7rem); object-fit: contain; mix-blend-mode: multiply; }
+.letter-reader__text .title { margin-top: var(--s-4); }
+.letter-reader__date { margin-top: var(--s-4); }
+.letter-reader__quote { margin: var(--s-6) 0 var(--s-4); padding-left: var(--s-5); border-left: 1px solid var(--red); }
+.letter-reader__quote p { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.0625rem, 1rem + .3vw, 1.25rem); line-height: 1.65; color: var(--graphite); }
+.letter-reader__close {
+  position: absolute; top: clamp(.75rem, .5rem + 1vw, 1.5rem); right: clamp(1rem, .5rem + 1.5vw, 2rem);
+  border: 0; padding: 0 0 var(--ul-gap, .1em); background: none; cursor: pointer; font-family: inherit; color: var(--graphite);
+}
+html.has-dialog { overflow: hidden; }
 
 @media (max-width: 64rem) {
   .origin__portrait { grid-column: 1 / span 5; }
-  .origin__text, .archive { grid-column: 6 / -1; padding-left: var(--s-4); }
+  .origin__text, .place, .archive { grid-column: 6 / -1; padding-left: var(--s-4); }
+  .place { grid-template-columns: minmax(0, 1fr); row-gap: var(--s-4); }
+  .place__caption { border-top: 0; padding-top: 0; }
+  .place__title { margin-top: var(--s-2); }
+  .archive__list { gap: var(--s-6) var(--s-5); }
 }
 @media (max-width: 47.9375rem) {
-  .origin__grid { row-gap: var(--s-7); }
-  .origin__portrait, .origin__text, .archive { grid-column: 1 / -1; grid-row: auto; padding-left: 0; }
+  .origin__grid { row-gap: var(--s-8); }
+  .origin__portrait, .origin__text, .place, .archive { grid-column: 1 / -1; grid-row: auto; padding-left: 0; }
   .origin__text { order: -1; }
   .origin__portrait { position: static; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: var(--s-4); align-items: end; }
   .origin__portrait figcaption { margin-top: 0; }
+  .place { grid-template-columns: minmax(0, 1fr); }
+  .letter-reader__inner { grid-template-columns: minmax(0, 1fr); padding-top: 3.5rem; }
+  .letter-reader__media img { max-height: none; }
 }
 
 /* =========================================================

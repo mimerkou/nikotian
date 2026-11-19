@@ -123,15 +123,19 @@
       </div>
     </section>
 
-    <!-- ================= 02 · Η ΑΡΧΗ ================= -->
+    <!-- ================= 02 · Η ΑΡΧΗ =================
+         v4 (19/11/2026): one chapter, three documents — the man, the place, the testimonies.
+         Left: the founder's oil portrait, presented as an object (ivory mat, fine rule, soft shadow), sticky.
+         Right: the story, then the first shop at Ακαδημίας 63 (archive plate, caption beside it),
+         then the two letters of 1931 (flat scans on archival paper; each opens a reader with a translation). -->
     <section class="origin section" id="arxi" aria-labelledby="origin-title">
       <div class="wrap origin__grid">
         <figure class="origin__portrait" data-reveal>
-          <div class="frame origin__portrait-frame">
-            <!-- Crop of oikos-portrait-wall.jpg (Nikotian). Replace with an original photograph of Κάρλο Νικοτιάν when the archive material arrives. -->
-            <img src="assets/photos/about/founder-portrait-crop.jpg" alt="Το πορτραίτο του Κάρλο Νικοτιάν σε επιχρυσωμένη κορνίζα, πάνω από ένα όρθιο πιάνο στην έκθεση" width="400" height="490" loading="lazy">
+          <div class="painting">
+            <!-- portrait_01.jpg (Nikotian archive): the oil painting that hangs in the showroom; edges trimmed, light contrast. -->
+            <img src="assets/photos/about/founder-portrait-oil.jpg" alt="Προσωπογραφία του Κάρλο Νικοτιάν σε λάδι: ηλικιωμένος άνδρας με γκρίζα μαλλιά, καφέ σακάκι και ριγέ γραβάτα, σε σκούρο πράσινο φόντο" width="1200" height="1627" loading="lazy">
           </div>
-          <figcaption class="t-caption"><strong>Κάρλο Νικοτιάν</strong>, ιδρυτής του Οίκου. Το πορτραίτο του κρέμεται σήμερα στην έκθεση, δίπλα στα πιάνα.</figcaption>
+          <figcaption class="t-caption"><strong>Κάρλο Νικοτιάν</strong>, ιδρυτής του Οίκου. Η προσωπογραφία του, σε λάδι, κρέμεται σήμερα στην έκθεση της Σόλωνος.</figcaption>
         </figure>
 
         <div class="origin__text" data-reveal style="--d: 120ms">
@@ -142,29 +146,86 @@
           <div class="prose">
             <p>Ο Κάρλο Νικοτιάν ήταν τεχνικός και χορδιστής πιάνων. Η δουλειά του ξεκινούσε από το αυτί: να ακούσει ένα όργανο, να καταλάβει τι χρειάζεται και να του επιστρέψει τη σωστή του φωνή.</p>
             <p>Τον Μάρτιο του 1929 ίδρυσε τον μουσικό οίκο στην οδό Ακαδημίας 63. Η εξειδίκευσή του στη συντήρηση και στο χόρδισμα τον έφερε κοντά σε μουσικούς της εποχής, και ο Οίκος συνδέθηκε με ρεσιτάλ σημαντικών καλλιτεχνών στην Αθήνα.</p>
-            <p>Ανάμεσα στα τεκμήρια εκείνων των χρόνων, η ιστορία του Οίκου αναφέρει συγχαρητήριες επιστολές του Ρουμπινστάιν και του Άρτουρ Σνάμπελ.</p>
+            <p>Από εκείνα τα χρόνια σώζονται δύο επιστολές του 1931, γραμμένες στο ξενοδοχείο Μεγάλη Βρεταννία από τον Άρτουρ Ρουμπινστάιν και τον Άρτουρ Σνάμπελ. Και οι δύο επαινούν τη δουλειά του Κάρλο σε ένα πιάνο Bechstein.</p>
           </div>
         </div>
 
-        <!-- Archive: two slots for the original letters. Placeholders only, until the scans arrive from the family archive. -->
-        <div class="archive" data-reveal style="--d: 200ms">
-          <p class="t-meta archive__label">Από το αρχείο του Οίκου</p>
+        <!-- Archive plate: nikotian akadimias trikoupi.jpg (680 × 720, Nikotian archive) — warm monochrome, ×2 for sharp edges. Undated: no year is given. -->
+        <figure class="place" data-reveal>
+          <div class="place__media">
+            <img src="assets/photos/about/akadimias-63-archive.jpg" alt="Ασπρόμαυρη φωτογραφία: διώροφο νεοκλασικό κτίριο σε γωνία της Ακαδημίας. Στο ισόγειο, ανάμεσα σε δύο βιβλιοπωλεία, η επιγραφή «Κ. Νικοτιάν — Πιάνα»· περαστικοί με παλτά στο πεζοδρόμιο" width="1360" height="1440" loading="lazy">
+          </div>
+          <figcaption class="place__caption">
+            <p class="t-meta place__label">Από το αρχείο του Οίκου</p>
+            <p class="t-subtitle place__title">Ακαδημίας 63</p>
+            <p class="t-caption">Το πρώτο κατάστημα, εκεί που άρχισαν όλα. Στο ισόγειο του νεοκλασικού, ανάμεσα σε δύο βιβλιοπωλεία, η επιγραφή «Κ.&nbsp;Νικοτιάν — Πιάνα».</p>
+          </figcaption>
+        </figure>
+
+        <!-- Archive: the two letters of 1931 (IMG_20190413_0020 / 0021, flat scans — sharper than the framed photographs).
+             Each opens a dialog with the letter large and a free Greek translation (js/about.js). -->
+        <div class="archive" data-reveal>
+          <p class="t-meta archive__label">Δύο επιστολές, 1931</p>
           <ul class="archive__list">
             <li class="archive__item">
-              <div class="placeholder" role="img" aria-label="Θέση για την επιστολή του Ρουμπινστάιν. Το πρωτότυπο δεν έχει ακόμη ψηφιοποιηθεί.">
-                <span class="t-meta placeholder__tag">Προσωρινή θέση</span>
-              </div>
-              <p class="t-caption archive__caption"><strong>Επιστολή του Ρουμπινστάιν</strong><br>Το πρωτότυπο θα προστεθεί από το οικογενειακό αρχείο.</p>
+              <button class="archive__open" type="button" data-letter="letter-rubinstein" aria-haspopup="dialog">
+                <span class="letter-sheet">
+                  <img src="assets/photos/about/letter-rubinstein-1931.jpg" alt="" width="900" height="1360" loading="lazy">
+                </span>
+                <span class="visually-hidden">Ανάγνωση της επιστολής του Άρτουρ Ρουμπινστάιν</span>
+              </button>
+              <p class="t-caption archive__caption"><strong>Άρτουρ Ρουμπινστάιν</strong><br>Αθήνα, 9 Φεβρουαρίου 1931 · στα γαλλικά</p>
+              <p class="t-caption archive__quote">«…το έκανε ξανά ηχηρό και λαμπερό.»</p>
             </li>
             <li class="archive__item">
-              <div class="placeholder" role="img" aria-label="Θέση για την επιστολή του Άρτουρ Σνάμπελ. Το πρωτότυπο δεν έχει ακόμη ψηφιοποιηθεί.">
-                <span class="t-meta placeholder__tag">Προσωρινή θέση</span>
-              </div>
-              <p class="t-caption archive__caption"><strong>Επιστολή του Άρτουρ Σνάμπελ</strong><br>Το πρωτότυπο θα προστεθεί από το οικογενειακό αρχείο.</p>
+              <button class="archive__open" type="button" data-letter="letter-schnabel" aria-haspopup="dialog">
+                <span class="letter-sheet">
+                  <img src="assets/photos/about/letter-schnabel-1931.jpg" alt="" width="900" height="1369" loading="lazy">
+                </span>
+                <span class="visually-hidden">Ανάγνωση της επιστολής του Άρτουρ Σνάμπελ</span>
+              </button>
+              <p class="t-caption archive__caption"><strong>Άρτουρ Σνάμπελ</strong><br>Αθήνα, 1931 · στα γερμανικά</p>
+              <p class="t-caption archive__quote">«…ένας προικισμένος τεχνικός πιάνων.»</p>
             </li>
           </ul>
         </div>
       </div>
+
+      <!-- Letter reader: native <dialog>, opened by js/about.js. Without JS the buttons do nothing and the captions still read. -->
+      <dialog class="letter-reader" id="letter-rubinstein" aria-labelledby="letter-rubinstein-title">
+        <div class="letter-reader__inner">
+          <figure class="letter-reader__media">
+            <img src="assets/photos/about/letter-rubinstein-1931-large.jpg" alt="Χειρόγραφη επιστολή του Άρτουρ Ρουμπινστάιν στα γαλλικά, σε επιστολόχαρτο του ξενοδοχείου Μεγάλη Βρεταννία, Αθήνα, 9 Φεβρουαρίου 1931" width="1800" height="2721" loading="lazy">
+          </figure>
+          <div class="letter-reader__text">
+            <p class="t-meta">Από το αρχείο του Οίκου</p>
+            <h2 class="title title--md" id="letter-rubinstein-title">Άρτουρ <em>Ρουμπινστάιν</em></h2>
+            <p class="t-meta letter-reader__date">Ξενοδοχείο Μεγάλη Βρεταννία · Αθήνα, 9 Φεβρουαρίου 1931</p>
+            <blockquote class="letter-reader__quote">
+              <p>«Με πραγματική χαρά εκφράζω την πλήρη ικανοποίησή μου για τον τρόπο με τον οποίο ο κ. Karl Nicotian κούρδισε και επισκεύασε το ωραίο πιάνο Bechstein. Κατάφερε να αξιοποιήσει στο έπακρο ένα πιάνο λίγο κουρασμένο και φθαρμένο από την υγρασία, και το έκανε ξανά ηχηρό και λαμπερό.»</p>
+            </blockquote>
+            <p class="t-caption">Ελεύθερη μετάφραση από τα γαλλικά.</p>
+          </div>
+          <button class="letter-reader__close link-arrow" type="button" data-close>Κλείσιμο <span aria-hidden="true">×</span></button>
+        </div>
+      </dialog>
+      <dialog class="letter-reader" id="letter-schnabel" aria-labelledby="letter-schnabel-title">
+        <div class="letter-reader__inner">
+          <figure class="letter-reader__media">
+            <img src="assets/photos/about/letter-schnabel-1931-large.jpg" alt="Χειρόγραφη επιστολή του Άρτουρ Σνάμπελ στα γερμανικά, σε επιστολόχαρτο του ξενοδοχείου Μεγάλη Βρεταννία, Αθήνα, 1931" width="1800" height="2737" loading="lazy">
+          </figure>
+          <div class="letter-reader__text">
+            <p class="t-meta">Από το αρχείο του Οίκου</p>
+            <h2 class="title title--md" id="letter-schnabel-title">Άρτουρ <em>Σνάμπελ</em></h2>
+            <p class="t-meta letter-reader__date">Ξενοδοχείο Μεγάλη Βρεταννία · Αθήνα, 1931</p>
+            <blockquote class="letter-reader__quote">
+              <p>«Με ευχαρίστηση βεβαιώνω ότι ο κ. Carl Nicotian, κάτω από δύσκολες συνθήκες, κούρδισε, ρύθμισε τη χροιά και εξισορρόπησε με μεγάλη φροντίδα και με επιτυχία το πιάνο με ουρά Bechstein που χρησιμοποίησα στις συναυλίες μου στην Αθήνα. Είναι ένας προικισμένος τεχνικός πιάνων, στον οποίο εύχομαι καλό μέλλον.»</p>
+            </blockquote>
+            <p class="t-caption">Ελεύθερη μετάφραση από τα γερμανικά.</p>
+          </div>
+          <button class="letter-reader__close link-arrow" type="button" data-close>Κλείσιμο <span aria-hidden="true">×</span></button>
+        </div>
+      </dialog>
     </section>
 
     <!-- ================= 03 · Η ΔΙΑΔΡΟΜΗ ΜΑΣ =================

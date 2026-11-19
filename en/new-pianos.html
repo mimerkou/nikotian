@@ -124,7 +124,7 @@
     </section>
 
     <!-- ================= 02 · Η ΣΥΛΛΟΓΗ =================
-         Filters (manufacturer × type) and the product grid.
+         Filters (manufacturer × type × availability) and the product grid.
          The cards are rendered by js/new-pianos.js from data/new-pianos.js (one record per model,
          generated from new-pianos.zip). Product pages do not exist yet: every product link carries
          its future URL in data-href and shows the «pending page» notice instead of a 404. -->
@@ -135,8 +135,9 @@
           <h2 class="title title--stack" id="np-collection-title">Discover <em>the collection.</em></h2>
         </header>
 
-        <!-- Filters: a native <select> for the manufacturer (options built from the data) and a segmented
-             radio group for the type. Results and reset sit apart, on the right (below on small screens). -->
+        <!-- Filters: a native <select> for the manufacturer (options built from the data) and segmented
+             radio groups for the type and the availability. They combine (AND). Results and reset sit on
+             their own ledger line under the controls (v1.2, same on every collection page). -->
         <form class="filters" id="np-filters" aria-label="Collection filters" data-reveal hidden>
           <div class="filters__controls">
             <div class="filters__field">
@@ -156,6 +157,15 @@
                 <label class="segmented__option"><input type="radio" name="type" value="grand"><span>Grand</span></label>
               </div>
             </div>
+            <!-- v1.2 (19/11/2026): availability — record.availability 'stock' | 'order' (data/editorial/product-details.json) -->
+            <div class="filters__field filters__field--availability" role="radiogroup" aria-labelledby="np-availability-label">
+              <p class="t-meta filters__label" id="np-availability-label">Availability</p>
+              <div class="segmented segmented--auto">
+                <label class="segmented__option"><input type="radio" name="availability" value="all" checked><span>All</span></label>
+                <label class="segmented__option"><input type="radio" name="availability" value="stock"><span>In stock</span></label>
+                <label class="segmented__option"><input type="radio" name="availability" value="order"><span>To order</span></label>
+              </div>
+            </div>
           </div>
           <div class="filters__status">
             <p class="t-meta-value filters__count" id="np-count" role="status" aria-live="polite" aria-atomic="true"></p>
@@ -167,7 +177,7 @@
 
         <div class="np-empty" id="np-empty" hidden>
           <p class="t-subtitle">No piano matches this combination.</p>
-          <p class="t-body np-empty__text">Try another maker or piano type, or see the whole collection.</p>
+          <p class="t-body np-empty__text">Try another combination of maker, type and availability, or see the whole collection.</p>
           <button class="link-arrow np-empty__reset" type="button">All pianos <span class="link-arrow__icon" aria-hidden="true">→</span></button>
         </div>
 

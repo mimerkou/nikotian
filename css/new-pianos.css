@@ -63,18 +63,22 @@
 }
 .np-collection__head { margin-bottom: clamp(2rem, 1.5rem + 1.5vw, 3rem); }
 
-/* --- Filters (v1.1): one horizontal bar — manufacturer <select>, type segmented control;
-       result count and reset apart on the right. Control height = button height (3rem). --- */
+/* --- Filters (v1.2, 19/11/2026): two rows inside the same pair of rules.
+       Row 1: the controls — manufacturer <select>, type and (Καινούργια) availability segmented controls.
+       Row 2: a quiet ledger line — result count on the left, «Καθαρισμός φίλτρων» on the right.
+       The count no longer competes with the controls for the same line, so a third filter fits, and the
+       layout is identical on every collection page (new, used, electric, guitars).
+       Control height = button height (3rem). --- */
 .filters {
-  display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between;
-  gap: var(--s-5) var(--s-7);
-  padding-block: var(--s-5);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  padding-top: var(--s-5);
   border-top: 1px solid var(--line-strong);
   border-bottom: 1px solid var(--line);
   margin-bottom: clamp(2.5rem, 1.75rem + 2vw, 3.75rem);
 }
 .filters[hidden] { display: none; }
-.filters__controls { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--s-5) var(--s-6); min-width: 0; }
+.filters__controls { display: flex; flex-wrap: wrap; align-items: flex-end; gap: var(--s-5) var(--s-6); min-width: 0; padding-bottom: var(--s-5); }
 .filters__field { display: grid; gap: var(--s-2); margin: 0; padding: 0; border: 0; min-width: 0; }
 .filters__label { display: block; padding: 0; }
 
@@ -101,6 +105,9 @@
   overflow: hidden;
   background: var(--ivory);
 }
+/* Availability (v1.2): segments as wide as their labels («Κατόπιν παραγγελίας» is much longer than «Στοκ») */
+.segmented--auto { display: flex; }
+.segmented--auto .segmented__option { flex: 1 1 auto; }
 .segmented__option { position: relative; display: flex; }
 .segmented__option input { position: absolute; opacity: 0; width: 1px; height: 1px; margin: 0; pointer-events: none; }
 .segmented__option span {
@@ -123,7 +130,11 @@ html[data-input="pointer"] .filters .select__control:focus-visible { outline: no
 html[data-input="pointer"] .filters .select__control:focus-visible:hover { border-color: var(--graphite); }
 html[data-input="pointer"] .filters .segmented__option input:focus-visible + span { outline: none; }
 
-.filters__status { display: flex; align-items: center; gap: var(--s-5); min-height: 3rem; margin-left: auto; }
+.filters__status {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--s-5);
+  min-height: 3rem;
+  border-top: 1px solid var(--line-soft);
+}
 .filters__count { white-space: nowrap; }
 .filters__reset { border: 0; padding: 0 0 var(--ul-gap, .1em); cursor: pointer; color: var(--graphite); font-family: inherit; line-height: inherit; background-color: transparent; }
 .filters__reset[hidden] { display: none; }
@@ -171,16 +182,14 @@ html[data-input="pointer"] .filters .segmented__option input:focus-visible + spa
 
 @media (max-width: 64rem) {
   .np-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  /* filters: count and reset get their own row under the controls */
-  .filters__status { width: 100%; margin-left: 0; justify-content: space-between; min-height: 2.75rem; }
 }
 @media (max-width: 47.9375rem) {
   .np-grid { grid-template-columns: minmax(0, 1fr); }
-  /* filters: the two controls full width, stacked; status row under them */
+  /* filters: the controls full width, stacked; the ledger line under them */
   .filters__controls, .filters__field, .filters__field--type { width: 100%; }
   .select { width: 100%; }
   .segmented__option span { padding: 0 .5rem; }
-  .filters__status { width: 100%; margin-left: 0; justify-content: space-between; min-height: 2.75rem; }
+  .filters__status { min-height: 2.75rem; }
 }
 
 /* =========================================================

@@ -54,7 +54,9 @@ window.NIKOTIAN_NEW_PIANOS = [
     "summary": [
       "Η πλάτη του ενισχύεται σε πέντε σημεία, για υψηλή σταθερότητα και πρόσθετη στήριξη απέναντι στην τάση των χορδών.",
       "Το ευαίσθητο ηχείο ανταποκρίνεται στον πιανίστα και αποδίδει τη δυναμική και τον τόνο που περιμένει κανείς από ένα επαγγελματικό όρθιο πιάνο."
-    ]
+    ],
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-03",
@@ -105,7 +107,9 @@ window.NIKOTIAN_NEW_PIANOS = [
     "specsOriginal": [],
     "summary": [
       "Ένα επίτευγμα μουσικής και τεχνολογίας: ήχος εντυπωσιακός, πλούσιος και θερμός, με μελωδικό τόνο και γρήγορη επαναφορά."
-    ]
+    ],
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-02",
@@ -163,7 +167,9 @@ window.NIKOTIAN_NEW_PIANOS = [
       "Διαθέτει τις πλήρεις δυνατότητες καλλιτεχνικής απόδοσης που ζητούν οι επαγγελματίες. Οι τονικές του ιδιότητες το κάνουν όργανο συναυλίας κατάλληλο για σόλο ρεσιτάλ, για συνεργασία με μικρές ορχήστρες ή ακόμη και για το μεγάλο σαλόνι ενός σπιτιού.",
       "Η ανταπόκρισή του, σε συνδυασμό με τον ζωντανό τονικό του χαρακτήρα, αφήνει τον πιανίστα απόλυτα ικανοποιημένο."
     ],
-    "bodySource": "TXT (new-piano_02.txt), επιμέλεια γλώσσας."
+    "bodySource": "TXT (new-piano_02.txt), επιμέλεια γλώσσας.",
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-06",
@@ -274,7 +280,9 @@ window.NIKOTIAN_NEW_PIANOS = [
           2585
         ]
       }
-    ]
+    ],
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-07",
@@ -378,7 +386,9 @@ window.NIKOTIAN_NEW_PIANOS = [
           2512
         ]
       }
-    ]
+    ],
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-08",
@@ -487,7 +497,9 @@ window.NIKOTIAN_NEW_PIANOS = [
           1759
         ]
       }
-    ]
+    ],
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-09",
@@ -592,7 +604,9 @@ window.NIKOTIAN_NEW_PIANOS = [
           1758
         ]
       }
-    ]
+    ],
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-10",
@@ -699,7 +713,9 @@ window.NIKOTIAN_NEW_PIANOS = [
           1759
         ]
       }
-    ]
+    ],
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-11",
@@ -765,7 +781,9 @@ window.NIKOTIAN_NEW_PIANOS = [
     "summary": [
       "Ένα συναυλιακό πιάνο με ουρά μήκους 225 cm, με εξαιρετικά πλούσιο ήχο.",
       "Είναι σαν όλα τα άλλα πιάνα να μιλούν μεταξύ τους μια κοινή γλώσσα και το Grotrian μια άγνωστη, με εξωτική προφορά. Στο Concert 225 συγκεντρώνεται όλη η δύναμη ενός συναυλιακού οργάνου."
-    ]
+    ],
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-12",
@@ -870,7 +888,9 @@ window.NIKOTIAN_NEW_PIANOS = [
           1758
         ]
       }
-    ]
+    ],
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-05",
@@ -926,7 +946,9 @@ window.NIKOTIAN_NEW_PIANOS = [
     "summary": [
       "Τα πιάνα Friedrich Grotrian στηρίζονται στη μεγάλη παράδοση της εταιρείας.",
       "Ακούγοντας ένα Friedrich Grotrian, αναγνωρίζει κανείς αμέσως την πηγή της έμπνευσής του: τα όργανα της παράδοσης Grotrian. Διαφέρουν ωστόσο σε ορισμένες λεπτομέρειες, κάτι που τους επιτρέπει να προσφέρουν εξαιρετική σχέση ποιότητας και τιμής."
-    ]
+    ],
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-18",
@@ -986,154 +1008,14 @@ window.NIKOTIAN_NEW_PIANOS = [
         "source": "Τεκμηρίωση τύπου: TXT: «Το όρθιο πιάνο P 118 P1»"
       },
       {
-        "label": "Βάθος",
-        "value": "542 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Length (mm): 542»"
+        "label": "Μέγεθος",
+        "value": "117,5 × 144,6 × 54,2 cm",
+        "source": "Πίνακας κατασκευαστή στο TXT, σε cm (όρθια: ύψος × πλάτος × βάθος· με ουρά: μήκος × πλάτος × ύψος, όπως στα Young Chang)"
       },
       {
-        "label": "Πλάτος",
-        "value": "1446 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Width (mm): 1446»"
-      },
-      {
-        "label": "Ύψος",
-        "value": "1175 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Height (mm): 1175»"
-      },
-      {
-        "label": "Βάρος",
-        "value": "199 kg",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Weight (kg): 199»"
-      },
-      {
-        "label": "Ηχείο — υλικό",
-        "value": "μασίφ ηχητικό ξύλο ελάτης",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Soundboard material: solid resonance spruce wood»"
-      },
-      {
-        "label": "Ενεργή επιφάνεια ηχείου",
-        "value": "1,060 m²",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Active area of soundboard (m2): 1,060»"
-      },
-      {
-        "label": "Νευρώσεις ηχείου",
-        "value": "9, σφαιρικές",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Ribs - number, shape: 9, spherical»"
-      },
-      {
-        "label": "Κατασκευή ηχείου",
-        "value": "σφηνοειδής λέπτυνση",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Soundboard construction: wedgewise tapered»"
-      },
-      {
-        "label": "Χυτοσίδηρη πλάκα",
-        "value": "χύτευση σε υγρή άμμο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Cast iron plate: wet sand casting»"
-      },
-      {
-        "label": "Φινίρισμα χυτοσίδηρης πλάκας",
-        "value": "βαφή με σκόνη μπρούντζου",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Surfacing of iron plate: paint with bronze dust»"
-      },
-      {
-        "label": "Βάση κουρδιστηριών (pin block)",
-        "value": "πολυστρωματικό κόντρα πλακέ οξιάς, πυκνότητα 800–850 kg/m³",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Pin block - material: Multiplex beech plywood, density 800 - 850 kg/m3»"
-      },
-      {
-        "label": "Ξύλινος σκελετός",
-        "value": "οξιά, κατασκευή πλαισίου",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Wooden frame construction, material: beech, frame construction»"
-      },
-      {
-        "label": "Γωνιακή εγκάρσια νεύρωση",
-        "value": "οξιά, 1",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Cut off bar (corner cross rib) - material, number: beech, 1»"
-      },
-      {
-        "label": "Κέλυφος — υλικό",
-        "value": "MDF, κόντρα πλακέ, μασίφ ξύλο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Cabinet material: MDF, plywood, solid wood»"
-      },
-      {
-        "label": "Καβαλάρης πρίμων",
-        "value": "ξύλο οξιάς",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Bridge - treble: beech wood»"
-      },
-      {
-        "label": "Καβαλάρης μπάσων",
-        "value": "ξύλο οξιάς",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Bridge - bass: beech wood»"
-      },
-      {
-        "label": "Καρφιά καβαλάρη",
-        "value": "χάλυβας, στρογγυλεμένες άκρες",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Bridge pins: steel-round tips»"
-      },
-      {
-        "label": "Αγκράφες",
-        "value": "ορείχαλκος, 88",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Agraffes - material, number: brass, 88»"
-      },
-      {
-        "label": "Χορδές",
-        "value": "χαλύβδινο σύρμα, περιέλιξη χαλκού",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Strings - material: steel wire, copper winding»"
-      },
-      {
-        "label": "Στερέωση απλών χορδών",
-        "value": "διπλή",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Hitching of plain strings: double»"
-      },
-      {
-        "label": "Αποσβεστήρες",
-        "value": "1–70",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Dampers - number: 1 - 70»"
-      },
-      {
-        "label": "Μηχανισμός",
-        "value": "ευρωπαϊκός μηχανισμός κορυφαίας ποιότητας",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Action: top quality european action»"
-      },
-      {
-        "label": "Κεφαλές σφυριών",
-        "value": "τσόχα κορυφαίας ποιότητας",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Hammer heads: top quality felt hammer heads»"
-      },
-      {
-        "label": "Πληκτρολόγιο",
-        "value": "ξύλο ελάτης, πλήκτρα ζυγισμένα ένα προς ένα",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Keyboard: spruce wood, individually balanced keys»"
-      },
-      {
-        "label": "Βάρος αφής",
-        "value": "52 g στα μπάσα – 48 g στα πρίμα",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Keys balancing, touch weight: 52g in bass - 48g in treble»"
-      },
-      {
-        "label": "Πεντάλ",
-        "value": "αριστερό: una corda · μεσαίο: σουρντίνα (moderator) · δεξί: forte",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Pedals: left - Unacorda, middle - Muffler (moderator), right - Forte»"
-      },
-      {
-        "label": "Ροδάκια",
-        "value": "ναι",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Castors: yes»"
-      },
-      {
-        "label": "Χρώμα τσόχας",
-        "value": "κόκκινο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Felts colour: red»"
-      },
-      {
-        "label": "Υδραυλικό αργό κλείσιμο καπακιού πλήκτρων",
-        "value": "κατόπιν παραγγελίας",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 118 P1): «Hydraulic slow close fallboard mech.: on demand»"
-      },
-      {
-        "label": "Φινιρίσματα κατασκευαστή",
-        "value": "Λευκό γυαλιστερό (0001), Μαύρο γυαλιστερό (0801), Καρυδιά γυαλιστερό (2251), Καρυδιά σατινέ (2357), Μαόνι γυαλιστερό (3281), Μαόνι σατινέ (3287), Οξιά σατινέ (4107), Κερασιά σατινέ (6217), Σκλήθρο σατινέ (8107)",
-        "source": "TXT: λίστα «Finish/ΤΕΛΕΙΩΜΑ» του κατασκευαστή (κωδικός χρώματος σε παρένθεση)"
+        "label": "Τελείωμα",
+        "value": "Λευκό γυαλιστερό, μαύρο γυαλιστερό, καρυδιά γυαλιστερό, καρυδιά σατινέ, μαόνι γυαλιστερό, μαόνι σατινέ, οξιά σατινέ, κερασιά σατινέ, σκλήθρο σατινέ",
+        "source": "TXT: λίστα «Finish/ΤΕΛΕΙΩΜΑ» του κατασκευαστή"
       }
     ],
     "images": [
@@ -1281,7 +1163,10 @@ window.NIKOTIAN_NEW_PIANOS = [
     "summary": [
       "Το P 118 P1 είναι όρθιο πιάνο μεσαίου ύψους.",
       "Χάρη στις διαστάσεις του είναι ιδανικό για μικρούς χώρους και ιδιαίτερα για εκμάθηση και μελέτη — ένα αγαπημένο μοντέλο για ευρεία χρήση. Το κέλυφος του P1 συνδυάζει το κλασικό φινίρισμα με σύγχρονα στοιχεία."
-    ]
+    ],
+    "editNote": "Πελάτης, 19/11/2026: μόνο τύπος, μέγεθος, στυλ, τελείωμα (όπως στο Young Chang Y 185). Ο πλήρης πίνακας του κατασκευαστή μένει στο specsOriginal. Στυλ: δεν υπάρχει στο υλικό της Petrof.",
+    "availability": "stock",
+    "availabilityLabel": "Στοκ"
   },
   {
     "id": "new-19",
@@ -1337,159 +1222,14 @@ window.NIKOTIAN_NEW_PIANOS = [
         "source": "Τεκμηρίωση τύπου: TXT: «είναι ένα όρθιο πιάνο»"
       },
       {
-        "label": "Έκδοση πίνακα προδιαγραφών",
-        "value": "P 125 G1",
-        "source": "TXT: ο πίνακας του κατασκευαστή αναγράφει αυτή την έκδοση"
+        "label": "Μέγεθος",
+        "value": "125 × 146,3 × 58,5 cm",
+        "source": "Πίνακας κατασκευαστή στο TXT, σε cm (όρθια: ύψος × πλάτος × βάθος· με ουρά: μήκος × πλάτος × ύψος, όπως στα Young Chang)"
       },
       {
-        "label": "Βάθος",
-        "value": "585 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Length (mm): 585»"
-      },
-      {
-        "label": "Πλάτος",
-        "value": "1463 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Width (mm): 1463»"
-      },
-      {
-        "label": "Ύψος",
-        "value": "1250 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Height (mm): 1250»"
-      },
-      {
-        "label": "Βάρος",
-        "value": "209 kg",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Weight (kg): 209»"
-      },
-      {
-        "label": "Ηχείο — υλικό",
-        "value": "μασίφ ηχητικό ξύλο ελάτης",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Soundboard material: solid resonance spruce wood»"
-      },
-      {
-        "label": "Ενεργή επιφάνεια ηχείου",
-        "value": "1,185 m²",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Active area of soundboard (m2): 1,185»"
-      },
-      {
-        "label": "Νευρώσεις ηχείου",
-        "value": "10, σφαιρικές",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Ribs - number, shape: 10, spherical»"
-      },
-      {
-        "label": "Κατασκευή ηχείου",
-        "value": "σφηνοειδής λέπτυνση",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Soundboard construction: wedgewise tapered»"
-      },
-      {
-        "label": "Χυτοσίδηρη πλάκα",
-        "value": "χύτευση σε υγρή άμμο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Cast iron plate: wet sand casting»"
-      },
-      {
-        "label": "Φινίρισμα χυτοσίδηρης πλάκας",
-        "value": "βαφή με σκόνη μπρούντζου",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Surfacing of iron plate: paint with bronze dust»"
-      },
-      {
-        "label": "Βάση κουρδιστηριών (pin block)",
-        "value": "πολυστρωματικό κόντρα πλακέ οξιάς, πυκνότητα 800–850 kg/m³",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Pin block - material: Multiplex beech plywood, density 800 - 850 kg/m3»"
-      },
-      {
-        "label": "Ξύλινος σκελετός",
-        "value": "έλατο, 3 + 2 δοκοί",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Wooden frame construction, material: spruce wood, 3+2 posts»"
-      },
-      {
-        "label": "Γωνιακή εγκάρσια νεύρωση",
-        "value": "οξιά, 1",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Cut off bar (corner cross rib) - material, number: beech, 1»"
-      },
-      {
-        "label": "Κέλυφος — υλικό",
-        "value": "MDF, κόντρα πλακέ, μασίφ ξύλο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Cabinet material: MDF, plywood, solid wood»"
-      },
-      {
-        "label": "Καβαλάρης πρίμων",
-        "value": "ξύλο οξιάς",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Bridge - treble: beech wood»"
-      },
-      {
-        "label": "Καβαλάρης μπάσων",
-        "value": "ξύλο οξιάς",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Bridge - bass: beech wood»"
-      },
-      {
-        "label": "Καρφιά καβαλάρη",
-        "value": "χάλυβας, στρογγυλεμένες άκρες",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Bridge pins: steel-round tips»"
-      },
-      {
-        "label": "Αγκράφες",
-        "value": "ορείχαλκος, 88",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Agraffes - material, number: brass, 88»"
-      },
-      {
-        "label": "Χορδές",
-        "value": "χαλύβδινο σύρμα, περιέλιξη χαλκού",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Strings - material: steel wire, copper winding»"
-      },
-      {
-        "label": "Στερέωση απλών χορδών",
-        "value": "διπλή",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Hitching of plain strings: double»"
-      },
-      {
-        "label": "Αποσβεστήρες",
-        "value": "1–70",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Dampers - number: 1 - 70»"
-      },
-      {
-        "label": "Μηχανισμός",
-        "value": "ευρωπαϊκός μηχανισμός κορυφαίας ποιότητας",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Action: top quality european action»"
-      },
-      {
-        "label": "Κεφαλές σφυριών",
-        "value": "τσόχα κορυφαίας ποιότητας",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Hammer heads: top quality felt hammer heads»"
-      },
-      {
-        "label": "Πληκτρολόγιο",
-        "value": "ξύλο ελάτης, πλήκτρα ζυγισμένα ένα προς ένα",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Keyboard: spruce wood, individually balanced keys»"
-      },
-      {
-        "label": "Βάρος αφής",
-        "value": "52 g στα μπάσα – 48 g στα πρίμα",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Keys balancing, touch weight: 52g in bass - 48g in treble»"
-      },
-      {
-        "label": "Πεντάλ",
-        "value": "αριστερό: una corda · μεσαίο: σουρντίνα (moderator) · δεξί: forte",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Pedals: left - Unacorda, middle - Muffler (moderator), right - Forte»"
-      },
-      {
-        "label": "Ροδάκια",
-        "value": "ναι",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Castors: yes»"
-      },
-      {
-        "label": "Χρώμα τσόχας",
-        "value": "κόκκινο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Felts colour: red»"
-      },
-      {
-        "label": "Υδραυλικό αργό κλείσιμο καπακιού πλήκτρων",
-        "value": "κατόπιν παραγγελίας",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 125 G1): «Hydraulic slow close fallboard mech.: on demand»"
-      },
-      {
-        "label": "Φινιρίσματα κατασκευαστή",
-        "value": "Λευκό γυαλιστερό (0001), Ιβουάρ γυαλιστερό (0051), Μαύρο γυαλιστερό (0801), Καρυδιά γυαλιστερό (2251), Μαόνι γυαλιστερό (3281)",
-        "source": "TXT: λίστα «Finish/ΤΕΛΕΙΩΜΑ» του κατασκευαστή (κωδικός χρώματος σε παρένθεση)"
+        "label": "Τελείωμα",
+        "value": "Λευκό γυαλιστερό, ιβουάρ γυαλιστερό, μαύρο γυαλιστερό, καρυδιά γυαλιστερό, μαόνι γυαλιστερό",
+        "source": "TXT: λίστα «Finish/ΤΕΛΕΙΩΜΑ» του κατασκευαστή"
       }
     ],
     "images": [
@@ -1637,7 +1377,10 @@ window.NIKOTIAN_NEW_PIANOS = [
     "summary": [
       "Το P 125 είναι όρθιο πιάνο από την υψηλότερη σειρά οργάνων της Petrof και μια αγαπημένη λύση για ευρεία χρήση.",
       "Είναι κατάλληλο για το σπίτι και τη διδασκαλία, για τη μελέτη επαγγελματιών και για μουσικά σύνολα, ενώ ο ήχος του ικανοποιεί και το ακροατήριο μουσικών χώρων. Το κέλυφός του συνδυάζει κλασικό και σύγχρονο ύφος, με διακοσμητικά στοιχεία."
-    ]
+    ],
+    "editNote": "Πελάτης, 19/11/2026: μόνο τύπος, μέγεθος, στυλ, τελείωμα (όπως στο Young Chang Y 185). Ο πλήρης πίνακας του κατασκευαστή μένει στο specsOriginal. Στυλ: δεν υπάρχει στο υλικό της Petrof.",
+    "availability": "stock",
+    "availabilityLabel": "Στοκ"
   },
   {
     "id": "new-20",
@@ -1867,7 +1610,9 @@ window.NIKOTIAN_NEW_PIANOS = [
       "Το μοντέλο E1 έχει μη παραδοσιακή θέση αναλογίου, που επιτρέπει να τοποθετηθούν οι παρτιτούρες σε ευρύτερη επιφάνεια και στο ύψος του ματιού του πιανίστα."
     ],
     "bodySource": "TXT (new-piano_20.txt), επιμέλεια γλώσσας.",
-    "editNote": "Ο πίνακας προδιαγραφών του TXT αφορά το «P 131 M1» (άλλη έκδοση) και δεν εμφανίζεται. Εμφανίζονται μόνο οι διαστάσεις του σχεδίου του E1 και τα φινιρίσματα."
+    "editNote": "Ο πίνακας προδιαγραφών του TXT αφορά το «P 131 M1» (άλλη έκδοση) και δεν εμφανίζεται. Εμφανίζονται μόνο οι διαστάσεις του σχεδίου του E1 και τα φινιρίσματα.",
+    "availability": "stock",
+    "availabilityLabel": "Στοκ"
   },
   {
     "id": "new-21",
@@ -1920,154 +1665,14 @@ window.NIKOTIAN_NEW_PIANOS = [
         "source": "Τεκμηρίωση τύπου: TXT: «Το P 135 K1 όρθιο πιάνο»"
       },
       {
-        "label": "Βάθος",
-        "value": "610 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Length (mm): 610»"
+        "label": "Μέγεθος",
+        "value": "135,1 × 144,6 × 61 cm",
+        "source": "Πίνακας κατασκευαστή στο TXT, σε cm (όρθια: ύψος × πλάτος × βάθος· με ουρά: μήκος × πλάτος × ύψος, όπως στα Young Chang)"
       },
       {
-        "label": "Πλάτος",
-        "value": "1446 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Width (mm): 1446»"
-      },
-      {
-        "label": "Ύψος",
-        "value": "1351 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Height (mm): 1351»"
-      },
-      {
-        "label": "Βάρος",
-        "value": "243 kg",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Weight (kg): 243»"
-      },
-      {
-        "label": "Ηχείο — υλικό",
-        "value": "μασίφ ηχητικό ξύλο ελάτης",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Soundboard material: solid resonance spruce wood»"
-      },
-      {
-        "label": "Ενεργή επιφάνεια ηχείου",
-        "value": "1,222 m²",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Active area of soundboard (m2): 1,222»"
-      },
-      {
-        "label": "Νευρώσεις ηχείου",
-        "value": "10, σφαιρικές",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Ribs - number, shape: 10, spherical»"
-      },
-      {
-        "label": "Κατασκευή ηχείου",
-        "value": "σφηνοειδής λέπτυνση",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Soundboard construction: wedgewise tapered»"
-      },
-      {
-        "label": "Χυτοσίδηρη πλάκα",
-        "value": "χύτευση σε υγρή άμμο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Cast iron plate: Wet sand casting»"
-      },
-      {
-        "label": "Φινίρισμα χυτοσίδηρης πλάκας",
-        "value": "ανοιχτόχρυση μεταλλική βαφή, εφέ διαμαντιού",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Surfacing of iron plate: light gold metallic paint, diamond effekt»"
-      },
-      {
-        "label": "Βάση κουρδιστηριών (pin block)",
-        "value": "πολυστρωματικό κόντρα πλακέ οξιάς, πυκνότητα 800–850 kg/m³",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Pin block - material: Multiplex beech plywood, density 800 - 850 kg/m3»"
-      },
-      {
-        "label": "Ξύλινος σκελετός",
-        "value": "έλατο, 3 + 2 δοκοί",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Wooden frame construction, material: spruce wood, 3+2 posts»"
-      },
-      {
-        "label": "Γωνιακή εγκάρσια νεύρωση",
-        "value": "οξιά, 1",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Cut off bar (corner cross rib) - material, number: beech, 1»"
-      },
-      {
-        "label": "Κέλυφος — υλικό",
-        "value": "MDF, κόντρα πλακέ, μασίφ ξύλο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Cabinet material: MDF, plywood, solid wood»"
-      },
-      {
-        "label": "Καβαλάρης πρίμων",
-        "value": "ξύλο οξιάς",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Bridge - treble: beech wood»"
-      },
-      {
-        "label": "Καβαλάρης μπάσων",
-        "value": "ξύλο οξιάς",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Bridge - bass: beech wood»"
-      },
-      {
-        "label": "Καρφιά καβαλάρη",
-        "value": "χάλυβας, στρογγυλεμένες άκρες",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Bridge pins: steel-round tips»"
-      },
-      {
-        "label": "Αγκράφες",
-        "value": "ορείχαλκος, 88",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Agraffes - material, number: brass, 88»"
-      },
-      {
-        "label": "Χορδές",
-        "value": "χαλύβδινο σύρμα, περιέλιξη χαλκού",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Strings - material: steel wire, copper winding»"
-      },
-      {
-        "label": "Στερέωση απλών χορδών",
-        "value": "διπλή",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Hitching of plain strings: double»"
-      },
-      {
-        "label": "Αποσβεστήρες",
-        "value": "1–70",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Dampers - number: 1 - 70»"
-      },
-      {
-        "label": "Μηχανισμός",
-        "value": "ευρωπαϊκός μηχανισμός κορυφαίας ποιότητας",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Action: top quality european action»"
-      },
-      {
-        "label": "Κεφαλές σφυριών",
-        "value": "τσόχα κορυφαίας ποιότητας",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Hammer heads: top quality felt hammer heads»"
-      },
-      {
-        "label": "Πληκτρολόγιο",
-        "value": "ξύλο ελάτης, πλήκτρα ζυγισμένα ένα προς ένα",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Keyboard: spruce wood, individually balanced keys»"
-      },
-      {
-        "label": "Βάρος αφής",
-        "value": "52 g στα μπάσα – 48 g στα πρίμα",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Keys balancing, touch weight: 52g in bass - 48g in treble»"
-      },
-      {
-        "label": "Πεντάλ",
-        "value": "αριστερό: una corda · μεσαίο: σουρντίνα (moderator) · δεξί: forte",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Pedals: left - Unacorda, middle - Muffler (moderator), right - Forte»"
-      },
-      {
-        "label": "Ροδάκια",
-        "value": "ναι",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Castors: yes»"
-      },
-      {
-        "label": "Χρώμα τσόχας",
-        "value": "κόκκινο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Felts colour: red»"
-      },
-      {
-        "label": "Υδραυλικό αργό κλείσιμο καπακιού πλήκτρων",
-        "value": "ναι",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 135 K1): «Hydraulic slow close fallboard mech.: yes»"
-      },
-      {
-        "label": "Φινιρίσματα κατασκευαστή",
-        "value": "Μαύρο γυαλιστερό (0801)",
-        "source": "TXT: λίστα «Finish/ΤΕΛΕΙΩΜΑ» του κατασκευαστή (κωδικός χρώματος σε παρένθεση)"
+        "label": "Τελείωμα",
+        "value": "Μαύρο γυαλιστερό",
+        "source": "TXT: λίστα «Finish/ΤΕΛΕΙΩΜΑ» του κατασκευαστή"
       }
     ],
     "images": [
@@ -2220,7 +1825,10 @@ window.NIKOTIAN_NEW_PIANOS = [
       "Είναι πιάνα με τις μέγιστες ακουστικές δυνατότητες, γι’ αυτό και αγαπημένα των απαιτητικών επαγγελματιών πιανιστών. Ταιριάζουν όχι μόνο σε κατοικίες και μουσικές σχολές, αλλά και σε παρουσιάσεις με ορχήστρα ή σε διάφορες δημόσιες σκηνές.",
       "Το όργανο δίνει στον πιανίστα πολλές δυνατότητες ελέγχου του ήχου, μέσω τριών πεντάλ και ενός χειροκίνητου μοχλού."
     ],
-    "bodySource": "TXT (new-piano_21.txt): το διπλοεπικολλημένο κείμενο ενοποιήθηκε· η λανθασμένη αναφορά στο «P 131 E1» αφαιρέθηκε."
+    "bodySource": "TXT (new-piano_21.txt): το διπλοεπικολλημένο κείμενο ενοποιήθηκε· η λανθασμένη αναφορά στο «P 131 E1» αφαιρέθηκε.",
+    "editNote": "Πελάτης, 19/11/2026: μόνο τύπος, μέγεθος, στυλ, τελείωμα (όπως στο Young Chang Y 185). Ο πλήρης πίνακας του κατασκευαστή μένει στο specsOriginal. Στυλ: δεν υπάρχει στο υλικό της Petrof.",
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-22",
@@ -2312,7 +1920,9 @@ window.NIKOTIAN_NEW_PIANOS = [
     "summary": [
       "Το P IV είναι πιάνο με ουρά για μελέτη στο σπίτι και για εκπαιδευτική χρήση.",
       "Μπορεί να γίνει ένα όμορφο κομμάτι του σπιτιού, με έναν τόνο που θα ευχαριστήσει κάθε πιανίστα."
-    ]
+    ],
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-23",
@@ -2364,189 +1974,14 @@ window.NIKOTIAN_NEW_PIANOS = [
         "source": "Τεκμηρίωση τύπου: TXT: «πιάνο με ουρά», «GRAND PIANO GROUND VIEW»"
       },
       {
-        "label": "Μήκος",
-        "value": "2100 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Length (mm): 2100 mm (82,68 inch)»"
+        "label": "Μέγεθος",
+        "value": "210 × 152,5 × 102,5 cm",
+        "source": "Πίνακας κατασκευαστή στο TXT, σε cm (όρθια: ύψος × πλάτος × βάθος· με ουρά: μήκος × πλάτος × ύψος, όπως στα Young Chang)"
       },
       {
-        "label": "Πλάτος",
-        "value": "1525 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Width (mm): 1525 mm (60,04 inch)»"
-      },
-      {
-        "label": "Ύψος",
-        "value": "1025 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Height (mm): 1025 mm (40,35 inch)»"
-      },
-      {
-        "label": "Βάρος",
-        "value": "410 kg",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Weight (kg): 410 kg (904 lb)»"
-      },
-      {
-        "label": "Ηχείο — υλικό",
-        "value": "μασίφ ηχητικό ξύλο ελάτης",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Sound board material: solid resonance spruce wood»"
-      },
-      {
-        "label": "Ενεργή επιφάνεια ηχείου",
-        "value": "1,401 m²",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Sound board active area: 1,401»"
-      },
-      {
-        "label": "Νευρώσεις ηχείου",
-        "value": "13, ασύμμετρες",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Ribs (number, shape): 13, asymetric»"
-      },
-      {
-        "label": "Κατασκευή ηχείου",
-        "value": "διαφραγματική",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Soundboard construction: diaphragmatic»"
-      },
-      {
-        "label": "Χυτοσίδηρη πλάκα",
-        "value": "χύτευση σε υγρή άμμο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Cast iron plate: wet sand casting»"
-      },
-      {
-        "label": "Φινίρισμα χυτοσίδηρης πλάκας",
-        "value": "ανοιχτόχρυση μεταλλική βαφή, εφέ διαμαντιού",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Surfacing of iron plate: light gold metallic paint, diamond effekt»"
-      },
-      {
-        "label": "Βάση κουρδιστηριών (pin block)",
-        "value": "πολυστρωματικό κόντρα πλακέ οξιάς",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Pin block - material: multiplex beech plywood»"
-      },
-      {
-        "label": "Εσωτερικό στεφάνι — υλικό",
-        "value": "οξιά, σημύδα",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Inner rim material: beech, birch»"
-      },
-      {
-        "label": "Εσωτερικό στεφάνι — πάχος",
-        "value": "55 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Inner rim thickness: 55 mm»"
-      },
-      {
-        "label": "Δοκοί ξύλινου σκελετού",
-        "value": "5 διαμήκεις",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Wooden frame posts: 5 longitudinal»"
-      },
-      {
-        "label": "Δοκός πρίμων — υλικό",
-        "value": "ξύλο οξιάς",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Descant post material: beech wood»"
-      },
-      {
-        "label": "Γωνιακή εγκάρσια νεύρωση",
-        "value": "καμπύλη, πολυστρωματική σημύδα ή οξιά",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Cut off bar (corner cross rib): round shaped, multiple birch or beech»"
-      },
-      {
-        "label": "Εξωτερικό στεφάνι — υλικό",
-        "value": "πολυστρωματικό σημύδας, εσωτερικός καπλαμάς Ebony Makassar",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Outer rim - material: birch plywood sandwich, inner veneer  Ebony Makassar»"
-      },
-      {
-        "label": "Καβαλάρης πρίμων",
-        "value": "μασίφ ξύλο σφενδάμου",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Bridge - treble: solid maple wood»"
-      },
-      {
-        "label": "Καβαλάρης μπάσων",
-        "value": "μασίφ ξύλο σφενδάμου",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Bridge - bass: solid maple wood»"
-      },
-      {
-        "label": "Καρφιά καβαλάρη",
-        "value": "χάλυβας, λειασμένες άκρες",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Bridge pins: steel-ground tips»"
-      },
-      {
-        "label": "Αγκράφες",
-        "value": "ορείχαλκος, 1–50",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Agraffes (material, number): brass, 1-50»"
-      },
-      {
-        "label": "Duplex — εμπρός",
-        "value": "h1 - c5",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Duplexes - front: h1 - c5»"
-      },
-      {
-        "label": "Duplex — πίσω",
-        "value": "fis1 - c5",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Duplexes - rear: fis1 - c5»"
-      },
-      {
-        "label": "Χορδές",
-        "value": "χαλύβδινο σύρμα, περιέλιξη χαλκού",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Strings - material: steel wire, copper winding»"
-      },
-      {
-        "label": "Στερέωση απλών χορδών",
-        "value": "μονή",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Hitching of plain strings: single»"
-      },
-      {
-        "label": "Αποσβεστήρες",
-        "value": "1–69",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Dampers - number: 1-69»"
-      },
-      {
-        "label": "Μηχανισμός",
-        "value": "ευρωπαϊκός μηχανισμός κορυφαίας ποιότητας",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Action: top quality european action»"
-      },
-      {
-        "label": "Κεφαλές σφυριών",
-        "value": "τσόχα κορυφαίας ποιότητας",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Hammer heads: top quality felt hammer heads»"
-      },
-      {
-        "label": "Πληκτρολόγιο",
-        "value": "ξύλο ελάτης, πλήκτρα ζυγισμένα ένα προς ένα",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Keyboard: spruce wood, individually balanced keys»"
-      },
-      {
-        "label": "Βάρος αφής",
-        "value": "55 g στα μπάσα – 50 g στα πρίμα",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Keys balancing, touch weight: 55g in bass - 50g in treble»"
-      },
-      {
-        "label": "Μαύρα πλήκτρα",
-        "value": "έβενος",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Black keys: Ebony wood»"
-      },
-      {
-        "label": "Πεντάλ",
-        "value": "una corda · sostenuto · forte",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Pedals: Unacorda (Piano) pedal, Sostenuto (Prolongement) pedal, Forte pedal»"
-      },
-      {
-        "label": "Ροδάκια",
-        "value": "ορειχάλκινα, με φρένο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Castors: brass, braked castors»"
-      },
-      {
-        "label": "Λογότυπο στο δεξί πλευρικό τοίχωμα",
-        "value": "PETROF",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «PETROF sign on right side wall: PETROF»"
-      },
-      {
-        "label": "Χρώμα τσόχας",
-        "value": "κόκκινο και μαύρο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Felts colour: red+ black»"
-      },
-      {
-        "label": "Υδραυλικό αργό κλείσιμο καπακιού πλήκτρων",
-        "value": "ναι",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 210 Pasat): «Hydraulic slow close fallboard mech.: yes»"
-      },
-      {
-        "label": "Φινιρίσματα κατασκευαστή",
-        "value": "Μαύρο γυαλιστερό (0801)",
-        "source": "TXT: λίστα «Finish/ΤΕΛΕΙΩΜΑ» του κατασκευαστή (κωδικός χρώματος σε παρένθεση)"
+        "label": "Τελείωμα",
+        "value": "Μαύρο γυαλιστερό",
+        "source": "TXT: λίστα «Finish/ΤΕΛΕΙΩΜΑ» του κατασκευαστή"
       }
     ],
     "images": [
@@ -2725,7 +2160,10 @@ window.NIKOTIAN_NEW_PIANOS = [
     "body": [
       "Ο ρομαντικός, διαυγής και μελωδικός τόνος του το κατατάσσει ανάμεσα στα καλύτερα πιάνα των διεθνών εκθέσεων. Οι ακουστικές του παράμετροι ενισχύουν έξοχα το συναίσθημα της μουσικής, ενώ οι διαστάσεις του το κάνουν ιδανικό για αίθουσες συναυλιών, στούντιο αλλά και σπίτια."
     ],
-    "bodySource": "TXT (new-piano_23.txt), επιμέλεια γλώσσας."
+    "bodySource": "TXT (new-piano_23.txt), επιμέλεια γλώσσας.",
+    "editNote": "Πελάτης, 19/11/2026: μόνο τύπος, μέγεθος, στυλ, τελείωμα (όπως στο Young Chang Y 185). Ο πλήρης πίνακας του κατασκευαστή μένει στο specsOriginal. Στυλ: δεν υπάρχει στο υλικό της Petrof.",
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-24",
@@ -2777,189 +2215,14 @@ window.NIKOTIAN_NEW_PIANOS = [
         "source": "Τεκμηρίωση τύπου: TXT: όνομα «Mistral Grand», «GRAND PIANO GROUND VIEW»"
       },
       {
-        "label": "Μήκος",
-        "value": "2840 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Length (mm): 2840 mm (112 inch)»"
+        "label": "Μέγεθος",
+        "value": "284 × 158 × 103 cm",
+        "source": "Πίνακας κατασκευαστή στο TXT, σε cm (όρθια: ύψος × πλάτος × βάθος· με ουρά: μήκος × πλάτος × ύψος, όπως στα Young Chang)"
       },
       {
-        "label": "Πλάτος",
-        "value": "1580 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Width (mm): 1580 mm (62 inch)»"
-      },
-      {
-        "label": "Ύψος",
-        "value": "1030 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Height (mm): 1030 mm (40,5 inch)»"
-      },
-      {
-        "label": "Βάρος",
-        "value": "560 kg",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Weight (kg): 560 kg (1235 lb)»"
-      },
-      {
-        "label": "Ηχείο — υλικό",
-        "value": "μασίφ ηχητικό ξύλο ελάτης",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Sound board material: solid resonance spruce wood»"
-      },
-      {
-        "label": "Ενεργή επιφάνεια ηχείου",
-        "value": "2,029 m²",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Sound board active area: 2,029 m2»"
-      },
-      {
-        "label": "Νευρώσεις ηχείου",
-        "value": "16, ασύμμετρες",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Ribs (number, shape): 16, asymetric»"
-      },
-      {
-        "label": "Κατασκευή ηχείου",
-        "value": "διαφραγματική",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Soundboard construction: diaphragmatic»"
-      },
-      {
-        "label": "Χυτοσίδηρη πλάκα",
-        "value": "χύτευση σε υγρή άμμο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Cast iron plate: wet sand casting»"
-      },
-      {
-        "label": "Φινίρισμα χυτοσίδηρης πλάκας",
-        "value": "ανοιχτόχρυση μεταλλική βαφή, εφέ διαμαντιού",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Surfacing of iron plate: light gold metallic paint, diamond effekt»"
-      },
-      {
-        "label": "Βάση κουρδιστηριών (pin block)",
-        "value": "πολυστρωματικό κόντρα πλακέ οξιάς",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Pin block - material: multiplex beech plywood»"
-      },
-      {
-        "label": "Εσωτερικό στεφάνι — υλικό",
-        "value": "οξιά, σημύδα",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Inner rim material: beech, birch»"
-      },
-      {
-        "label": "Εσωτερικό στεφάνι — πάχος",
-        "value": "50 mm",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Inner rim thickness: 50 mm»"
-      },
-      {
-        "label": "Δοκοί ξύλινου σκελετού",
-        "value": "έλατο, 5 διαμήκεις + 2 εγκάρσιες",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Wooden frame posts: spruce, 5 longitudinal + 2 cross»"
-      },
-      {
-        "label": "Δοκός πρίμων — υλικό",
-        "value": "ξύλο οξιάς",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Descant post material: beech wood»"
-      },
-      {
-        "label": "Γωνιακή εγκάρσια νεύρωση",
-        "value": "καμπύλη, πολυστρωματική σημύδα ή οξιά",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Cut off bar (corner cross rib): round shaped, multiple birch or beech»"
-      },
-      {
-        "label": "Εξωτερικό στεφάνι — υλικό",
-        "value": "πολυστρωματικό σημύδας, εσωτερικός καπλαμάς Ebony Makassar",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Outer rim - material: birch plywood sandwich, inner veneer  Ebony Makassar»"
-      },
-      {
-        "label": "Καβαλάρης πρίμων",
-        "value": "μασίφ ξύλο σφενδάμου",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Bridge - treble: solid maple wood»"
-      },
-      {
-        "label": "Καβαλάρης μπάσων",
-        "value": "μασίφ ξύλο σφενδάμου",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Bridge - bass: solid maple wood»"
-      },
-      {
-        "label": "Καρφιά καβαλάρη",
-        "value": "χάλυβας, λειασμένες άκρες",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Bridge pins: steel-ground tips»"
-      },
-      {
-        "label": "Αγκράφες",
-        "value": "ορείχαλκος, 1–53",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Agraffes (material, number): brass, 1-53»"
-      },
-      {
-        "label": "Duplex — εμπρός",
-        "value": "d2 - c5",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Duplexes - front: d2 - c5»"
-      },
-      {
-        "label": "Duplex — πίσω",
-        "value": "ais - c5",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Duplexes - rear: ais - c5»"
-      },
-      {
-        "label": "Χορδές",
-        "value": "χαλύβδινο σύρμα, περιέλιξη χαλκού",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Strings - material: steel wire, copper winding»"
-      },
-      {
-        "label": "Στερέωση απλών χορδών",
-        "value": "μονή",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Hitching of plain strings: single»"
-      },
-      {
-        "label": "Αποσβεστήρες",
-        "value": "1–69",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Dampers - number: 1-69»"
-      },
-      {
-        "label": "Μηχανισμός",
-        "value": "ευρωπαϊκός μηχανισμός κορυφαίας ποιότητας",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Action: top quality european action»"
-      },
-      {
-        "label": "Κεφαλές σφυριών",
-        "value": "τσόχα κορυφαίας ποιότητας",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Hammer heads: top quality felt hammer heads»"
-      },
-      {
-        "label": "Πληκτρολόγιο",
-        "value": "ξύλο ελάτης, πλήκτρα ζυγισμένα ένα προς ένα",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Keyboard: spruce wood, individually balanced keys»"
-      },
-      {
-        "label": "Βάρος αφής",
-        "value": "55 g στα μπάσα – 50 g στα πρίμα",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Keys balancing, touch weight: 55g in bass - 50g in treble»"
-      },
-      {
-        "label": "Μαύρα πλήκτρα",
-        "value": "έβενος",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Black keys: Ebony wood»"
-      },
-      {
-        "label": "Πεντάλ",
-        "value": "una corda · sostenuto · forte",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Pedals: Unacorda (Piano) pedal, Sostenuto (Prolongement) pedal, Forte pedal»"
-      },
-      {
-        "label": "Ροδάκια",
-        "value": "ορειχάλκινα, με φρένο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Castors: brass, braked castors»"
-      },
-      {
-        "label": "Λογότυπο στο δεξί πλευρικό τοίχωμα",
-        "value": "PETROF",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «PETROF sign on right side wall: PETROF»"
-      },
-      {
-        "label": "Χρώμα τσόχας",
-        "value": "κόκκινο και μαύρο",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Felts colour: red+ black»"
-      },
-      {
-        "label": "Υδραυλικό αργό κλείσιμο καπακιού πλήκτρων",
-        "value": "ναι",
-        "source": "Πίνακας κατασκευαστή στο TXT (P 284 Mistral): «Hydraulic slow close fallboard mech.: yes»"
-      },
-      {
-        "label": "Φινιρίσματα κατασκευαστή",
-        "value": "Μαύρο γυαλιστερό (0801)",
-        "source": "TXT: λίστα «Finish/ΤΕΛΕΙΩΜΑ» του κατασκευαστή (κωδικός χρώματος σε παρένθεση)"
+        "label": "Τελείωμα",
+        "value": "Μαύρο γυαλιστερό",
+        "source": "TXT: λίστα «Finish/ΤΕΛΕΙΩΜΑ» του κατασκευαστή"
       }
     ],
     "images": [
@@ -3135,7 +2398,10 @@ window.NIKOTIAN_NEW_PIANOS = [
     "summary": [
       "Το πιάνο με ουρά P 284 Mistral είναι εξελιγμένο μοντέλο της σειράς Master, φτιαγμένο για επαγγελματίες πιανίστες και επαγγελματικούς χώρους συναυλιών.",
       "Χάρη στις ακουστικές του δυνατότητες, επιτρέπει στον πιανίστα να ερμηνεύσει και τα πιο απαιτητικά έργα. Έχει τον χαρακτηριστικό ήχο και την ιδιαίτερα όμορφη εμφάνιση των πιάνων Petrof."
-    ]
+    ],
+    "editNote": "Πελάτης, 19/11/2026: μόνο τύπος, μέγεθος, στυλ, τελείωμα (όπως στο Young Chang Y 185). Ο πλήρης πίνακας του κατασκευαστή μένει στο specsOriginal. Στυλ: δεν υπάρχει στο υλικό της Petrof.",
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-13",
@@ -3188,7 +2454,9 @@ window.NIKOTIAN_NEW_PIANOS = [
     "summary": [
       "Μεσαίο μέγεθος, αξιοπρόσεκτος ήχος. Κατάλληλο και για μικρότερους χώρους, ενσωματώνει την πιο πρόσφατη σχεδιαστική τεχνολογία της Rönisch.",
       "Το Model 115 προσφέρει εντυπωσιακό βάθος για το μέγεθος του ηχείου του. Η απλή κομψότητα και ο καλλιεργημένος τόνος του αποτελούν την εισαγωγή στη διακεκριμένη οικογένεια πιάνων της Rönisch."
-    ]
+    ],
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-14",
@@ -3241,7 +2509,9 @@ window.NIKOTIAN_NEW_PIANOS = [
     "summary": [
       "Προσφέρει τον ίδιο εξαιρετικό τόνο και την ίδια αίσθηση αφής με το Model 115, με την απλή κομψότητα ενός ψηλότερου πιάνου.",
       "Το Model 118 διατίθεται σε μεγαλύτερη ποικιλία στυλ και επιλεγμένων ξύλων, σπάνιων καπλαμάδων και ασυνήθιστων χρωμάτων, συνεχίζοντας τη μακρά παράδοση της Rönisch στη διακόσμηση και την αισθητική."
-    ]
+    ],
+    "availability": "stock",
+    "availabilityLabel": "Στοκ"
   },
   {
     "id": "new-16",
@@ -3298,7 +2568,9 @@ window.NIKOTIAN_NEW_PIANOS = [
       "Στον μηχανισμό του ψηλότερου όρθιου πιάνου της Rönisch είναι εμφανή όλα τα πλεονεκτήματα ενός άψογου πιάνου με ουρά.",
       "Η ογκώδης δύναμη του μπάσου και οι κρυστάλλινες ψηλές νότες δίνουν τη μέγιστη μουσική ποικιλία και απόχρωση· οι πλούσιες αρμονικές συνθέτουν μια ατελείωτη παλέτα τονικών χρωμάτων. Αυτός είναι ο ήχος Rönisch, για όσους ζητούν τον καλύτερο δυνατό ήχο από ένα όρθιο πιάνο."
     ],
-    "bodySource": "TXT (new-piano_16.txt), επιμέλεια γλώσσας."
+    "bodySource": "TXT (new-piano_16.txt), επιμέλεια γλώσσας.",
+    "availability": "stock",
+    "availabilityLabel": "Στοκ"
   },
   {
     "id": "new-15",
@@ -3352,7 +2624,9 @@ window.NIKOTIAN_NEW_PIANOS = [
     "specsOriginal": [],
     "summary": [
       "Για τον επαγγελματία πιανίστα: τα μακρύτερα μέρη του μηχανισμού, σε συνδυασμό με διευρυμένο ηχείο και μακρύτερες χορδές, χαρίζουν μεγαλύτερη ευαισθησία αφής και μεγαλύτερη δυναμική."
-    ]
+    ],
+    "availability": "stock",
+    "availabilityLabel": "Στοκ"
   },
   {
     "id": "new-28",
@@ -3444,7 +2718,9 @@ window.NIKOTIAN_NEW_PIANOS = [
     "summary": [
       "Είτε η μουσική είναι για εσάς επάγγελμα, πάθος ή και τα δύο, το Y 121 ανταποκρίνεται στις απαιτήσεις σας.",
       "Ανταποκρίνεται άμεσα στο άγγιγμά σας και δίνει ζωή στη μουσική, στο σπίτι ή στο στούντιο."
-    ]
+    ],
+    "availability": "stock",
+    "availabilityLabel": "Στοκ"
   },
   {
     "id": "new-27",
@@ -3534,7 +2810,9 @@ window.NIKOTIAN_NEW_PIANOS = [
     "summary": [
       "Το Y 131 ανήκει στην επαγγελματική σειρά πιάνων της Young Chang, σχεδιασμένη για τον πιο απαιτητικό μουσικό.",
       "Με άμεση ανταπόκριση στο παίξιμο και έξοχο τόνο, συνδυάζει διαυγή ήχο και ιδιαίτερη ομορφιά — ένα πιάνο για κάθε σπίτι ή στούντιο."
-    ]
+    ],
+    "availability": "stock",
+    "availabilityLabel": "Στοκ"
   },
   {
     "id": "new-01",
@@ -3628,35 +2906,37 @@ window.NIKOTIAN_NEW_PIANOS = [
     "summary": [
       "Ένα πιάνο με ουρά τύπου baby grand, με όλα τα χαρακτηριστικά γνωρίσματα των πιάνων με ουρά της Young Chang."
     ],
-    "editNote": "Οι αναφορές του TXT σε «υπέροχη / χαμηλή τιμή» παραλείπονται (εμπορική διατύπωση χωρίς τιμή)."
+    "editNote": "Οι αναφορές του TXT σε «υπέροχη / χαμηλή τιμή» παραλείπονται (εμπορική διατύπωση χωρίς τιμή).",
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-17",
-    "slug": "young-chang-y-157",
-    "url": "/pianos/new/young-chang-y-157/",
-    "detailPage": "piano.html?model=young-chang-y-157",
+    "slug": "young-chang-y-152",
+    "url": "/pianos/new/young-chang-y-152/",
+    "detailPage": "piano.html?model=young-chang-y-152",
     "manufacturer": "Young Chang",
     "manufacturerSlug": "young-chang",
-    "model": "Y 157",
+    "model": "Y 152",
     "type": "grand",
     "typeLabel": "Πιάνο με ουρά",
     "typeEvidence": "TXT: «Grand πιάνο», «Στυλ: Classic Grand»",
     "category": "Κλασικό πιάνο",
-    "sizeCm": 157,
+    "sizeCm": 152,
     "description": [
-      "Αναμείνετε την βέλτιστη χημεία μεταξύ οργάνου και πιανίστα από το Y 157 Grand πιάνο.",
-      "Σε αυτό το έργο τέχνης κομψά συνδιάζονται η τέχνη της χειροτεχνίας και η μεθυστική ομορφιά. Με την προσεκτική κατασκευασμένη μηχανή, τα χωριστά σταθμισμένα κλειδιά,το Y-157 απολαμβάνει την υψηλή ανταπόκριση των πλήκτρων στη μουσικη έμπνευση του καλλιτέχνη."
+      "Αναμείνετε την βέλτιστη χημεία μεταξύ οργάνου και πιανίστα από το Y 152 Grand πιάνο.",
+      "Σε αυτό το έργο τέχνης κομψά συνδιάζονται η τέχνη της χειροτεχνίας και η μεθυστική ομορφιά. Με την προσεκτική κατασκευασμένη μηχανή, τα χωριστά σταθμισμένα κλειδιά,το Y-152 απολαμβάνει την υψηλή ανταπόκριση των πλήκτρων στη μουσικη έμπνευση του καλλιτέχνη."
     ],
     "additional": [
       "Κλασικό πιάνο",
-      "Μέγεθος: 157 x 148 x 101",
+      "Μέγεθος: 152 x 148 x 101",
       "Στυλ: Classic Grand",
       "Τελείωμα: Ebony Polish"
     ],
     "facts": [
       {
         "label": "Μέγεθος",
-        "value": "157 x 148 x 101"
+        "value": "152 x 148 x 101"
       },
       {
         "label": "Στυλ",
@@ -3678,8 +2958,8 @@ window.NIKOTIAN_NEW_PIANOS = [
       },
       {
         "label": "Μέγεθος",
-        "value": "157 × 148 × 101 cm",
-        "source": "TXT (Μέγεθος· μονάδα cm κατά το όνομα του μοντέλου)"
+        "value": "152 × 148 × 101 cm",
+        "source": "Πελάτης, 19/11/2026 (το TXT έγραφε 157 x 148 x 101)"
       },
       {
         "label": "Στυλ",
@@ -3694,10 +2974,10 @@ window.NIKOTIAN_NEW_PIANOS = [
     ],
     "images": [
       {
-        "src": "assets/photos/pianos/new/young-chang-y-157.jpg",
+        "src": "assets/photos/pianos/new/young-chang-y-152.jpg",
         "width": 400,
         "height": 454,
-        "alt": "Young Chang Y 157, πιάνο με ουρά, σε ουδέτερο φόντο",
+        "alt": "Young Chang Y 152, πιάνο με ουρά, σε ουδέτερο φόντο",
         "source": "new-piano_17.jpg",
         "sourceSize": [
           400,
@@ -3711,16 +2991,19 @@ window.NIKOTIAN_NEW_PIANOS = [
       "photo": "new-piano_17.jpg"
     },
     "notes": [
-      "Γραφή ονόματος «Y 157» στον τίτλο, «Y-157» στο κείμενο."
+      "Γραφή ονόματος «Y 152» στον τίτλο, «Y-152» στο κείμενο.",
+      "19/11/2026, πελάτης: το μοντέλο είναι το Y 152 (όχι Y 157), μέγεθος 152 × 148 × 101 cm. Τίτλος, κείμενα και χαρακτηριστικά διορθώθηκαν· το raw μένει όπως το TXT."
     ],
-    "raw": "Young Chang | Y 157\n\nΑναμείνετε την βέλτιστη χημεία μεταξύ οργάνου και πιανίστα από το Y 157 Grand πιάνο.\n\nΣε αυτό το έργο τέχνης κομψά συνδιάζονται η τέχνη της χειροτεχνίας και η μεθυστική ομορφιά. Με την προσεκτική κατασκευασμένη μηχανή, τα χωριστά σταθμισμένα κλειδιά,το Y-157 απολαμβάνει την υψηλή ανταπόκριση των πλήκτρων στη μουσικη έμπνευση του καλλιτέχνη.\n\n\nΠρόσθετες πληροφορίες:\n- Κλασικό πιάνο\n- Μέγεθος: 157 x 148 x 101\n- Στυλ: Classic Grand\n- Τελείωμα: Ebony Polish\n",
     "order": 26,
-    "name": "Young Chang Y 157",
+    "name": "Young Chang Y 152",
     "specsOriginal": [],
     "summary": [
-      "Το Y 157 υπόσχεται την καλύτερη δυνατή χημεία ανάμεσα σε όργανο και πιανίστα.",
+      "Το Y 152 υπόσχεται την καλύτερη δυνατή χημεία ανάμεσα σε όργανο και πιανίστα.",
       "Σε αυτό το πιάνο με ουρά συνδυάζονται κομψά η τέχνη της χειροτεχνίας και η ομορφιά. Με προσεκτικά κατασκευασμένο μηχανισμό και πλήκτρα ζυγισμένα ένα προς ένα, ανταποκρίνεται άμεσα στη μουσική έμπνευση του καλλιτέχνη."
-    ]
+    ],
+    "raw": "Young Chang | Y 157\n\nΑναμείνετε την βέλτιστη χημεία μεταξύ οργάνου και πιανίστα από το Y 157 Grand πιάνο.\n\nΣε αυτό το έργο τέχνης κομψά συνδιάζονται η τέχνη της χειροτεχνίας και η μεθυστική ομορφιά. Με την προσεκτική κατασκευασμένη μηχανή, τα χωριστά σταθμισμένα κλειδιά,το Y-157 απολαμβάνει την υψηλή ανταπόκριση των πλήκτρων στη μουσικη έμπνευση του καλλιτέχνη.\n\n\nΠρόσθετες πληροφορίες:\n- Κλασικό πιάνο\n- Μέγεθος: 157 x 148 x 101\n- Στυλ: Classic Grand\n- Τελείωμα: Ebony Polish\n",
+    "availability": "stock",
+    "availabilityLabel": "Στοκ"
   },
   {
     "id": "new-26",
@@ -3815,7 +3098,9 @@ window.NIKOTIAN_NEW_PIANOS = [
     "body": [
       "Το πάθος και η προσοχή της Young Chang στη λεπτομέρεια οδήγησαν σε ένα όργανο παγκόσμιας κλάσης. Η επιμονή στην τελειότητα στον ήχο, στο άγγιγμα και στην εμφάνιση κάνει αυτό το κομψό επαγγελματικό πιάνο με ουρά ένα όνειρο που γίνεται πραγματικότητα."
     ],
-    "bodySource": "TXT (new-piano_26.txt), επιμέλεια γλώσσας."
+    "bodySource": "TXT (new-piano_26.txt), επιμέλεια γλώσσας.",
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   },
   {
     "id": "new-25",
@@ -3911,6 +3196,8 @@ window.NIKOTIAN_NEW_PIANOS = [
       "Υπό το αυστηρό βλέμμα της Young Chang, καμία λεπτομέρεια αυτής της σειράς δεν ξεφεύγει από τον έλεγχο. Το αποτέλεσμα είναι ένας θερμός τόνος, λεπτή ανταπόκριση στην αφή και εντυπωσιακή δύναμη.",
       "Η κομψή καμπίνα και η προσεγμένη λεπτομέρεια τραβούν την προσοχή, ακόμη κι όταν το πιάνο δεν παίζεται."
     ],
-    "bodySource": "TXT (new-piano_25.txt), επιμέλεια γλώσσας."
+    "bodySource": "TXT (new-piano_25.txt), επιμέλεια γλώσσας.",
+    "availability": "order",
+    "availabilityLabel": "Κατόπιν παραγγελίας"
   }
 ];
