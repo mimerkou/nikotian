@@ -34,7 +34,7 @@
   background: var(--beige);
 }
 /* the piano and the pianist sit left of centre; the crop keeps them and the window */
-.c-hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 38% 62%; }
+.c-hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 85% 55%; }
 
 .js .c-hero .crumbs, .js .c-hero__text > * { animation: rise 1000ms var(--ease-out) both; }
 .js .c-hero__text > :nth-child(1) { animation-delay: 100ms; }
@@ -48,7 +48,7 @@
 @media (max-width: 64rem) {
   .c-hero__text { grid-column: 1 / span 6; }
   .c-hero__media { grid-column: 7 / -1; height: clamp(20rem, 52vw, 30rem); }
-  .c-hero__media img { object-position: 24% 60%; }   /* near-square crop: keep the pianist and the whole piano */
+  .c-hero__media img { object-position: 88% 58%; }   /* near-square crop: keep the keys and the lyre */
 }
 @media (max-width: 47.9375rem) {
   .c-hero__grid { row-gap: var(--s-7); }

@@ -1166,7 +1166,7 @@ window.NIKOTIAN_NEW_PIANOS = [
     ],
     "editNote": "Πελάτης, 19/11/2026: μόνο τύπος, μέγεθος, στυλ, τελείωμα (όπως στο Young Chang Y 185). Ο πλήρης πίνακας του κατασκευαστή μένει στο specsOriginal. Στυλ: δεν υπάρχει στο υλικό της Petrof.",
     "availability": "stock",
-    "availabilityLabel": "Στοκ"
+    "availabilityLabel": "Στην έκθεση"
   },
   {
     "id": "new-19",
@@ -1380,7 +1380,7 @@ window.NIKOTIAN_NEW_PIANOS = [
     ],
     "editNote": "Πελάτης, 19/11/2026: μόνο τύπος, μέγεθος, στυλ, τελείωμα (όπως στο Young Chang Y 185). Ο πλήρης πίνακας του κατασκευαστή μένει στο specsOriginal. Στυλ: δεν υπάρχει στο υλικό της Petrof.",
     "availability": "stock",
-    "availabilityLabel": "Στοκ"
+    "availabilityLabel": "Στην έκθεση"
   },
   {
     "id": "new-20",
@@ -1612,7 +1612,7 @@ window.NIKOTIAN_NEW_PIANOS = [
     "bodySource": "TXT (new-piano_20.txt), επιμέλεια γλώσσας.",
     "editNote": "Ο πίνακας προδιαγραφών του TXT αφορά το «P 131 M1» (άλλη έκδοση) και δεν εμφανίζεται. Εμφανίζονται μόνο οι διαστάσεις του σχεδίου του E1 και τα φινιρίσματα.",
     "availability": "stock",
-    "availabilityLabel": "Στοκ"
+    "availabilityLabel": "Στην έκθεση"
   },
   {
     "id": "new-21",
@@ -2511,7 +2511,7 @@ window.NIKOTIAN_NEW_PIANOS = [
       "Το Model 118 διατίθεται σε μεγαλύτερη ποικιλία στυλ και επιλεγμένων ξύλων, σπάνιων καπλαμάδων και ασυνήθιστων χρωμάτων, συνεχίζοντας τη μακρά παράδοση της Rönisch στη διακόσμηση και την αισθητική."
     ],
     "availability": "stock",
-    "availabilityLabel": "Στοκ"
+    "availabilityLabel": "Στην έκθεση"
   },
   {
     "id": "new-16",
@@ -2570,7 +2570,7 @@ window.NIKOTIAN_NEW_PIANOS = [
     ],
     "bodySource": "TXT (new-piano_16.txt), επιμέλεια γλώσσας.",
     "availability": "stock",
-    "availabilityLabel": "Στοκ"
+    "availabilityLabel": "Στην έκθεση"
   },
   {
     "id": "new-15",
@@ -2626,7 +2626,7 @@ window.NIKOTIAN_NEW_PIANOS = [
       "Για τον επαγγελματία πιανίστα: τα μακρύτερα μέρη του μηχανισμού, σε συνδυασμό με διευρυμένο ηχείο και μακρύτερες χορδές, χαρίζουν μεγαλύτερη ευαισθησία αφής και μεγαλύτερη δυναμική."
     ],
     "availability": "stock",
-    "availabilityLabel": "Στοκ"
+    "availabilityLabel": "Στην έκθεση"
   },
   {
     "id": "new-28",
@@ -2720,7 +2720,7 @@ window.NIKOTIAN_NEW_PIANOS = [
       "Ανταποκρίνεται άμεσα στο άγγιγμά σας και δίνει ζωή στη μουσική, στο σπίτι ή στο στούντιο."
     ],
     "availability": "stock",
-    "availabilityLabel": "Στοκ"
+    "availabilityLabel": "Στην έκθεση"
   },
   {
     "id": "new-27",
@@ -2812,7 +2812,7 @@ window.NIKOTIAN_NEW_PIANOS = [
       "Με άμεση ανταπόκριση στο παίξιμο και έξοχο τόνο, συνδυάζει διαυγή ήχο και ιδιαίτερη ομορφιά — ένα πιάνο για κάθε σπίτι ή στούντιο."
     ],
     "availability": "stock",
-    "availabilityLabel": "Στοκ"
+    "availabilityLabel": "Στην έκθεση"
   },
   {
     "id": "new-01",
@@ -3003,7 +3003,7 @@ window.NIKOTIAN_NEW_PIANOS = [
     ],
     "raw": "Young Chang | Y 157\n\nΑναμείνετε την βέλτιστη χημεία μεταξύ οργάνου και πιανίστα από το Y 157 Grand πιάνο.\n\nΣε αυτό το έργο τέχνης κομψά συνδιάζονται η τέχνη της χειροτεχνίας και η μεθυστική ομορφιά. Με την προσεκτική κατασκευασμένη μηχανή, τα χωριστά σταθμισμένα κλειδιά,το Y-157 απολαμβάνει την υψηλή ανταπόκριση των πλήκτρων στη μουσικη έμπνευση του καλλιτέχνη.\n\n\nΠρόσθετες πληροφορίες:\n- Κλασικό πιάνο\n- Μέγεθος: 157 x 148 x 101\n- Στυλ: Classic Grand\n- Τελείωμα: Ebony Polish\n",
     "availability": "stock",
-    "availabilityLabel": "Στοκ"
+    "availabilityLabel": "Στην έκθεση"
   },
   {
     "id": "new-26",

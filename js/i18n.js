@@ -326,7 +326,7 @@
   "Λευκό γυαλιστερό, μαύρο γυαλιστερό, καρυδιά γυαλιστερό, καρυδιά σατινέ, μαόνι γυαλιστερό, μαόνι σατινέ, οξιά σατινέ, κερασιά σατινέ, σκλήθρο σατινέ": "White polish, black polish, walnut polish, walnut satin, mahogany polish, mahogany satin, beech satin, cherry satin, alder satin",
   "Λευκό γυαλιστερό, ιβουάρ γυαλιστερό, μαύρο γυαλιστερό, καρυδιά γυαλιστερό, μαόνι γυαλιστερό": "White polish, ivory polish, black polish, walnut polish, mahogany polish",
   "Μαύρο γυαλιστερό": "Black polish",
-  "Στοκ": "In stock",
+  "Στην έκθεση": "In the showroom",
   "Κατόπιν παραγγελίας": "To order",
   "Διαθεσιμότητα": "Availability",
   "Μουσικός Οίκος Νικοτιάν": "Nikotian Music House"

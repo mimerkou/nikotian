@@ -105,7 +105,7 @@
   overflow: hidden;
   background: var(--ivory);
 }
-/* Availability (v1.2): segments as wide as their labels («Κατόπιν παραγγελίας» is much longer than «Στοκ») */
+/* Availability (v1.2): segments as wide as their labels («Κατόπιν παραγγελίας» is much longer than «Όλα») */
 .segmented--auto { display: flex; }
 .segmented--auto .segmented__option { flex: 1 1 auto; }
 .segmented__option { position: relative; display: flex; }
