@@ -1,15 +1,16 @@
-/* Nikotian — «Υπηρεσίες» (services.html) · v1.0
+/* Nikotian — «Υπηρεσίες» (services.html) · v1.1 (hero on ivory, like the other internal pages)
    Layout only. Every piece of text takes its type from a shared role class
    (style.css «Typography roles» + tokens.css role tokens):
    .eyebrow · .title (+ --stack, --light) · .t-body · .t-meta · .t-subtitle · .t-index · .btn · .link-arrow.
    This file sets no font-size, font-family or colour for text. */
 
 /* =========================================================
-   01 · Hero — the About hero, on Deep Charcoal
-   Same padding, grid, column split and viewport-driven photo height as .a-hero (about.css),
-   so the h1, the lead and the overall height match the approved internal hero.
+   01 · Hero — v1.1 (20/11/2026): the same hero as Ο Οίκος / Πιάνα / Επικοινωνία
+   Ivory ground, same padding, grid, column split, viewport-driven photo height and the same entrance
+   (text rises; the photograph is unveiled from the right and settles). Was: on Deep Charcoal.
    ========================================================= */
 .s-hero {
+  background: var(--ivory);
   padding-top: calc(var(--header-h) + var(--s-6));
   padding-bottom: clamp(3rem, 2rem + 3vw, 5rem);
   overflow: hidden;
@@ -26,29 +27,22 @@
 .s-hero__lead { margin-top: var(--s-6); }
 
 .s-hero__media {
-  position: relative;
   grid-column: 6 / -1;
   margin-right: calc(-1 * var(--gutter) - max(0px, (100vw - var(--max-w)) / 2));
   height: clamp(20rem, 100svh - var(--header-h) - 14rem, 36rem);
   overflow: hidden;
-  background: var(--graphite);
+  background: var(--charcoal);
 }
 .s-hero__media img { width: 100%; height: 100%; object-fit: cover; object-position: 58% 50%; }
-/* The photograph is not cut out of the page: its left edge dissolves into the charcoal */
-.s-hero__media::after {
-  content: ""; position: absolute; inset: 0; pointer-events: none;
-  background:
-    linear-gradient(90deg, var(--charcoal) 0%, rgba(24, 34, 37, .55) 14%, rgba(24, 34, 37, 0) 42%),
-    linear-gradient(0deg, rgba(24, 34, 37, .35) 0%, rgba(24, 34, 37, 0) 30%);
-}
 
 .js .s-hero .crumbs, .js .s-hero__text > * { animation: rise 1000ms var(--ease-out) both; }
 .js .s-hero__text > :nth-child(1) { animation-delay: 100ms; }
 .js .s-hero__text > :nth-child(2) { animation-delay: 200ms; }
 .js .s-hero__text > :nth-child(3) { animation-delay: 340ms; }
-.js .s-hero__media img { animation: s-glow 2200ms var(--ease-out) 200ms both; }
-/* the light comes up slowly on the strings */
-@keyframes s-glow { from { opacity: 0; transform: scale(1.05); filter: brightness(.6); } to { opacity: 1; transform: none; filter: none; } }
+.js .s-hero__media { animation: s-unveil 1400ms var(--ease-out) 300ms both; }
+.js .s-hero__media img { animation: s-settle 2000ms var(--ease-out) 300ms both; }
+@keyframes s-unveil { from { clip-path: inset(0 0 0 100%); } to { clip-path: inset(0); } }
+@keyframes s-settle { from { transform: scale(1.06); } to { transform: none; } }
 
 @media (max-width: 64rem) {
   .s-hero__text { grid-column: 1 / span 6; }
@@ -59,9 +53,6 @@
   .s-hero__text, .s-hero__media { grid-column: 1 / -1; }
   .s-hero__text { padding-right: 0; }
   .s-hero__media { margin-inline: calc(-1 * var(--gutter)); height: auto; aspect-ratio: 4 / 3; }
-  .s-hero__media::after {
-    background: linear-gradient(180deg, var(--charcoal) 0%, rgba(24, 34, 37, 0) 30%);
-  }
 }
 
 /* =========================================================
@@ -71,6 +62,9 @@
   --svc-gap: clamp(1.5rem, .75rem + 2vw, 2.75rem);
   --row-py: clamp(2rem, 1.25rem + 2vw, 3.25rem);
   background: var(--ivory);
+  /* v1.1: follows the ivory hero directly — same seam as the piano pages (.np-collection) */
+  padding-top: clamp(2.5rem, 1.5rem + 3vw, 4.5rem);
+  border-top: 1px solid var(--line-soft);
 }
 .svc__head { margin-bottom: clamp(3rem, 2rem + 3vw, 5rem); }
 .svc__group + .svc__group { margin-top: clamp(4.5rem, 3rem + 4vw, 7.5rem); }

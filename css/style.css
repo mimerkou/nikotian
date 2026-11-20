@@ -807,6 +807,11 @@ html:not(.menu-open) .site-header:not(.is-solid) :focus-visible:not(.nav__sub a)
   padding-block: clamp(3.5rem, 2.5rem + 3vw, 5rem) var(--s-7);
 }
 .site-footer__brand img { width: 170px; height: auto; margin-bottom: var(--s-4); }
+/* Footer logo (20/11/2026): back to top on the homepage (glides, js/main.js), to the homepage elsewhere */
+.site-footer__logo { display: inline-block; opacity: .92; transition: opacity var(--dur-link, 500ms) var(--ease-soft); }
+.site-footer__logo img { display: block; }
+.site-footer__logo:hover { opacity: 1; }
+.site-footer__logo:focus-visible { outline: 2px solid var(--red-on-dark, currentColor); outline-offset: 6px; }
 .site-footer__brand p { line-height: 1.7; }
 .site-footer__social {
   display: inline-flex; align-items: center; gap: .6rem;
